@@ -1,0 +1,20 @@
+# Docker volumes / runtime data
+**/mysql/
+**/wp-content/uploads/
+
+# Test artifacts
+test-results.txt
+/tmp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Claude
+.claude/

@@ -1,0 +1,199 @@
+[[environment]]
+name = "Email Subscribers by Icegram Express <= 5.7.14 - Unauthenticated SQL Injection"
+cve = ["CVE-2024-2876"]
+app = "Email Subscribers"
+path = "email-subscribers/CVE-2024-2876"
+dockerfile = {"vulhub/email-subscribers:5.7.13" = "base/email-subscribers/5.7.13"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "Secure Copy Content Protection <= 2.8.1 - SQL Injection"
+cve = ["CVE-2021-24931"]
+app = "Secure Copy Content Protection"
+path = "secure-copy-content-protection/CVE-2021-24931"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "Paid Memberships Pro <= 2.9.7 - Unauthenticated SQL Injection"
+cve = ["CVE-2023-23488"]
+app = "Paid Memberships Pro"
+path = "paid-member-subscriptions/CVE-2023-23488"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "Permalink Manager Lite <= 2.2.14 - Reflected XSS"
+cve = ["CVE-2022-0201"]
+app = "Permalink Manager Lite"
+path = "permalink-manager/CVE-2022-0201"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "LearnPress <= 4.1.5 - Reflected XSS"
+cve = ["CVE-2022-0271"]
+app = "LearnPress"
+path = "learnpress/CVE-2022-0271"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "PublishPress Capabilities <= 2.3.0 - CSRF"
+cve = ["CVE-2021-25032"]
+app = "PublishPress Capabilities"
+path = "capability-manager-enhanced/CVE-2021-25032"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["CSRF"]
+
+[[environment]]
+name = "Sitemap by click5 <= 1.0.35 - CSRF"
+cve = ["CVE-2022-0952"]
+app = "Sitemap by click5"
+path = "sitemap-by-click5/CVE-2022-0952"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["CSRF"]
+
+[[environment]]
+name = "3DPrint Lite <= 1.9.1.4 - Unauthenticated File Upload RCE"
+cve = ["CVE-2021-4436"]
+app = "3DPrint Lite"
+path = "3dprint-lite/CVE-2021-4436"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["File Upload", "RCE"]
+
+[[environment]]
+name = "Hash Form <= 1.1.0 - Unauthenticated File Upload RCE"
+cve = ["CVE-2024-5084"]
+app = "Hash Form"
+path = "hash-form/CVE-2024-5084"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["File Upload", "RCE"]
+
+[[environment]]
+name = "DukaPress Shopping Cart <= 2.5.4 - Unauthenticated File Upload"
+cve = ["CVE-2014-8799"]
+app = "DukaPress"
+path = "dukapress/CVE-2014-8799"
+dockerfile = {"vulhub/dukapress:2.5.4" = "base/dukapress/2.5.4"}
+tags = ["File Upload", "RCE"]
+
+[[environment]]
+name = "AB Google Map Travel <= 3.9 - CSRF"
+cve = ["CVE-2015-2755"]
+app = "AB Google Map Travel"
+path = "ab-google-map-travel/CVE-2015-2755"
+dockerfile = {"vulhub/ab-google-map-travel:3.4" = "base/ab-google-map-travel/3.4"}
+tags = ["CSRF"]
+
+[[environment]]
+name = "Button Generator <= 2.3.2 - Arbitrary File Inclusion via CSRF"
+cve = ["CVE-2021-25052"]
+app = "Button Generator"
+path = "button-generation/CVE-2021-25052"
+dockerfile = {"vulhub/button-generation:2.3.2" = "base/button-generation/2.3.2"}
+tags = ["CSRF", "File Inclusion"]
+
+[[environment]]
+name = "Shield Security <= 20.0.5 - Reflected XSS"
+cve = ["CVE-2024-7313"]
+app = "Shield Security"
+path = "wp-simple-firewall/CVE-2024-7313"
+dockerfile = {"vulhub/wp-simple-firewall:20.0.5" = "base/wp-simple-firewall/20.0.5"}
+tags = ["XSS"]
+
+[[environment]]
+name = "WP Statistics <= 13.0.7 - SQL Injection"
+cve = ["CVE-2021-24340"]
+app = "WP Statistics"
+path = "wp-statistics/CVE-2021-24340"
+dockerfile = {"vulhub/wp-statistics:13.0.7" = "base/wp-statistics/13.0.7"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "Pie Register <= 3.7.1.5 - SQL Injection"
+cve = ["CVE-2021-24731"]
+app = "Pie Register"
+path = "pie-register/CVE-2021-24731"
+dockerfile = {"vulhub/pie-register:3.7.1.5" = "base/pie-register/3.7.1.5"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "Photo Gallery by 10Web <= 1.5.87 - SQL Injection"
+cve = ["CVE-2022-0169"]
+app = "Photo Gallery"
+path = "photo-gallery/CVE-2022-0169"
+dockerfile = {"vulhub/photo-gallery:1.5.87" = "base/photo-gallery/1.5.87"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "Cryptocurrency Widgets Pack <= 1.8.1 - SQL Injection"
+cve = ["CVE-2022-4059"]
+app = "Cryptocurrency Widgets Pack"
+path = "cryptocurrency-widgets-pack/CVE-2022-4059"
+dockerfile = {"vulhub/cryptocurrency-widgets-pack:1.8.1" = "base/cryptocurrency-widgets-pack/1.8.1"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "My Calendar <= 3.4.0 - SQL Injection"
+cve = ["CVE-2023-6360"]
+app = "My Calendar"
+path = "my-calendar/CVE-2023-6360"
+dockerfile = {"vulhub/my-calendar:3.4.0" = "base/my-calendar/3.4.0"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "GamiPress <= 2.8.9 - SQL Injection"
+cve = ["CVE-2024-13496"]
+app = "GamiPress"
+path = "gamepress/CVE-2024-13496"
+dockerfile = {"vulhub/gamipress:2.7.0" = "base/gamipress/2.7.0"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "Depicter <= 3.6.0 - SQL Injection"
+cve = ["CVE-2025-2011"]
+app = "Depicter"
+path = "depicter/CVE-2025-2011"
+dockerfile = {"vulhub/depicter:3.6.0" = "base/depicter/3.6.0"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "Booking Calendar <= 3.2.0 - Unauthenticated File Upload"
+cve = ["CVE-2022-3982"]
+app = "Booking Calendar"
+path = "booking-calendar/CVE-2022-3982"
+dockerfile = {"vulhub/booking-calendar:3.2.0" = "base/booking-calendar/3.2.0"}
+tags = ["File Upload", "RCE"]
+
+[[environment]]
+name = "InstaWP Connect <= 0.1.0.22 - Unauthenticated File Upload"
+cve = ["CVE-2024-2667"]
+app = "InstaWP Connect"
+path = "instawp-connect/CVE-2024-2667"
+dockerfile = {"vulhub/instawp-connect:0.1.0.22" = "base/instawp-connect/0.1.0.22"}
+tags = ["File Upload", "RCE"]
+
+[[environment]]
+name = "myStickyElements <= 2.0.3 - Reflected XSS"
+cve = ["CVE-2022-0148"]
+app = "myStickyElements"
+path = "mystickyelements/CVE-2022-0148"
+dockerfile = {"vulhub/mystickyelements:2.0.3" = "base/mystickyelements/2.0.3"}
+tags = ["XSS"]
+
+[[environment]]
+name = "Simple Membership <= 4.1.0 - Reflected XSS"
+cve = ["CVE-2022-1724"]
+app = "Simple Membership"
+path = "simple-membership/CVE-2022-1724"
+dockerfile = {"vulhub/simple-membership:4.1.0" = "base/simple-membership/4.1.0"}
+tags = ["XSS"]
+
+[[environment]]
+name = "CF7 Math Captcha <= 2.0.1 - Reflected XSS"
+cve = ["CVE-2024-6517"]
+app = "CF7 Math Captcha"
+path = "ds-cf7-math-captcha/CVE-2024-6517"
+dockerfile = {"vulhub/ds-cf7-math-captcha:2.0.1" = "base/ds-cf7-math-captcha/2.0.1"}
+tags = ["XSS"]
