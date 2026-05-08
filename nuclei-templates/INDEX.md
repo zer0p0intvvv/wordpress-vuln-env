@@ -24,7 +24,7 @@
 | CVE-2022-4059 | SQLi (time-based) | No | No | cryptocurrency-widgets-pack/CVE-2022-4059 | 8104 |
 | CVE-2023-23488 | SQLi (time-based) | No | No | paid-member-subscriptions/CVE-2023-23488 | 8090 |
 | CVE-2023-6360 | SQLi (time-based) | No | No | my-calendar/CVE-2023-6360 | 8105 |
-| CVE-2024-13496 | SQLi (time-based) | No | No | gamepress/CVE-2024-13496 | 8106 |
+| CVE-2024-13496 | SQLi (time-based) | Yes | No | gamepress/CVE-2024-13496 | 8106 |
 | CVE-2024-2667 | File Upload | No | Yes | instawp-connect/CVE-2024-2667 | 8109 |
 | CVE-2024-2876 | SQLi (time-based) | No | No | email-subscribers/CVE-2024-2876 | 8088 |
 | CVE-2024-5084 | File Upload RCE | No | No | hash-form/CVE-2024-5084 | 8096 |
@@ -36,7 +36,7 @@
 
 - 总计: 25 个模板
 - 无需认证: 18 个
-- 需认证 (username/password): 5 个 (CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2024-7313)
+- 需认证 (username/password): 6 个 (CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2024-7313, CVE-2024-13496)
 - 使用 OOB (interactsh): 2 个 (CVE-2021-25052, CVE-2024-2667)
 
 ## 使用方法

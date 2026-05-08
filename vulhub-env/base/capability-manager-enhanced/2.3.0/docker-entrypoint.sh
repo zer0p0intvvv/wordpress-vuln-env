@@ -89,6 +89,15 @@ if [ -n "$WP_PLUGIN_SLUG" ]; then
     eval "$INSTALL_CMD" || true
 fi
 
+# Activate plugins baked into the image
+for plugin_dir in /var/www/html/wp-content/plugins/*/; do
+    slug=$(basename "$plugin_dir")
+    if ! wp plugin is-active "$slug" --allow-root 2>/dev/null; then
+        echo "Activating plugin: $slug"
+        wp plugin activate "$slug" --allow-root 2>/dev/null || true
+    fi
+done
+
 echo "Setup complete. WordPress is running at $WP_URL"
 [ "$DEBUG_MODE" = "true" ] && echo "Debug logs: /var/www/html/wp-content/debug.log"
 

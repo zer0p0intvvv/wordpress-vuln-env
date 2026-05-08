@@ -36,7 +36,7 @@ wordpress漏洞环境自动化生成/
 | 3 | paid-member-subscriptions | CVE-2023-23488 | SQLi | 8090 | 3309 | No | No | PASS |
 | 4 | permalink-manager | CVE-2022-0201 | XSS | 8091 | 3310 | No | No | PASS |
 | 5 | learnpress | CVE-2022-0271 | XSS | 8092 | 3311 | No | No | PASS |
-| 6 | capability-manager-enhanced | CVE-2021-25032 | CSRF | 8093 | 3312 | Yes | No | **FAIL** |
+| 6 | capability-manager-enhanced | CVE-2021-25032 | CSRF | 8093 | 3312 | Yes | No | PASS |
 | 7 | sitemap-by-click5 | CVE-2022-0952 | CSRF | 8094 | 3313 | No | No | PASS |
 | 8 | 3dprint-lite | CVE-2021-4436 | File Upload | 8095 | 3314 | No | No | PASS |
 | 9 | hash-form | CVE-2024-5084 | File Upload | 8096 | 3315 | No | No | PASS |
@@ -49,7 +49,7 @@ wordpress漏洞环境自动化生成/
 | 16 | photo-gallery | CVE-2022-0169 | SQLi | 8103 | 3323 | No | No | PASS |
 | 17 | cryptocurrency-widgets-pack | CVE-2022-4059 | SQLi | 8104 | 3324 | No | No | PASS |
 | 18 | my-calendar | CVE-2023-6360 | SQLi | 8105 | 3325 | No | No | PASS |
-| 19 | gamepress | CVE-2024-13496 | SQLi | 8106 | 3326 | No | No | **模板限制** |
+| 19 | gamepress | CVE-2024-13496 | SQLi | 8106 | 3326 | Yes | No | PASS |
 | 20 | depicter | CVE-2025-2011 | SQLi | 8107 | 3327 | No | No | PASS |
 | 21 | booking-calendar | CVE-2022-3982 | File Upload | 8108 | 3328 | No | No | PASS |
 | 22 | instawp-connect | CVE-2024-2667 | File Upload | 8109 | 3329 | No | Yes | **FAIL** |
@@ -89,24 +89,30 @@ sleep 15
 - MySQL: 3307-3333（已用），新环境从 3334 开始
 - 检查冲突: `lsof -i :<port>`
 
-## Nuclei 验证结果（2026-05-07）
+## Nuclei 验证结果（2026-05-08）
 
 - 测试工具: nuclei 3.8.0
-- 通过: 21/25 (84%)
-- 排除 OOB/模板限制后通过: 21/22 (95%)
+- 通过: 23/25 (92%)
+- OOB 限制: 2 个（需 interactsh 服务器）
 
-### 失败项详情
+### 修复记录
 
-| CVE | 原因 | 状态 | 说明 |
-|-----|------|------|------|
-| CVE-2023-23488 | `paid-memberships-pro` 未激活 | **已修复** | 改用本地源码 base 镜像 + 自动激活 |
-| CVE-2024-13496 | 环境用 `gamepress`, 模板检测 `gamipress` | **已修复** | 改用 gamipress 2.7.0 base 镜像 |
-| CVE-2024-13496 | 模板需 admin 认证的 AJAX (gamipress_get_logs) | 模板限制 | 漏洞需 admin 权限触发, nuclei 模板未传认证 |
-| CVE-2024-2667 | 模板使用 interactsh OOB | 模板限制 | 需 OOB 服务器, 模板本身正确 |
-| CVE-2021-25032 | 模板访问 admin-ajax 被拒 | 模板限制 | nonce/权限问题 |
-| CVE-2021-25052 | 模板使用 interactsh OOB | 模板限制 | 需 OOB 服务器, 模板本身正确 |
+| CVE | 问题 | 修复 |
+|-----|------|------|
+| CVE-2023-23488 | 插件在 WP.org 已关闭 | 创建本地源码 base 镜像 |
+| CVE-2024-13496 | 环境用 gamepress, 模板检测 gamipress | 改用 gamipress 2.7.0 base 镜像 |
+| CVE-2024-13496 | 模板需 admin 认证 + matcher 格式错误 | 添加登录步骤 + 修复 matcher |
+| CVE-2021-25032 | 插件未激活 + 请求顺序错误 | entrypoint 自动激活 + 调整请求顺序 |
+
+### 剩余限制（OOB）
+
+| CVE | 说明 |
+|-----|------|
+| CVE-2024-2667 | 模板使用 interactsh OOB, 需外部 OOB 服务器 |
+| CVE-2021-25052 | 模板使用 interactsh OOB, 需外部 OOB 服务器 |
 
 1. PHP 7.4 必须（create_function 兼容性）
 2. 使用本地源码，不依赖 WP.org 在线安装
 3. 部分插件需在 entrypoint 中手动实例化类
 4. 模板检测分类: 直接检测(47%) / 需认证(20%) / 需数据初始化(13%) / OOB限制(13%)
+
