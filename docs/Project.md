@@ -4,11 +4,15 @@
 
 自动生成 WordPress 插件漏洞的 Docker 测试环境，用于 nuclei 模板验证和漏洞复现。
 
+## 主要工作流
+1、输入；2、创建环境；3、收集模版；4、验证；5、修复；6、提交                        
+
 ## 目录结构
 
 ```
 wordpress漏洞环境自动化生成/
-├── CLAUDE.md                    # Claude Code 项目指引
+├── .claude/
+│   └── CLAUDE.md                # Claude Code 项目指引
 ├── docs/
 │   └── Project.md               # 本文件 - 项目进度与工作流
 ├── vulhub-env/                  # 交付产物：Docker 漏洞环境
@@ -27,7 +31,7 @@ wordpress漏洞环境自动化生成/
     └── CVE-XXXX-XXXX.yaml      # 25 个官方模板
 ```
 
-## 已完成环境（25 个）
+## 已完成环境（27 个）
 
 | # | 插件 | CVE | 类型 | Web | MySQL | 认证 | OOB | Nuclei |
 |---|------|-----|------|-----|-------|------|-----|--------|
@@ -56,6 +60,8 @@ wordpress漏洞环境自动化生成/
 | 23 | mystickyelements | CVE-2022-0148 | XSS | 8110 | 3330 | Yes | No | PASS |
 | 24 | simple-membership | CVE-2022-1724 | XSS | 8111 | 3331 | No | No | PASS |
 | 25 | ds-cf7-math-captcha | CVE-2024-6517 | XSS | 8113 | 3333 | No | No | PASS |
+| 26 | drag-and-drop-multiple-file-upload-cf7 | CVE-2026-5718 | File Upload | 8114 | 3334 | No | No | - |
+| 27 | registrationmagic | CVE-2025-15403 | Priv Esc | 8115 | 3335 | No | No | - |
 
 ## Nuclei 模板状态
 
@@ -66,7 +72,7 @@ wordpress漏洞环境自动化生成/
 - OOB 模板: 2 个（CVE-2021-25052, CVE-2024-2667）
 
 ## 验证流程
-
+### 单独验证
 ```bash
 # 1. 启动环境
 cd vulhub-env/<plugin>/<CVE-ID>
@@ -81,12 +87,18 @@ sleep 15
 
 # 需认证
 ~/工具/nuclei -t nuclei-templates/CVE-XXXX-XXXX.yaml -u http://localhost:<PORT> -V "username=admin" -V "password=admin"
-```
 
+```
+### 批量验证
+、、、bash
+
+bash /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/test-all.sh
+结果保存:/Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/test-results.txt
+、、、
 ## 端口规划
 
-- Web: 8088-8113（已用），新环境从 8114 开始
-- MySQL: 3307-3333（已用），新环境从 3334 开始
+- Web: 8088-8115（已用），新环境从 8116 开始
+- MySQL: 3307-3335（已用），新环境从 3336 开始
 - 检查冲突: `lsof -i :<port>`
 
 ## Nuclei 验证结果（2026-05-08）
@@ -104,7 +116,7 @@ sleep 15
 | CVE-2024-13496 | 模板需 admin 认证 + matcher 格式错误 | 添加登录步骤 + 修复 matcher |
 | CVE-2021-25032 | 插件未激活 + 请求顺序错误 | entrypoint 自动激活 + 调整请求顺序 |
 
-### 剩余限制（OOB）
+### 当前卡点（OOB）
 
 | CVE | 说明 |
 |-----|------|
@@ -116,3 +128,6 @@ sleep 15
 3. 部分插件需在 entrypoint 中手动实例化类
 4. 模板检测分类: 直接检测(47%) / 需认证(20%) / 需数据初始化(13%) / OOB限制(13%)
 
+### 需求点
+1、主要需要点 主要工作流
+2、检测

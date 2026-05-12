@@ -197,3 +197,19 @@ app = "CF7 Math Captcha"
 path = "ds-cf7-math-captcha/CVE-2024-6517"
 dockerfile = {"vulhub/ds-cf7-math-captcha:2.0.1" = "base/ds-cf7-math-captcha/2.0.1"}
 tags = ["XSS"]
+
+[[environment]]
+name = "Drag and Drop Multiple File Upload for Contact Form 7 <= 1.3.9.6 - Unauthenticated File Upload RCE"
+cve = ["CVE-2026-5718"]
+app = "Drag and Drop Multiple File Upload"
+path = "drag-and-drop-multiple-file-upload-contact-form-7/CVE-2026-5718"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["File Upload", "RCE"]
+
+[[environment]]
+name = "RegistrationMagic <= 6.0.7.1 - Privilege Escalation"
+cve = ["CVE-2025-15403"]
+app = "RegistrationMagic"
+path = "custom-registration-form-builder-with-submission-manager/CVE-2025-15403"
+dockerfile = {"vulhub/registrationmagic:6.0.7.1" = "base/registrationmagic/6.0.7.1"}
+tags = ["Privilege Escalation"]
