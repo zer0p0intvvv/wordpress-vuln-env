@@ -23,6 +23,9 @@ RUN if [ "$INSTALL_XDEBUG" = "true" ]; then \
         pecl install xdebug && docker-php-ext-enable xdebug; \
     fi
 
+# Copy the vulnerable plugin into the image
+COPY plugins/ /usr/src/wordpress/wp-content/plugins/custom-registration-form-builder-with-submission-manager/
+
 # Keep the official WordPress entrypoint, then wrap it with our auto-installer
 RUN mv /usr/local/bin/docker-entrypoint.sh /usr/local/bin/docker-entrypoint-original.sh
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh

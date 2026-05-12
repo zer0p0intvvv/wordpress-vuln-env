@@ -78,16 +78,12 @@ wp option update home "$WP_URL" --allow-root >/dev/null
 wp option update permalink_structure '/%postname%/' --allow-root >/dev/null
 wp rewrite flush --allow-root >/dev/null || true
 
-# Install and activate plugin
-if [ -n "$WP_PLUGIN_SLUG" ]; then
-    INSTALL_CMD="wp plugin install $WP_PLUGIN_SLUG --allow-root"
-    if [ -n "$WP_PLUGIN_VERSION" ]; then
-        INSTALL_CMD="$INSTALL_CMD --version=$WP_PLUGIN_VERSION"
-    fi
-    INSTALL_CMD="$INSTALL_CMD --activate"
-
-    echo "Installing plugin: $WP_PLUGIN_SLUG ${WP_PLUGIN_VERSION:-(latest)}"
-    eval "$INSTALL_CMD" || true
+# Activate plugin (already bundled in image)
+if wp plugin list --allow-root --field=name | grep -qx "$WP_PLUGIN_SLUG"; then
+    echo "Activating plugin: $WP_PLUGIN_SLUG"
+    wp plugin activate "$WP_PLUGIN_SLUG" --allow-root || true
+else
+    echo "WARNING: Plugin not found: $WP_PLUGIN_SLUG" >&2
 fi
 
 # Create subscriber user for privilege escalation testing
