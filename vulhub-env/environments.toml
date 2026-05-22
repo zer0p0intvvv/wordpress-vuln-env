@@ -243,7 +243,7 @@ name = "Read More & Accordion (expand-maker) <= 3.5.7 - Authenticated Privilege 
 cve = ["CVE-2026-7467"]
 app = "Read More & Accordion"
 path = "expand-maker/CVE-2026-7467"
-dockerfile = {"vulhub/expand-maker:3.5.7" = "base/expand-maker/3.5.7"}
+dockerfile = {"vulhub/expand-maker:3.5.5" = "base/expand-maker/3.5.5"}
 tags = ["Privilege Escalation"]
 
 [[environment]]

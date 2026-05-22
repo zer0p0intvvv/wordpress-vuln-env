@@ -78,10 +78,71 @@ mkdir -p "$CANARY_DIR"
 echo "wpo-canary-file" > "$CANARY_DIR/canary.txt"
 chown -R www-data:www-data "$CANARY_DIR"
 
+# Install mu-plugin that:
+# 1. Enables Basic Auth for REST API (WordPress doesn't allow it by default)
+# 2. Exposes a helper endpoint returning the pre-created attachment ID
+mkdir -p "$WORDPRESS_PATH/wp-content/mu-plugins"
+cat > "$WORDPRESS_PATH/wp-content/mu-plugins/vulhub-wpo-auth.php" << 'MUPLUGIN'
+<?php
+// Enable HTTP Basic Auth for WordPress REST API using regular user credentials.
+add_filter('determine_current_user', function($user_id) {
+    if (!isset($_SERVER['PHP_AUTH_USER'])) return $user_id;
+    $user = get_user_by('login', $_SERVER['PHP_AUTH_USER']);
+    if ($user && wp_check_password($_SERVER['PHP_AUTH_PW'] ?? '', $user->data->user_pass, $user->ID)) {
+        return $user->ID;
+    }
+    return $user_id;
+}, 20);
+
+// Expose the pre-created attachment ID for nuclei to read.
+add_action('rest_api_init', function() {
+    register_rest_route('vulhub/v1', '/wpo-info', [
+        'methods'             => 'GET',
+        'callback'            => function() {
+            $attachment_id = get_option('vulhub_wpo_attachment_id', 0);
+            return ['attachment_id' => (int) $attachment_id];
+        },
+        'permission_callback' => '__return_true',
+    ]);
+});
+MUPLUGIN
+chown www-data:www-data "$WORDPRESS_PATH/wp-content/mu-plugins/vulhub-wpo-auth.php"
+
+# Pre-create an attachment record owned by the author user with original-file meta
+# pointing to the canary file. This simulates the state after WP-Optimize processes an image.
+echo "Creating pre-configured attachment for CVE-2026-7252..."
+wp eval '
+$author = get_user_by("login", "author");
+if (!$author) { echo "ERROR: author user not found\n"; exit(1); }
+
+$attachment_id = wp_insert_attachment([
+    "post_title"     => "wpo-test-image",
+    "post_status"    => "inherit",
+    "post_type"      => "attachment",
+    "post_mime_type" => "image/jpeg",
+    "post_author"    => $author->ID,
+], false);
+
+if (is_wp_error($attachment_id)) {
+    echo "ERROR: " . $attachment_id->get_error_message() . "\n";
+    exit(1);
+}
+
+// Set original-file to canary path (relative to uploads basedir — WP-Optimize uses basedir . "/" . value)
+update_post_meta($attachment_id, "original-file", "wpo_canary/canary.txt");
+
+// Store the ID so the REST helper endpoint can return it
+update_option("vulhub_wpo_attachment_id", $attachment_id);
+
+echo "Attachment ID: " . $attachment_id . "\n";
+echo "original-file meta set to: wpo_canary/canary.txt\n";
+' --allow-root 2>/dev/null || echo "WARNING: attachment creation may have failed"
+
 echo "Setup complete. CVE-2026-7252 environment ready at $WP_URL"
 echo "Admin:  $WP_ADMIN_USER / $WP_ADMIN_PASSWORD"
 echo "Author: author / author"
-echo "Exploit: Login as author, set original-file meta on attachment to /var/www/html/wp-config.php, trigger cleanup"
+echo "Info:   GET $WP_URL/wp-json/vulhub/v1/wpo-info"
+echo "Exploit: DELETE /wp-json/wp/v2/media/<id>?force=true (Basic Auth: author:author)"
 
 trap - EXIT
 wait "$APACHE_PID"

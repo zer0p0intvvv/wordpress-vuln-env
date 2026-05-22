@@ -71,9 +71,27 @@ fi
 wp option update users_can_register 1 --allow-root >/dev/null
 wp option update default_role subscriber --allow-root >/dev/null
 
+# Install mu-plugin that exposes the easy_elements_nonce via REST API.
+# Needed because the nonce is only output when an Elementor login-register widget renders.
+mkdir -p "$WORDPRESS_PATH/wp-content/mu-plugins"
+cat > "$WORDPRESS_PATH/wp-content/mu-plugins/vulhub-eel-nonce.php" << 'MUPLUGIN'
+<?php
+add_action('rest_api_init', function() {
+    register_rest_route('vulhub/v1', '/eel-nonce', [
+        'methods'             => 'GET',
+        'callback'            => function() {
+            return ['nonce' => wp_create_nonce('easy_elements_nonce')];
+        },
+        'permission_callback' => '__return_true',
+    ]);
+});
+MUPLUGIN
+chown www-data:www-data "$WORDPRESS_PATH/wp-content/mu-plugins/vulhub-eel-nonce.php"
+
 echo "Setup complete. CVE-2026-7284 environment ready at $WP_URL"
 echo "Admin: $WP_ADMIN_USER / $WP_ADMIN_PASSWORD"
-echo "Exploit: POST /wp-admin/admin-ajax.php action=easyel_handle_register with role=administrator"
+echo "Nonce: GET $WP_URL/wp-json/vulhub/v1/eel-nonce"
+echo "Exploit: POST /wp-admin/admin-ajax.php action=eel_register with role=administrator"
 
 trap - EXIT
 wait "$APACHE_PID"
