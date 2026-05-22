@@ -60,15 +60,21 @@ wordpress漏洞环境自动化生成/
 | 23 | mystickyelements | CVE-2022-0148 | XSS | 8110 | 3330 | Yes | No | PASS |
 | 24 | simple-membership | CVE-2022-1724 | XSS | 8111 | 3331 | No | No | PASS |
 | 25 | ds-cf7-math-captcha | CVE-2024-6517 | XSS | 8113 | 3333 | No | No | PASS |
-| 26 | drag-and-drop-multiple-file-upload-cf7 | CVE-2026-5718 | File Upload | 8114 | 3334 | No | No | - |
+| 26 | drag-and-drop-multiple-file-upload-cf7 | CVE-2026-5718 | File Upload | 8114 | 3334 | No | No | 待验证 |
 | 27 | registrationmagic | CVE-2025-15403 | Priv Esc | 8115 | 3335 | No | No | - |
+| 28 | easy-elements | CVE-2026-7284 | Priv Esc | 8116 | 3336 | No | No | 待验证 |
+| 29 | highland-software-custom-role-manager | CVE-2026-7106 | Priv Esc | 8117 | 3337 | Yes | No | 待验证 |
+| 30 | wp-optimize | CVE-2026-7252 | File Deletion→RCE | 8118 | 3338 | Yes | No | 待验证 |
+| 31 | expand-maker | CVE-2026-7467 | Priv Esc | 8119 | 3339 | Yes | No | 待验证 |
+| 32 | import-users-from-csv-with-meta | CVE-2026-7641 | Priv Esc (Multisite) | 8120 | 3340 | Yes | No | 待验证 |
 
 ## Nuclei 模板状态
 
 - 官方模板: 25/25 全部从 projectdiscovery/nuclei-templates 获取
+- 自定义模板: 6 个 (CVE-2026-5718, CVE-2026-7284, CVE-2026-7106, CVE-2026-7252, CVE-2026-7467, CVE-2026-7641)
 - 模板目录: `nuclei-templates/`
 - 索引文件: `nuclei-templates/INDEX.md`
-- 需认证模板: 5 个（CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2024-7313）
+- 需认证模板: 9 个（CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2024-7313, CVE-2024-13496, CVE-2026-7106, CVE-2026-7252, CVE-2026-7467, CVE-2026-7641）
 - OOB 模板: 2 个（CVE-2021-25052, CVE-2024-2667）
 
 ## 验证流程
@@ -97,8 +103,8 @@ bash /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/test-all.sh
 、、、
 ## 端口规划
 
-- Web: 8088-8115（已用），新环境从 8116 开始
-- MySQL: 3307-3335（已用），新环境从 3336 开始
+- Web: 8088-8120（已用），新环境从 8121 开始
+- MySQL: 3307-3340（已用），新环境从 3341 开始
 - 检查冲突: `lsof -i :<port>`
 
 ## Nuclei 验证结果（2026-05-08）

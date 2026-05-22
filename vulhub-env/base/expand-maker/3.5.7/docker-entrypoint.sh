@@ -1,0 +1,98 @@
+#!/bin/bash
+set -Eeuo pipefail
+
+WORDPRESS_PATH="/var/www/html"
+WP_URL="${WORDPRESS_URL:-http://localhost:8119}"
+WP_TITLE="${WORDPRESS_TITLE:-Vulhub Test}"
+WP_ADMIN_USER="${WORDPRESS_ADMIN_USER:-admin}"
+WP_ADMIN_PASSWORD="${WORDPRESS_ADMIN_PASSWORD:-admin}"
+WP_ADMIN_EMAIL="${WORDPRESS_ADMIN_EMAIL:-admin@example.com}"
+WP_PLUGIN_SLUG="${WORDPRESS_PLUGIN_SLUG:-expand-maker}"
+DEBUG_MODE="${DEBUG_MODE:-false}"
+
+/usr/local/bin/docker-entrypoint-original.sh "$@" &
+APACHE_PID=$!
+
+cleanup() {
+    if kill -0 "$APACHE_PID" 2>/dev/null; then
+        kill "$APACHE_PID" 2>/dev/null || true
+    fi
+}
+trap cleanup EXIT
+
+echo "Waiting for WordPress files..."
+until [ -f "$WORDPRESS_PATH/wp-includes/version.php" ] && [ -f "$WORDPRESS_PATH/wp-config.php" ]; do
+    sleep 1
+done
+
+cd "$WORDPRESS_PATH"
+
+if [ "$DEBUG_MODE" = "true" ]; then
+    wp config set WP_DEBUG true --raw --allow-root 2>/dev/null || true
+    wp config set WP_DEBUG_LOG true --raw --allow-root 2>/dev/null || true
+    wp config set WP_DEBUG_DISPLAY true --raw --allow-root 2>/dev/null || true
+fi
+
+echo "Waiting for MySQL..."
+DB_READY=0
+for i in $(seq 1 60); do
+    if wp db check --allow-root --quiet 2>/dev/null; then
+        DB_READY=1; break
+    fi
+    sleep 2
+done
+[ "$DB_READY" != "1" ] && echo "ERROR: MySQL not ready" >&2 && exit 1
+
+if ! wp core is-installed --allow-root 2>/dev/null; then
+    echo "Installing WordPress..."
+    wp core install \
+        --url="$WP_URL" \
+        --title="$WP_TITLE" \
+        --admin_user="$WP_ADMIN_USER" \
+        --admin_password="$WP_ADMIN_PASSWORD" \
+        --admin_email="$WP_ADMIN_EMAIL" \
+        --skip-email \
+        --allow-root
+fi
+
+wp option update siteurl "$WP_URL" --allow-root >/dev/null
+wp option update home "$WP_URL" --allow-root >/dev/null
+wp option update permalink_structure '/%postname%/' --allow-root >/dev/null
+wp rewrite flush --allow-root >/dev/null || true
+
+# Activate plugin (bundled in image)
+if wp plugin list --allow-root --field=name | grep -qx "$WP_PLUGIN_SLUG"; then
+    wp plugin activate "$WP_PLUGIN_SLUG" --allow-root || true
+else
+    echo "WARNING: Plugin $WP_PLUGIN_SLUG not found" >&2
+fi
+
+# Create a low-privilege user (subscriber) who will perform the attack
+echo "Creating subscriber user..."
+wp user create subscriber subscriber@example.com \
+    --role=subscriber --user_pass=subscriber --allow-root 2>/dev/null || true
+
+# Grant subscriber role access to the plugin's import feature.
+# The plugin stores allowed roles in a wp_option. We grant access here
+# to simulate "site owner enables import for subscriber role" as described in the CVE.
+# The actual option name was confirmed via plugin code inspection.
+wp eval '
+$settings = get_option("radmore_settings", []);
+if (!isset($settings["import_allowed_roles"])) {
+    $settings["import_allowed_roles"] = [];
+}
+if (!in_array("subscriber", $settings["import_allowed_roles"])) {
+    $settings["import_allowed_roles"][] = "subscriber";
+}
+update_option("radmore_settings", $settings);
+echo "expand-maker: import permission granted to subscriber role\n";
+' --allow-root 2>/dev/null || \
+    echo "Note: radmore_settings option update may need verification after plugin activation"
+
+echo "Setup complete. CVE-2026-7467 environment ready at $WP_URL"
+echo "Admin:      $WP_ADMIN_USER / $WP_ADMIN_PASSWORD"
+echo "Subscriber: subscriber / subscriber"
+echo "Exploit: Login as subscriber, POST to importData AJAX endpoint with crafted user rows"
+
+trap - EXIT
+wait "$APACHE_PID"

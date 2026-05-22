@@ -31,12 +31,18 @@
 | CVE-2024-6517 | Reflected XSS | No | No | ds-cf7-math-captcha/CVE-2024-6517 | 8113 |
 | CVE-2024-7313 | Reflected XSS | Yes | No | wp-simple-firewall/CVE-2024-7313 | 8100 |
 | CVE-2025-2011 | SQLi (union-based) | No | No | depicter/CVE-2025-2011 | 8107 |
+| CVE-2026-5718 | File Upload RCE | No | No | drag-and-drop-multiple-file-upload-cf7/CVE-2026-5718 | 8114 |
+| CVE-2026-7106 | Privilege Escalation | Yes | No | highland-software-custom-role-manager/CVE-2026-7106 | 8117 |
+| CVE-2026-7252 | File Deletion → RCE | Yes | No | wp-optimize/CVE-2026-7252 | 8118 |
+| CVE-2026-7284 | Privilege Escalation | No | No | easy-elements/CVE-2026-7284 | 8116 |
+| CVE-2026-7467 | Privilege Escalation | Yes | No | expand-maker/CVE-2026-7467 | 8119 |
+| CVE-2026-7641 | Privilege Escalation (Multisite) | Yes | No | import-users-from-csv-with-meta/CVE-2026-7641 | 8120 |
 
 ## 统计
 
-- 总计: 25 个模板
-- 无需认证: 18 个
-- 需认证 (username/password): 6 个 (CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2024-7313, CVE-2024-13496)
+- 总计: 31 个模板
+- 无需认证: 20 个
+- 需认证 (username/password): 9 个 (CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2024-7313, CVE-2024-13496, CVE-2026-7106, CVE-2026-7252, CVE-2026-7467, CVE-2026-7641)
 - 使用 OOB (interactsh): 2 个 (CVE-2021-25052, CVE-2024-2667)
 
 ## 使用方法

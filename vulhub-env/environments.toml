@@ -213,3 +213,43 @@ app = "RegistrationMagic"
 path = "custom-registration-form-builder-with-submission-manager/CVE-2025-15403"
 dockerfile = {"vulhub/registrationmagic:6.0.7.1" = "base/registrationmagic/6.0.7.1"}
 tags = ["Privilege Escalation"]
+
+[[environment]]
+name = "Easy Elements for Elementor <= 1.4.4 - Unauthenticated Privilege Escalation"
+cve = ["CVE-2026-7284"]
+app = "Easy Elements for Elementor"
+path = "easy-elements/CVE-2026-7284"
+dockerfile = {"vulhub/easy-elements:1.4.4" = "base/easy-elements/1.4.4"}
+tags = ["Privilege Escalation"]
+
+[[environment]]
+name = "Highland Software Custom Role Manager <= 1.0.0 - Authenticated Privilege Escalation"
+cve = ["CVE-2026-7106"]
+app = "Highland Software Custom Role Manager"
+path = "highland-software-custom-role-manager/CVE-2026-7106"
+dockerfile = {"vulhub/highland-software-custom-role-manager:1.0.0" = "base/highland-software-custom-role-manager/1.0.0"}
+tags = ["Privilege Escalation"]
+
+[[environment]]
+name = "WP-Optimize <= 4.5.2 - Authenticated Arbitrary File Deletion"
+cve = ["CVE-2026-7252"]
+app = "WP-Optimize"
+path = "wp-optimize/CVE-2026-7252"
+dockerfile = {"vulhub/wp-optimize:4.5.2" = "base/wp-optimize/4.5.2"}
+tags = ["File Deletion", "RCE"]
+
+[[environment]]
+name = "Read More & Accordion (expand-maker) <= 3.5.7 - Authenticated Privilege Escalation via importData"
+cve = ["CVE-2026-7467"]
+app = "Read More & Accordion"
+path = "expand-maker/CVE-2026-7467"
+dockerfile = {"vulhub/expand-maker:3.5.7" = "base/expand-maker/3.5.7"}
+tags = ["Privilege Escalation"]
+
+[[environment]]
+name = "Import and Export Users and Customers <= 2.0.8 - Multisite Subscriber Privilege Escalation"
+cve = ["CVE-2026-7641"]
+app = "Import and Export Users and Customers"
+path = "import-users-from-csv-with-meta/CVE-2026-7641"
+dockerfile = {"vulhub/import-users-from-csv-with-meta:2.0.8" = "base/import-users-from-csv-with-meta/2.0.8"}
+tags = ["Privilege Escalation", "Multisite"]
