@@ -6,37 +6,47 @@ NUCLEI="/opt/homebrew/bin/nuclei"
 TEMPLATES_DIR="/Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/nuclei-templates"
 RESULTS_FILE="/Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/test-results.txt"
 
-# CVE -> port mapping
-declare -A PORTS=(
-  [CVE-2024-2876]=8088
-  [CVE-2021-24931]=8089
-  [CVE-2023-23488]=8090
-  [CVE-2022-0201]=8091
-  [CVE-2022-0271]=8092
-  [CVE-2021-25032]=8093
-  [CVE-2022-0952]=8094
-  [CVE-2021-4436]=8095
-  [CVE-2024-5084]=8096
-  [CVE-2014-8799]=8097
-  [CVE-2015-2755]=8098
-  [CVE-2021-25052]=8099
-  [CVE-2024-7313]=8100
-  [CVE-2021-24340]=8101
-  [CVE-2021-24731]=8102
-  [CVE-2022-0169]=8103
-  [CVE-2022-4059]=8104
-  [CVE-2023-6360]=8105
-  [CVE-2024-13496]=8106
-  [CVE-2025-2011]=8107
-  [CVE-2022-3982]=8108
-  [CVE-2024-2667]=8109
-  [CVE-2022-0148]=8110
-  [CVE-2022-1724]=8111
-  [CVE-2024-6517]=8113
-)
+# CVE:PORT pairs (one per line)
+ENTRIES="
+CVE-2024-2876:8088
+CVE-2021-24931:8089
+CVE-2023-23488:8090
+CVE-2022-0201:8091
+CVE-2022-0271:8092
+CVE-2021-25032:8093
+CVE-2022-0952:8094
+CVE-2021-4436:8095
+CVE-2024-5084:8096
+CVE-2014-8799:8097
+CVE-2015-2755:8098
+CVE-2021-25052:8099
+CVE-2024-7313:8100
+CVE-2021-24340:8101
+CVE-2021-24731:8102
+CVE-2022-0169:8103
+CVE-2022-4059:8104
+CVE-2023-6360:8105
+CVE-2024-13496:8106
+CVE-2025-2011:8107
+CVE-2022-3982:8108
+CVE-2024-2667:8109
+CVE-2022-0148:8110
+CVE-2022-1724:8111
+CVE-2024-6517:8113
+CVE-2024-11740:8142
+CVE-2024-10400:8143
+CVE-2024-11972:8145
+CVE-2024-12849:8147
+CVE-2024-12025:8148
+CVE-2023-23489:8150
+CVE-2023-28787:8152
+CVE-2023-32590:8153
+CVE-2023-5652:8159
+CVE-2023-4596:8157
+"
 
 # Auth required CVEs
-AUTH_CVES="CVE-2015-2755 CVE-2021-25032 CVE-2021-25052 CVE-2022-0148 CVE-2024-7313"
+AUTH_CVES="CVE-2015-2755 CVE-2021-25032 CVE-2021-25052 CVE-2022-0148 CVE-2024-7313 CVE-2024-13496"
 
 echo "=== Nuclei Template Test Results ===" > "$RESULTS_FILE"
 echo "Date: $(date)" >> "$RESULTS_FILE"
@@ -46,8 +56,10 @@ pass=0
 fail=0
 skip=0
 
-for cve in $(echo "${!PORTS[@]}" | tr ' ' '\n' | sort); do
-  port=${PORTS[$cve]}
+for entry in $ENTRIES; do
+  [ -z "$entry" ] && continue
+  cve="${entry%%:*}"
+  port="${entry#*:}"
   template="${TEMPLATES_DIR}/${cve}.yaml"
   url="http://localhost:${port}"
 
@@ -60,7 +72,7 @@ for cve in $(echo "${!PORTS[@]}" | tr ' ' '\n' | sort); do
   fi
 
   # Check if port is up
-  if ! curl -s -o /dev/null -w '' --max-time 3 "$url" 2>/dev/null; then
+  if ! curl -s -o /dev/null --max-time 3 "$url" 2>/dev/null; then
     echo "SKIP $cve - port $port not responding"
     echo "SKIP $cve - port $port not responding" >> "$RESULTS_FILE"
     skip=$((skip + 1))
@@ -68,7 +80,7 @@ for cve in $(echo "${!PORTS[@]}" | tr ' ' '\n' | sort); do
   fi
 
   # Build nuclei command
-  cmd="$NUCLEI -t $template -u $url -timeout 10 -rl 1 -silent"
+  cmd="$NUCLEI -t $template -u $url -timeout 60 -rl 1 -silent"
   # Add auth if needed
   if echo "$AUTH_CVES" | grep -q "$cve"; then
     cmd="$cmd -V username=admin -V password=admin"
@@ -76,9 +88,11 @@ for cve in $(echo "${!PORTS[@]}" | tr ' ' '\n' | sort); do
 
   echo -n "TEST $cve (port $port)... "
   output=$(eval "$cmd" 2>&1)
-  exit_code=$?
 
-  if [ $exit_code -eq 0 ] && [ -n "$output" ]; then
+  # nuclei 命中时输出格式: [CVE-XXXX-XXXX] [http] [severity] url
+  # 先去掉 ANSI 颜色码再匹配
+  clean_output=$(echo "$output" | sed 's/\x1b\[[0-9;]*m//g')
+  if echo "$clean_output" | grep -q "\[$cve\]"; then
     echo "PASS"
     echo "PASS $cve (port $port)" >> "$RESULTS_FILE"
     echo "  Output: $output" >> "$RESULTS_FILE"

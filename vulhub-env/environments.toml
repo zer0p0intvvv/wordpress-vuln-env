@@ -253,3 +253,83 @@ app = "Import and Export Users and Customers"
 path = "import-users-from-csv-with-meta/CVE-2026-7641"
 dockerfile = {"vulhub/import-users-from-csv-with-meta:2.0.8" = "base/import-users-from-csv-with-meta/2.0.8"}
 tags = ["Privilege Escalation", "Multisite"]
+
+[[environment]]
+name = "Download Manager < 3.3.04 - Unauthenticated Arbitrary Shortcode Execution"
+cve = ["CVE-2024-11740"]
+app = "Download Manager"
+path = "download-manager/CVE-2024-11740"
+dockerfile = {"vulhub/download-manager:3.3.03" = "download-manager/CVE-2024-11740"}
+tags = ["Shortcode Execution", "RCE"]
+
+[[environment]]
+name = "Collapsing Categories <= 3.0.8 - Unauthenticated SQL Injection"
+cve = ["CVE-2024-12025"]
+app = "Collapsing Categories"
+path = "collapsing-categories/CVE-2024-12025"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "Error Log Viewer By WP Guru <= 1.0.1.3 - Unauthenticated Arbitrary File Read"
+cve = ["CVE-2024-12849"]
+app = "Error Log Viewer By WP Guru"
+path = "error-log-viewer/CVE-2024-12849"
+dockerfile = {"vulhub/error-log-viewer:1.0.1.3" = "error-log-viewer/CVE-2024-12849"}
+tags = ["LFI", "File Read"]
+
+[[environment]]
+name = "Easy Digital Downloads 3.1.0.2/3.1.0.3 - SQL Injection"
+cve = ["CVE-2023-23489"]
+app = "Easy Digital Downloads"
+path = "easy-digital-downloads/CVE-2023-23489"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "Quiz and Survey Master <= 8.1.4 - SQL Injection"
+cve = ["CVE-2023-28787"]
+app = "Quiz and Survey Master"
+path = "quiz-master-next/CVE-2023-28787"
+dockerfile = {"vulhub/quiz-master-next:8.1.4" = "quiz-master-next/CVE-2023-28787"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "Hunk Companion < 1.9.0 - Unauthenticated Plugin Installation"
+cve = ["CVE-2024-11972"]
+app = "Hunk Companion"
+path = "hunk-companion/CVE-2024-11972"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["Plugin Installation", "RCE"]
+
+[[environment]]
+name = "Forminator 1.24.6 - Unauthenticated Arbitrary File Upload"
+cve = ["CVE-2023-4596"]
+app = "Forminator"
+path = "forminator/CVE-2023-4596"
+dockerfile = {"vulhub/forminator:1.24.6" = "forminator/CVE-2023-4596"}
+tags = ["File Upload", "RCE"]
+
+[[environment]]
+name = "WP Hotel Booking <= 2.0.7 - Unauthenticated SQL Injection"
+cve = ["CVE-2023-5652"]
+app = "WP Hotel Booking"
+path = "wp-hotel-booking/CVE-2023-5652"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "Tutor LMS <= 2.7.6 - Unauthenticated SQL Injection"
+cve = ["CVE-2024-10400"]
+app = "Tutor LMS"
+path = "tutor/CVE-2024-10400"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQL Injection"]
+
+[[environment]]
+name = "Subscribe to Category <= 2.7.4 - Unauthenticated SQL Injection"
+cve = ["CVE-2023-32590"]
+app = "Subscribe to Category"
+path = "subscribe-to-category/CVE-2023-32590"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQL Injection"]
