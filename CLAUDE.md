@@ -4,187 +4,339 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Purpose
 
-自动生成 WordPress 插件漏洞的 Docker 测试环境，用于 nuclei 模板验证和漏洞复现。从JSON文件中提取漏洞信息，生成可直接 `docker-compose up` 的环境。
-## docs
-@../docs/Project.md 保存当前的项目的进度以及工作流，可以查看，当工作流和项目进度发生改变的时候，请及时维护；
-## Architecture
+自动生成 WordPress 插件漏洞的 Docker 测试环境，用于 nuclei 模板验证和漏洞复现。
 
-- **输入**: JSON 文件（包含 CVE ID、插件名、版本号、漏洞类型等）
-    JSON 文件按来源/批次分文件，结构大致为：
-    ```json
-    {
-      "cve_id": "CVE-XXXX-XXXX",
-      "plugin_slug": "xxx",
-      "plugin_version": "x.x.x",
-      "vuln_type": "SQLi/XSS/LFI/RCE",
-      "description": "...",
-      "references": ["..."]
-    }
-    ```
-- **输出**: 每个 CVE 一个独立目录，包含 `docker-compose.yml`、`Dockerfile`、插件源码、entrypoint 脚本
-- **验证**: 配套 nuclei 模板自动检测漏洞是否可触发，使用nuclei命令或者test-all.sh批量脚本
+`docs/Project.md` 保存当前项目进度及所有已完成环境的端口表，工作流变更时请同步维护。CVE 数量、端口占用以 manifest / `environments.toml` 为准，本文件不重复统计。
 
-### 环境配置
+项目数据分两类，对应两条独立工作流：
 
-- **PHP 版本**: 7.4（必须 — 几乎所有目标插件使用 `create_function()`，PHP 8.0+ 不兼容）
-- **源码策略**: 优先使用`wp plugin install`，当WordPress.org 移除插件后无法下载，使用本地源码
-- **端口分配**: HTTP 8098-8113 / MySQL 3318-3333（每个环境递增）
-## 专属问题
-  ### Key Technical Constraints
+---
 
-    1. **`create_function()` 兼容性**: 这是硬性约束。所有使用该函数的插件必须运行在 PHP 7.4 上。新环境不要尝试 PHP 8.x。
-    2. **插件从 WP.org 移除**: 如 `gallery`（CVE-2022-1946），必须提前缓存源码，不能依赖在线安装。
-    3. **类未实例化问题**: 部分插件的 REST API 类或漏洞类在插件加载时未自动实例化（如 CVE-2024-2667 v0.1.0.22），需要在 entrypoint 中手动 `new` 实例。
-    4. **Nuclei 检测分类**:
-      - **直接检测** (~47%): 无需认证，nuclei 可直接触发
-      - **需 admin 认证** (~20%): 环境需预设管理员 cookie 或 Basic Auth
-      - **需数据初始化** (~13%): entrypoint 必须创建前置数据（gallery、upload 目录等）
-      - **OOB 限制** (~13%): 需 out-of-band 回连，nuclei 受限但手动验证可利用
+## 工作流 A：有模板 → 搭建验证环境
 
-    5. **WP.org SSL 间歇性故障（系统性风险）**:
-       验证中发现大量环境因 `cURL error 35: OpenSSL SSL_ERROR_SYSCALL` 导致 `wp plugin install` 失败。
-       - entrypoint 中不要依赖 `wp plugin install` 作为唯一安装方式
-       - 优先预下载插件 zip 到本地缓存，entrypoint 通过 `unzip` 本地安装
-       - 若必须在线安装，entrypoint 需包含重试逻辑（sleep + 重试 3 次）
+针对 projectdiscovery/nuclei-templates 中已有的 WordPress 插件 CVE 模板，搭建对应漏洞环境并验证模板能命中。
 
-    6. **插件版本 vs 漏洞真实可用性**:
-       有些"漏洞版本"实际上已被 silently patched，不能直接按版本号选 CVE：
-       - simple-file-list 3.2.7 加了 `realpath()` 检测，模板用的相对路径 `../` 被拦截
-       - swift-performance-lite WP.org 已下架 `<2.3.7.2` 版本，无法获取漏洞版
-       - 选 CVE 时不仅要查版本号，还要下载该版本实际验证漏洞 sink 是否仍然存在
+### 数据来源
 
-    7. **REST 路由注册时机**:
-       部分插件的 REST 控制器继承 `WP_REST_Controller`，但在 `plugins_loaded` 时该类尚未定义，导致 fatal error，REST 路由从未注册。
-       - 如 html5-video-player 的 `VideoController` 需在 `init` 钩子之后延迟加载
-       - entrypoint 中可通过 `wp eval` 在 `init` 后手动触发 `register_rest_route()`
+CVE 信息通过 `vulnx-cve` 技能从 ProjectDiscovery 数据库读取，写入 **`cve-manifest-a.json`**。
 
-    8. **插件依赖链必须完整**:
-       很多漏洞插件依赖其他插件/主题：
-       - royal-elementor-addons → 依赖 Elementor（且 Elementor 版本需兼容 WP 版本）
-       - ti-woocommerce-wishlist → 依赖 WooCommerce
-       - 依赖插件也必须是漏洞兼容版本，不能装最新版（Elementor 最新版要求 WP 6.6+，base 镜像是 WP 6.4）
+```bash
+# 查单个 CVE
+python3 .claude/skills/vulnx-cve/scripts/cve.py CVE-XXXX-XXXX --format json
 
-    9. **PHP 7.4 vs 8.2 的实际差异**:
-       模板声明需要 PHP 7.4（如 wp-file-upload），但漏洞在 PHP 8.2 上也能触发。
-       - 不要仅凭模板说明就切换 PHP 7.4（会引入 Debian bullseye 仓库签名问题）
-       - 优先在 PHP 8.2 上测试，只有确实触发失败时才降级
+# 搜索有 nuclei 模板的 WP 插件 CVE
+vulnx search "wordpress plugin && is_template:true" --limit 20 --json --silent
+```
 
-    10. **数据初始化深度**:
-        有些环境需要远超"激活插件"的初始化：
-        - wd-google-maps：需创建数据库表 `gmwd_maps`/`gmwd_markers`/`gmwd_options`，并在首页插入正确短代码 `[Google_Maps_WD map=1]`
-        - ultimate-member：需创建注册页面并设置 `_um_mode=register` + `_um_is_default=1` postmeta，且需配置表单字段
-        - really-simple-ssl：需在 `rsssl_options` 数组中启用 `login_protection_enabled` 才能加载 two-fa 模块
+manifest 条目包含：`cve_id` / `plugin_name` / `target` / `description` / `severity` / `cvss_score` / `vulnerability_type` / `references` / `diff_links` / `has_poc` / `is_kev`
 
-    11. **Nuclei 版本兼容性**:
-        当前环境使用 nuclei v3.4.10，部分官方模板 matcher 识别存在问题：
-        - really-simple-ssl 模板第三步 matcher 明明条件满足但返回 `0 matches`
-        - backup-backup 模板 `len(body)==0` + `status_code==200` 不命中
-        - 建议升级到 nuclei 最新版，或手动用 curl 验证后标记 PASS
+### 步骤
 
-  ### Entrypoint 常见模式
+1. 用 `vulnx-cve` 查 CVE，补充到 `cve-manifest-a.json`
+2. 在 `nuclei-templates/` 中确认官方模板存在，读取模板确认：端口、认证要求、OOB 标记
+3. 在 `vulhub-env/<plugin-slug>/<CVE-ID>/` 下创建 `docker-compose.yml` + `docker-entrypoint.sh`，参考下文「技术约束与已知坑」「Entrypoint 模式参考」两节
+4. 启动环境，用**官方模板原文**运行 nuclei 验证（具体流程见下文「测试工作流」）
+5. 在 `vulhub-env/environments.toml`、`nuclei-templates/INDEX.md`、`test-batch.sh` 中补充条目
 
-    创建新环境时，entrypoint 脚本通常需要处理：
+### ⚠️ 硬性规则：官方 nuclei 模板不可修改
 
-    ```bash
-    # 1. 等待 WordPress 就绪
-    until wp core is-installed 2>/dev/null; do sleep 2; done
+- 官方模板是**验证基准**，不是调试对象。模板打不中 → 说明环境有问题，去修环境
+- **严禁**修改 `nuclei-templates/` 下来自官方库的任何 `.yaml` 文件
+- 如果官方模板存在已知 matcher 误判（见"Nuclei 版本兼容性"章节），手动 curl 验证通过后标记 PASS，不修改模板
+- 唯一例外：自行编写的 `CVE-2026-xxxx.yaml`（工作流 B 产出）可以修改
 
-    # 2. 激活目标插件
-    wp plugin activate <plugin-slug>
+### 命令
 
-    # 3. 数据初始化（按需）
-    wp post create --post_type=gallery --post_title='test' --post_status=publish
-    mkdir -p /var/www/html/wp-content/uploads/<plugin-dir>
+```bash
+# 启动单个环境
+cd vulhub-env/<plugin-slug>/<CVE-ID>
+docker compose up -d --build
 
-    # 4. 手动实例化未注册的类（PHP require + new）
-    php -r "require_once '/var/www/html/wp-content/plugins/<plugin>/<file>.php'; new <ClassName>();"
-    ```
+# nuclei 验证（无认证）—— 使用官方模板原文，不做任何修改
+# 注：项目约定 nuclei 二进制在 ~/工具/nuclei，团队成员可改为本地 PATH
+~/工具/nuclei -t nuclei-templates/CVE-XXXX-XXXX.yaml -u http://localhost:<PORT>
 
-    ### 新增 Entrypoint 模式（验证中发现的）
+# nuclei 验证（需 admin 认证）
+~/工具/nuclei -t nuclei-templates/CVE-XXXX-XXXX.yaml -u http://localhost:<PORT> \
+  -V "username=admin" -V "password=admin"
 
-    ```bash
-    # 5. 本地缓存安装（避免 WP.org SSL 故障）
-    if [ ! -d "/var/www/html/wp-content/plugins/<plugin-slug>" ]; then
-        unzip -oq /tmp/<plugin-slug>.<version>.zip -d /var/www/html/wp-content/plugins/
-        chown -R www-data:www-data /var/www/html/wp-content/plugins/<plugin-slug>
-    fi
-    wp plugin activate <plugin-slug> --allow-root
+# 检查端口冲突
+lsof -i :<port>
+```
 
-    # 6. 安装插件依赖链
-    # 如 royal-elementor-addons 需要 Elementor
-    wp plugin install elementor --version=<compatible-version> --activate --allow-root || \
-        unzip -oq /tmp/elementor.<version>.zip -d /var/www/html/wp-content/plugins/
-    wp plugin activate elementor --allow-root
+---
 
-    # 7. 创建插件自定义数据表（如 wd-google-maps）
-    wp --allow-root eval '
-    global $wpdb;
-    $wpdb->query("CREATE TABLE IF NOT EXISTS {$wpdb->prefix}gmwd_maps (...)");
-    $wpdb->query("INSERT INTO {$wpdb->prefix}gmwd_maps (id, title, published) VALUES (1, \"Test\", 1)");
-    '
+## 工作流 B：当前暂缓
 
-    # 8. 为依赖 REST API 的插件延迟注册路由
-    wp --allow-root eval '
-    add_action("init", function() {
-        require_once "/var/www/html/wp-content/plugins/<plugin>/<rest-controller>.php";
-        $controller = new <Namespace>\<ClassName>();
-        $controller->register_routes();
-    });
-    '
+> **状态：已搭建若干环境但模板验证链路不可靠，暂不新增。**
+>
+> 工作流 B 涉及纯靠漏洞描述搭建环境并自行编写 nuclei 模板。
+> 已有数据记录在 `cve-manifest-b.json`，其中部分条目带 `custom_template: true` 字段表示已写自建模板，但其可靠性尚未建立完整验证链路。
+>
+> **当前所有新任务聚焦工作流 A。** 已存在的工作流 B 环境保留，但不在本轮推进。
 
-    # 9. 修复插件配置使其加载漏洞模块
-    # 如 really-simple-ssl 需启用 login_protection 才能加载 two-fa
-    wp --allow-root option get um_options --format=json | \
-        jq '. + {"login_protection_enabled": 1}' | \
-        wp --allow-root option set um_options --format=json
-    ```
+---
 
+## 共用：架构
 
-## Nuclei Templates
+### 两层基础镜像体系
 
-- 官方模板目录: `nuclei-templates/`（从 projectdiscovery/nuclei-templates 获取）
-- 索引: `nuclei-templates/INDEX.md`（含端口映射和认证/OOB 标记）
-- 命名: `CVE-XXXX-XXXX.yaml`
-- 当前 25 个模板与 vulhub-env 环境一一对应
-- 需认证模板（5个）使用 `-V "username=admin" -V "password=admin"`
-- OOB 模板（2个）使用官方 interactsh 服务
+每个漏洞环境的 `docker-compose.yml` 中的 `build:` 指向 `vulhub-env/base/` 下的某个目录，分两种类型：
 
-### Template Conventions
+1. **通用基础镜像** `base/wordpress/6.4/`：适用于插件仍可从 WP.org 在线安装的情况。`docker-entrypoint.sh` 读取 `WORDPRESS_PLUGIN_SLUG` / `WORDPRESS_PLUGIN_VERSION` 环境变量自动安装并激活插件，WordPress 安装、DB 等待、permalink 配置全部在 entrypoint 中自动完成。
 
-- 需要认证的模板使用 `cookie` 或自定义 header 变量
-- OOB 检测使用 `{{interactsh-url}}`
+2. **插件专用镜像** `base/<plugin-slug>/<version>/`：插件源码预先 `COPY` 进镜像（`plugins/` 目录），entrypoint 中仅需激活，不再依赖 WP.org。适用于插件已从 WP.org 移除、版本已下架、或依赖链复杂的情况。
 
-### Nuclei 版本兼容性注意事项
+### 文件关系
 
-当前项目使用 nuclei v3.4.10，与部分官方模板存在 matcher 兼容性问题：
-- **really-simple-ssl (CVE-2024-10924)**: 第三步 `word` matcher 条件满足但返回 `0 matches`
-- **backup-backup (CVE-2023-6553)**: `len(body)==0` + `status_code==200` 的 DSL matcher 不命中
-- **all-in-one-wp-migration (CVE-2024-8852)**: Apache 对 `.log` 文件未发送 `Content-Type: text/plain`，导致 `contains(tolower(header), 'text/plain')` 失败
-- **建议**: 若 nuclei 未命中但手动 curl 验证成功，应标记为 PASS 并记录 nuclei 版本问题
+- `cve-manifest-a.json` — 工作流 A 数据源；**仅收录 vulnx `is_template:true` 确认的官方模板 CVE**；由 `vulnx-cve` 富化，包含 description / references / diff_links 等字段。当前总数以文件实际行数为准
+- `cve-manifest-b.json` — 无官方模板的 CVE 集合；其中部分有本地自建模板（`custom_template: true` 字段标记），自建模板**不等同于官方模板**，不受"不可修改"约束。当前总数以文件实际行数为准
+- `vulhub-env/environments.toml` — 所有环境的元数据索引（name / cve / path / dockerfile / tags），不含端口，端口在各环境的 `docker-compose.yml` 里；新增环境后必须追加
+- `nuclei-templates/INDEX.md` — 模板索引，记录每个模板的端口、认证要求、OOB 标记
+- `test-batch.sh` — 批量测试脚本，内部硬编码 CVE:PORT 对和认证白名单；新增环境需手动追加对应条目
+
+### 端口分配
+
+- Web 端口段：从 8088 起按 manifest 顺序占用；新环境取 `environments.toml` 中已用最大 Web 端口 +1
+- MySQL 端口段：从 3307 起，规则同上
+- 提交前用 `lsof -i :<port>` 确认无冲突
+
+---
+
+## 共用：技术约束与已知坑
+
+### 1. `create_function()` 兼容性（硬性约束）
+使用该函数的插件必须运行在 PHP 7.4。新环境不要尝试 PHP 8.x。其他插件优先在 PHP 8.2 上测试，只有确实失败才降级（降级会引入 Debian bullseye 仓库签名问题，不要仅凭模板说明就切换）。
+
+### 2. WP.org 插件安装容错（系统性风险）
+
+`wp plugin install` 走 WP.org API，以下情况会失败：
+
+| 失败原因 | 表现 | 案例 |
+|---|---|---|
+| SSL 故障 | `cURL error 35: OpenSSL SSL_ERROR_SYSCALL` | 间歇性，重试可解 |
+| 插件关闭 (closed) | API 返回 "plugin not found"，但 CDN zip 仍可下载 | subscribe-to-category |
+| 版本不存在 | API 返回 404，SVN 中该版本号缺失 | hunk-companion 1.8.9（实际 SVN 只有 1.8.8） |
+
+**解决方案：`base/wordpress/6.4/docker-entrypoint.sh` 已内置三级回退**——
+
+1. 插件目录已存在 → 直接 `wp plugin activate`
+2. `wp plugin install --version=$VER` 走 WP.org API
+3. API 失败 → `curl` 从 `https://downloads.wordpress.org/plugin/{slug}.{version}.zip` 下载 → `unzip` → `wp plugin activate`
+
+CDN 直链下载绕过了 API 层，即便插件已关闭（closed）、短期 SSL 故障也能装。**大部分环境无需为插件安装问题单独创建 base 镜像**，直接用通用 `base/wordpress/6.4` 即可。
+
+**只有以下情况才需要插件专用 base 镜像**（`base/<plugin-slug>/<version>/`）：
+- 需要额外的 MU-plugin 或代码注入（如 hunk-companion 需强制加载 import 模块注册 REST 路由）
+- 插件依赖复杂（如需要特定主题或第三方库）
+- CDN 上该版本 zip 也不存在，只能本地缓存
+
+### 3. 插件版本 vs 漏洞真实可用性
+"漏洞版本"可能已被 silently patched，不能只看版本号：
+- simple-file-list 3.2.7 加了 `realpath()` 检测，模板的相对路径 `../` 被拦截
+- 选 CVE 时要下载该版本实际验证漏洞 sink 是否仍然存在
+
+### 4. 类未实例化问题
+部分插件的 REST API 类在插件加载时未自动实例化（如 CVE-2024-2667 v0.1.0.22），需要在 entrypoint 中手动 `new` 实例。
+
+### 5. REST 路由注册时机
+部分插件的 REST 控制器继承 `WP_REST_Controller`，但在 `plugins_loaded` 时该类尚未定义，导致 fatal error，REST 路由从未注册。需在 `init` 钩子之后延迟加载（如 html5-video-player 的 `VideoController`）。
+
+### 6. 插件依赖链必须完整
+- royal-elementor-addons → 依赖 Elementor（且 Elementor 版本需与 WP 6.4 兼容，最新版要求 WP 6.6+）
+- ti-woocommerce-wishlist → 依赖 WooCommerce
+- 依赖插件不能装最新版，需指定兼容版本
+
+**如何确定兼容版本**：WP.org 插件页 "Advanced View" → "Previous Versions" 下拉框，挑选发布时间早于目标 WP 版本发布日的最新版；或看插件 `readme.txt` 的 `Requires at least` / `Tested up to` 字段。
+
+### 7. 数据初始化深度
+有些环境需要远超"激活插件"的初始化：
+- wd-google-maps：需创建 `gmwd_maps`/`gmwd_markers`/`gmwd_options` 表，首页插入短代码 `[Google_Maps_WD map=1]`
+- ultimate-member：需创建注册页面并设置 `_um_mode=register` + `_um_is_default=1` postmeta
+- really-simple-ssl：需在 `rsssl_options` 中启用 `login_protection_enabled` 才能加载 two-fa 模块
+
+**如何发现此类需求**：nuclei FAIL → 看 nuclei 模板的 path/参数 → 反查插件源码中该路由/钩子的入口条件（是否依赖某 option、postmeta、表存在），把这些前置数据在 entrypoint 中创建出来。
+
+### 8. Nuclei 检测分类（建环境时判断初始化需求）
+- **直接检测** (~47%): 无需认证，nuclei 可直接触发
+- **需 admin 认证** (~20%): 需预设管理员 cookie 或 Basic Auth
+- **需数据初始化** (~13%): entrypoint 必须创建前置数据
+- **OOB 限制** (~13%): 需 out-of-band 回连，nuclei 受限，手动 curl 验证后标记 PASS
+
+---
+
+## 共用：Entrypoint 模式参考
+
+下文占位符约定：`<plugin-slug>` 为插件目录名（如 `royal-elementor-addons`）、`<plugin-version>` 为版本号、`<ClassName>` 为 PHP 类名。
+
+```bash
+# ① 等待 WordPress 就绪（所有 entrypoint 的第一步）
+until wp core is-installed 2>/dev/null; do sleep 2; done
+
+# ② 本地 zip 安装（优先于 wp plugin install）
+if [ ! -d "/var/www/html/wp-content/plugins/<plugin-slug>" ]; then
+    unzip -oq /tmp/<plugin-slug>.<plugin-version>.zip -d /var/www/html/wp-content/plugins/
+    chown -R www-data:www-data /var/www/html/wp-content/plugins/<plugin-slug>
+fi
+wp plugin activate <plugin-slug> --allow-root
+
+# ③ 安装依赖插件（指定兼容版本）
+wp plugin install elementor --version=3.18.0 --activate --allow-root || \
+    unzip -oq /tmp/elementor.3.18.0.zip -d /var/www/html/wp-content/plugins/
+wp plugin activate elementor --allow-root
+
+# ④ 手动实例化未注册的 REST 类
+php -r "require_once '/var/www/html/wp-content/plugins/<plugin-slug>/<file>.php'; new <ClassName>();"
+
+# ⑤ REST 路由延迟注册（避免 plugins_loaded 时 WP_REST_Controller 未定义）
+wp --allow-root eval '
+add_action("init", function() {
+    require_once "/var/www/html/wp-content/plugins/<plugin-slug>/<rest-controller>.php";
+    (new <Namespace>\<ClassName>())->register_routes();
+});
+'
+
+# ⑥ 创建插件依赖的自定义数据表
+wp --allow-root eval '
+global $wpdb;
+$wpdb->query("CREATE TABLE IF NOT EXISTS {$wpdb->prefix}gmwd_maps (id int, title varchar(255), published int)");
+$wpdb->query("INSERT INTO {$wpdb->prefix}gmwd_maps VALUES (1, \"Test\", 1)");
+'
+
+# ⑦ 修改插件选项以加载漏洞模块
+wp --allow-root option get rsssl_options --format=json | \
+    jq '. + {"login_protection_enabled": 1}' | \
+    wp --allow-root option set rsssl_options --format=json
+```
+
+---
+
+## 共用：Nuclei 模板
+
+- 模板目录: `nuclei-templates/`
+- 工作流 A 模板：来自 projectdiscovery/nuclei-templates 官方库，按原始 CVE 编号命名
+- 工作流 B 模板：自行编写，以 `CVE-2026-xxxx` 编号，存放在同一目录
+- 需认证模板：运行时加 `-V "username=admin" -V "password=admin"`（具体清单见 `nuclei-templates/INDEX.md`）
+- OOB 模板（如 CVE-2021-25052 / CVE-2024-2667）：使用 `{{interactsh-url}}`，自动验证受限，手动 curl 验证后标记 PASS
+
+### Nuclei 版本兼容性
+
+> 本节基于撰写时使用的 nuclei v3.4.10；升级 nuclei 后请重新核对以下条目。
+
+以下已知 matcher 误判，手动 curl 验证通过则标记 PASS：
+- `CVE-2024-10924`（really-simple-ssl）: 第三步 word matcher 返回 `0 matches`
+- `CVE-2023-6553`（backup-backup）: `len(body)==0` + `status_code==200` DSL 不命中
+- `CVE-2024-8852`（all-in-one-wp-migration）: Apache 不返回 `Content-Type: text/plain`
+
+---
+
+## 共用：测试工作流
+
+### 整体分工
+
+```
+test-batch.sh          纯机械执行：启动容器 → 运行 nuclei → 输出原始 jsonl
+      ↓
+Agent 读取 jsonl       判断每条结果：强特征是否命中
+      ↓
+lark-doc 写入飞书      按格式追加到日志文档
+      ↓
+人工在飞书核对          确认 evidence 是否真实，附注异常
+```
+
+### 第一步：运行脚本
+
+```bash
+# 跑全部（manifest-a.json，批大小 10）
+bash test-batch.sh
+
+# 脚本最后一行输出 jsonl 文件路径，例如：
+# /path/to/nuclei-raw-20260603-1430.jsonl
+```
+
+脚本只负责执行，**不做 PASS/FAIL 判断**。
+
+### 第二步：Agent 读取 jsonl 并判断
+
+读取 jsonl，对每一条记录按以下标准判断：
+
+**命中（PASS）条件：同时满足**
+1. nuclei 输出了真实的 JSON 匹配行（`matched` 非 false）
+2. 存在 `matcher-name` 或 `extracted-results` 字段
+3. `extracted-results` 的内容与漏洞强相关（见下表）
+
+**强特征对照表：**
+
+| 漏洞类型 | 强特征 evidence | 弱/无效 evidence |
+|---|---|---|
+| SQLi time-based | `duration >= 5`（配合 SLEEP payload） | 单纯 status 200 |
+| SQLi union/error | MD5 定值（如 `e48e13207`）、DB 报错信息 | "success" 字符串 |
+| LFI / 文件读取 | `root:x:0:0`、`DB_PASSWORD`、`define('` | 页面标题、插件名 |
+| RCE | `uid=` + `gid=` + `groups=` 同时出现 | 单独 uid= |
+| XSS 反射型 | 注入的精确 payload 原样反射 | 含 script 的任意响应 |
+| 文件上传 RCE | 自定义唯一标记（echo 输出） | HTTP 200 + 文件名 |
+| 权限绕过 | 管理员专属字段（`wp_capabilities`、`role:administrator`） | 任意 JSON 响应 |
+| SSRF | 内网/metadata 内容回显（如 `169.254.169.254` 响应体） | 单纯 200 状态码 |
+| XXE | 外部实体引用回显的文件内容（payload 中含 `<!ENTITY>` 是区分点） | 仅 XML 解析错误 |
+| CSRF | 状态变更前后差异（对比验证，而非响应字符串） | 任意 200 响应 |
+
+**未命中（FAIL）**：nuclei 无输出，或输出中 `matched: false`。
+**跳过（SKIP）**：`skipped: true`（OOB 模板），需人工 curl 验证。
+**异常（ERROR）**：`error: wp_not_ready`，环境问题，需排查 entrypoint。
+
+### 第三步：写入飞书
+
+doc_id: `Daoxdyn1toejyhxnNWucMIRinKc`（仓库公开后建议把此 ID 移到本地 `.env` 引用，避免直接写入文档），用 `lark-cli docs +update --command append` 追加。
+
+每个 CVE 写一条（格式见下文「环境搭建日志规则」）
+### 第四步：人工核对要点
+
+- 看 `evidence` 是否确实是漏洞触发证据（对照上方强特征表）
+- SKIP 条目需手动 curl 测试后在飞书备注 PASS/FAIL
+- FAIL 条目检查是否属于已知 matcher 误判（见"Nuclei 版本兼容性"章节）
+
+---
 
 ## git 使用规则
 
-### 仓库结构
+所有 git 命令在 `wordpress漏洞环境自动化生成/` 目录下执行（或用 `git -C /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/`）。
 
-- `.git` 目录位于 `wordpress漏洞环境自动化生成/` 下（即 `claude-code/BlackWidow/.git`）
-- 仅 `wordpress漏洞环境自动化生成` 目录纳入版本控制
+完成验证后通过 `git-commit-push` Skill 提交并推送到 `https://github.com/zer0p0intvvv/wordpress-vuln-env.git`。提交信息用中文，说明"改了什么、为什么改、如何确认验证通过"。禁止 `git push --force` 或其他改写历史的命令（`git reset --hard <已推送的提交>` + push、`git rebase` 已推送分支等同样禁止）。
 
-### 命令执行
+---
 
-所有 git 命令必须在 `wordpress漏洞环境自动化生成/` 目录下执行，或使用`git -C /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/` 指定路径。
+## 环境搭建日志规则
 
-### 提交规则
+在执行环境搭建相关任务时，通过 `lark-doc` 把过程记录到飞书文档。
 
-- 每次完成代码修改并验证可用性后，必须通过 `git-commit-push` Skill提交代码并推送到私有仓库
-- 提交前必须先检查工作区状态，禁止混入无关改动或临时调试文件
-- 提交信息必须说明"改了什么、为什么改、如何验证通过"
-- 提交信息用中文描述
+### 记录方式
 
-### 推送规则
+- **doc_id**: `Daoxdyn1toejyhxnNWucMIRinKc`
+- **URL**: https://rcn285sv4kcb.feishu.cn/docx/Daoxdyn1toejyhxnNWucMIRinKc
+- 文档已存在，直接用 `lark-cli docs +update --command append` 追加，禁止重复创建。
+- **不要每一条命令都记**，只记有意义的节点。
 
-- 推送到公共仓库 origin（`https://github.com/zer0p0intvvv/wordpress-vuln-env.git`）
-- 禁止改写历史（如强推）覆盖他人提交，除非用户明确批准
+### 记录时机（满足任一就记一条）
 
-### 异常处理
+- 完成一个阶段性步骤（装好依赖、初始化某个服务、配置文件写好）
+- 遇到报错以及最终的解决办法（失败的尝试也要记，往往比成功步骤更有参考价值）
+- 任务结束时写一条总结
 
-若 push 失败（权限、冲突、网络），必须先记录失败原因并完成修复，再继续推送，禁止跳过。
+### 记录格式
+
+```
+每个 CVE 开头（只写一次）：
+CVE-XXXX-XXXX ✅/❌
+插件：xxx-plugin　版本：x.x.x　类型：SQLi/XSS/…　端口：81XX
+
+每条操作日志：
+🔹 [时间] nuclei 验证
+操作：运行 nuclei-templates/CVE-XXXX-XXXX.yaml
+结果：✅ PASS / ❌ FAIL / ⏭ SKIP
+强特征：matcher=<matcher-name>  evidence=<extracted-results 前120字符>
+备注：<异常说明，或"无">
+```
+
+- 正常步骤用 🔹，失败步骤用 🔸，nuclei 验证结果用 ✅/❌
+- 不记录 Dockerfile / docker build 等执行细节
+- 密钥、token、密码用 `<已隐藏>` 代替

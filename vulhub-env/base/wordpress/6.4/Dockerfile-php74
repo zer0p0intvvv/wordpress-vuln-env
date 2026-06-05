@@ -1,0 +1,23 @@
+FROM wordpress:6.1-php7.4-apache
+
+LABEL maintainer="phithon <root@leavesongs.com>"
+
+RUN set -eux; \
+    apt-get update; \
+    apt-get install -y --no-install-recommends \
+        curl \
+        less \
+        default-mysql-client \
+        unzip; \
+    rm -rf /var/lib/apt/lists/*
+
+RUN set -eux; \
+    curl -fsSL -o /usr/local/bin/wp https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar; \
+    chmod +x /usr/local/bin/wp; \
+    wp --info --allow-root
+
+RUN mv /usr/local/bin/docker-entrypoint.sh /usr/local/bin/docker-entrypoint-original.sh
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
+CMD ["apache2-foreground"]

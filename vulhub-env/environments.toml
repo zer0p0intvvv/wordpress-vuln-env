@@ -301,6 +301,7 @@ app = "Hunk Companion"
 path = "hunk-companion/CVE-2024-11972"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["Plugin Installation", "RCE"]
+notes = "Permission callback returns WP_REST_Response (not false) → bypassed by WP REST dispatch; MU-plugin loads import.php + class-installation.php on rest_api_init; WORDPRESS_URL=https for nuclei matcher; HTTPS forced via $_SERVER['HTTPS']='on' in MU-plugin"
 
 [[environment]]
 name = "Forminator 1.24.6 - Unauthenticated Arbitrary File Upload"
@@ -323,8 +324,9 @@ name = "Tutor LMS <= 2.7.6 - Unauthenticated SQL Injection"
 cve = ["CVE-2024-10400"]
 app = "Tutor LMS"
 path = "tutor/CVE-2024-10400"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+dockerfile = {"vulhub/wordpress:6.1-php7.4" = "base/wordpress/6.4/Dockerfile-php74"}
 tags = ["SQL Injection"]
+notes = "PHP 7.4 required: in_array('1e0 and ...', [1,2,3,4,5]) returns true via leading-numeric-string loose comparison in PHP 7; PHP 8 blocks the payload"
 
 [[environment]]
 name = "Subscribe to Category <= 2.7.4 - Unauthenticated SQL Injection"
@@ -333,3 +335,323 @@ app = "Subscribe to Category"
 path = "subscribe-to-category/CVE-2023-32590"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQL Injection"]
+
+[[environment]]
+name = "posts-like-dislike - SQLi"
+cve = ["CVE-2025-5287"]
+app = "posts-like-dislike"
+path = "posts-like-dislike/CVE-2025-5287"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+
+[[environment]]
+name = "ioncube-tester-plus - LFI"
+cve = ["CVE-2025-69411"]
+app = "ioncube-tester-plus"
+path = "ioncube-tester-plus/CVE-2025-69411"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["LFI"]
+
+[[environment]]
+name = "file-away - LFI"
+cve = ["CVE-2025-2539"]
+app = "file-away"
+path = "file-away/CVE-2025-2539"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["LFI"]
+
+[[environment]]
+name = "woocommerce-products-filter - LFI"
+cve = ["CVE-2025-1661"]
+app = "woocommerce-products-filter"
+path = "woocommerce-products-filter/CVE-2025-1661"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["LFI"]
+
+[[environment]]
+name = "wp-recall - SQLi"
+cve = ["CVE-2025-1323"]
+app = "wp-recall"
+path = "wp-recall/CVE-2025-1323"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+
+[[environment]]
+name = "pie-register - File Upload"
+cve = ["CVE-2025-34077"]
+app = "pie-register"
+path = "pie-register/CVE-2025-34077"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["File Upload"]
+
+[[environment]]
+name = "wpbookit - File Upload"
+cve = ["CVE-2025-6058"]
+app = "wpbookit"
+path = "wpbookit/CVE-2025-6058"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["File Upload"]
+
+[[environment]]
+name = "kubio - LFI"
+cve = ["CVE-2025-2294"]
+app = "kubio"
+path = "kubio/CVE-2025-2294"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["LFI"]
+
+[[environment]]
+name = "instawp-connect - XSS"
+cve = ["CVE-2025-2636"]
+app = "instawp-connect"
+path = "instawp-connect/CVE-2025-2636"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "events-manager - SQLi"
+cve = ["CVE-2025-6970"]
+app = "events-manager"
+path = "events-manager/CVE-2025-6970"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+
+[[environment]]
+name = "jobwp - SQLi"
+cve = ["CVE-2025-2010"]
+app = "jobwp"
+path = "jobwp/CVE-2025-2010"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+
+[[environment]]
+name = "simple-file-list - File Upload"
+cve = ["CVE-2025-34085"]
+app = "simple-file-list"
+path = "simple-file-list/CVE-2025-34085"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["File Upload"]
+
+[[environment]]
+name = "suretriggers - Auth Bypass"
+cve = ["CVE-2025-3102"]
+app = "suretriggers"
+path = "suretriggers/CVE-2025-3102"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["Auth Bypass"]
+
+[[environment]]
+name = "yoco-payment-gateway - LFI"
+cve = ["CVE-2025-13801"]
+app = "yoco-payment-gateway"
+path = "yoco-payment-gateway/CVE-2025-13801"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["LFI"]
+
+[[environment]]
+name = "the-events-calendar - XSS"
+cve = ["CVE-2025-9808"]
+app = "the-events-calendar"
+path = "the-events-calendar/CVE-2025-9808"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "tlp-team - SQLi"
+cve = ["CVE-2025-14124"]
+app = "tlp-team"
+path = "tlp-team/CVE-2025-14124"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+
+[[environment]]
+name = "relevanssi - SQLi"
+cve = ["CVE-2025-4396"]
+app = "relevanssi"
+path = "relevanssi/CVE-2025-4396"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+
+[[environment]]
+name = "ti-woocommerce-wishlist - XSS"
+cve = ["CVE-2025-47577"]
+app = "ti-woocommerce-wishlist"
+path = "ti-woocommerce-wishlist/CVE-2025-47577"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "web-directory-free - SQLi"
+cve = ["CVE-2024-3552"]
+app = "web-directory-free"
+path = "web-directory-free/CVE-2024-3552"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+
+[[environment]]
+name = "country-state-city-auto-dropdown - SQLi"
+cve = ["CVE-2024-3495"]
+app = "country-state-city-auto-dropdown"
+path = "country-state-city-auto-dropdown/CVE-2024-3495"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+
+[[environment]]
+name = "quiz-maker - SQLi"
+cve = ["CVE-2024-6028"]
+app = "quiz-maker"
+path = "quiz-maker/CVE-2024-6028"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+
+[[environment]]
+name = "crm-perks-forms - SQLi"
+cve = ["CVE-2024-30498"]
+app = "crm-perks-forms"
+path = "crm-perks-forms/CVE-2024-30498"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+
+[[environment]]
+name = "formlift - SQLi"
+cve = ["CVE-2024-38773"]
+app = "formlift"
+path = "formlift/CVE-2024-38773"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+
+[[environment]]
+name = "mstore-api - Auth Bypass"
+cve = ["CVE-2023-2734"]
+app = "mstore-api"
+path = "mstore-api/CVE-2023-2734"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["Auth Bypass"]
+
+[[environment]]
+name = "mstore-api - SQLi"
+cve = ["CVE-2023-3077"]
+app = "mstore-api"
+path = "mstore-api/CVE-2023-3077"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+
+[[environment]]
+name = "cmp-coming-soon-maintenance - SQLi"
+cve = ["CVE-2022-0188"]
+app = "cmp-coming-soon-maintenance"
+path = "cmp-coming-soon-maintenance/CVE-2022-0188"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+
+[[environment]]
+name = "check-email - XSS"
+cve = ["CVE-2022-0220"]
+app = "check-email"
+path = "check-email/CVE-2022-0220"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "peepso-core - XSS"
+cve = ["CVE-2022-0234"]
+app = "peepso-core"
+path = "peepso-core/CVE-2022-0234"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "presto-player - XSS"
+cve = ["CVE-2022-0250"]
+app = "presto-player"
+path = "presto-player/CVE-2022-0250"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "dynamic-featured-image - XSS"
+cve = ["CVE-2022-0533"]
+app = "dynamic-featured-image"
+path = "dynamic-featured-image/CVE-2022-0533"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "formidable - XSS"
+cve = ["CVE-2022-0591"]
+app = "formidable"
+path = "formidable/CVE-2022-0591"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "caldera-forms - XSS"
+cve = ["CVE-2022-0592"]
+app = "caldera-forms"
+path = "caldera-forms/CVE-2022-0592"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "woo-discount-rules - XSS"
+cve = ["CVE-2022-0651"]
+app = "woo-discount-rules"
+path = "woo-discount-rules/CVE-2022-0651"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "profile-builder - XSS"
+cve = ["CVE-2022-0653"]
+app = "profile-builder"
+path = "profile-builder/CVE-2022-0653"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "cool-timeline - XSS"
+cve = ["CVE-2022-0783"]
+app = "cool-timeline"
+path = "cool-timeline/CVE-2022-0783"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "arprice-responsive-pricing-table - SQLi"
+cve = ["CVE-2022-0867"]
+app = "arprice-responsive-pricing-table"
+path = "arprice-responsive-pricing-table/CVE-2022-0867"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+
+[[environment]]
+name = "updraft-backup-post-email - XSS"
+cve = ["CVE-2022-1029"]
+app = "updraft-backup-post-email"
+path = "updraft-backup-post-email/CVE-2022-1029"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "wpcargo-track-and-trace - LFI"
+cve = ["CVE-2022-1221"]
+app = "wpcargo-track-and-trace"
+path = "wpcargo-track-and-trace/CVE-2022-1221"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["LFI"]
+
+[[environment]]
+name = "additional-order-filters-for-woocommerce - XSS"
+cve = ["CVE-2022-1390"]
+app = "additional-order-filters-for-woocommerce"
+path = "additional-order-filters-for-woocommerce/CVE-2022-1390"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+
+[[environment]]
+name = "site-offline-or-coming-soon-or-maintenance-mode - SQLi"
+cve = ["CVE-2022-1580"]
+app = "site-offline-or-coming-soon-or-maintenance-mode"
+path = "site-offline-or-coming-soon-or-maintenance-mode/CVE-2022-1580"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]

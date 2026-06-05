@@ -12,6 +12,30 @@ WP_PLUGIN_VERSION="${WORDPRESS_PLUGIN_VERSION:-}"
 DEBUG_MODE="${DEBUG_MODE:-false}"
 
 # Start the original WordPress entrypoint in the background.
+# Pre-create MU-plugin files for known plugins that need forced module loading
+mkdir -p /var/www/html/wp-content/mu-plugins
+# hunk-companion: import module only loads for ThemeHunk themes, force it
+if [ "$WP_PLUGIN_SLUG" = "hunk-companion" ]; then
+    cat > /var/www/html/wp-content/mu-plugins/load-hunk-import.php << 'MUEOF'
+<?php
+// Force HTTPS scheme so site_url() returns https:// (required for nuclei matcher)
+$_SERVER['HTTPS'] = 'on';
+
+add_action('rest_api_init', function() {
+    $base = WP_PLUGIN_DIR . '/hunk-companion/import/';
+    if (!file_exists($base . 'import.php')) return;
+    require_once $base . 'import.php';
+    // class-installation.php is loaded by 'init' hook in inc.php, but init has already
+    // fired when rest_api_init runs - require it directly so tp_install() can instantiate
+    // HUNK_COMPANION_SITES_BUILDER_SETUP without a fatal error
+    if (!class_exists('HUNK_COMPANION_SITES_BUILDER_SETUP')) {
+        require_once $base . 'core/class-installation.php';
+    }
+}, 0);
+MUEOF
+    echo "MU-plugin created for hunk-companion REST route"
+fi
+
 /usr/local/bin/docker-entrypoint-original.sh "$@" &
 APACHE_PID=$!
 
@@ -77,16 +101,50 @@ wp option update home "$WP_URL" --allow-root >/dev/null
 wp option update permalink_structure '/%postname%/' --allow-root >/dev/null
 wp rewrite flush --allow-root >/dev/null || true
 
-# Install and activate plugin
+# Install and activate plugin (with CDN fallback for closed/removed plugins)
 if [ -n "$WP_PLUGIN_SLUG" ]; then
-    INSTALL_CMD="wp plugin install $WP_PLUGIN_SLUG --allow-root"
-    if [ -n "$WP_PLUGIN_VERSION" ]; then
-        INSTALL_CMD="$INSTALL_CMD --version=$WP_PLUGIN_VERSION"
-    fi
-    INSTALL_CMD="$INSTALL_CMD --activate"
+    PLUGIN_DIR="/var/www/html/wp-content/plugins/$WP_PLUGIN_SLUG"
+    VERSION="${WP_PLUGIN_VERSION:-}"
+    INSTALLED=0
 
-    echo "Installing plugin: $WP_PLUGIN_SLUG ${WP_PLUGIN_VERSION:-(latest)}"
-    eval "$INSTALL_CMD" || true
+    # Already on disk (e.g. plugin-specific base image)
+    if [ -d "$PLUGIN_DIR" ]; then
+        echo "Plugin $WP_PLUGIN_SLUG already present, activating..."
+        wp plugin activate "$WP_PLUGIN_SLUG" --allow-root && INSTALLED=1
+    fi
+
+    # Try wp plugin install (WP.org API)
+    if [ "$INSTALLED" != "1" ]; then
+        echo "Installing plugin from WP.org: $WP_PLUGIN_SLUG ${VERSION:-(latest)}"
+        INSTALL_CMD="wp plugin install $WP_PLUGIN_SLUG --allow-root --activate"
+        [ -n "$VERSION" ] && INSTALL_CMD="$INSTALL_CMD --version=$VERSION"
+        if eval "$INSTALL_CMD" 2>/dev/null; then
+            INSTALLED=1
+        else
+            echo "WP.org API failed, trying CDN download..."
+        fi
+    fi
+
+    # Fallback: download zip from WP.org CDN (handles closed/removed plugins + SSL issues)
+    if [ "$INSTALLED" != "1" ] && [ -n "$VERSION" ]; then
+        CDN_URL="https://downloads.wordpress.org/plugin/${WP_PLUGIN_SLUG}.${VERSION}.zip"
+        CDN_FILE="/tmp/${WP_PLUGIN_SLUG}.${VERSION}.zip"
+        echo "Downloading $CDN_URL"
+        if curl -fsSL --retry 3 --max-time 30 -o "$CDN_FILE" "$CDN_URL"; then
+            unzip -oq "$CDN_FILE" -d /var/www/html/wp-content/plugins/
+            chown -R www-data:www-data "$PLUGIN_DIR" 2>/dev/null || true
+            wp plugin activate "$WP_PLUGIN_SLUG" --allow-root && INSTALLED=1
+            rm -f "$CDN_FILE"
+        else
+            echo "CDN download failed for $WP_PLUGIN_SLUG $VERSION"
+        fi
+    fi
+
+    if [ "$INSTALLED" = "1" ]; then
+        echo "Plugin $WP_PLUGIN_SLUG activated."
+    else
+        echo "WARNING: Could not install plugin $WP_PLUGIN_SLUG"
+    fi
 fi
 
 echo "Setup complete. WordPress is running at $WP_URL"

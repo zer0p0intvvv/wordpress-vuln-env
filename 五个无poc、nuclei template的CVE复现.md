@@ -1,18 +1,10 @@
-| 漏洞名        | 插件名                                | 漏洞描述                                                     |
-| :------------ | ------------------------------------- | ------------------------------------------------------------ |
-| CVE-2026-7641 | import-users-from-csv-with-meta       | The Import and export  users and customers plugin for WordPress is vulnerable to Privilege  Escalation in all versions up to and including 2.0.8 via the  `save_extra_user_profile_fields()` function. This is due to an incomplete  blocklist that correctly restricts capability meta keys for the primary site  (e.g., `wp_capabilities`, `wp_user_level`) but fails to block the equivalent  meta keys for any other subsite in a WordPress Multisite network (e.g.,  `wp_2_capabilities`, `wp_2_user_level`), allowing these keys to pass the  `in_array()` check and be written directly to user meta via  `update_user_meta()`. This makes it possible for authenticated attackers,  with Subscriber-level access and above, to escalate their privileges to  Administrator on any subsite within the Multisite network by submitting a  crafted profile update to `/wp-admin/profile.php`. Exploitation requires that  an administrator has previously imported a CSV file containing  multisite-prefixed capability column headers and has enabled the 'Show fields  in profile?' option, which causes those keys to be stored in the  `acui_columns` option and exposed as editable fields on the user profile  page. |
-| CVE-2026-7467 | expand-maker                          | The Read More & Accordion plugin for  WordPress is vulnerable to Privilege Escalation in all versions up to, and  including, 3.5.7. This is due to the 'RadMoreAjax::importData' function not  restricting which database tables can be written to during import and not  properly validating the imported data. This makes it possible for  authenticated attackers, with permission granted by the site owner through  the plugin's role settings, to insert arbitrary rows into the 'wp_users' and  'wp_usermeta' tables, including the 'wp_capabilities' field, allowing them to  create a new administrator account and gain administrator access to the site. |
-| CVE-2026-7284 | easy-elements                         | The Easy Elements for Elementor – Addons  & Website Templates plugin for WordPress is vulnerable to privilege  escalation via user registration in all versions up to, and including, 1.4.4.  This is due to the 'easyel_handle_register' function not restricting what  user roles a user can register with. This makes it possible for  unauthenticated attackers to supply the 'administrator' role during  registration and gain administrator access to the site. |
-| CVE-2026-7252 | wp-optimize                           | The WP-Optimize – Cache, Compress images,  Minify & Clean database to boost page speed & performance plugin for  WordPress is vulnerable to arbitrary file deletion due to insufficient file  path validation in the unscheduled_original_file_deletion function in all  versions up to, and including, 4.5.2 This makes it possible for authenticated  attackers, with author-level access and above, to delete arbitrary files on  the server, which can easily lead to remote code execution when the right  file is deleted (such as wp-config.php). This is possible because  'original-file' is a public (non-protected) meta key — it does not begin with  an underscore — allowing Authors to freely create or modify it on their own  attachment posts via the standard Edit Media form or the REST API. |
-| CVE-2026-7106 | highland-software-custom-role-manager | The Highland Software Custom Role Manager  plugin for WordPress is vulnerable to Privilege Escalation in versions up to  and including 1.0.0. This is due to insufficient authorization checks in the  hscrm_save_user_roles() function, which is hooked to the personal_options_update  action accessible by any authenticated user. This makes it possible for  authenticated attackers, with Subscriber-level access or higher, to  potentially modify user roles via the profile update form. |
-
-| 漏洞名        | 插件名                                | 漏洞描述                                                     |
-| :------------ | ------------------------------------- | ------------------------------------------------------------ |
-| CVE-2026-7641 | import-users-from-csv-with-meta       | The Import and export  users and customers plugin for WordPress is vulnerable to Privilege  Escalation in all versions up to and including 2.0.8 via the  `save_extra_user_profile_fields()` function. This is due to an incomplete  blocklist that correctly restricts capability meta keys for the primary site  (e.g., `wp_capabilities`, `wp_user_level`) but fails to block the equivalent  meta keys for any other subsite in a WordPress Multisite network (e.g.,  `wp_2_capabilities`, `wp_2_user_level`), allowing these keys to pass the  `in_array()` check and be written directly to user meta via  `update_user_meta()`. This makes it possible for authenticated attackers,  with Subscriber-level access and above, to escalate their privileges to  Administrator on any subsite within the Multisite network by submitting a  crafted profile update to `/wp-admin/profile.php`. Exploitation requires that  an administrator has previously imported a CSV file containing  multisite-prefixed capability column headers and has enabled the 'Show fields  in profile?' option, which causes those keys to be stored in the  `acui_columns` option and exposed as editable fields on the user profile  page. |
-| CVE-2026-7467 | expand-maker                          | The Read More & Accordion plugin for  WordPress is vulnerable to Privilege Escalation in all versions up to, and  including, 3.5.7. This is due to the 'RadMoreAjax::importData' function not  restricting which database tables can be written to during import and not  properly validating the imported data. This makes it possible for  authenticated attackers, with permission granted by the site owner through  the plugin's role settings, to insert arbitrary rows into the 'wp_users' and  'wp_usermeta' tables, including the 'wp_capabilities' field, allowing them to  create a new administrator account and gain administrator access to the site. |
-| CVE-2026-7284 | easy-elements                         | The Easy Elements for Elementor – Addons  & Website Templates plugin for WordPress is vulnerable to privilege  escalation via user registration in all versions up to, and including, 1.4.4.  This is due to the 'easyel_handle_register' function not restricting what  user roles a user can register with. This makes it possible for  unauthenticated attackers to supply the 'administrator' role during  registration and gain administrator access to the site. |
-| CVE-2026-7252 | wp-optimize                           | The WP-Optimize – Cache, Compress images,  Minify & Clean database to boost page speed & performance plugin for  WordPress is vulnerable to arbitrary file deletion due to insufficient file  path validation in the unscheduled_original_file_deletion function in all  versions up to, and including, 4.5.2 This makes it possible for authenticated  attackers, with author-level access and above, to delete arbitrary files on  the server, which can easily lead to remote code execution when the right  file is deleted (such as wp-config.php). This is possible because  'original-file' is a public (non-protected) meta key — it does not begin with  an underscore — allowing Authors to freely create or modify it on their own  attachment posts via the standard Edit Media form or the REST API. |
-| CVE-2026-7106 | highland-software-custom-role-manager | The Highland Software Custom Role Manager  plugin for WordPress is vulnerable to Privilege Escalation in versions up to  and including 1.0.0. This is due to insufficient authorization checks in the  hscrm_save_user_roles() function, which is hooked to the personal_options_update  action accessible by any authenticated user. This makes it possible for  authenticated attackers, with Subscriber-level access or higher, to  potentially modify user roles via the profile update form. |
+| 漏洞名        | 插件名                                | 漏洞描述                                                     | 人工验证 |
+| :------------ | ------------------------------------- | ------------------------------------------------------------ | -------- |
+| CVE-2026-7641 | import-users-from-csv-with-meta       | WordPress 的导入导出用户和客户插件在 2.0.8 及更早版本中存在权限提升漏洞，该漏洞利用 `save_extra_user_profile_fields()` 函数进行攻击。这是由于插件的阻止列表不完整造成的。该阻止列表虽然能够正确限制主站点的权限元键（例如 `wp_capabilities`、`wp_user_level`），但未能阻止 WordPress 多站点网络中其他子站点的等效元键（例如 `wp_2_capabilities`、`wp_2_user_level`）。这使得这些键能够通过 `in_array()` 检查，并被直接写入用户元数据（通过 `update_user_meta()` 函数）。因此，拥有订阅者级别及以上权限的已认证攻击者可以通过向 `/wp-admin/profile.php` 提交精心构造的配置文件更新，将其权限提升至多站点网络中任何子站点的管理员级别。利用此漏洞需要管理员事先导入一个包含多站点前缀的功能列标题的 CSV 文件，并启用“在个人资料中显示字段？”选项，这会导致这些键存储在 `acui_columns` 选项中，并在用户个人资料页面上显示为可编辑字段。 | ✅        |
+| CVE-2026-7467 | expand-maker                          | WordPress 的 Read More & Accordion 插件在 3.5.7 及更早版本中存在权限提升漏洞。这是由于 `RadMoreAjax::importData` 函数在导入过程中未限制可写入的数据库表，且未正确验证导入的数据。这使得已通过身份验证的攻击者，在获得网站所有者通过插件角色设置授予的权限后，可以向 `wp_users` 和 `wp_usermeta` 表中插入任意行，包括 `wp_capabilities` 字段，从而创建新的管理员帐户并获得网站的管理员权限。 | ✅        |
+| CVE-2026-7284 | easy-elements                         | WordPress 插件 Easy Elements for Elementor – Addons & Website Templates 在 1.4.4 及更早版本中存在权限提升漏洞，攻击者可通过用户注册进行权限提升。这是由于 `easyel_handle_register` 函数未限制用户注册时可使用的角色。这使得未经身份验证的攻击者能够在注册时提供“administrator”角色，从而获得网站的管理员权限。 | ✅        |
+| CVE-2026-7252 | wp-optimize                           | WP-Optimize – 一款用于提升 WordPress 页面速度和性能的缓存、图片压缩、数据库精简和清理插件，存在任意文件删除漏洞。该漏洞源于其 unscheduled_original_file_deletion 函数中文件路径验证不足，且该漏洞存在于所有 4.5.2 及更早版本中。这使得拥有作者级别及以上权限的已认证攻击者能够删除服务器上的任意文件，如果删除的是正确的文件（例如 wp-config.php），则很容易导致远程代码执行。造成这种漏洞的原因是，'original-file' 是一个公开的（未受保护的）元键，它不以下划线开头，因此作者可以通过标准的“编辑媒体”表单或 REST API 在自己的附件文章中自由创建或修改该元键。 | ❌        |
+| CVE-2026-7106 | highland-software-custom-role-manager | 适用于 WordPress 的 Highland Software Custom Role Manager 插件在 1.0.0 及更早版本中存在权限提升漏洞。这是由于 hscrm_save_user_roles() 函数中的授权检查不足造成的，该函数与任何已认证用户均可访问的 personal_options_update 操作挂钩。这使得拥有订阅者级别或更高访问权限的已认证攻击者有可能通过个人资料更新表单修改用户角色。 | ✅        |
 
 **约束**
 
@@ -21,3 +13,28 @@
 2、尽可能自己思考决策，是不行可以让我进行信息的补充
 
 3、最后，是呈现可以容器化的环境以及nuclei template
+
+**分析**
+
+CVE-2026-7106:如果修改的邮箱是恶意的，则攻击成功；
+
+CVE-2026-7252:检测上本身是存在问题，多次反复测试导致误报的情况，通过提示修改的情况，加固的模版
+
+CVE-2026-7467:需要结合恶意的yaml文件，在验证docker环境中已经自动添加了
+
+CVE-2026-7641:依赖于子站的url
+
+
+
+第一个任务：自动化根据cve描述构建漏洞环境，校验器是利用已有漏洞模版（100个）
+
+第二个任务:  自动化根据漏洞环境构建poc，校验器是
+
+第三个任务:  
+
+
+
+
+
+
+
