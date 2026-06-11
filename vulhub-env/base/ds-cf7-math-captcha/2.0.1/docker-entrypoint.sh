@@ -89,6 +89,12 @@ if [ -n "$WP_PLUGIN_SLUG" ]; then
     eval "$INSTALL_CMD" || true
 fi
 
+# Activate pre-copied plugin (ds-cf7-math-captcha is bundled in image)
+if [ -d "/var/www/html/wp-content/plugins/ds-cf7-math-captcha" ]; then
+    echo "Activating pre-installed plugin: ds-cf7-math-captcha"
+    wp plugin activate ds-cf7-math-captcha --allow-root || true
+fi
+
 echo "Setup complete. WordPress is running at $WP_URL"
 [ "$DEBUG_MODE" = "true" ] && echo "Debug logs: /var/www/html/wp-content/debug.log"
 
