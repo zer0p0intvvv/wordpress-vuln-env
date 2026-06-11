@@ -11,6 +11,12 @@ COPY plugins/ds-cf7-math-captcha /var/www/html/wp-content/plugins/ds-cf7-math-ca
 RUN find /var/www/html/wp-content/plugins/ds-cf7-math-captcha -name "*.php" -exec dos2unix {} \; && \
     chown -R www-data:www-data /var/www/html/wp-content/plugins/ds-cf7-math-captcha
 
+# MU-plugin: force-activate the plugin without wp-cli (Windows-safe, no shell dependency)
+RUN mkdir -p /var/www/html/wp-content/mu-plugins
+COPY mu-plugins/force-activate-ds-cf7-math-captcha.php /var/www/html/wp-content/mu-plugins/
+RUN dos2unix /var/www/html/wp-content/mu-plugins/force-activate-ds-cf7-math-captcha.php && \
+    chown www-data:www-data /var/www/html/wp-content/mu-plugins/force-activate-ds-cf7-math-captcha.php
+
 RUN mv /usr/local/bin/docker-entrypoint.sh /usr/local/bin/docker-entrypoint-original.sh
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 RUN dos2unix /usr/local/bin/docker-entrypoint.sh && \
