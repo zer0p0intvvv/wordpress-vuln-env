@@ -85,7 +85,7 @@ lsof -i :<port>
 
 1. **通用基础镜像** `base/wordpress/6.4/`：适用于插件仍可从 WP.org 在线安装的情况。`docker-entrypoint.sh` 读取 `WORDPRESS_PLUGIN_SLUG` / `WORDPRESS_PLUGIN_VERSION` 环境变量自动安装并激活插件，WordPress 安装、DB 等待、permalink 配置全部在 entrypoint 中自动完成。
 
-2. **插件专用镜像** `base/<plugin-slug>/<version>/`：插件源码预先 `COPY` 进镜像（`plugins/` 目录），entrypoint 中仅需激活，不再依赖 WP.org。适用于插件已从 WP.org 移除、版本已下架、或依赖链复杂的情况。
+2. **插件专用镜像** `base/<plugin-slug>/<version>/`：插件源码预先 `COPY` 进镜像（`plugins/` 目录），不再依赖 WP.org。适用于插件已从 WP.org 移除、版本已下架、或依赖链复杂的情况。**激活方式优先使用 MU-plugin**（见「技术约束」第 9 条），而非 entrypoint 中的 `wp plugin activate`，可彻底规避 Windows CRLF / wp-cli 时序问题。
 
 ### 文件关系
 
@@ -157,6 +157,42 @@ CDN 直链下载绕过了 API 层，即便插件已关闭（closed）、短期 S
 
 **如何发现此类需求**：nuclei FAIL → 看 nuclei 模板的 path/参数 → 反查插件源码中该路由/钩子的入口条件（是否依赖某 option、postmeta、表存在），把这些前置数据在 entrypoint 中创建出来。
 
+### 9. Windows CRLF 行尾与插件激活时序问题
+
+**现象**：在 Windows 主机上 `docker compose up -d --build` 后插件 inactive，nuclei 第一步 matcher 失败。
+
+**根因**（双重）：
+1. **CRLF 行尾**：Windows git 默认 `core.autocrlf=true`，`.sh` 文件被转为 `\r\n`，容器内报 `bad interpreter: ^M`，entrypoint 完全不执行
+2. **wp-cli 时序**：即使脚本正常执行，Windows Docker Desktop（WSL2/Hyper-V）启动比 Linux 慢，`wp plugin activate` 可能在 WordPress 正在写入 `wp_options` 的窗口期内失败，加上 `|| true` 完全无声无息
+
+**解决方案：MU-plugin 强制激活**（已在 ds-cf7-math-captcha 验证，参考 `base/ds-cf7-math-captcha/2.0.1/mu-plugins/`）
+
+在插件专用 base 目录下建 `mu-plugins/force-activate-<plugin-slug>.php`：
+
+```php
+<?php
+add_filter('option_active_plugins', function ($plugins) {
+    $target = '<plugin-slug>/<plugin-slug>.php';
+    if (!in_array($target, (array) $plugins, true)) {
+        $plugins[] = $target;
+    }
+    return $plugins;
+});
+```
+
+Dockerfile 中 COPY 并 dos2unix：
+
+```dockerfile
+RUN mkdir -p /var/www/html/wp-content/mu-plugins
+COPY mu-plugins/force-activate-<plugin-slug>.php /var/www/html/wp-content/mu-plugins/
+RUN dos2unix /var/www/html/wp-content/mu-plugins/force-activate-<plugin-slug>.php && \
+    chown www-data:www-data /var/www/html/wp-content/mu-plugins/force-activate-<plugin-slug>.php
+```
+
+**原理**：MU-plugin 在 WordPress 每次请求时自动加载，通过 `option_active_plugins` filter 注入激活状态，完全绕过 wp-cli 和 shell 脚本。纯 PHP，无平台依赖，build 成功即插件必然激活。
+
+**附**：根目录 `.gitattributes` 已配置 `*.sh eol=lf`，防止 Windows git clone 时转换行尾，与 Dockerfile 中的 `dos2unix` 形成双重保险。
+
 ### 8. Nuclei 检测分类（建环境时判断初始化需求）
 - **直接检测** (~47%): 无需认证，nuclei 可直接触发
 - **需 admin 认证** (~20%): 需预设管理员 cookie 或 Basic Auth
@@ -207,6 +243,19 @@ $wpdb->query("INSERT INTO {$wpdb->prefix}gmwd_maps VALUES (1, \"Test\", 1)");
 wp --allow-root option get rsssl_options --format=json | \
     jq '. + {"login_protection_enabled": 1}' | \
     wp --allow-root option set rsssl_options --format=json
+
+# ⑧ MU-plugin 强制激活（Windows 兼容方案，替代 wp plugin activate）
+# 文件放在 base/<plugin-slug>/<version>/mu-plugins/ 目录，Dockerfile 中 COPY 进镜像
+# WordPress 每次请求自动加载 mu-plugins/，无需 wp-cli，无平台依赖
+# 文件内容：
+#   <?php
+#   add_filter('option_active_plugins', function ($plugins) {
+#       $target = '<plugin-slug>/<plugin-slug>.php';
+#       if (!in_array($target, (array) $plugins, true)) {
+#           $plugins[] = $target;
+#       }
+#       return $plugins;
+#   });
 ```
 
 ---
