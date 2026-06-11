@@ -1,9 +1,13 @@
-# Force LF for shell scripts and Dockerfiles — prevents Windows git from converting to CRLF
+# Force LF for all text files — prevents Windows git from converting to CRLF
 # which would cause "bad interpreter: ^M" errors inside Linux containers
 *.sh        text eol=lf
 Dockerfile  text eol=lf
+*.php       text eol=lf
 *.yaml      text eol=lf
 *.yml       text eol=lf
 *.toml      text eol=lf
 *.json      text eol=lf
 *.md        text eol=lf
+*.txt       text eol=lf
+*.css       text eol=lf
+*.js        text eol=lf
