@@ -37,6 +37,7 @@
 | CVE-2026-7284 | Privilege Escalation | No | No | easy-elements/CVE-2026-7284 | 8116 |
 | CVE-2026-7467 | Privilege Escalation | Yes | No | expand-maker/CVE-2026-7467 | 8119 |
 | CVE-2026-7641 | Privilege Escalation (Multisite) | Yes | No | import-users-from-csv-with-meta/CVE-2026-7641 | 8120 |
+| CVE-2026-3018 | SQL Injection (Time-Based) | No | No | newsletters-lite/CVE-2026-3018 | 8201 |
 
 ## 统计
 

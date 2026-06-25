@@ -1,3 +1,7 @@
+# WordPress 漏洞环境索引
+# 字段: name / cve / app / path / dockerfile / tags / template / template_source [/ notes]
+# template_source: official=官方nuclei模板  custom=自建模板(nuclei-template-new/)  none=暂无模板
+
 [[environment]]
 name = "Email Subscribers by Icegram Express <= 5.7.14 - Unauthenticated SQL Injection"
 cve = ["CVE-2024-2876"]
@@ -5,6 +9,8 @@ app = "Email Subscribers"
 path = "email-subscribers/CVE-2024-2876"
 dockerfile = {"vulhub/email-subscribers:5.7.13" = "base/email-subscribers/5.7.13"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2024-2876.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Secure Copy Content Protection <= 2.8.1 - SQL Injection"
@@ -13,6 +19,8 @@ app = "Secure Copy Content Protection"
 path = "secure-copy-content-protection/CVE-2021-24931"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2021-24931.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Paid Memberships Pro <= 2.9.7 - Unauthenticated SQL Injection"
@@ -21,6 +29,8 @@ app = "Paid Memberships Pro"
 path = "paid-member-subscriptions/CVE-2023-23488"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2023-23488.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Permalink Manager Lite <= 2.2.14 - Reflected XSS"
@@ -29,6 +39,8 @@ app = "Permalink Manager Lite"
 path = "permalink-manager/CVE-2022-0201"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-0201.yaml"
+template_source = "official"
 
 [[environment]]
 name = "LearnPress <= 4.1.5 - Reflected XSS"
@@ -37,6 +49,8 @@ app = "LearnPress"
 path = "learnpress/CVE-2022-0271"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-0271.yaml"
+template_source = "official"
 
 [[environment]]
 name = "PublishPress Capabilities <= 2.3.0 - CSRF"
@@ -45,6 +59,8 @@ app = "PublishPress Capabilities"
 path = "capability-manager-enhanced/CVE-2021-25032"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["CSRF"]
+template = "nuclei-templates/CVE-2021-25032.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Sitemap by click5 <= 1.0.35 - CSRF"
@@ -53,6 +69,8 @@ app = "Sitemap by click5"
 path = "sitemap-by-click5/CVE-2022-0952"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["CSRF"]
+template = "nuclei-templates/CVE-2022-0952.yaml"
+template_source = "official"
 
 [[environment]]
 name = "3DPrint Lite <= 1.9.1.4 - Unauthenticated File Upload RCE"
@@ -61,6 +79,8 @@ app = "3DPrint Lite"
 path = "3dprint-lite/CVE-2021-4436"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["File Upload", "RCE"]
+template = "nuclei-templates/CVE-2021-4436.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Hash Form <= 1.1.0 - Unauthenticated File Upload RCE"
@@ -69,6 +89,8 @@ app = "Hash Form"
 path = "hash-form/CVE-2024-5084"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["File Upload", "RCE"]
+template = "nuclei-templates/CVE-2024-5084.yaml"
+template_source = "official"
 
 [[environment]]
 name = "DukaPress Shopping Cart <= 2.5.4 - Unauthenticated File Upload"
@@ -77,6 +99,8 @@ app = "DukaPress"
 path = "dukapress/CVE-2014-8799"
 dockerfile = {"vulhub/dukapress:2.5.4" = "base/dukapress/2.5.4"}
 tags = ["File Upload", "RCE"]
+template = "nuclei-templates/CVE-2014-8799.yaml"
+template_source = "official"
 
 [[environment]]
 name = "AB Google Map Travel <= 3.9 - CSRF"
@@ -85,6 +109,8 @@ app = "AB Google Map Travel"
 path = "ab-google-map-travel/CVE-2015-2755"
 dockerfile = {"vulhub/ab-google-map-travel:3.4" = "base/ab-google-map-travel/3.4"}
 tags = ["CSRF"]
+template = "nuclei-templates/CVE-2015-2755.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Button Generator <= 2.3.2 - Arbitrary File Inclusion via CSRF"
@@ -93,6 +119,8 @@ app = "Button Generator"
 path = "button-generation/CVE-2021-25052"
 dockerfile = {"vulhub/button-generation:2.3.2" = "base/button-generation/2.3.2"}
 tags = ["CSRF", "File Inclusion"]
+template = "nuclei-templates/CVE-2021-25052.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Shield Security <= 20.0.5 - Reflected XSS"
@@ -101,6 +129,8 @@ app = "Shield Security"
 path = "wp-simple-firewall/CVE-2024-7313"
 dockerfile = {"vulhub/wp-simple-firewall:20.0.5" = "base/wp-simple-firewall/20.0.5"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2024-7313.yaml"
+template_source = "official"
 
 [[environment]]
 name = "WP Statistics <= 13.0.7 - SQL Injection"
@@ -109,6 +139,8 @@ app = "WP Statistics"
 path = "wp-statistics/CVE-2021-24340"
 dockerfile = {"vulhub/wp-statistics:13.0.7" = "base/wp-statistics/13.0.7"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2021-24340.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Pie Register <= 3.7.1.5 - SQL Injection"
@@ -117,6 +149,8 @@ app = "Pie Register"
 path = "pie-register/CVE-2021-24731"
 dockerfile = {"vulhub/pie-register:3.7.1.5" = "base/pie-register/3.7.1.5"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2021-24731.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Photo Gallery by 10Web <= 1.5.87 - SQL Injection"
@@ -125,6 +159,8 @@ app = "Photo Gallery"
 path = "photo-gallery/CVE-2022-0169"
 dockerfile = {"vulhub/photo-gallery:1.5.87" = "base/photo-gallery/1.5.87"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2022-0169.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Cryptocurrency Widgets Pack <= 1.8.1 - SQL Injection"
@@ -133,6 +169,8 @@ app = "Cryptocurrency Widgets Pack"
 path = "cryptocurrency-widgets-pack/CVE-2022-4059"
 dockerfile = {"vulhub/cryptocurrency-widgets-pack:1.8.1" = "base/cryptocurrency-widgets-pack/1.8.1"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2022-4059.yaml"
+template_source = "official"
 
 [[environment]]
 name = "My Calendar <= 3.4.0 - SQL Injection"
@@ -141,6 +179,8 @@ app = "My Calendar"
 path = "my-calendar/CVE-2023-6360"
 dockerfile = {"vulhub/my-calendar:3.4.0" = "base/my-calendar/3.4.0"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2023-6360.yaml"
+template_source = "official"
 
 [[environment]]
 name = "GamiPress <= 2.8.9 - SQL Injection"
@@ -149,6 +189,8 @@ app = "GamiPress"
 path = "gamepress/CVE-2024-13496"
 dockerfile = {"vulhub/gamipress:2.7.0" = "base/gamipress/2.7.0"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2024-13496.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Depicter <= 3.6.0 - SQL Injection"
@@ -157,6 +199,8 @@ app = "Depicter"
 path = "depicter/CVE-2025-2011"
 dockerfile = {"vulhub/depicter:3.6.0" = "base/depicter/3.6.0"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2025-2011.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Booking Calendar <= 3.2.0 - Unauthenticated File Upload"
@@ -165,6 +209,8 @@ app = "Booking Calendar"
 path = "booking-calendar/CVE-2022-3982"
 dockerfile = {"vulhub/booking-calendar:3.2.0" = "base/booking-calendar/3.2.0"}
 tags = ["File Upload", "RCE"]
+template = "nuclei-templates/CVE-2022-3982.yaml"
+template_source = "official"
 
 [[environment]]
 name = "InstaWP Connect <= 0.1.0.22 - Unauthenticated File Upload"
@@ -173,6 +219,8 @@ app = "InstaWP Connect"
 path = "instawp-connect/CVE-2024-2667"
 dockerfile = {"vulhub/instawp-connect:0.1.0.22" = "base/instawp-connect/0.1.0.22"}
 tags = ["File Upload", "RCE"]
+template = "nuclei-templates/CVE-2024-2667.yaml"
+template_source = "official"
 
 [[environment]]
 name = "myStickyElements <= 2.0.3 - Reflected XSS"
@@ -181,6 +229,8 @@ app = "myStickyElements"
 path = "mystickyelements/CVE-2022-0148"
 dockerfile = {"vulhub/mystickyelements:2.0.3" = "base/mystickyelements/2.0.3"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-0148.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Simple Membership <= 4.1.0 - Reflected XSS"
@@ -189,6 +239,8 @@ app = "Simple Membership"
 path = "simple-membership/CVE-2022-1724"
 dockerfile = {"vulhub/simple-membership:4.1.0" = "base/simple-membership/4.1.0"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-1724.yaml"
+template_source = "official"
 
 [[environment]]
 name = "CF7 Math Captcha <= 2.0.1 - Reflected XSS"
@@ -197,6 +249,8 @@ app = "CF7 Math Captcha"
 path = "ds-cf7-math-captcha/CVE-2024-6517"
 dockerfile = {"vulhub/ds-cf7-math-captcha:2.0.1" = "base/ds-cf7-math-captcha/2.0.1"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2024-6517.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Drag and Drop Multiple File Upload for Contact Form 7 <= 1.3.9.6 - Unauthenticated File Upload RCE"
@@ -205,6 +259,8 @@ app = "Drag and Drop Multiple File Upload"
 path = "drag-and-drop-multiple-file-upload-contact-form-7/CVE-2026-5718"
 dockerfile = {"vulhub/drag-and-drop-multiple-file-upload-contact-form-7:1.3.9.6" = "base/drag-and-drop-multiple-file-upload-contact-form-7/1.3.9.6"}
 tags = ["File Upload", "RCE"]
+template = "nuclei-templates/CVE-2026-5718.yaml"
+template_source = "official"
 
 [[environment]]
 name = "RegistrationMagic <= 6.0.7.1 - Privilege Escalation"
@@ -213,6 +269,8 @@ app = "RegistrationMagic"
 path = "custom-registration-form-builder-with-submission-manager/CVE-2025-15403"
 dockerfile = {"vulhub/registrationmagic:6.0.7.1" = "base/registrationmagic/6.0.7.1"}
 tags = ["Privilege Escalation"]
+template = ""
+template_source = "none"
 
 [[environment]]
 name = "Easy Elements for Elementor <= 1.4.4 - Unauthenticated Privilege Escalation"
@@ -221,6 +279,8 @@ app = "Easy Elements for Elementor"
 path = "easy-elements/CVE-2026-7284"
 dockerfile = {"vulhub/easy-elements:1.4.4" = "base/easy-elements/1.4.4"}
 tags = ["Privilege Escalation"]
+template = "nuclei-template-new/CVE-2026-7284.yaml"
+template_source = "custom"
 
 [[environment]]
 name = "Highland Software Custom Role Manager <= 1.0.0 - Authenticated Privilege Escalation"
@@ -229,6 +289,8 @@ app = "Highland Software Custom Role Manager"
 path = "highland-software-custom-role-manager/CVE-2026-7106"
 dockerfile = {"vulhub/highland-software-custom-role-manager:1.0.0" = "base/highland-software-custom-role-manager/1.0.0"}
 tags = ["Privilege Escalation"]
+template = "nuclei-template-new/CVE-2026-7106.yaml"
+template_source = "custom"
 
 [[environment]]
 name = "WP-Optimize <= 4.5.2 - Authenticated Arbitrary File Deletion"
@@ -237,6 +299,8 @@ app = "WP-Optimize"
 path = "wp-optimize/CVE-2026-7252"
 dockerfile = {"vulhub/wp-optimize:4.5.2" = "base/wp-optimize/4.5.2"}
 tags = ["File Deletion", "RCE"]
+template = "nuclei-template-new/CVE-2026-7252.yaml"
+template_source = "custom"
 
 [[environment]]
 name = "Read More & Accordion (expand-maker) <= 3.5.7 - Authenticated Privilege Escalation via importData"
@@ -245,6 +309,8 @@ app = "Read More & Accordion"
 path = "expand-maker/CVE-2026-7467"
 dockerfile = {"vulhub/expand-maker:3.5.5" = "base/expand-maker/3.5.5"}
 tags = ["Privilege Escalation"]
+template = "nuclei-template-new/CVE-2026-7467.yaml"
+template_source = "custom"
 
 [[environment]]
 name = "Import and Export Users and Customers <= 2.0.8 - Multisite Subscriber Privilege Escalation"
@@ -253,6 +319,8 @@ app = "Import and Export Users and Customers"
 path = "import-users-from-csv-with-meta/CVE-2026-7641"
 dockerfile = {"vulhub/import-users-from-csv-with-meta:2.0.8" = "base/import-users-from-csv-with-meta/2.0.8"}
 tags = ["Privilege Escalation", "Multisite"]
+template = "nuclei-template-new/CVE-2026-7641.yaml"
+template_source = "custom"
 
 [[environment]]
 name = "Download Manager < 3.3.04 - Unauthenticated Arbitrary Shortcode Execution"
@@ -261,6 +329,8 @@ app = "Download Manager"
 path = "download-manager/CVE-2024-11740"
 dockerfile = {"vulhub/download-manager:3.3.03" = "download-manager/CVE-2024-11740"}
 tags = ["Shortcode Execution", "RCE"]
+template = "nuclei-templates/CVE-2024-11740.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Collapsing Categories <= 3.0.8 - Unauthenticated SQL Injection"
@@ -269,6 +339,8 @@ app = "Collapsing Categories"
 path = "collapsing-categories/CVE-2024-12025"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2024-12025.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Error Log Viewer By WP Guru <= 1.0.1.3 - Unauthenticated Arbitrary File Read"
@@ -277,6 +349,8 @@ app = "Error Log Viewer By WP Guru"
 path = "error-log-viewer/CVE-2024-12849"
 dockerfile = {"vulhub/error-log-viewer:1.0.1.3" = "error-log-viewer/CVE-2024-12849"}
 tags = ["LFI", "File Read"]
+template = "nuclei-templates/CVE-2024-12849.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Easy Digital Downloads 3.1.0.2/3.1.0.3 - SQL Injection"
@@ -285,6 +359,8 @@ app = "Easy Digital Downloads"
 path = "easy-digital-downloads/CVE-2023-23489"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2023-23489.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Quiz and Survey Master <= 8.1.4 - SQL Injection"
@@ -293,6 +369,8 @@ app = "Quiz and Survey Master"
 path = "quiz-master-next/CVE-2023-28787"
 dockerfile = {"vulhub/quiz-master-next:8.1.4" = "quiz-master-next/CVE-2023-28787"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2023-28787.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Hunk Companion < 1.9.0 - Unauthenticated Plugin Installation"
@@ -301,6 +379,8 @@ app = "Hunk Companion"
 path = "hunk-companion/CVE-2024-11972"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["Plugin Installation", "RCE"]
+template = "nuclei-templates/CVE-2024-11972.yaml"
+template_source = "official"
 notes = "Permission callback returns WP_REST_Response (not false) → bypassed by WP REST dispatch; MU-plugin loads import.php + class-installation.php on rest_api_init; WORDPRESS_URL=https for nuclei matcher; HTTPS forced via $_SERVER['HTTPS']='on' in MU-plugin"
 
 [[environment]]
@@ -310,6 +390,8 @@ app = "Forminator"
 path = "forminator/CVE-2023-4596"
 dockerfile = {"vulhub/forminator:1.24.6" = "forminator/CVE-2023-4596"}
 tags = ["File Upload", "RCE"]
+template = "nuclei-templates/CVE-2023-4596.yaml"
+template_source = "official"
 
 [[environment]]
 name = "WP Hotel Booking <= 2.0.7 - Unauthenticated SQL Injection"
@@ -318,6 +400,8 @@ app = "WP Hotel Booking"
 path = "wp-hotel-booking/CVE-2023-5652"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2023-5652.yaml"
+template_source = "official"
 
 [[environment]]
 name = "Tutor LMS <= 2.7.6 - Unauthenticated SQL Injection"
@@ -326,6 +410,8 @@ app = "Tutor LMS"
 path = "tutor/CVE-2024-10400"
 dockerfile = {"vulhub/wordpress:6.1-php7.4" = "base/wordpress/6.4/Dockerfile-php74"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2024-10400.yaml"
+template_source = "official"
 notes = "PHP 7.4 required: in_array('1e0 and ...', [1,2,3,4,5]) returns true via leading-numeric-string loose comparison in PHP 7; PHP 8 blocks the payload"
 
 [[environment]]
@@ -335,6 +421,8 @@ app = "Subscribe to Category"
 path = "subscribe-to-category/CVE-2023-32590"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQL Injection"]
+template = "nuclei-templates/CVE-2023-32590.yaml"
+template_source = "official"
 
 [[environment]]
 name = "posts-like-dislike - SQLi"
@@ -343,6 +431,8 @@ app = "posts-like-dislike"
 path = "posts-like-dislike/CVE-2025-5287"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2025-5287.yaml"
+template_source = "official"
 
 [[environment]]
 name = "ioncube-tester-plus - LFI"
@@ -351,6 +441,8 @@ app = "ioncube-tester-plus"
 path = "ioncube-tester-plus/CVE-2025-69411"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["LFI"]
+template = "nuclei-templates/CVE-2025-69411.yaml"
+template_source = "official"
 
 [[environment]]
 name = "file-away - LFI"
@@ -359,6 +451,8 @@ app = "file-away"
 path = "file-away/CVE-2025-2539"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["LFI"]
+template = "nuclei-templates/CVE-2025-2539.yaml"
+template_source = "official"
 
 [[environment]]
 name = "woocommerce-products-filter - LFI"
@@ -367,6 +461,8 @@ app = "woocommerce-products-filter"
 path = "woocommerce-products-filter/CVE-2025-1661"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["LFI"]
+template = "nuclei-templates/CVE-2025-1661.yaml"
+template_source = "official"
 
 [[environment]]
 name = "wp-recall - SQLi"
@@ -375,6 +471,8 @@ app = "wp-recall"
 path = "wp-recall/CVE-2025-1323"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2025-1323.yaml"
+template_source = "official"
 
 [[environment]]
 name = "pie-register - File Upload"
@@ -383,6 +481,8 @@ app = "pie-register"
 path = "pie-register/CVE-2025-34077"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["File Upload"]
+template = "nuclei-templates/CVE-2025-34077.yaml"
+template_source = "official"
 
 [[environment]]
 name = "wpbookit - File Upload"
@@ -391,6 +491,8 @@ app = "wpbookit"
 path = "wpbookit/CVE-2025-6058"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["File Upload"]
+template = "nuclei-templates/CVE-2025-6058.yaml"
+template_source = "official"
 
 [[environment]]
 name = "kubio - LFI"
@@ -399,6 +501,8 @@ app = "kubio"
 path = "kubio/CVE-2025-2294"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["LFI"]
+template = "nuclei-templates/CVE-2025-2294.yaml"
+template_source = "official"
 
 [[environment]]
 name = "instawp-connect - XSS"
@@ -407,6 +511,8 @@ app = "instawp-connect"
 path = "instawp-connect/CVE-2025-2636"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2025-2636.yaml"
+template_source = "official"
 
 [[environment]]
 name = "events-manager - SQLi"
@@ -415,6 +521,8 @@ app = "events-manager"
 path = "events-manager/CVE-2025-6970"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2025-6970.yaml"
+template_source = "official"
 
 [[environment]]
 name = "jobwp - SQLi"
@@ -423,6 +531,8 @@ app = "jobwp"
 path = "jobwp/CVE-2025-2010"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2025-2010.yaml"
+template_source = "official"
 
 [[environment]]
 name = "simple-file-list - File Upload"
@@ -431,6 +541,8 @@ app = "simple-file-list"
 path = "simple-file-list/CVE-2025-34085"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["File Upload"]
+template = "nuclei-templates/CVE-2025-34085.yaml"
+template_source = "official"
 
 [[environment]]
 name = "suretriggers - Auth Bypass"
@@ -439,6 +551,8 @@ app = "suretriggers"
 path = "suretriggers/CVE-2025-3102"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["Auth Bypass"]
+template = "nuclei-templates/CVE-2025-3102.yaml"
+template_source = "official"
 
 [[environment]]
 name = "yoco-payment-gateway - LFI"
@@ -447,6 +561,8 @@ app = "yoco-payment-gateway"
 path = "yoco-payment-gateway/CVE-2025-13801"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["LFI"]
+template = "nuclei-templates/CVE-2025-13801.yaml"
+template_source = "official"
 
 [[environment]]
 name = "the-events-calendar - XSS"
@@ -455,6 +571,8 @@ app = "the-events-calendar"
 path = "the-events-calendar/CVE-2025-9808"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2025-9808.yaml"
+template_source = "official"
 
 [[environment]]
 name = "tlp-team - SQLi"
@@ -463,6 +581,8 @@ app = "tlp-team"
 path = "tlp-team/CVE-2025-14124"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2025-14124.yaml"
+template_source = "official"
 
 [[environment]]
 name = "relevanssi - SQLi"
@@ -471,6 +591,8 @@ app = "relevanssi"
 path = "relevanssi/CVE-2025-4396"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2025-4396.yaml"
+template_source = "official"
 
 [[environment]]
 name = "ti-woocommerce-wishlist - XSS"
@@ -479,6 +601,8 @@ app = "ti-woocommerce-wishlist"
 path = "ti-woocommerce-wishlist/CVE-2025-47577"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2025-47577.yaml"
+template_source = "official"
 
 [[environment]]
 name = "web-directory-free - SQLi"
@@ -487,6 +611,8 @@ app = "web-directory-free"
 path = "web-directory-free/CVE-2024-3552"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2024-3552.yaml"
+template_source = "official"
 
 [[environment]]
 name = "country-state-city-auto-dropdown - SQLi"
@@ -495,6 +621,8 @@ app = "country-state-city-auto-dropdown"
 path = "country-state-city-auto-dropdown/CVE-2024-3495"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2024-3495.yaml"
+template_source = "official"
 
 [[environment]]
 name = "quiz-maker - SQLi"
@@ -503,6 +631,8 @@ app = "quiz-maker"
 path = "quiz-maker/CVE-2024-6028"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2024-6028.yaml"
+template_source = "official"
 
 [[environment]]
 name = "crm-perks-forms - SQLi"
@@ -511,6 +641,8 @@ app = "crm-perks-forms"
 path = "crm-perks-forms/CVE-2024-30498"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2024-30498.yaml"
+template_source = "official"
 
 [[environment]]
 name = "formlift - SQLi"
@@ -519,6 +651,8 @@ app = "formlift"
 path = "formlift/CVE-2024-38773"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2024-38773.yaml"
+template_source = "official"
 
 [[environment]]
 name = "mstore-api - Auth Bypass"
@@ -527,6 +661,8 @@ app = "mstore-api"
 path = "mstore-api/CVE-2023-2734"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["Auth Bypass"]
+template = "nuclei-templates/CVE-2023-2734.yaml"
+template_source = "official"
 
 [[environment]]
 name = "mstore-api - SQLi"
@@ -535,6 +671,8 @@ app = "mstore-api"
 path = "mstore-api/CVE-2023-3077"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2023-3077.yaml"
+template_source = "official"
 
 [[environment]]
 name = "cmp-coming-soon-maintenance - SQLi"
@@ -543,6 +681,8 @@ app = "cmp-coming-soon-maintenance"
 path = "cmp-coming-soon-maintenance/CVE-2022-0188"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2022-0188.yaml"
+template_source = "official"
 
 [[environment]]
 name = "check-email - XSS"
@@ -551,6 +691,8 @@ app = "check-email"
 path = "check-email/CVE-2022-0220"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-0220.yaml"
+template_source = "official"
 
 [[environment]]
 name = "peepso-core - XSS"
@@ -559,6 +701,8 @@ app = "peepso-core"
 path = "peepso-core/CVE-2022-0234"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-0234.yaml"
+template_source = "official"
 
 [[environment]]
 name = "presto-player - XSS"
@@ -567,6 +711,8 @@ app = "presto-player"
 path = "presto-player/CVE-2022-0250"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-0250.yaml"
+template_source = "official"
 
 [[environment]]
 name = "dynamic-featured-image - XSS"
@@ -575,6 +721,8 @@ app = "dynamic-featured-image"
 path = "dynamic-featured-image/CVE-2022-0533"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-0533.yaml"
+template_source = "official"
 
 [[environment]]
 name = "formidable - XSS"
@@ -583,6 +731,8 @@ app = "formidable"
 path = "formidable/CVE-2022-0591"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-0591.yaml"
+template_source = "official"
 
 [[environment]]
 name = "caldera-forms - XSS"
@@ -591,6 +741,8 @@ app = "caldera-forms"
 path = "caldera-forms/CVE-2022-0592"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-0592.yaml"
+template_source = "official"
 
 [[environment]]
 name = "woo-discount-rules - XSS"
@@ -599,6 +751,8 @@ app = "woo-discount-rules"
 path = "woo-discount-rules/CVE-2022-0651"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-0651.yaml"
+template_source = "official"
 
 [[environment]]
 name = "profile-builder - XSS"
@@ -607,6 +761,8 @@ app = "profile-builder"
 path = "profile-builder/CVE-2022-0653"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-0653.yaml"
+template_source = "official"
 
 [[environment]]
 name = "cool-timeline - XSS"
@@ -615,6 +771,8 @@ app = "cool-timeline"
 path = "cool-timeline/CVE-2022-0783"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-0783.yaml"
+template_source = "official"
 
 [[environment]]
 name = "arprice-responsive-pricing-table - SQLi"
@@ -623,6 +781,8 @@ app = "arprice-responsive-pricing-table"
 path = "arprice-responsive-pricing-table/CVE-2022-0867"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2022-0867.yaml"
+template_source = "official"
 
 [[environment]]
 name = "updraft-backup-post-email - XSS"
@@ -631,6 +791,8 @@ app = "updraft-backup-post-email"
 path = "updraft-backup-post-email/CVE-2022-1029"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-1029.yaml"
+template_source = "official"
 
 [[environment]]
 name = "wpcargo-track-and-trace - LFI"
@@ -639,6 +801,8 @@ app = "wpcargo-track-and-trace"
 path = "wpcargo-track-and-trace/CVE-2022-1221"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["LFI"]
+template = "nuclei-templates/CVE-2022-1221.yaml"
+template_source = "official"
 
 [[environment]]
 name = "additional-order-filters-for-woocommerce - XSS"
@@ -647,6 +811,8 @@ app = "additional-order-filters-for-woocommerce"
 path = "additional-order-filters-for-woocommerce/CVE-2022-1390"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
+template = "nuclei-templates/CVE-2022-1390.yaml"
+template_source = "official"
 
 [[environment]]
 name = "site-offline-or-coming-soon-or-maintenance-mode - SQLi"
@@ -655,3 +821,317 @@ app = "site-offline-or-coming-soon-or-maintenance-mode"
 path = "site-offline-or-coming-soon-or-maintenance-mode/CVE-2022-1580"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["SQLi"]
+template = "nuclei-templates/CVE-2022-1580.yaml"
+template_source = "official"
+
+[[environment]]
+name = "ads-pro - SQLi"
+cve = ["CVE-2024-13322"]
+app = "ads-pro"
+path = "ads-pro/CVE-2024-13322"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+template = ""
+template_source = "none"
+
+[[environment]]
+name = "all-in-one-wp-migration - Information Disclosure"
+cve = ["CVE-2024-8852"]
+app = "all-in-one-wp-migration"
+path = "all-in-one-wp-migration/CVE-2024-8852"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["Information Disclosure"]
+template = "nuclei-templates/CVE-2024-8852.yaml"
+template_source = "official"
+notes = "base/wordpress/6.4 entrypoint 按 slug 特判注入 storage/error.log（含 Number/Message）+ storage/.htaccess（AddType text/plain .log）。全新环境该日志文件不会自动生成，且 Debian Apache 默认不给 .log 任何 Content-Type，官方模板第二步要求 contains(header,'text/plain')，故两者缺一不可。"
+
+[[environment]]
+name = "backup-backup - RCE"
+cve = ["CVE-2023-6553"]
+app = "backup-backup"
+path = "backup-backup/CVE-2023-6553"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["RCE"]
+template = "nuclei-templates/CVE-2023-6553.yaml"
+template_source = "official"
+
+[[environment]]
+name = "canto - RFI"
+cve = ["CVE-2023-3452"]
+app = "canto"
+path = "canto/CVE-2023-3452"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["RFI", "RCE"]
+template = ""
+template_source = "none"
+
+[[environment]]
+name = "chart-builder - LFI"
+cve = ["CVE-2024-10571"]
+app = "chart-builder"
+path = "chart-builder/CVE-2024-10571"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["LFI"]
+template = "nuclei-templates/CVE-2024-10571.yaml"
+template_source = "official"
+
+[[environment]]
+name = "elementor - RCE"
+cve = ["CVE-2023-48777"]
+app = "elementor"
+path = "elementor/CVE-2023-48777"
+dockerfile = {"vulhub/wordpress:6.4" = "elementor/CVE-2023-48777"}
+tags = ["RCE", "File Upload"]
+template = "nuclei-templates/CVE-2023-48777.yaml"
+template_source = "official"
+
+[[environment]]
+name = "extensive-vc-addon - LFI"
+cve = ["CVE-2023-0159"]
+app = "extensive-vc-addon"
+path = "extensive-vc-addon/CVE-2023-0159"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["LFI"]
+template = "nuclei-templates/CVE-2023-0159.yaml"
+template_source = "official"
+
+[[environment]]
+name = "gift-cards-woocommerce - SQLi"
+cve = ["CVE-2023-28662"]
+app = "gift-cards-woocommerce"
+path = "gift-cards-woocommerce/CVE-2023-28662"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+template = ""
+template_source = "none"
+
+[[environment]]
+name = "html5-video-player - SQLi"
+cve = ["CVE-2024-5522"]
+app = "html5-video-player"
+path = "html5-video-player/CVE-2024-5522"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+template = "nuclei-templates/CVE-2024-5522.yaml"
+template_source = "official"
+
+[[environment]]
+name = "import-xml-feed - RCE"
+cve = ["CVE-2023-4521"]
+app = "import-xml-feed"
+path = "import-xml-feed/CVE-2023-4521"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["RCE"]
+template = ""
+template_source = "none"
+
+[[environment]]
+name = "job-portal - SQLi"
+cve = ["CVE-2023-4490"]
+app = "job-portal"
+path = "job-portal/CVE-2023-4490"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+template = ""
+template_source = "none"
+
+[[environment]]
+name = "kivicare-clinic-management-system - SQLi"
+cve = ["CVE-2022-0786"]
+app = "kivicare-clinic-management-system"
+path = "kivicare-clinic-management-system/CVE-2022-0786"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+template = ""
+template_source = "none"
+
+[[environment]]
+name = "kivicare-clinic-management-system - SQLi"
+cve = ["CVE-2024-11728"]
+app = "kivicare-clinic-management-system"
+path = "kivicare-clinic-management-system/CVE-2024-11728"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+template = ""
+template_source = "none"
+
+[[environment]]
+name = "learnpress - SQLi"
+cve = ["CVE-2024-8522"]
+app = "learnpress"
+path = "learnpress/CVE-2024-8522"
+dockerfile = {"vulhub/wordpress:6.4" = "learnpress/CVE-2024-8522"}
+tags = ["SQLi"]
+template = "nuclei-templates/CVE-2024-8522.yaml"
+template_source = "official"
+
+[[environment]]
+name = "login-configurator - XSS"
+cve = ["CVE-2023-1893"]
+app = "login-configurator"
+path = "login-configurator/CVE-2023-1893"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["XSS"]
+template = "nuclei-templates/CVE-2023-1893.yaml"
+template_source = "official"
+
+[[environment]]
+name = "mstore-api - Auth Bypass"
+cve = ["CVE-2023-2732"]
+app = "mstore-api"
+path = "mstore-api/CVE-2023-2732"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["Auth Bypass"]
+template = "nuclei-templates/CVE-2023-2732.yaml"
+template_source = "official"
+
+[[environment]]
+name = "notificationx - SQLi"
+cve = ["CVE-2024-1698"]
+app = "notificationx"
+path = "notificationx/CVE-2024-1698"
+dockerfile = {"vulhub/wordpress:6.4" = "notificationx/CVE-2024-1698"}
+tags = ["SQLi"]
+template = "nuclei-templates/CVE-2024-1698.yaml"
+template_source = "official"
+
+[[environment]]
+name = "really-simple-ssl - Auth Bypass"
+cve = ["CVE-2024-10924"]
+app = "really-simple-ssl"
+path = "really-simple-ssl/CVE-2024-10924"
+dockerfile = {"vulhub/wordpress:6.4" = "really-simple-ssl/CVE-2024-10924"}
+tags = ["Auth Bypass"]
+template = "nuclei-templates/CVE-2024-10924.yaml"
+template_source = "official"
+
+[[environment]]
+name = "royal-elementor-addons - RCE"
+cve = ["CVE-2023-5360"]
+app = "royal-elementor-addons"
+path = "royal-elementor-addons/CVE-2023-5360"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["RCE"]
+template = "nuclei-templates/CVE-2023-5360.yaml"
+template_source = "official"
+
+[[environment]]
+name = "simple-file-list - LFI"
+cve = ["CVE-2022-1119"]
+app = "simple-file-list"
+path = "simple-file-list/CVE-2022-1119"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["LFI"]
+template = "nuclei-templates/CVE-2022-1119.yaml"
+template_source = "official"
+
+[[environment]]
+name = "stripe-payments - SQLi"
+cve = ["CVE-2024-0705"]
+app = "stripe-payments"
+path = "stripe-payments/CVE-2024-0705"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi", "RCE"]
+template = ""
+template_source = "none"
+
+[[environment]]
+name = "swift-performance-lite - LFI"
+cve = ["CVE-2024-10516"]
+app = "swift-performance-lite"
+path = "swift-performance-lite/CVE-2024-10516"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["LFI"]
+template = "nuclei-templates/CVE-2024-10516.yaml"
+template_source = "official"
+
+[[environment]]
+name = "tenweb-speed-optimizer - Unknown"
+cve = ["CVE-2023-5559"]
+app = "tenweb-speed-optimizer"
+path = "tenweb-speed-optimizer/CVE-2023-5559"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["Unknown"]
+template = ""
+template_source = "none"
+
+[[environment]]
+name = "ti-woocommerce-wishlist - SQLi"
+cve = ["CVE-2022-0412"]
+app = "ti-woocommerce-wishlist"
+path = "ti-woocommerce-wishlist/CVE-2022-0412"
+dockerfile = {"vulhub/wordpress:6.4" = "ti-woocommerce-wishlist/CVE-2022-0412"}
+tags = ["SQLi", "RCE"]
+template = "nuclei-templates/CVE-2022-0412.yaml"
+template_source = "official"
+
+[[environment]]
+name = "ultimate-member - Auth Bypass"
+cve = ["CVE-2023-3460"]
+app = "ultimate-member"
+path = "ultimate-member/CVE-2023-3460"
+dockerfile = {"vulhub/wordpress:6.4" = "ultimate-member/CVE-2023-3460"}
+tags = ["Auth Bypass"]
+template = "nuclei-templates/CVE-2023-3460.yaml"
+template_source = "official"
+
+[[environment]]
+name = "wd-google-maps - SQLi"
+cve = ["CVE-2023-0037"]
+app = "wd-google-maps"
+path = "wd-google-maps/CVE-2023-0037"
+dockerfile = {"vulhub/wordpress:6.4" = "wd-google-maps/CVE-2023-0037"}
+tags = ["SQLi"]
+template = "nuclei-templates/CVE-2023-0037.yaml"
+template_source = "official"
+
+[[environment]]
+name = "wp-file-upload - LFI"
+cve = ["CVE-2024-9047"]
+app = "wp-file-upload"
+path = "wp-file-upload/CVE-2024-9047"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["LFI", "File Upload"]
+template = "nuclei-templates/CVE-2024-9047.yaml"
+template_source = "official"
+
+[[environment]]
+name = "wp-shoutbox-live-chat - SQLi"
+cve = ["CVE-2023-1020"]
+app = "wp-shoutbox-live-chat"
+path = "wp-shoutbox-live-chat/CVE-2023-1020"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+template = "nuclei-templates/CVE-2023-1020.yaml"
+template_source = "official"
+
+[[environment]]
+name = "wp-stats-manager - SQLi"
+cve = ["CVE-2023-0600"]
+app = "wp-stats-manager"
+path = "wp-stats-manager/CVE-2023-0600"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["SQLi"]
+template = "nuclei-templates/CVE-2023-0600.yaml"
+template_source = "official"
+
+[[environment]]
+name = "wp-umbrella - LFI"
+cve = ["CVE-2024-12209"]
+app = "wp-umbrella"
+path = "wp-umbrella/CVE-2024-12209"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["LFI"]
+template = ""
+template_source = "none"
+
+[[environment]]
+name = "newsletters-lite <= 4.13 - Unauthenticated Time-Based SQL Injection"
+cve = ["CVE-2026-3018"]
+app = "newsletters-lite"
+path = "newsletters-lite/CVE-2026-3018"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["sqli", "time-based", "unauth"]
+template = "CVE-2026-3018.yaml"
+template_source = "official"
+notes = "MU-plugin 强制激活; entrypoint 手动 check_tables + 创建 newsletter-management 页面"
