@@ -117,9 +117,10 @@ name = "Button Generator <= 2.3.2 - Arbitrary File Inclusion via CSRF"
 cve = ["CVE-2021-25052"]
 app = "Button Generator"
 path = "button-generation/CVE-2021-25052"
-dockerfile = {"vulhub/button-generation:2.3.2" = "base/button-generation/2.3.2"}
-tags = ["CSRF", "File Inclusion"]
+dockerfile = {"vulhub/button-generation:2.3.2" = "button-generation/CVE-2021-25052"}
+tags = ["CSRF", "RFI"]
 template = "nuclei-templates/CVE-2021-25052.yaml"
+notes = "OOB 模板（interactsh），需手动 curl 验证；MU-plugin 强制激活"
 template_source = "official"
 
 [[environment]]
@@ -669,10 +670,11 @@ name = "mstore-api - SQLi"
 cve = ["CVE-2023-3077"]
 app = "mstore-api"
 path = "mstore-api/CVE-2023-3077"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+dockerfile = {"vulhub/mstore-api:3.9.7" = "mstore-api/CVE-2023-3077"}
 tags = ["SQLi"]
 template = "nuclei-templates/CVE-2023-3077.yaml"
 template_source = "official"
+notes = "MU-plugin 强制激活; 无认证; 无需额外数据初始化"
 
 [[environment]]
 name = "cmp-coming-soon-maintenance - SQLi"
@@ -705,20 +707,20 @@ template = "nuclei-templates/CVE-2022-0234.yaml"
 template_source = "official"
 
 [[environment]]
-name = "presto-player - XSS"
+name = "Redirection for Contact Form 7 < 2.5.0 - Reflected XSS"
 cve = ["CVE-2022-0250"]
-app = "presto-player"
-path = "presto-player/CVE-2022-0250"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+app = "Redirection for Contact Form 7"
+path = "wpcf7-redirect/CVE-2022-0250"
+dockerfile = {"vulhub/wpcf7-redirect:2.4.0" = "wpcf7-redirect/CVE-2022-0250"}
 tags = ["XSS"]
 template = "nuclei-templates/CVE-2022-0250.yaml"
 template_source = "official"
 
 [[environment]]
-name = "dynamic-featured-image - XSS"
+name = "ditty-news-ticker <= 3.0.14 - Reflected XSS"
 cve = ["CVE-2022-0533"]
-app = "dynamic-featured-image"
-path = "dynamic-featured-image/CVE-2022-0533"
+app = "ditty-news-ticker"
+path = "ditty-news-ticker/CVE-2022-0533"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
 tags = ["XSS"]
 template = "nuclei-templates/CVE-2022-0533.yaml"
@@ -1056,14 +1058,15 @@ template = ""
 template_source = "none"
 
 [[environment]]
-name = "ti-woocommerce-wishlist - SQLi"
+name = "ti-woocommerce-wishlist <= 1.40.0 - Unauthenticated Time-Based SQL Injection"
 cve = ["CVE-2022-0412"]
 app = "ti-woocommerce-wishlist"
 path = "ti-woocommerce-wishlist/CVE-2022-0412"
-dockerfile = {"vulhub/wordpress:6.4" = "ti-woocommerce-wishlist/CVE-2022-0412"}
-tags = ["SQLi", "RCE"]
+dockerfile = {"vulhub/ti-woocommerce-wishlist:1.40.0" = "ti-woocommerce-wishlist/CVE-2022-0412"}
+tags = ["SQLi", "time-based", "unauth"]
 template = "nuclei-templates/CVE-2022-0412.yaml"
 template_source = "official"
+notes = "MU-plugin 强制激活; WooCommerce 8.5.0 依赖; Dockerfile 预下载 zip 绕过 wp.org 延迟"
 
 [[environment]]
 name = "ultimate-member - Auth Bypass"

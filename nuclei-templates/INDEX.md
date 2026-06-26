@@ -17,7 +17,9 @@
 | CVE-2022-0148 | Reflected XSS | Yes | No | mystickyelements/CVE-2022-0148 | 8110 |
 | CVE-2022-0169 | SQLi (union-based) | No | No | photo-gallery/CVE-2022-0169 | 8103 |
 | CVE-2022-0201 | Reflected XSS | No | No | permalink-manager/CVE-2022-0201 | 8091 |
+| CVE-2022-0250 | Reflected XSS | Yes | No | wpcf7-redirect/CVE-2022-0250 | 8204 |
 | CVE-2022-0271 | Reflected XSS | No | No | learnpress/CVE-2022-0271 | 8092 |
+| CVE-2022-0412 | SQLi (time-based) | No | No | ti-woocommerce-wishlist/CVE-2022-0412 | 8205 |
 | CVE-2022-0533 | Reflected XSS | Yes | No | ditty-news-ticker/CVE-2022-0533 | 8200 |
 | CVE-2022-0952 | CSRF | No | No | sitemap-by-click5/CVE-2022-0952 | 8094 |
 | CVE-2022-1724 | Reflected XSS | No | No | simple-membership/CVE-2022-1724 | 8111 |
@@ -44,9 +46,9 @@
 
 ## 统计
 
-- 总计: 34 个模板
-- 无需认证: 23 个
-- 需认证 (username/password): 11 个 (CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2022-0533, CVE-2024-7313, CVE-2024-13496, CVE-2026-7106, CVE-2026-7252, CVE-2026-7467, CVE-2026-7641)
+- 总计: 35 个模板
+- 无需认证: 24 个
+- 需认证 (username/password): 12 个 (CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2022-0250, CVE-2022-0533, CVE-2024-7313, CVE-2024-13496, CVE-2026-7106, CVE-2026-7252, CVE-2026-7467, CVE-2026-7641)
 - 使用 OOB (interactsh): 2 个 (CVE-2021-25052, CVE-2024-2667)
 
 ## 使用方法
