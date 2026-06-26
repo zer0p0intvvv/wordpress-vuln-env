@@ -656,14 +656,15 @@ template = "nuclei-templates/CVE-2024-38773.yaml"
 template_source = "official"
 
 [[environment]]
-name = "mstore-api - Auth Bypass"
+name = "MStore API <= 3.9.1 - Authentication Bypass"
 cve = ["CVE-2023-2734"]
 app = "mstore-api"
 path = "mstore-api/CVE-2023-2734"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+dockerfile = {"vulhub/mstore-api:3.9.1" = "mstore-api/CVE-2023-2734"}
 tags = ["Auth Bypass"]
 template = "nuclei-templates/CVE-2023-2734.yaml"
 template_source = "official"
+notes = "MU-plugin 强制激活; entrypoint 设置 mstore_purchase_code option; Dockerfile 预下载插件 zip"
 
 [[environment]]
 name = "mstore-api - SQLi"

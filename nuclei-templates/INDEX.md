@@ -27,6 +27,7 @@
 | CVE-2022-4059 | SQLi (time-based) | No | No | cryptocurrency-widgets-pack/CVE-2022-4059 | 8104 |
 | CVE-2023-23488 | SQLi (time-based) | No | No | paid-member-subscriptions/CVE-2023-23488 | 8090 |
 | CVE-2023-2732 | Auth Bypass | No | No | mstore-api/CVE-2023-2732 | 8138 |
+| CVE-2023-2734 | Auth Bypass | No | No | mstore-api/CVE-2023-2734 | 8210 |
 | CVE-2023-3077 | SQLi (time-based) | No | No | mstore-api/CVE-2023-3077 | 8211 |
 | CVE-2023-6360 | SQLi (time-based) | No | No | my-calendar/CVE-2023-6360 | 8105 |
 | CVE-2024-13496 | SQLi (time-based) | Yes | No | gamepress/CVE-2024-13496 | 8106 |
@@ -46,8 +47,8 @@
 
 ## 统计
 
-- 总计: 35 个模板
-- 无需认证: 24 个
+- 总计: 36 个模板
+- 无需认证: 25 个
 - 需认证 (username/password): 12 个 (CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2022-0250, CVE-2022-0533, CVE-2024-7313, CVE-2024-13496, CVE-2026-7106, CVE-2026-7252, CVE-2026-7467, CVE-2026-7641)
 - 使用 OOB (interactsh): 2 个 (CVE-2021-25052, CVE-2024-2667)
 
