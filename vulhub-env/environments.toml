@@ -1082,14 +1082,15 @@ template = "nuclei-templates/CVE-2023-3460.yaml"
 template_source = "official"
 
 [[environment]]
-name = "wd-google-maps - SQLi"
+name = "wd-google-maps <= 1.0.72 - Unauthenticated SQL Injection (Time-Based)"
 cve = ["CVE-2023-0037"]
 app = "wd-google-maps"
 path = "wd-google-maps/CVE-2023-0037"
 dockerfile = {"vulhub/wordpress:6.4" = "wd-google-maps/CVE-2023-0037"}
-tags = ["SQLi"]
+tags = ["SQLi", "time-based", "unauth"]
 template = "nuclei-templates/CVE-2023-0037.yaml"
 template_source = "official"
+notes = "MU-plugin 强制激活; entrypoint 手动创建 gmwd_maps/gmwd_markers 表 + 默认数据; 静态首页含 Google_Maps_WD 短代码确保 \"wd-google-maps\" 出现在响应体"
 
 [[environment]]
 name = "wp-file-upload - LFI"
