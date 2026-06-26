@@ -974,10 +974,11 @@ name = "login-configurator - XSS"
 cve = ["CVE-2023-1893"]
 app = "login-configurator"
 path = "login-configurator/CVE-2023-1893"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+dockerfile = {"vulhub/login-configurator:2.1" = "login-configurator/CVE-2023-1893"}
 tags = ["XSS"]
 template = "nuclei-templates/CVE-2023-1893.yaml"
 template_source = "official"
+notes = "MU-plugin 强制激活; 自定义 entrypoint 创建 post 供 internal matcher 匹配"
 
 [[environment]]
 name = "mstore-api - Auth Bypass"

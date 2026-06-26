@@ -26,6 +26,7 @@
 | CVE-2022-1724 | Reflected XSS | No | No | simple-membership/CVE-2022-1724 | 8111 |
 | CVE-2022-3982 | File Upload RCE | No | No | booking-calendar/CVE-2022-3982 | 8108 |
 | CVE-2022-4059 | SQLi (time-based) | No | No | cryptocurrency-widgets-pack/CVE-2022-4059 | 8104 |
+| CVE-2023-1893 | Reflected XSS | Yes | No | login-configurator/CVE-2023-1893 | 8131 |
 | CVE-2023-23488 | SQLi (time-based) | No | No | paid-member-subscriptions/CVE-2023-23488 | 8090 |
 | CVE-2023-2732 | Auth Bypass | No | No | mstore-api/CVE-2023-2732 | 8138 |
 | CVE-2023-2734 | Auth Bypass | No | No | mstore-api/CVE-2023-2734 | 8210 |
