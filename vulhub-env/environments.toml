@@ -675,7 +675,7 @@ dockerfile = {"vulhub/mstore-api:3.9.7" = "mstore-api/CVE-2023-3077"}
 tags = ["SQLi"]
 template = "nuclei-templates/CVE-2023-3077.yaml"
 template_source = "official"
-notes = "MU-plugin 强制激活; 无认证; 无需额外数据初始化"
+notes = "MU-plugin 强制激活; entrypoint 绕过 isPurchaseCodeVerified() 设置 mstore_active_* option; 创建 wc_appointment_relationships 表确保 SLEEP payload 触发"
 
 [[environment]]
 name = "cmp-coming-soon-maintenance - SQLi"
