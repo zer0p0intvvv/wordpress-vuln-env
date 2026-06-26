@@ -21,6 +21,7 @@
 | CVE-2022-0271 | Reflected XSS | No | No | learnpress/CVE-2022-0271 | 8092 |
 | CVE-2022-0412 | SQLi (time-based) | No | No | ti-woocommerce-wishlist/CVE-2022-0412 | 8205 |
 | CVE-2022-0533 | Reflected XSS | Yes | No | ditty-news-ticker/CVE-2022-0533 | 8200 |
+| CVE-2022-0867 | SQLi (time-based) | No | No | arprice-responsive-pricing-table/CVE-2022-0867 | 8196 |
 | CVE-2022-0952 | CSRF | No | No | sitemap-by-click5/CVE-2022-0952 | 8094 |
 | CVE-2022-1724 | Reflected XSS | No | No | simple-membership/CVE-2022-1724 | 8111 |
 | CVE-2022-3982 | File Upload RCE | No | No | booking-calendar/CVE-2022-3982 | 8108 |

@@ -782,10 +782,11 @@ name = "arprice-responsive-pricing-table - SQLi"
 cve = ["CVE-2022-0867"]
 app = "arprice-responsive-pricing-table"
 path = "arprice-responsive-pricing-table/CVE-2022-0867"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+dockerfile = {"vulhub/arprice-responsive-pricing-table:3.6.0" = "arprice-responsive-pricing-table/CVE-2022-0867"}
 tags = ["SQLi"]
 template = "nuclei-templates/CVE-2022-0867.yaml"
 template_source = "official"
+notes = "MU-plugin 强制激活; 自定义 entrypoint 创建 arplite_arprice_analytics 表; 通用级 entrypoint 不创建该表导致 AJAX SQLi 静默失败"
 
 [[environment]]
 name = "updraft-backup-post-email - XSS"
