@@ -19,3 +19,8 @@ Thumbs.db
 # Claude
 .claude/
 .omx/
+
+# Local docker cache artifacts
+docker-cache/plugins/*.zip
+docker-cache/tools/wp-cli.phar
+docker-cache/tools/wp    # wp-cli 二进制副本（从宿主复制）

@@ -11,6 +11,10 @@ WP_PLUGIN_SLUG="${WORDPRESS_PLUGIN_SLUG:-}"
 WP_PLUGIN_VERSION="${WORDPRESS_PLUGIN_VERSION:-}"
 DEBUG_MODE="${DEBUG_MODE:-false}"
 
+# shellcheck disable=SC1091
+source /docker-cache/lib/cache.sh
+ensure_wp_cli
+
 # Start the original WordPress entrypoint in the background.
 # Pre-create MU-plugin files for known plugins that need forced module loading
 mkdir -p /var/www/html/wp-content/mu-plugins
@@ -63,9 +67,20 @@ if [ "$DEBUG_MODE" = "true" ]; then
 fi
 
 echo "Waiting for MySQL..."
+# 解析 WORDPRESS_DB_HOST（格式 host:port 或纯 host）
+DB_HOST="${WORDPRESS_DB_HOST%%:*}"
+DB_PORT="${WORDPRESS_DB_HOST##*:}"
+[ "$DB_PORT" = "$WORDPRESS_DB_HOST" ] && DB_PORT=3306
+
 DB_READY=0
-for i in $(seq 1 60); do
-    if wp db check --allow-root --quiet 2>/dev/null; then
+for i in $(seq 1 120); do
+    # mysqladmin 不支持 host:port 格式，需分拆 -h / -P
+    if mysqladmin ping -h"$DB_HOST" -P"$DB_PORT" -u"$WORDPRESS_DB_USER" -p"$WORDPRESS_DB_PASSWORD" --silent 2>/dev/null; then
+        DB_READY=1
+        break
+    fi
+    # 每 10 轮穿插一次 wp db check 作为 fallback
+    if [ $((i % 10)) -eq 0 ] && wp db check --allow-root --quiet 2>/dev/null; then
         DB_READY=1
         break
     fi
@@ -73,7 +88,7 @@ for i in $(seq 1 60); do
 done
 
 if [ "$DB_READY" != "1" ]; then
-    echo "ERROR: MySQL is not ready after 120 seconds." >&2
+    echo "ERROR: MySQL is not ready after 240 seconds." >&2
     exit 1
 fi
 
@@ -101,50 +116,10 @@ wp option update home "$WP_URL" --allow-root >/dev/null
 wp option update permalink_structure '/%postname%/' --allow-root >/dev/null
 wp rewrite flush --allow-root >/dev/null || true
 
-# Install and activate plugin (with CDN fallback for closed/removed plugins)
+# Install and activate plugin from local cache
 if [ -n "$WP_PLUGIN_SLUG" ]; then
-    PLUGIN_DIR="/var/www/html/wp-content/plugins/$WP_PLUGIN_SLUG"
-    VERSION="${WP_PLUGIN_VERSION:-}"
-    INSTALLED=0
-
-    # Already on disk (e.g. plugin-specific base image)
-    if [ -d "$PLUGIN_DIR" ]; then
-        echo "Plugin $WP_PLUGIN_SLUG already present, activating..."
-        wp plugin activate "$WP_PLUGIN_SLUG" --allow-root && INSTALLED=1
-    fi
-
-    # Try wp plugin install (WP.org API)
-    if [ "$INSTALLED" != "1" ]; then
-        echo "Installing plugin from WP.org: $WP_PLUGIN_SLUG ${VERSION:-(latest)}"
-        INSTALL_CMD="wp plugin install $WP_PLUGIN_SLUG --allow-root --activate"
-        [ -n "$VERSION" ] && INSTALL_CMD="$INSTALL_CMD --version=$VERSION"
-        if eval "$INSTALL_CMD" 2>/dev/null; then
-            INSTALLED=1
-        else
-            echo "WP.org API failed, trying CDN download..."
-        fi
-    fi
-
-    # Fallback: download zip from WP.org CDN (handles closed/removed plugins + SSL issues)
-    if [ "$INSTALLED" != "1" ] && [ -n "$VERSION" ]; then
-        CDN_URL="https://downloads.wordpress.org/plugin/${WP_PLUGIN_SLUG}.${VERSION}.zip"
-        CDN_FILE="/tmp/${WP_PLUGIN_SLUG}.${VERSION}.zip"
-        echo "Downloading $CDN_URL"
-        if curl -fsSL --retry 3 --max-time 30 -o "$CDN_FILE" "$CDN_URL"; then
-            unzip -oq "$CDN_FILE" -d /var/www/html/wp-content/plugins/
-            chown -R www-data:www-data "$PLUGIN_DIR" 2>/dev/null || true
-            wp plugin activate "$WP_PLUGIN_SLUG" --allow-root && INSTALLED=1
-            rm -f "$CDN_FILE"
-        else
-            echo "CDN download failed for $WP_PLUGIN_SLUG $VERSION"
-        fi
-    fi
-
-    if [ "$INSTALLED" = "1" ]; then
-        echo "Plugin $WP_PLUGIN_SLUG activated."
-    else
-        echo "WARNING: Could not install plugin $WP_PLUGIN_SLUG"
-    fi
+    install_plugin_from_local_cache "$WP_PLUGIN_SLUG" "${WP_PLUGIN_VERSION:-}"
+    echo "Plugin $WP_PLUGIN_SLUG activated."
 fi
 
 echo "Setup complete. WordPress is running at $WP_URL"
