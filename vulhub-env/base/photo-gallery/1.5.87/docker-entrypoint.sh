@@ -89,10 +89,15 @@ if [ -n "$WP_PLUGIN_SLUG" ]; then
     eval "$INSTALL_CMD" || true
 fi
 
-# Create sample gallery for SQLi testing (CVE-2022-0169)
-echo "Creating sample gallery..."
-wp db query "INSERT INTO wp_bwg_gallery (name, published, gallery_type) VALUES ('Test Gallery', 1, 'thumbnail')" --allow-root 2>/dev/null || true
-wp db query "INSERT INTO wp_bwg_shortcode (id, tagtext) VALUES (1, '[Best_Wordpress_Gallery id=\"1\"]')" --allow-root 2>/dev/null || true
+# Initialize plugin database tables and sample gallery (CVE-2022-0169)
+echo "Initializing plugin tables and sample gallery..."
+wp --allow-root eval '
+require_once "/var/www/html/wp-content/plugins/photo-gallery/insert.php";
+BWGInsert::tables();
+global $wpdb;
+$wpdb->query("INSERT INTO {$wpdb->prefix}bwg_gallery (name, published, gallery_type) VALUES (\"Test Gallery\", 1, \"thumbnail\")");
+$wpdb->query("INSERT INTO {$wpdb->prefix}bwg_shortcode (id, tagtext) VALUES (1, \"[Best_Wordpress_Gallery id=1]\")");
+' 2>/dev/null || true
 
 echo "Setup complete. WordPress is running at $WP_URL"
 [ "$DEBUG_MODE" = "true" ] && echo "Debug logs: /var/www/html/wp-content/debug.log"
