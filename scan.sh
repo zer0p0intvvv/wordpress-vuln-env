@@ -317,6 +317,11 @@ run_one_cve() {
     esac
   done
 
+  if [ "$is_oob" -eq 1 ]; then
+    printf 'SKIP\t%s\t%s\n' "" "OOB 模板，需手动 curl 验证" > "$job_result"
+    return 0
+  fi
+
   if [ "$do_skip" -eq 1 ]; then
     printf 'SKIP\t%s\t%s\n' "" "conf skip" > "$job_result"
     return 0
