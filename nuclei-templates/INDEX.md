@@ -40,6 +40,7 @@
 | CVE-2023-2734 | Auth Bypass | No | No | mstore-api/CVE-2023-2734 | 8210 |
 | CVE-2023-3077 | SQLi (time-based) | No | No | mstore-api/CVE-2023-3077 | 8211 |
 | CVE-2023-3460 | Privilege Escalation | No | No | ultimate-member/CVE-2023-3460 | 8130 |
+| CVE-2023-48777 | File Upload/RCE | Yes | No | elementor/CVE-2023-48777 | 8139 |
 | CVE-2023-5360 | File Upload RCE | No | No | royal-elementor-addons/CVE-2023-5360 | 8140 |
 | CVE-2023-6360 | SQLi (time-based) | No | No | my-calendar/CVE-2023-6360 | 8105 |
 | CVE-2024-10571 | LFI (File Read) | No | No | chart-builder/CVE-2024-10571 | 8121 |
@@ -63,9 +64,9 @@
 
 ## 统计
 
-- 总计: 52 个模板
+- 总计: 53 个模板
 - 无需认证: 37 个
-- 需认证 (username/password): 14 个 (CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2022-0250, CVE-2022-0533, CVE-2022-1029, CVE-2023-1893, CVE-2024-7313, CVE-2024-13496, CVE-2026-7106, CVE-2026-7252, CVE-2026-7467, CVE-2026-7641)
+- 需认证 (username/password): 15 个 (CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2022-0250, CVE-2022-0533, CVE-2022-1029, CVE-2023-1893, CVE-2023-48777, CVE-2024-7313, CVE-2024-13496, CVE-2026-7106, CVE-2026-7252, CVE-2026-7467, CVE-2026-7641)
 - 使用 OOB (interactsh): 3 个 (CVE-2021-25052, CVE-2022-0591, CVE-2024-2667)
 
 ## 使用方法
