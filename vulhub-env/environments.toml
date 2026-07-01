@@ -228,7 +228,7 @@ name = "myStickyElements <= 2.0.3 - Reflected XSS"
 cve = ["CVE-2022-0148"]
 app = "myStickyElements"
 path = "mystickyelements/CVE-2022-0148"
-dockerfile = {"vulhub/mystickyelements:2.0.3" = "base/mystickyelements/2.0.3"}
+dockerfile = {"vulhub/mystickyelements:2.0.3" = "mystickyelements/CVE-2022-0148"}
 tags = ["XSS"]
 template = "nuclei-templates/CVE-2022-0148.yaml"
 template_source = "official"
