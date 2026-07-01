@@ -1,0 +1,21 @@
+[15:59:54] nuclei: /Users/zer0p0int/工具/nuclei (v3.9.0)
+[15:59:54] 日志目录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-155952
+[15:59:54] 本次共 1 个环境 | 并行度: 4 | 重试: 2次/5s间隔
+[15:59:54] 预构建: 是 | 续跑: 是
+[15:59:54] 续跑模式：跳过已 PASS 的 CVE
+[15:59:54] ━━━ 预构建基础镜像 ━━━
+[15:59:54] 预构建基础镜像 (1): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/dukapress/2.5.4
+[16:00:08] 预构建完成，共 1 个基础镜像
+[16:00:08] ━━━ 开始并行测试 (4 并发) ━━━
+[16:00:08] [########################] 100% (1/1)  CVE-2014-8799  :8097 [official]
+[16:00:08] 等待剩余任务完成...
+[16:00:09] ━━━ 汇总结果 ━━━
+[16:00:09] ERROR CVE-2014-8799 ()
+
+==================== 汇总 ====================
+总计 1  |  PASS 0  FAIL 0  SKIP 0  ERROR 1
+明细: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-155952/summary.txt
+判定记录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-155952/results.jsonl
+原始 jsonl: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-155952/raw/
+[16:00:09] 收到中断信号，清理已启动的容器...
+[16:00:23]   已清理: CVE-2014-8799

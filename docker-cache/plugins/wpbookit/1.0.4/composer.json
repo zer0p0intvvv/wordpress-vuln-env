@@ -1,0 +1,33 @@
+{
+    "name": "iqonic/wpbookit",
+    "description": "WPBookit Plugin ",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Iqonic Design",
+            "email": "iqonic.design@gmail.com"
+        }
+    ],
+    "scripts": {
+        "unit-test": [
+            "./vendor/bin/phpcs --standard=phpcs.xml . --report-full=test/full-result.txt   --report-summary=test/summary.txt "
+        ]
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "wp-coding-standards/wpcs": "^3.0",
+        "phpcompatibility/phpcompatibility-wp": "^2.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "php-http/discovery": true
+        }
+    },
+    "require": {
+        "kucrut/vite-for-wp": "^0.8.0",
+        "bitapps/wp-validator": "^1.0",
+        "illuminate/collections": "^10"
+    }
+}

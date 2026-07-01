@@ -21,8 +21,13 @@
 | CVE-2022-0271 | Reflected XSS | No | No | learnpress/CVE-2022-0271 | 8092 |
 | CVE-2022-0412 | SQLi (time-based) | No | No | ti-woocommerce-wishlist/CVE-2022-0412 | 8205 |
 | CVE-2022-0533 | Reflected XSS | Yes | No | ditty-news-ticker/CVE-2022-0533 | 8200 |
+| CVE-2022-0651 | SQLi (time-based) | No | No | wp-statistics/CVE-2022-0651 | 8193 |
+| CVE-2022-0783 | SQLi (time-based) | No | No | multiple-shipping-address-woocommerce/CVE-2022-0783 | 8195 |
 | CVE-2022-0867 | SQLi (time-based) | No | No | arprice-responsive-pricing-table/CVE-2022-0867 | 8196 |
 | CVE-2022-0952 | CSRF | No | No | sitemap-by-click5/CVE-2022-0952 | 8094 |
+| CVE-2022-1029 | Stored XSS | Yes | No | miniorange-limit-login-attempts/CVE-2022-1029 | 8197 |
+| CVE-2022-1119 | LFI (File Read) | No | No | simple-file-list/CVE-2022-1119 | 8137 |
+| CVE-2022-1390 | LFI (File Read) | No | No | admin-word-count-column/CVE-2022-1390 | 8199 |
 | CVE-2022-1724 | Reflected XSS | No | No | simple-membership/CVE-2022-1724 | 8111 |
 | CVE-2022-3982 | File Upload RCE | No | No | booking-calendar/CVE-2022-3982 | 8108 |
 | CVE-2022-4059 | SQLi (time-based) | No | No | cryptocurrency-widgets-pack/CVE-2022-4059 | 8104 |
@@ -35,6 +40,8 @@
 | CVE-2023-6360 | SQLi (time-based) | No | No | my-calendar/CVE-2023-6360 | 8105 |
 | CVE-2024-13496 | SQLi (time-based) | Yes | No | gamepress/CVE-2024-13496 | 8106 |
 | CVE-2024-2667 | File Upload | No | Yes | instawp-connect/CVE-2024-2667 | 8109 |
+| CVE-2022-0591 | SSRF (OOB) | No | Yes | formcraft3/CVE-2022-0591 | 8191 |
+| CVE-2022-0592 | SQLi (time-based) | No | No | mapsvg/CVE-2022-0592 | 8192 |
 | CVE-2024-2876 | SQLi (time-based) | No | No | email-subscribers/CVE-2024-2876 | 8088 |
 | CVE-2024-5084 | File Upload RCE | No | No | hash-form/CVE-2024-5084 | 8096 |
 | CVE-2024-6517 | Reflected XSS | No | No | ds-cf7-math-captcha/CVE-2024-6517 | 8113 |
@@ -50,10 +57,10 @@
 
 ## 统计
 
-- 总计: 40 个模板
-- 无需认证: 27 个
-- 需认证 (username/password): 13 个 (CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2022-0250, CVE-2022-0533, CVE-2023-1893, CVE-2024-7313, CVE-2024-13496, CVE-2026-7106, CVE-2026-7252, CVE-2026-7467, CVE-2026-7641)
-- 使用 OOB (interactsh): 2 个 (CVE-2021-25052, CVE-2024-2667)
+- 总计: 47 个模板
+- 无需认证: 33 个
+- 需认证 (username/password): 14 个 (CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2022-0250, CVE-2022-0533, CVE-2022-1029, CVE-2023-1893, CVE-2024-7313, CVE-2024-13496, CVE-2026-7106, CVE-2026-7252, CVE-2026-7467, CVE-2026-7641)
+- 使用 OOB (interactsh): 3 个 (CVE-2021-25052, CVE-2022-0591, CVE-2024-2667)
 
 ## 使用方法
 

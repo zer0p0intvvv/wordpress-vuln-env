@@ -1,0 +1,22 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../public/assets/app.styles.css">
+</head>
+
+<body class="canto-class">
+    <img src="../assets/loader_white.gif" id="loader">
+    <section id="root"></section>
+    <script>
+        var args = JSON.parse(localStorage.getItem("canto_args"));
+        var wpBlockClientId = localStorage.getItem("canto_wpClientId");
+        var wpBlockIndex = localStorage.getItem("canto_blockIndex");
+    </script>
+    <script src="../public/assets/app.vendor.bundle.js"></script>
+    <script src="../public/assets/app.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+{"cve":"CVE-2021-24731","port":8102,"status":"FAIL","matcher_name":"","evidence":""}
+{"cve":"CVE-2021-25052","port":8203,"status":"FAIL","matcher_name":"","evidence":""}
+{"cve":"CVE-2022-0148","port":8110,"status":"FAIL","matcher_name":"","evidence":""}
+{"cve":"CVE-2022-0533","port":8190,"status":"FAIL","matcher_name":"","evidence":""}

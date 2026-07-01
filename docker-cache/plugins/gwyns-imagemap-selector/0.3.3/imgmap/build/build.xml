@@ -1,0 +1,426 @@
+
+
+<project name="imgmap" default="zipall" basedir=".">
+	<description>
+	    imgmap build file
+	</description>
+	
+	<!-- set global properties for this build -->
+	<property name="src" location=".." />
+
+	<target name="init">
+		<propertyfile
+		    file="build.properties"
+		    comment="Build properties">
+		  <entry key="buildDate" type="date" value="now"/>
+		  <entry key="buildNumber" default="1" type="int" operation="+"/>
+		</propertyfile>
+		<property file="build.properties"/>
+		<echo>Preparing to build ${ant.project.name} ${version} (build ${buildNumber})</echo>
+	</target>
+
+	<target name="jslint">
+		<echo>Checking imgmap.js for errors (using jslint)</echo>
+		<java jar="custom_rhino.jar" fork="true" failonerror="false">
+			<arg value="http://www.jslint.com/rhino/jslint.js" />
+			<arg file="../imgmap.js" />
+			<redirector output="jslint_imgmap.txt" />
+		</java>
+
+		<echo>Checking default_interface.js for errors (using jslint)</echo>
+		<java jar="custom_rhino.jar" fork="true" failonerror="false">
+			<arg value="http://www.jslint.com/rhino/jslint.js" />
+			<arg file="../examples/example1_files/default_interface.js" />
+			<redirector output="jslint_default_interface.txt" />
+		</java>
+
+		<echo>Checking air.js for errors (using jslint)</echo>
+		<java jar="custom_rhino.jar" fork="true" failonerror="false">
+			<arg value="http://www.jslint.com/rhino/jslint.js" />
+			<arg file="../examples/example_air_files/air.js" />
+			<redirector output="jslint_air.txt" />
+		</java>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: Add version, build and release date information
+         - - - - - - - - - - - - - - - - - -->
+    <target name="release" description="Add version, build and release date information" depends="init">
+    	<echo>Replacing release information in main sourcefile</echo>
+		<replaceregexp file="${src}/imgmap.js"
+		                         match="this.buildNumber\s*=\s*&#34;(\d*)&#34;"
+		                         replace="this.buildNumber = &#34;${buildNumber}&#34;"
+		                         byline="true"/>
+		<replaceregexp file="${src}/imgmap.js"
+		                         match="this.buildDate\s*=\s*&#34;(.*?)&#34;"
+		                         replace="this.buildDate = &#34;${buildDate}&#34;"
+		                         byline="true"/>
+		<replaceregexp file="${src}/imgmap.js"
+		                         match="this.version\s*=\s*&#34;(.*?)&#34;"
+		                         replace="this.version = &#34;${version}&#34;"
+		                         byline="true"/>
+		<replaceregexp file="${src}/imgmap.js"
+		                         match="\@version\s([\w\.]*)"
+		                         replace="@version ${version}"
+		                         byline="true"/>
+    </target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+          target: Compress javascript file
+         - - - - - - - - - - - - - - - - - -->
+	<target name="compress" description="Compress javascript file">
+		<echo>Compressing javascript main sourcefile (rhino -c)</echo>
+		<java jar="custom_rhino.jar" fork="true" failonerror="true">
+			<arg value="-c" />
+			<arg file="${src}/imgmap.js" />
+			<redirector output="${src}/imgmap_packed.js" />
+		</java>
+		<echo>Minifying javascript main sourcefile (jsmin)</echo>
+		<!-- @url http://code.google.com/p/jsmin-ant-task/ -->
+		<taskdef name="jsmin"
+		        classname="net.matthaynes.jsmin.JSMin_Task"
+		        classpath="jsmin.0.2.3.jar"/>
+		<jsmin srcfile="${src}/imgmap_packed.js" force="true"/>
+	</target>
+	
+	<!-- =================================
+          target: Make Tiny plugin
+         ================================= -->
+    <target name="build_tiny" description="Make Tiny plugin" depends="init,release,compress">
+    	<echo>Creating TinyMCE 2.x plugin...</echo>
+    	<delete dir="${src}/temp" />
+    	<mkdir dir="${src}/temp/imgmap"/>
+		<copy todir="${src}/temp/imgmap">
+			<fileset dir="${src}/examples/example_tiny_files/tinymce/jscripts/tiny_mce/plugins/imgmap"/>
+		</copy>
+		
+    	<mkdir dir="${src}/temp/imgmap/licenses"/>
+    	<copy file="${src}/licenses/excanvas.txt" todir="${src}/temp/imgmap/licenses"></copy>
+
+    	<copy file="${src}/imgmap.js" todir="${src}/temp/imgmap/jscripts"></copy>
+    	<copy file="${src}/imgmap_packed.js" todir="${src}/temp/imgmap/jscripts"></copy>
+    	<!-- copy language files -->
+		<copy todir="${src}/temp/imgmap/jscripts">
+			<fileset dir="${src}">
+			<include name="lang_*.js"/>
+			</fileset>
+		</copy>
+    	
+    	<copy file="${src}/changelog" todir="${src}/temp/imgmap"></copy>
+    	<copy file="${src}/license_GPL.txt" todir="${src}/temp/imgmap"></copy>
+
+		<replaceregexp file="${src}/temp/imgmap/popup.html"
+				match="\.\./\.\./\.\./\.\./\.\./\.\./\.\./imgmap\.js"
+				replace="jscripts/imgmap_packed.js"
+				flags="i"
+				byline="true"/>
+    	<echo>Packaging ZIP: plugin_tinymce_${buildNumber}.zip</echo>
+    	<zip destfile="${src}/plugin_tinymce_${buildNumber}.zip"
+    		 basedir="${src}/temp"
+    	/>
+    	<delete dir="${src}/temp" />
+    </target>
+
+	<!-- =================================
+          target: Make Tiny3 plugin
+         ================================= -->
+    <target name="build_tiny3" description="Make TinyMCE 3.x plugin" depends="init,release,compress">
+    	<echo>Creating TinyMCE 3.x plugin...</echo>
+    	<delete dir="${src}/temp" />
+    	<mkdir dir="${src}/temp/imgmap"/>
+		<copy todir="${src}/temp/imgmap">
+			<fileset dir="${src}/examples/example_tiny3_files/tinymce/jscripts/tiny_mce/plugins/imgmap"/>
+		</copy>
+		
+    	<mkdir dir="${src}/temp/imgmap/licenses"/>
+    	<copy file="${src}/licenses/excanvas.txt" todir="${src}/temp/imgmap/licenses"></copy>
+
+    	<copy file="${src}/imgmap.js" todir="${src}/temp/imgmap/jscripts"></copy>
+    	<copy file="${src}/imgmap_packed.js" todir="${src}/temp/imgmap/jscripts"></copy>
+    	<!-- copy language files -->
+		<copy todir="${src}/temp/imgmap/jscripts">
+			<fileset dir="${src}">
+			<include name="lang_*.js"/>
+			</fileset>
+		</copy>
+    	
+    	<copy file="${src}/changelog" todir="${src}/temp/imgmap"></copy>
+    	<copy file="${src}/license_GPL.txt" todir="${src}/temp/imgmap"></copy>
+
+		<replaceregexp file="${src}/temp/imgmap/popup.html"
+				match="\.\./\.\./\.\./\.\./\.\./\.\./\.\./imgmap\.js"
+				replace="jscripts/imgmap_packed.js"
+				flags="i"
+				byline="true"/>
+    	<echo>Packaging ZIP: plugin_tinymce3_${buildNumber}.zip</echo>
+    	<zip destfile="${src}/plugin_tinymce3_${buildNumber}.zip"
+    		 basedir="${src}/temp"
+    	/>
+    	<delete dir="${src}/temp" />
+    </target>
+
+	<!-- =================================
+          target: Make Xinha plugin
+         ================================= -->
+    <target name="build_xinha" description="Make Xinha plugin" depends="init,release,compress">
+    	<echo>Creating Xinha plugin...</echo>
+    	<delete dir="${src}/temp" />
+    	<mkdir dir="${src}/temp/ImageMap"/>
+		<copy todir="${src}/temp/ImageMap">
+			<fileset dir="${src}/examples/example_xinha_files/ImageMap"/>
+		</copy>
+		
+    	<mkdir dir="${src}/temp/ImageMap/licenses"/>
+    	<copy file="${src}/licenses/excanvas.txt" todir="${src}/temp/ImageMap/licenses"></copy>
+
+    	<copy file="${src}/imgmap.js" todir="${src}/temp/ImageMap/jscripts"></copy>
+    	<copy file="${src}/imgmap_packed.js" todir="${src}/temp/ImageMap/jscripts"></copy>
+    	<!-- copy language files -->
+		<copy todir="${src}/temp/ImageMap/jscripts">
+			<fileset dir="${src}">
+			<include name="lang_*.js"/>
+			</fileset>
+		</copy>
+    	
+    	<copy file="${src}/changelog" todir="${src}/temp/ImageMap"></copy>
+    	<copy file="${src}/license_GPL.txt" todir="${src}/temp/ImageMap"></copy>
+
+		<replaceregexp file="${src}/temp/ImageMap/popup.html"
+				match="\.\./\.\./\.\./imgmap\.js"
+				replace="jscripts/imgmap_packed.js"
+				flags="i"
+				byline="true"/>
+		<replaceregexp file="${src}/temp/ImageMap/popup.html"
+				match="\.\./xinha/popups/popup\.js"
+				replace="../../popups/popup.js"
+				flags="i"
+				byline="true"/>
+		<replaceregexp file="${src}/temp/ImageMap/ImageMap.js"
+				match=".\.\./\.\./\.\./.\s+\+\s+plugin_base"
+				replace="plugin_base"
+				flags="i"
+				byline="true"/>
+    	<echo>Packaging ZIP: plugin_xinha_${buildNumber}.zip</echo>
+    	<zip destfile="${src}/plugin_xinha_${buildNumber}.zip"
+    		 basedir="${src}/temp"
+    	/>
+    	<delete dir="${src}/temp" />
+    </target>
+
+	<!-- =================================
+          target: Make FCK plugin
+         ================================= -->
+    <target name="build_fck" description="Make FCK plugin" depends="init,release,compress">
+    	<echo>Creating FCKEditor plugin...</echo>
+    	<delete dir="${src}/temp" />
+    	<mkdir dir="${src}/temp/imgmap"/>
+		<copy todir="${src}/temp/imgmap">
+			<fileset dir="${src}/examples/example_fck_files/imgmap"/>
+		</copy>
+		
+    	<mkdir dir="${src}/temp/imgmap/licenses"/>
+    	<copy file="${src}/licenses/excanvas.txt" todir="${src}/temp/imgmap/licenses"></copy>
+
+    	<copy file="${src}/imgmap.js" todir="${src}/temp/imgmap/jscripts"></copy>
+    	<copy file="${src}/imgmap_packed.js" todir="${src}/temp/imgmap/jscripts"></copy>
+    	<!-- copy language files -->
+		<copy todir="${src}/temp/imgmap/jscripts">
+			<fileset dir="${src}">
+			<include name="lang_*.js"/>
+			</fileset>
+		</copy>
+
+    	<copy file="${src}/changelog" todir="${src}/temp/imgmap"></copy>
+    	<copy file="${src}/license_GPL.txt" todir="${src}/temp/imgmap"></copy>
+
+		<replaceregexp file="${src}/temp/imgmap/popup.html"
+				match="\.\./\.\./\.\./imgmap\.js"
+				replace="jscripts/imgmap_packed.js"
+				flags="i"
+				byline="true"/>
+    	<echo>Packaging ZIP: plugin_fck_${buildNumber}.zip</echo>
+    	<zip destfile="${src}/plugin_fck_${buildNumber}.zip"
+    		 basedir="${src}/temp"
+    	/>
+    	<delete dir="${src}/temp" />
+    </target>
+
+
+
+	<!-- =================================
+          target: Make AIR package
+         ================================= -->
+    <target name="build_air" description="Make AIR package" depends="init,release,compress">
+    	<echo>Creating Adobe AIR package...</echo>
+    	<delete dir="${src}/temp" />
+    	<mkdir dir="${src}/temp"/>
+		<copy todir="${src}/temp">
+			<fileset dir="${src}/examples/example_air_files"/>
+		</copy>
+		
+		<!-- remove introspector since that is for debug only -->
+		<delete file="${src}/temp/AIRIntrospector.js" />
+		<copy file="${src}/examples/example_air.xml" todir="${src}/temp"></copy>
+		
+    	<copy file="${src}/imgmap.js" todir="${src}/temp" overwrite="true"></copy>
+    	<copy file="${src}/imgmap_packed.js" todir="${src}/temp" overwrite="true"></copy>
+    	<!-- copy language files -->
+		<copy todir="${src}/temp" overwrite="true">
+			<fileset dir="${src}">
+			<include name="lang_*.js"/>
+			</fileset>
+		</copy>
+
+    	<copy file="${src}/changelog" todir="${src}/temp"></copy>
+    	<copy file="${src}/license_GPL.txt" todir="${src}/temp"></copy>
+
+		<!-- replace reference to subdir -->
+		<replaceregexp file="${src}/temp/example_air.xml"
+				match="example_air_files\/"
+				replace=""
+				flags="i"
+				byline="true"/>
+		
+		<!-- replace version info -->
+		<replaceregexp file="${src}/temp/example_air.xml"
+				match="&lt;version&gt;.*?&lt;/version&gt;"
+				replace="&lt;version&gt;${version} (build ${buildNumber})&lt;/version&gt;"
+				flags="i"
+				byline="true"/>
+		
+		<!-- replace reference to introspector functions (prepend comment) -->
+		<replaceregexp file="${src}/temp/air.js"
+				match="air\.Introspector"
+				replace="//air\.Introspector"
+				flags="i"
+				byline="true"/>
+		
+		<!-- replace reference to introspector include -->
+		<replaceregexp file="${src}/temp/example_air.html"
+				match='&lt;script.*?src="AIRIntrospector\.js".*?/script&gt;'
+				replace=""
+				flags="i"
+				byline="true"/>
+		
+		<!-- replace reference to imgmap, use packed instead -->
+		<replaceregexp file="${src}/temp/example_air.html"
+				match='src="imgmap\.js"'
+				replace='src="imgmap_packed.js"'
+				flags="i"
+				byline="true"/>
+		
+		<!-- replace reference to Example AIR (first paragraph) -->
+		<replaceregexp file="${src}/temp/example_air.html"
+				match='&lt;p\sid=\"intro".*?/p&gt;'
+				replace=""
+				flags="i"
+				byline="true"/>
+		
+		<!-- build air package, you will need AIR SDK and a signing certificate! -->
+		<echo>Press Enter, input cert password an press enter again:</echo>		
+		<java jar="c:/air/lib/adt.jar" fork="true" failonerror="true">
+			<arg value="-package"/>
+			<arg value="-storetype"/>
+			<arg value="pkcs12"/>
+			<arg value="-keystore"/>
+			<arg value="cert.pfx"/>
+			<arg value="${src}/imgmap_desktop_${buildNumber}.air"/>
+			<arg value="${src}/temp/example_air.xml"/>
+			<arg value="-C"/>
+			<arg value="${src}/temp"/>
+			<arg value="."/>
+		</java>
+    	
+    	<!-- clean up temp dir -->
+		<delete dir="${src}/temp" />
+    </target>
+
+	<target name="build_plugins" description="Build plugins" depends="build_tiny,build_tiny3,build_fck,build_air,build_xinha">
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: Create Documentation
+         - - - - - - - - - - - - - - - - - -->
+	<target name="jsdoc" description="Build jsdoc documentation" depends="">
+    	<echo>Creating documentation</echo>
+		<java jar="c:\jsdoc\jsrun.jar" fork="true" failonerror="true">
+			<arg value="c:\jsdoc\app\run.js" />
+			<arg value="../imgmap.js" />
+			<arg value="-a" />
+			<arg value="-p" />
+			<arg value="-t=jsdoc-tpl/outline2/" />
+			<arg value="-D=projectName:imgmap" />
+			<arg value="-d=../docs/" />
+			<arg value="-v" />
+			<redirector output="jsdoc.log" />
+		</java>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: Create release ZIP file
+         - - - - - - - - - - - - - - - - - -->
+    <target name="zipall" description="Create release ZIP file" depends="init,compress,jsdoc,build_plugins">
+    	<property name="build.zipfile" value="imgmap_${version}_${buildNumber}.zip"/>
+    	<echo>Creating final ZIP package as: ${build.zipfile}</echo>
+    	<zip destfile="${src}/${build.zipfile}"
+    		 basedir="${src}"
+    		 excludes="build/**, temp/**, **/*.zip *.air" />
+    	<checksum file="${src}/${build.zipfile}" property="build.md5"/>
+    </target>
+	
+	<!-- - - - - - - - - - - - - - - - - -
+          target: Upload to googlecode.com
+         - - - - - - - - - - - - - - - - - -->
+	<taskdef name="GoogleCodeUploadTask" classname="net.bluecow.googlecode.ant.GoogleCodeUploadTask" classpath="ant-googlecode-0.0.0test.jar"/>
+    <target name="upload_google" description="Upload to googlecode.com" depends="zipall">
+    	<echo>Uploading final ZIP file to googlecode.com</echo>
+    	<!--
+    	these will be skipped if coming from property file
+    	 -->
+    	<input
+    	    message="Please enter googlecode.com username:"
+    	    addproperty="googlecode.username"
+    	    defaultvalue="${user.name}"
+    	/>
+	  	<input
+	  	    message="Please enter googlecode.com password (NOT google account password!):"
+	  	    addproperty="googlecode.password"
+	  	/>
+	  	<input
+	  	    message="Please enter summary of new release:"
+	  	    addproperty="googlecode.summary"
+	  	/>
+    	<GoogleCodeUploadTask description="Uploads code to googlecode"
+			projectname="imgmap"
+			summary="${googlecode.summary}"
+			username="${googlecode.username}"
+			password="${googlecode.password}"
+			verbose="true"
+    		filename="${src}/${build.zipfile}"
+    		targetfilename="${build.zipfile}"
+    	/>
+	  <input
+	    message="Do you want to store your googlecode.com username and password in the build propertyfile (y/n)?"
+	    validargs="y,n"
+	    addproperty="build.storegooglecodeyn"
+	  />
+	  <condition property="build.storegooglecode">
+	    <equals arg1="y" arg2="${build.storegooglecodeyn}"/>
+	  </condition>
+    </target>
+	
+	<!-- - - - - - - - - - - - - - - - - -
+          target: Googlecode.com info save
+         - - - - - - - - - - - - - - - - - -->
+    <target name="upload_save" description="Googlecode.com info save" depends="upload_google" if="build.storegooglecode">
+		<propertyfile file="build.properties" >
+		  <entry key="googlecode.username" type="string" value="${googlecode.username}"/>
+		  <entry key="googlecode.password" type="string" value="${googlecode.password}"/>
+		</propertyfile>
+    </target>
+
+	<target name="all" depends="init,zipall,upload_save">
+		<!-- all build tasks -->
+	</target>
+
+</project>

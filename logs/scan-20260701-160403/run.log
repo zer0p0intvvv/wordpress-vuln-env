@@ -1,0 +1,33 @@
+[16:04:04] nuclei: /Users/zer0p0int/工具/nuclei (v3.9.0)
+[16:04:04] 日志目录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-160403
+[16:04:05] 本次共 5 个环境 | 并行度: 4 | 重试: 2次/5s间隔
+[16:04:05] 预构建: 是 | 续跑: 是
+[16:04:05] 续跑模式：跳过已 PASS 的 CVE
+[16:04:05] ━━━ 预构建基础镜像 ━━━
+[16:04:05] 预构建基础镜像 (1): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/dukapress/2.5.4
+[16:04:05] 预构建基础镜像 (2): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/ab-google-map-travel/3.4
+[16:04:06] 预构建基础镜像 (3): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/wp-statistics/13.0.7
+[16:04:08] 预构建基础镜像 (4): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/pie-register/3.7.1.5
+[16:04:08] 预构建基础镜像 (5): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/button-generation/CVE-2021-25052
+[16:04:10] 预构建完成，共 5 个基础镜像
+[16:04:10] ━━━ 开始并行测试 (4 并发) ━━━
+[16:04:10] [####--------------------]  20% (1/5)  CVE-2014-8799  :8097 [official]
+[16:04:10] [#########---------------]  40% (2/5)  CVE-2015-2755  :8098 [official]
+[16:04:10] [##############----------]  60% (3/5)  CVE-2021-24340  :8101 [official]
+[16:04:10] [###################-----]  80% (4/5)  CVE-2021-24731  :8102 [official]
+[16:04:12] [########################] 100% (5/5)  CVE-2021-25052  :8203 [official]
+[16:04:12] 等待剩余任务完成...
+[16:04:55] ━━━ 汇总结果 ━━━
+[16:04:55] PASS CVE-2014-8799    
+[16:04:55] PASS CVE-2015-2755    
+[16:04:55] PASS CVE-2021-24340    
+[16:04:55] ERROR CVE-2021-24731 ()
+[16:04:55] SKIP CVE-2021-25052 ()
+
+==================== 汇总 ====================
+总计 5  |  PASS 3  FAIL 0  SKIP 1  ERROR 1
+明细: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-160403/summary.txt
+判定记录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-160403/results.jsonl
+原始 jsonl: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-160403/raw/
+[16:04:55] 收到中断信号，清理已启动的容器...
+[16:04:56]   已清理: CVE-2021-24731

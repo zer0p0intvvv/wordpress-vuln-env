@@ -1,0 +1,186 @@
+#!/bin/bash
+# scan.sh —— 单 CVE 自动化检测脚本（task 独立文件夹版）
+# 用法: bash scan.sh [--keep] [--no-build]
+set -o pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$SCRIPT_DIR"
+
+# ── 加载 .env ────────────────────────────────────
+if [ ! -f ".env" ]; then
+    echo "错误: 找不到 .env 文件"
+    exit 1
+fi
+source .env
+: "${CVE_ID:?需要 CVE_ID}"
+: "${WEB_PORT:?需要 WEB_PORT}"
+: "${PLUGIN_SLUG:=}"
+
+NUCLEI="${NUCLEI_BIN:-$HOME/工具/nuclei}"
+TPL_FILE="nuclei-templates/$CVE_ID.yaml"
+DO_BUILD="--build"
+KEEP=0
+
+while [ $# -gt 0 ]; do
+    case "$1" in
+        --no-build) DO_BUILD="" ;;
+        --keep)     KEEP=1 ;;
+        *)          echo "未知参数: $1"; exit 2 ;;
+    esac
+    shift
+done
+
+# ── 检查依赖 ────────────────────────────────────
+[ -x "$NUCLEI" ] || { echo "找不到 nuclei: $NUCLEI (可用 NUCLEI_BIN 覆盖)"; exit 1; }
+[ -f "$TPL_FILE" ] || { echo "找不到模板: $TPL_FILE (先运行 bash generate.sh)"; exit 1; }
+
+# ── 检测模板属性 ────────────────────────────────
+TPL_NEEDS_AUTH=false; TPL_IS_OOB=false
+grep -q 'username=admin\|password=admin\|-V "username"\|-V "password"' "$TPL_FILE" 2>/dev/null && TPL_NEEDS_AUTH=true
+grep -q 'interactsh-url' "$TPL_FILE" 2>/dev/null && TPL_IS_OOB=true
+
+echo "═══════════════════════════════════════════"
+echo "  scan.sh — $CVE_ID"
+echo "  插件: $PLUGIN_SLUG  版本: ${PLUGIN_VERSION:-latest}"
+echo "  端口: $WEB_PORT  MySQL: ${MYSQL_PORT:-?}"
+echo "  认证: $TPL_NEEDS_AUTH  OOB: $TPL_IS_OOB"
+echo "═══════════════════════════════════════════"
+echo ""
+
+# ── 1. 构建 & 启动 ──────────────────────────────
+echo "[1/5] 启动 Docker 环境..."
+docker compose down -v --remove-orphans >/dev/null 2>&1 || true
+docker compose up -d $DO_BUILD 2>&1 | tail -3
+
+# ── 2. 等待 WordPress 就绪 ──────────────────────
+echo "[2/5] 等待 WordPress 就绪..."
+DEADLINE=$((SECONDS + 180))
+
+# Step 2a: /wp-json/ 返回
+while [ $SECONDS -lt $DEADLINE ]; do
+    curl -sf --max-time 3 "http://localhost:$WEB_PORT/wp-json/" -o /dev/null 2>/dev/null && break
+    sleep 3
+done
+
+# Step 2b: wp-login.php 有登录表单
+while [ $SECONDS -lt $DEADLINE ]; do
+    if curl -sf --max-time 3 "http://localhost:$WEB_PORT/wp-login.php" 2>/dev/null | grep -q '<form.*wp-login'; then
+        break
+    fi
+    sleep 5
+done
+
+if [ $SECONDS -ge $DEADLINE ]; then
+    echo "❌ ERROR: WordPress 超时未就绪"
+    echo "   检查: docker compose logs web"
+    [ "$KEEP" -eq 0 ] && docker compose down -v --remove-orphans >/dev/null 2>&1
+    exit 1
+fi
+
+# Step 2c: 轮询插件 (如果插件在 /wp-json/ 里注册了路由)
+if [ -n "$PLUGIN_SLUG" ]; then
+    POLL_END=$((SECONDS + 16))
+    while [ $SECONDS -lt $POLL_END ]; do
+        if curl -sf --max-time 3 "http://localhost:$WEB_PORT/wp-json/" 2>/dev/null | grep -qi "$PLUGIN_SLUG"; then
+            break
+        fi
+        sleep 2
+    done
+fi
+echo "   WordPress 就绪 (${SECONDS}s elapsed)"
+
+# ── 3. 运行 nuclei ───────────────────────────────
+echo "[3/5] 运行 nuclei..."
+NUCLEI_ARGS=(-t "$TPL_FILE" -u "http://localhost:$WEB_PORT" -jsonl -ms -timeout 60 -silent)
+$TPL_NEEDS_AUTH && NUCLEI_ARGS+=(-V "username=admin" -V "password=admin")
+
+RAW_OUT="output/nuclei-raw.jsonl"
+NUCLEI_LOG="output/nuclei.log"
+
+mkdir -p output
+"$NUCLEI" "${NUCLEI_ARGS[@]}" >"$RAW_OUT" 2>"$NUCLEI_LOG" || true
+
+# ── 4. 判定 ──────────────────────────────────────
+echo "[4/5] 判定结果..."
+
+STATUS="FAIL"; MATCHER=""; EVIDENCE=""
+
+if [ -s "$RAW_OUT" ] && grep -q '"matcher-status":\s*true' "$RAW_OUT" 2>/dev/null; then
+    STATUS="PASS"
+    MATCHER=$(grep -o '"matcher-name":"[^"]*"' "$RAW_OUT" 2>/dev/null | head -1 | sed 's/"matcher-name":"//;s/"$//')
+    EVIDENCE=$(grep -o '"extracted-results":\[[^]]*\]' "$RAW_OUT" 2>/dev/null | head -1 | \
+               sed 's/"extracted-results":\[//;s/\]//;s/^"//;s/"$//;s/","/ | /g' | tr '\n' ' ' | cut -c1-120)
+fi
+
+# OOB 兜底
+if $TPL_IS_OOB && [ "$STATUS" != "PASS" ]; then
+    STATUS="SKIP (OOB — 需手动 curl 验证)"
+fi
+
+# ── 5. 输出 ──────────────────────────────────────
+echo "[5/5] 输出结果..."
+
+cat > output/result.txt << EOF
+CVE: $CVE_ID
+Plugin: $PLUGIN_SLUG ${PLUGIN_VERSION:-latest}
+Port: $WEB_PORT
+Status: $STATUS
+Auth: $TPL_NEEDS_AUTH
+OOB: $TPL_IS_OOB
+Matcher: ${MATCHER:-N/A}
+Evidence: ${EVIDENCE:-N/A}
+EOF
+
+# 登记片段
+cat > output/register-env.toml << EOF
+[[environment]]
+name = "$PLUGIN_SLUG <= ${PLUGIN_VERSION:-latest} - TODO_TYPE"
+cve = ["$CVE_ID"]
+app = "$PLUGIN_SLUG"
+path = "$PLUGIN_SLUG/$CVE_ID"
+dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+tags = ["TODO"]
+template = "$CVE_ID.yaml"
+template_source = "official"
+EOF
+
+cat > output/register-index.md << EOF
+| $CVE_ID | TODO_TYPE | $($TPL_NEEDS_AUTH && echo "Yes" || echo "No") | $($TPL_IS_OOB && echo "Yes" || echo "No") | $PLUGIN_SLUG/$CVE_ID | $WEB_PORT |
+EOF
+
+if $TPL_NEEDS_AUTH || $TPL_IS_OOB; then
+    PARAMS=""
+    $TPL_NEEDS_AUTH && PARAMS="auth"
+    $TPL_IS_OOB && PARAMS="$PARAMS oob"
+    echo "$CVE_ID $PARAMS" > output/register-params.conf
+else
+    rm -f output/register-params.conf
+fi
+
+# ── 汇总 ─────────────────────────────────────────
+echo ""
+echo "═══════════════════════════════════════════"
+case "$STATUS" in
+    PASS)   echo "  ✅ $CVE_ID — PASS" ;;
+    FAIL)   echo "  ❌ $CVE_ID — FAIL" ;;
+    SKIP*)  echo "  ⏭ $CVE_ID — $STATUS" ;;
+    *)      echo "  ⚠ $CVE_ID — $STATUS" ;;
+esac
+echo "  matcher: ${MATCHER:-N/A}"
+echo "  evidence: ${EVIDENCE:-N/A}"
+echo ""
+echo "  产物: output/result.txt"
+echo "  登记: output/register-*.{toml,md,conf}"
+echo "═══════════════════════════════════════════"
+
+# ── 清理 ─────────────────────────────────────────
+if [ "$KEEP" -eq 0 ]; then
+    echo ""
+    echo "清理容器..."
+    docker compose down -v --remove-orphans >/dev/null 2>&1
+else
+    echo ""
+    echo "--keep: 保留容器, 手动: docker compose down -v"
+fi
+
+[ "$STATUS" = "PASS" ] && exit 0 || exit 1

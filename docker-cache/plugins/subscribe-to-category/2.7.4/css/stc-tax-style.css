@@ -1,0 +1,80 @@
+/*
+(c) M2TransMod,
+Gerard Revestraat 49, 205EN Haarlem
+sidney.vandestouwe@m2transmod.com
+*/
+/* 
+    Created on : 2 sep. 2020, 11:56:54
+    Author     : Sidney van de Stouwe
+*/
+
+.stcUL {
+    list-style-type: none;
+}
+
+.stcUL  {
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0px;
+}
+
+.stc-caret {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+.stc-caret::before {
+    content: "\25B6";
+/*  color: black; */
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.stc-caret-down::before {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);  
+}
+
+.stc-nested {
+    display: none;
+}
+
+.stc-active {
+    list-style-type: none;
+    display: block;
+}
+
+.stc-caret-u {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+.stc-caret-u::before {
+    content: "\25B6";
+/*  color: black; */
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.stc-caret-down-u::before {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);  
+}
+
+.stc-nested-u {
+    display: none;
+}
+
+.stc-active-u {
+    list-style-type: none;
+    display: block;
+}        
+

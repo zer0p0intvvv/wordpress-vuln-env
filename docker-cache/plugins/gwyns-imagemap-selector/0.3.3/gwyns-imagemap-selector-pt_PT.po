@@ -1,0 +1,528 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gwyns-imagemap-selector\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-01 19:18-0000\n"
+"PO-Revision-Date: 2013-05-01 19:18-0000\n"
+"Last-Translator: Gwyneth Llewelyn <gwyneth.llewelyn@gwynethllewelyn.net>\n"
+"Language-Team: Gwyneth Llewelyn <gwyneth.llewelyn@gwynethllewelyn.net>\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;esc_attr_e\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: gwyns-imagemap-selector.php:60 gwyns-imagemap-selector.php:451
+msgid "Imagemap Creator"
+msgstr "Criador de imagemaps"
+
+#: gwyns-imagemap-selector.php:61 gwyns-imagemap-selector.php:454
+msgid "Instructions"
+msgstr "Instruções de utilização"
+
+#: gwyns-imagemap-selector.php:62
+msgid "Settings"
+msgstr "Opções"
+
+#: gwyns-imagemap-selector.php:134 gwyns-imagemap-selector.php:152
+#: gwyns-imagemap-selector.php:226 gwyns-imagemap-selector.php:472
+#: gwyns-imagemap-selector.php:601
+msgid "Gwyn's Imagemap Selector"
+msgstr "Gwyn selector de imagemaps"
+
+#: gwyns-imagemap-selector.php:159
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Não tem permissões suficientes para aceder a esta página."
+
+#: gwyns-imagemap-selector.php:167
+msgid "Save Settings"
+msgstr "Gravar opções"
+
+#: gwyns-imagemap-selector.php:182
+msgid "Error"
+msgstr "Erro"
+
+#: gwyns-imagemap-selector.php:184
+msgid "This page should have never been displayed!"
+msgstr "Esta página nunca deveria ter sido mostrada!"
+
+#: gwyns-imagemap-selector.php:226
+msgid "This imagemap inserted by "
+msgstr "Este imagemap foi inserido pelo "
+
+#: gwyns-imagemap-selector.php:268
+msgid "No valid category, tag, or generic query"
+msgstr ""
+"Não foi encontrada nenhuma query válida para categoria, tag ou query livre"
+
+#: gwyns-imagemap-selector.php:410
+msgid "No imagemap data found"
+msgstr "Não foi encontrado nenhum imagemap"
+
+#: gwyns-imagemap-selector.php:445
+msgid "Options"
+msgstr "Opções"
+
+#: gwyns-imagemap-selector.php:446
+msgid "Debug mode"
+msgstr "Modo de debug"
+
+#: gwyns-imagemap-selector.php:447
+msgid "Pop-Up URL"
+msgstr "URL do Popup"
+
+#: gwyns-imagemap-selector.php:448
+msgid "Pop-Up CSS"
+msgstr "CSS do pop-up"
+
+#: gwyns-imagemap-selector.php:472
+msgid "Settings for "
+msgstr "Opções de configuração para "
+
+#: gwyns-imagemap-selector.php:480
+msgid "Debug mode adds further comments on outputted HTML"
+msgstr "O modo de debug acrescenta mais comentários no HTML emitido"
+
+#: gwyns-imagemap-selector.php:486
+msgid "External pop-up link"
+msgstr "Link (URL) para pop-up externo"
+
+#: gwyns-imagemap-selector.php:492
+msgid "Inline CSS for popup styling"
+msgstr "CSS para o design do popup"
+
+#: gwyns-imagemap-selector.php:501
+msgid ""
+"Uses the online editor as described by Adam Maschek in\n"
+"<a href=\"http://www.maschek.hu/imagemap/imgmap\">http://www.maschek.hu/"
+"imagemap/imgmap</a>; you can go to that page to get more help."
+msgstr ""
+"Usa o editor online de imagemaps tal como descrito por Adam Maschek em\n"
+"<a href=\"http://www.maschek.hu/imagemap/imgmap\">http://www.maschek.hu/"
+"imagemap/imgmap</a>; clique nessa página para obter mais ajuda."
+
+#: gwyns-imagemap-selector.php:507
+msgid "Select source"
+msgstr "Escolha uma imagem"
+
+#: gwyns-imagemap-selector.php:510
+msgid "An image from the Media Library"
+msgstr "Imagem da Biblioteca de Media"
+
+#: gwyns-imagemap-selector.php:514
+msgid "Get image"
+msgstr "Ver imagem"
+
+#: gwyns-imagemap-selector.php:516
+msgid "accept"
+msgstr "aceitar"
+
+#: gwyns-imagemap-selector.php:521
+msgid "Image map areas"
+msgstr "Áreas do imagemap"
+
+#: gwyns-imagemap-selector.php:526
+msgid "Add new area"
+msgstr "Nova área"
+
+#: gwyns-imagemap-selector.php:527
+msgid "Delete selected area"
+msgstr "Apagar área seleccionada"
+
+#: gwyns-imagemap-selector.php:528
+msgid "Preview image map"
+msgstr "Prever imagemap"
+
+#: gwyns-imagemap-selector.php:529
+msgid "Get image map HTML"
+msgstr "Obter HTML do imagemap"
+
+#: gwyns-imagemap-selector.php:530
+msgid "Zoom:"
+msgstr "Ampliação:"
+
+#: gwyns-imagemap-selector.php:538
+msgid "Output:"
+msgstr ""
+
+#: gwyns-imagemap-selector.php:540
+msgid "WordPress shortcodes"
+msgstr "Shortcodes para WordPress"
+
+#: gwyns-imagemap-selector.php:541
+msgid "Standard imagemap"
+msgstr "Imagemap standard"
+
+#: gwyns-imagemap-selector.php:542
+msgid "CSS imagemap"
+msgstr "Imagemap com CSS"
+
+#: gwyns-imagemap-selector.php:543
+msgid "Wiki imagemap"
+msgstr "Imagemap para Wiki"
+
+#: gwyns-imagemap-selector.php:546
+msgid "More actions"
+msgstr "Mais acções"
+
+#: gwyns-imagemap-selector.php:548
+msgid "bounding box"
+msgstr "caixa envolvente"
+
+#: gwyns-imagemap-selector.php:549
+msgid "background color"
+msgstr "cor de fundo"
+
+#: gwyns-imagemap-selector.php:555
+msgid "No labeling"
+msgstr "Sem etiquetas"
+
+#: gwyns-imagemap-selector.php:556
+msgid "Label with numbers"
+msgstr "Etiquetar com números"
+
+#: gwyns-imagemap-selector.php:557
+msgid "Label with alt text"
+msgstr "Etiquetar com texto no campo alt"
+
+#: gwyns-imagemap-selector.php:558
+msgid "Label with href"
+msgstr "Etiquetar com href"
+
+#: gwyns-imagemap-selector.php:559
+msgid "Label with coords"
+msgstr "Etiquetar com coordenadas"
+
+#: gwyns-imagemap-selector.php:569
+msgid "Image"
+msgstr "Imagem"
+
+#: gwyns-imagemap-selector.php:576
+msgid "Status"
+msgstr "Estado"
+
+#: gwyns-imagemap-selector.php:582
+msgid "Code"
+msgstr "Código"
+
+#: gwyns-imagemap-selector.php:601
+msgid ""
+" uses shortcodes to define imagemaps, assign an image to it, and "
+"automatically make queries on the WordPress database to extract the "
+"appropriate links."
+msgstr ""
+" usa \"shortcodes\" para definir imagemaps, atribuir-lhes uma imagem e fazer "
+"queries na base de dados do WordPress para automaticamente extrair os links "
+"apropriados."
+
+#: gwyns-imagemap-selector.php:603
+msgid ""
+"There are two basic usages of this plugin. The first is if you know exactly "
+"which URLs are linked to each area of the imagemap. This is appropriate for "
+"menus (and very likely used on a widget) that will not change much over "
+"time. This uses the \"direct\" approach and requires URLs to be explicitly "
+"named on each area; thus, it's quite similar to directly placing the "
+"imagemap HTML inside the post/page/widget (the only advantage of using the "
+"shortcode is to get automatic ids)."
+msgstr ""
+"Existem duas utilizações básicas deste plugin. A primeira é usada se se "
+"souber exactamente quais URLs vão ser linkados a cada uma das áreas do "
+"imagemap. Isto é apropriado para menus (e será muito provavelmente usado "
+"dentro de um widget) que não mudem muito com o tempo. Isto usa a abordagem "
+"\"directa\" e necessita que cada URL seja explicitamente indicado em cada "
+"área; ou seja, é muito semelhante a colocar o HTML apropriado para um "
+"imagemap directamente dentro do post, página ou widget (a única vantagem "
+"neste caso é na geração automática de identificadores para CSS)."
+
+#: gwyns-imagemap-selector.php:605
+msgid ""
+"The second variant makes a query on the WordPress database and returns the "
+"appropriate permalinks for each post. You can query by category, tag, or "
+"even add a free query (it will be passed to WP_Query so the same syntax "
+"applies; see <a href=\"http://codex.wordpress.org/Function_Reference/WP_Query"
+"\">http://codex.wordpress.org/Function_Reference/WP_Query</a>). The order of "
+"permalinks thus retrieved will dynamically be assigned to each area (in the "
+"order those are written). If there are more areas than permalinks, the "
+"remaining areas will be ignored (the reverse situation is undefined). "
+"Category and tag queries can be made by name or id and can be retrieved "
+"either in the descending (default) or ascending order."
+msgstr ""
+"A segunda variante de utilização faz uma query na base de dados do WordPress "
+"e retorna os permalinks apropriados para cada post. Pode fazer esta query "
+"por categoria, tag ou mesmo uma query livre (será passada a WP_Query pelo "
+"que se aplica a mesma sintaxe; consulte como referência <a href=\"http://"
+"codex.wordpress.org/Function_Reference/WP_Query\">http://codex.wordpress.org/"
+"Function_Reference/WP_Query</a>). A ordem dos permalinks devolvida desta "
+"forma será dinamicamente atribuída a cada área (pela ordem que foram "
+"colocadas). Se existirem mais áreas que permalinks, as restantes áreas serão "
+"ignoradas (a situação inversa não está definida). As queries por categoria "
+"ou tag podem ser feitas por nome ou id e podem ser ordenadas de forma "
+"descendente (por omissão) ou ascendente."
+
+#: gwyns-imagemap-selector.php:607
+msgid ""
+"A few extra parameters are available to add names, titles, ids, and classes. "
+"If those are omitted, this plugin will provide \"best effort\" alternatives "
+"to comply with HTML guidelines. This also allows for extra styling."
+msgstr ""
+"Existem alguns parâmetros adicionais para acrescentar nomes, títulos, ids e "
+"classes. Se estes forem omitidos, este plugin irá fazer um esforço para "
+"inserir alternativas que estejam conforme as normas do HTML. Isto permite "
+"depois a utilização de estilos via CSS."
+
+#: gwyns-imagemap-selector.php:609
+msgid "The overall syntax is:"
+msgstr "A sintaxe é:"
+
+#: gwyns-imagemap-selector.php:611
+msgid ""
+"[imagemap (category=[\"category id\"|\"category name\"] \n"
+"\t\t| category_name=\"category name\"\n"
+"\t\t| tag=[\"tag id\"|\"tag name\"]\n"
+"\t\t| tag_name=\"tag name\"\n"
+"\t\t| query=\"a WP_QUERY string\") \n"
+"\t\t| direct=[0|1] \n"
+"\t\timg=\"/your/url/to/image\"\n"
+"\t\ttitle=\"Image title\" \n"
+"\t\torder=[\"DESC\"|\"ASC\"]\n"
+"\t\tnopaging=[\"true\"|\"false\"]\n"
+"\t\tmap=\"imagemap name\" \n"
+"\t\tid=\"HTML id\" \n"
+"\t\tclass=\"CSS style\"\n"
+"\t\talt=\"Alt text for the image\"\n"
+"\t\tpopup=\"true|false\"\n"
+"\t\tthumbnail=\"true|false\"\n"
+"\t\texcerpt=\"true|false\"]\n"
+"[area shape=[\"rect\"|\"poly\"|\"circle\"]\n"
+"\turl=\"/direct/link/for/this/area \n"
+"\talt=\"name for this area\"\n"
+"\tclass=\"CSS style\"\n"
+"\ttarget=[\"_self\"|\"_blank\"|\"_top\"|...]\n"
+"\ttitle=\"name for this area\"]coord1,coord2,coord3,...,coordN[/area]\n"
+"[/imagemap]</pre>"
+msgstr ""
+"[imagemap (category=[\"id da categoria\"|\"nome da categoria\"] \n"
+"\t\t\t\t| category_name=\"nome da categoria\"\n"
+"\t\t\t\t| tag=[\"id da tag\"|\"nome da tag\"]\n"
+"\t\t\t\t| tag_name=\"nome da tag\"\n"
+"\t\t\t\t| query=\"uma string de query tipo WP_QUERY\") \n"
+"\t\t\t| direct=[0|1] \n"
+"\t\timg=\"/o/seu/url/para/a/imagem\" \n"
+"\t\ttitle=\"Título da imagem\" \n"
+"\t\torder=[\"DESC\"|\"ASC\"]\n"
+"\t\tnopaging=[\"true\"|\"false\"]\n"
+"\t\tmap=\"nome do imagemap\" \n"
+"\t\tid=\"id HTML\" \n"
+"\t\tclass=\"CSS\n"
+"\t\tstyle\"\n"
+"\t\talt=\"Texto alternativo para a imagem\"\n"
+"\t\tpopup=\"true|false\"\n"
+"\t\tthumbnail=\"true|false\"\n"
+"\t\texcerpt=\"true|false\"]\n"
+"[area shape=[\"rect\"|\"poly\"|\"circle\"]\n"
+"\turl=\"/link/directo/para/esta/área \n"
+"\talt=\"nome para esta área\"\n"
+"\tclass=\"CSS style\" \n"
+"\ttarget=[\"_self\"|\"_blank\"|\"_top\"|…]\n"
+"\ttitle=\"nome para esta área\"]coord1,coord2,coord3,…,coordN[/area]\n"
+"[/imagemap]</pre>"
+
+#: gwyns-imagemap-selector.php:636
+msgid ""
+"Thus, imagemaps can be either in direct mode (direct=1) or in query mode "
+"(omit the direct clause). When in query mode, you can use query by "
+"categories (id or name/slug), tags (id or name), or a free query that "
+"complies with WP_Query types of queries. Queries by category or tag can be "
+"made in descending (default; can be omitted) or ascending order (this "
+"parameter is ignored when using a WP_Query-compliant query instead). The "
+"<code>img</code> parameter is mandatory. <code>map</code>, <code>id</code>, "
+"<code>class</code>, and <code>alt</code> are all optional and a best effort "
+"to fill them with plausible values will be provided."
+msgstr ""
+"Logo, imagemaps podem estar ou no modo directo (direct=1) ou no modo query "
+"(neste caso, por favor omita o parâmetro \"direct\"). Quando em modo query, "
+"pode utilizar queris por categorias (seja pelo id, seja pelo nome/slug), "
+"tags (pelo id ou pelo nome), ou em modo de query livre, que terá de estar "
+"conforme os tipos de queries WP_Query possíveis. As queries por categoria ou "
+"tag podem ser ordenadas de forma descendente (por omissão; o parâmetro pode "
+"ser omitido) ou ascendente (este parâmetro é normalmente ignorado quando se "
+"usa uma query livre do tipo WP_Query). O parâmetro <code>img</code> é "
+"obrigatório. Os parâmetros <code>map</code>, <code>id</code>, <code>class</"
+"code> e <code>alt</code> são todos opcionais; se forem omitidos, será feito "
+"um esforço para fornecer valores plausíveis para os mesmos."
+
+#: gwyns-imagemap-selector.php:638
+msgid ""
+"Queries are usually paged, i.e. they will respect the post limit set on "
+"<code>Reading Settings > Blog pages show at most</code>. To override, use "
+"<code>nopaging=\"true\"</code>."
+msgstr ""
+"As queries normalmente retornam resultados paginados, ou seja, irá ser "
+"respeitado o limite de posts definido em <code>Leitura > As páginas de blog "
+"mostram no máximo</code>. Para ignorar este limite, use o parâmetro "
+"<code>nopaging=\"true\"</code>."
+
+#: gwyns-imagemap-selector.php:640
+msgid ""
+"Each area has just a mandatory section, the one between [area][/area] tags. "
+"Default shape is a rectangle (<code>shape=\"rect\"</code>) and this would "
+"require 4 coordinates (coordinate numbers are neither checked nor "
+"validated). For direct mode, an additional url for each area has to be "
+"supplied (inside the [area] tag). <code>alt</code>, <code>class</code>, and "
+"<code>title</code> are optional and they will be filled automatically with "
+"plausible values if omitted."
+msgstr ""
+"Cada área só tem uma secção obrigatória que deve ser colocada entre os "
+"marcadores [area][/area]. A forma (shape) por omissão é o rectângulo "
+"(<code>shape=\"rect\"</code>), que requer 4 coordenadas (o número de "
+"coordenadas não é nem verificado, nem validado). Para o modo directo, é "
+"necessário acrescentar um URL adicional a cada área (dentro do marcador "
+"[area]). <code>alt</code>, <code>class</code> e <code>title</code> são "
+"opcionais e serão preenchidos automáticamente com valores plausíveis se "
+"forem omitidos."
+
+#: gwyns-imagemap-selector.php:642
+msgid ""
+"Multiple categories/tags should work (as well as excluding categories/tags); "
+"note that <code>category=Uncategorized</code> will work (even though it "
+"should be <code>category_name=Uncategorized</code>) but <code>category=first,"
+"second,last</code> will not (use <code>category_name=first,second,last</"
+"code> instead)."
+msgstr ""
+"Deve ser possível usar múltiplas categorias ou tags (assim como excluír "
+"categorias ou tags); note que <code>category=\"Sem categoria\"</code> deve "
+"funcionar (embora devesse na realidade ser utilizado code>category_name="
+"\"Sem categoria\"</code>) mas <code>category=primeira,segunda,terceira</"
+"code> não funciona (use em vez disso <code>category_name=primeira,segunda,"
+"terceira</code>)."
+
+#: gwyns-imagemap-selector.php:644
+msgid ""
+"If you wish, you can get a hovering popup for the imagemap that shows the "
+"article linked to it. Use <code>popup=true</code> and you can optionally "
+"specify a thumbnail and/or just show the excerpt. CSS styling is done via "
+"the <code>class</code> parameter."
+msgstr ""
+"Se quiser, pode criar um popup flutuante para o imagemap que mostre o artigo "
+"associado à área. Para isso, use <code>popup=true</code> e pode "
+"opcionalmente especificar a imagem reduzida do artigo (thumbnail) e/ou "
+"mostrar apenas um excerto do artigo. Pode ser aplicado um estilo CSS através "
+"do parâmetro <code>class</code>."
+
+#: gwyns-imagemap-selector.php:646
+msgid ""
+"You can also specify your own AJAX handler and call it remotely instead of "
+"using the built-in handler. All parameters are passed via <code>GET</code>, "
+"and you should at least pass a post ID (parameter <code>id</code>). "
+"Optionally you can receive the CSS class for styling on the parameter "
+"<code>class</code>. <code>excerpt</code> and <code>thumbnail</code> will be "
+"set to true if the user specifies those parameters on the shortcode tag for "
+"the imagemap."
+msgstr ""
+"Também pode especificar o seu próprio script de recepção das chamadas AJAX e "
+"chamá-lo remotamente em vez do pré-definido. Todos os parâmetros são "
+"passados via <code>GET</code>, e deve pelo menos enviar o ID do post "
+"(parâmetro <code>id</code>). Opcionalmente pode receber também a classe CSS "
+"para o design através do parâmetro <code>class</code>. Os parâmetros "
+"<code>excerpt</code> e <code>thumbnail</code> terão sido inicializados se o "
+"utilizador os especificar no shortcode do imagemap."
+
+#: gwyns-imagemap-selector.php:648
+msgid ""
+"Also, several imagemaps with the same name in the same post/page/widget "
+"haven't been tested either. In theory you could define an imagemap "
+"<em>without</em> an associated image, and insert images and change manually "
+"the imagemap for each, so that the same imagemap is used across several "
+"images in the same page. None of this was tested."
+msgstr ""
+"Também não foi testada a utilização de vários imagemaps com o mesmo nome no "
+"mesmo post/página/artigo (não deve funcionar). Em teoria é possível definir "
+"um imagemap <em>sem</em> uma imagem associada, inserir depois manualmente "
+"uma imagem e associar-lhe manualmente o imagemap apropriado, de forma a "
+"permitir que o mesmo imagemap seja usado em várias imagens na mesma página. "
+"Nada disto foi testado."
+
+#: gwyns-imagemap-selector.php:650
+msgid ""
+"Imagemaps can be conveniently created from the Imagemap Creator tab, which "
+"uses <a href=\"http://code.google.com/p/imgmap/\">Adam Maschek's imgmap "
+"Javascript library</a> to provide an interactive, Web-based imagemap creator."
+msgstr ""
+"Os imagemaps podem ser convenientemente criados a partir do tab do Criador "
+"de Imagemaps, que usa a <a href=\"http://code.google.com/p/imgmap/"
+"\">biblioteca imgmap em Javascript de Adam Maschek</a> para fornecer um "
+"editor interactivo de imagemaps baseado na Web."
+
+#: gwyns-imagemap-selector.php:652
+msgid ""
+"The plugin will now work for anyone with read capabilities (and not only "
+"administrators), but only administrators have access to the \"Settings\" tab."
+msgstr ""
+"Este plugin agora funciona para qualquer utilizador que tenha capacidades de "
+"leitura (e não apenas de administração), mas só os administradores é que têm "
+"acesso à aba de \"Opções\"."
+
+#: gwyns-imagemap-selector.php:653
+msgid ""
+"Warning: this plugin will not work with any automatic image-resizing "
+"mechanisms (e.g. Jetpack's Photon or similar tools, specially those for "
+"dynamic/fluid themes which resize images for mobile viewing). This is a "
+"limitation of the <code>imagemap</code> HTML command, which is very simple "
+"and basic, and relies upon absolute values relative to an image's "
+"dimensions, which are supposed to be known in advance. There are a few "
+"techniques to rewrite imagemaps (basically recalculating the selection areas "
+"based on the redimensioned image), but these are a bit pointless for the "
+"purpose of this plugin, which totally avoids Javascript (for browsers which "
+"have it turned off), and there are already better, Javascript/Flash/Java-"
+"based solutions which allow clickable areas on resized images."
+msgstr ""
+"Aviso: este plugin não funciona com nenhum mecanismo de redimensionamento "
+"automático (por exemplo, o Photon do Jetpack ou ferramentas semelhantes, "
+"nomeadamente as que lidam com o redimensionamento de imagens em temas "
+"dinâmicos/fluidos para plataformas móveis). Esta é uma limitação do comando "
+"HTML <code>imagemap</code>, que é muito simples e básico, e que depende de "
+"valores absolutos da dimensão das imagens, que supostamente são conhecidos "
+"<em>a priori</em>. Existem algumas técnicas para re-escrever imagemaps "
+"(basicamente recalculando as áreas de selecção a partir dos valores da "
+"imagem redimensionada), mas estas são um pouco inúteis para o propósito "
+"deste plugin, que evita completamente a utilização de Javascript (para "
+"browsers que o tenham desligado), e já existem soluções bem melhores, "
+"baseadas em Javascript/Flash/Java, que permitem a selecção de áreas "
+"clicáveis em imagens redimensionadas."
+
+#: gwyns-imagemap-selector.php:711 gwyns-imagemap-selector.php:720
+msgid "Choose"
+msgstr "Escolher"
+
+#~ msgid "Main"
+#~ msgstr "Opções"
+
+#~ msgid "To-do"
+#~ msgstr "A fazer"
+
+#~ msgid "This will possibly have an inline imagemap creator."
+#~ msgstr "Isto vai ter um gerador de imagemaps automático."
+
+#~ msgid ""
+#~ "For now, you can use either <a href=\"http://www.image-maps.com/\">http://"
+#~ "www.image-maps.com/</a> or <a href=\"http://www.kolchose.org/simon/"
+#~ "ajaximagemapcreator/\">http://www.kolchose.org/simon/ajaximagemapcreator/"
+#~ "</a>. Have fun!"
+#~ msgstr ""
+#~ "Até isso acabar de ser desenvolvido, pode usar <a href=\"http://www.image-"
+#~ "maps.com/\">http://www.image-maps.com/</a> ou <a href=\"http://www."
+#~ "kolchose.org/simon/ajaximagemapcreator/\">http://www.kolchose.org/simon/"
+#~ "ajaximagemapcreator/</a>. Divirta-se"
+
+#~ msgid "External pop-up link (if not set, uses default AJAX handler)"
+#~ msgstr ""
+#~ "Link para pop-up externo (se não estiver definido, utiliza o link AJAX "
+#~ "interno)"
+
+#~ msgid "Instructions of usage"
+#~ msgstr "Instruções de utilização"

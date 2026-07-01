@@ -1,0 +1,25 @@
+.formlift-module {
+    background: #FFFFFF;
+    width: 400px;
+    /*height: 450px;*/
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 20px 0 0 20px;
+    box-shadow: 0 0 5px #c4c4c4;
+    display: inline-block;
+}
+
+.formlift-image-container {
+    box-sizing: border-box;
+}
+
+.formlift-module-image {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.formlift-description-container {
+    padding: 10px;
+    box-sizing: border-box;
+}

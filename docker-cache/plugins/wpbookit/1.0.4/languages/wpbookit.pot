@@ -1,0 +1,3513 @@
+# Copyright (C) 2025 Iqonic Design
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPBookit 1.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpbookit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-06-14T13:10:21+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: wpbookit\n"
+
+#. Plugin Name of the plugin
+#: core/admin/classes/class.wpb-admin.php:59
+msgid "WPBookit"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wpbookit.com"
+msgstr ""
+
+#. Description of the plugin
+msgid "WPBookit is a comprehensive WordPress plugin that streamlines appointment bookings and enhances user experience, ideal for businesses of all sizes. Manage reservations effortlessly directly from your WordPress site."
+msgstr ""
+
+#. Author of the plugin
+msgid "Iqonic Design"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://iqonic.design"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin-routes-handler.php:26
+#: core/admin/classes/class.wpb-admin-routes-handler.php:39
+#: core/admin/classes/class.wpb-admin-routes-handler.php:87
+#: core/admin/classes/class.wpb-admin-routes-handler.php:100
+msgid "Method is not allowed"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin-routes-handler.php:51
+msgid "Invalid nonce in request"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin-routes-handler.php:59
+#: core/admin/classes/class.wpb-admin-routes-handler.php:107
+msgid "Route not found"
+msgstr ""
+
+#. translators: Dependency Name placeholder:0
+#: core/admin/classes/class.wpb-admin-routes-handler.php:141
+msgid "%s dependency file not found at the desired location "
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin-routes-handler.php:168
+msgid "Internal server error."
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin-settings.php:97
+msgid "Your settings have been saved."
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:45
+#: core/admin/classes/settings/class.wpb-settings-dashboard.php:20
+#: core/admin/views/settings/html-admin-settings-dashboard.php:6
+msgid "Dashboard"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:58
+msgid "WPBookit Dashboard"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:145
+msgid "No data available"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:146
+msgid "Showing _START_ to _END_ of _TOTAL_ entries"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:147
+msgid "Showing 0 to 0 of 0 entries"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:148
+msgid "(filtered from _MAX_ total entries)"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:149
+msgid "Show _MENU_ entries"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:151
+msgid "Loading..."
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:152
+msgid "Search:"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:153
+msgid "No matching records found"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:155
+msgctxt "datatable pagination"
+msgid "«"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:156
+msgctxt "datatable pagination"
+msgid "»"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:157
+msgctxt "datatable pagination"
+msgid "›"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:158
+msgctxt "datatable pagination"
+msgid "‹"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:161
+msgid ": activate to sort column ascending"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:168
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:67
+msgid "Sun"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:169
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:68
+msgid "Mon"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:170
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:69
+msgid "Tue"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:171
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:70
+msgid "Wed"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:172
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:71
+msgid "Thu"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:173
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:72
+msgid "Fri"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:174
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:73
+msgid "Sat"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:177
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:76
+msgid "Sunday"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:178
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:77
+msgid "Monday"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:179
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:78
+msgid "Tuesday"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:180
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:79
+msgid "Wednesday"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:181
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:80
+msgid "Thursday"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:182
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:81
+msgid "Friday"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:183
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:82
+msgid "Saturday"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:188
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:87
+msgid "Jan"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:189
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:88
+msgid "Feb"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:190
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:89
+msgid "Mar"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:191
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:90
+msgid "Apr"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:192
+#: core/admin/classes/class.wpb-admin.php:206
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:91
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:105
+msgid "May"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:193
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:92
+msgid "Jun"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:194
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:93
+msgid "Jul"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:195
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:94
+msgid "Aug"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:196
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:95
+msgid "Sep"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:197
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:96
+msgid "Oct"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:198
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:97
+msgid "Nov"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:199
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:98
+msgid "Dec"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:202
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:101
+msgid "January"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:203
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:102
+msgid "February"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:204
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:103
+msgid "March"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:205
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:104
+msgid "April"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:207
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:106
+msgid "June"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:208
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:107
+msgid "July"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:209
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:108
+msgid "August"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:210
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:109
+msgid "September"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:211
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:110
+msgid "October"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:212
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:111
+msgid "November"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:213
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:112
+msgid "December"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:217
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:116
+msgid "Wk"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:218
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:117
+msgid "Scroll to increment"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:219
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:118
+msgid "Click to toggle"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:221
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:120
+msgid "AM"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:222
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:121
+msgid "PM"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:224
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:123
+msgid "Year"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:225
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:124
+msgid "Month"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:226
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:125
+msgid "Hour"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:227
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:126
+#: core/shortcodes/views/html-shortcode-booking.php:32
+#: templates/shortcodes/booking/html-shortcode-booking-confirmation.php:60
+#: templates/shortcodes/booking/html-shortcode-booking-model.php:48
+msgid "Minute"
+msgid_plural "Minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/admin/classes/class.wpb-admin.php:234
+msgid "Please Select booking type"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:235
+msgid "Please Select Booking Date"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:236
+msgid "Please Select Booking Time"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:237
+msgid "Please Select Customer"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:238
+msgid "Please Select Booking Status"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:239
+msgid "Please Select Booking Payment Status"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:240
+msgid "Please Select Booking Payment Mode"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:242
+msgid "Please Select Cover Image"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:243
+msgid "Please Enter Title"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:244
+msgid "Please Enter slug"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:245
+msgid "Please Enter url"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:246
+msgid "Please Select Duration"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:247
+msgid "Please Enter Description"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:248
+msgid "Please enter proper time slot"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:249
+msgid "Please Select At least one date and time"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:250
+msgid "Please Enter Your Queston"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:251
+msgid "Custom Meeting URL require Pro "
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:252
+msgid "Please enter a valid URL"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:253
+msgid "Please enter meeting address"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:254
+msgid "Please enter a valid number of seats"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:255
+msgid "Please enter a valid URL."
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:256
+msgid "At list one avaible day require"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:259
+msgid "First name is required"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:260
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:57
+msgid "First name can only contain alphabetic characters"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:261
+msgid "Last name is required"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:262
+msgid "Last name can only contain alphabetic characters"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:263
+msgid "Email address is required"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:264
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:58
+msgid "Please enter a valid email address"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:265
+msgid "Please enter a valid phone number"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:266
+msgid "Invalid file type. Please upload one of the following"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:267
+msgid "Select type"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:270
+msgid "Enter Your Question"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:271
+msgid "Enter options separated by comma"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:274
+msgid "Do you want to delete this booking: "
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:277
+msgid "Do you want to delete this booking type: "
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:280
+#: core/admin/classes/class.wpb-admin.php:283
+msgid "Do you want to delete this customer: "
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:286
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:78
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:438
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:439
+#: core/admin/views/settings/bookings/booking-form.php:17
+#: core/admin/views/settings/html-admin-settings-bookingtype.php:62
+#: core/includes/classes/class.wpb-booking.php:225
+#: core/includes/classes/class.wpb-calendar.php:225
+#: core/includes/wpb-core-functions.php:263
+#: core/includes/wpb-core-functions.php:264
+#: core/shortcodes/views/html-shortcode-booking.php:42
+#: templates/shortcodes/booking-types/booking-types.php:45
+#: templates/shortcodes/booking/html-shortcode-booking-confirmation.php:72
+#: templates/shortcodes/booking/html-shortcode-booking-model.php:58
+#: templates/shortcodes/booking/tabs/html-shortcode-booking-payment-tab.php:28
+msgid "Free"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:287
+#: core/admin/views/settings/html-admin-settings-bookingtype.php:77
+#: core/admin/views/settings/html-admin-settings-setting.php:350
+#: core/admin/views/settings/html-admin-settings-setting.php:365
+#: core/admin/views/settings/html-admin-settings-setting.php:393
+#: core/admin/views/settings/html-admin-settings-setting.php:413
+#: core/admin/views/settings/html-admin-settings-setting.php:435
+#: core/admin/views/settings/html-admin-settings-setting.php:490
+msgid "Copied"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:288
+msgid "Failed to copy"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:289
+msgid "Click to Copy"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:290
+msgid "Sub Total"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:291
+msgid "Total"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:292
+#: templates/dashboard/booking-types/booking-types-form.php:158
+#: templates/dashboard/booking-types/booking-types-form.php:250
+msgid "Remove"
+msgstr ""
+
+#: core/admin/classes/class.wpb-admin.php:293
+#: core/admin/classes/class.wpb-admin.php:294
+#: core/admin/views/settings/html-admin-settings-bookingtype.php:104
+msgid "Delete"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:69
+msgid "Address"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:70
+msgid "Meeting URL"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:71
+#: core/admin/views/settings/html-admin-settings-custom-fields.php:14
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:53
+#: templates/shortcodes/booking/html-shortcode-booking-form-user-phone-number.php:11
+#: templates/shortcodes/profile/html-edit-profile.php:106
+msgid "Phone Number"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:87
+#: core/admin/classes/controllers/class.wpb-calendar-controller.php:85
+msgid "Min"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:153
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:164
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:175
+msgid "Booking Deleted Successfully."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:158
+msgid "Error while deleting booking."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:305
+msgid "Booking Updated Successfully"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:311
+msgid "Booking Not Updated"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:376
+msgid "Booking Added Successfully"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-controller.php:382
+msgid "Booking Not Added"
+msgstr ""
+
+#. translators: Label of Seats Left placeholder:0, Remain Seat Count placeholder:1 ,Total Seat Count placeholder:2
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:167
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:191
+msgid "Seats Left"
+msgstr ""
+
+#. translators: No of Available Seat placeholder:0
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:193
+msgid "%s Available"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:352
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:417
+msgid "Already had an booking at this time. Kindly book on a different available time."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:456
+msgid "That E-mail is registered kindly login"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:493
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:510
+msgid "You have reached your booking limit. No more bookings can be made at this time."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:564
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:666
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:671
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:688
+#: core/admin/classes/controllers/class.wpb-setting-controller.php:89
+#: core/admin/classes/controllers/class.wpb-setting-controller.php:111
+#: core/admin/classes/controllers/class.wpb-setting-controller.php:127
+#: core/admin/classes/controllers/class.wpb-setting-controller.php:141
+#: core/admin/classes/controllers/class.wpb-setting-controller.php:157
+msgid "Something Went Wrong"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:598
+#: core/admin/classes/controllers/class.wpb-booking-type-controller.php:475
+#: core/admin/classes/controllers/class.wpb-booking-type-controller.php:497
+msgid "SomeThing Went Wrong"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:614
+msgid "Your reservation has been successfully confirmed!"
+msgstr ""
+
+#. translators: Minutes placeholder:0
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:658
+msgid "Cancellation is Not Allowed Within %d Minutes of The Reservation Time."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:680
+#: core/admin/classes/controllers/class.wpb-booking-shortcode-controller.php:696
+msgid "Your Reservations Cancel Successfully"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-type-controller.php:39
+msgid "Fail To Upload Media"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-type-controller.php:248
+msgid "Booking Type Updated Successfully"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-type-controller.php:248
+msgid "Booking Type Created Successfully"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-type-controller.php:259
+msgid "Booking Type Creation Failed"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-type-controller.php:308
+msgid "Booking Type Deleted Successfully."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-type-controller.php:315
+msgid "No Booking Type Found."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-type-controller.php:376
+msgid "Failed to clone meta data for booking type."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-type-controller.php:385
+msgid "Booking Type Cloned Successfully."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-type-controller.php:392
+msgid "Failed to clone Booking Type."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-booking-type-controller.php:492
+msgid "Booking Type Status Update Successfully."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:107
+#: core/admin/classes/controllers/class.wpb-guest-controller.php:45
+msgid "Invalid user ID"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:114
+msgid "Customer Deleted Successfully."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:119
+msgid "Error Deleting Customer."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:125
+#: core/admin/classes/controllers/class.wpb-guest-controller.php:63
+msgid "Token Verification Failed."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:142
+msgid "You must be logged in to edit customer data."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:166
+msgid "You don't have permission to edit this customer."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:174
+msgid "Missing Customer ID"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:205
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:250
+msgid "Failed to update user."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:211
+msgid "Customer update failed."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:217
+msgid "Customer Updated Successfully."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:227
+msgid "Error sideloading image"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:256
+msgid "User Update Failed."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:263
+msgid "User Updated Successfully."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:332
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:347
+msgid "Customer Added Successfully."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:341
+msgid "Error image Uploading"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:398
+msgid "Login Failed. Incorrect email or password."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:419
+msgid "Logged in successfully."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:437
+msgid "That E-mail is registered kindly login."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-customer-controller.php:491
+msgid "Registaration Successfull."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-dashboard-controller.php:43
+msgid "Revenue"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-dashboard-controller.php:48
+#: core/admin/classes/settings/class.wpb-settings-bookings.php:20
+#: core/admin/classes/settings/class.wpb-settings-dashboard.php:44
+#: core/admin/views/settings/html-admin-settings-bookings.php:12
+msgid "Bookings"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-email-controller.php:17
+msgid "Email Updated Successfully."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-email-controller.php:22
+msgid "Failed to update email details."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-email-controller.php:62
+msgid "Email Status Updated Successfully."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-email-controller.php:69
+msgid "Failed to update email status."
+msgstr ""
+
+#. translators: template path placeholder:0
+#. translators: Template Name placeholder:0
+#: core/admin/classes/controllers/class.wpb-email-controller.php:103
+#: core/includes/wpb-core-functions.php:53
+msgid "%s does not exist."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-exportcsv-controller.php:105
+msgid "paid"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-exportcsv-controller.php:105
+msgid "Unpaid"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-guest-controller.php:52
+msgid "Guest User Deleted Successfully."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-guest-controller.php:57
+msgid "Error Deleting Guest User."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-profile-controller.php:104
+msgid "Error"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-profile-controller.php:112
+msgid "Success"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-setting-controller.php:11
+msgid "Settings Saved Successfully!"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-setting-controller.php:24
+msgid "Custom Code Saved Successfully."
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-setting-controller.php:98
+msgid "Payment Mode Added Successfully"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-setting-controller.php:121
+msgid "Payment Mode Status Updated Successfully"
+msgstr ""
+
+#: core/admin/classes/controllers/class.wpb-setting-controller.php:151
+msgid "Payment Mode Delete Successfully"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-bookings.php:23
+#: core/admin/classes/settings/class.wpb-settings-bookingtype.php:17
+#: core/admin/classes/settings/class.wpb-settings-calendar.php:23
+msgid "COMPANY"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-bookings.php:33
+#: core/admin/classes/settings/class.wpb-settings-customer.php:39
+msgid "Customer"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-bookings.php:34
+msgid "Date and Time"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-bookings.php:35
+msgid "Type"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-bookings.php:36
+#: core/admin/views/settings/html-admin-settings-bookingtype.php:45
+#: templates/dashboard/booking-types/booking-types-form.php:84
+msgid "Duration"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-bookings.php:37
+msgid "Total Price"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-bookings.php:38
+#: core/admin/views/settings/html-admin-settings-bookingtype.php:37
+#: core/admin/views/settings/html-admin-settings-calendar.php:27
+msgid "Status"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-bookings.php:39
+msgid "Actions"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-bookingtype.php:15
+#: core/admin/views/settings/html-admin-settings-bookingtype.php:12
+msgid "Booking Types"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-bookingtype.php:43
+msgid "Custom Link"
+msgstr ""
+
+#. translators: Minutes placeholder:0
+#: core/admin/classes/settings/class.wpb-settings-bookingtype.php:70
+#: core/admin/classes/settings/class.wpb-settings-bookingtype.php:72
+#: core/admin/classes/settings/class.wpb-settings-bookingtype.php:74
+#: core/admin/classes/settings/class.wpb-settings-bookingtype.php:76
+#: core/admin/views/settings/html-admin-settings-bookingtype.php:48
+msgid "%d Minutes"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-calendar.php:20
+#: core/admin/views/settings/html-admin-settings-calendar.php:11
+msgid "Calendar"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-customer.php:17
+msgid "Customers"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-customer.php:22
+#: core/admin/classes/settings/class.wpb-settings-guest.php:22
+msgid "USER"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-customer.php:38
+#: core/admin/classes/settings/class.wpb-settings-guest.php:38
+#: core/admin/classes/settings/class.wpb-settings-setting.php:259
+msgid "ID"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-customer.php:40
+#: core/admin/views/settings/customers/customer-form.php:77
+#: core/admin/views/settings/html-admin-settings-custom-fields.php:29
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:78
+msgid "Date of Birth"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-customer.php:41
+msgid "Phone"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-customer.php:42
+#: core/admin/views/settings/customers/customer-form.php:62
+#: core/admin/views/settings/html-admin-settings-custom-fields.php:4
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:63
+#: templates/shortcodes/profile/html-edit-profile.php:118
+msgid "Gender"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-customer.php:43
+msgid "Created"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-customer.php:44
+#: core/admin/classes/settings/class.wpb-settings-guest.php:42
+#: core/admin/classes/settings/class.wpb-settings-setting.php:242
+#: core/admin/classes/settings/class.wpb-settings-setting.php:263
+msgid "Action"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-dashboard.php:22
+msgid "MAIN"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-guest.php:17
+#: core/admin/views/settings/html-admin-settings-guest.php:4
+msgid "Guest Users"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-guest.php:39
+msgid "Guest Name"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-guest.php:40
+msgid "Guest Email"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-guest.php:41
+msgid "Guest Phone Number"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:15
+msgid "Settings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:16
+msgid "SETTING"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:69
+msgid "General"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:70
+msgid "Theme Settings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:71
+msgid "Emails"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:72
+#: core/admin/views/settings/html-admin-settings-payment-gateway-form.php:10
+msgid "Offline Payments"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:73
+msgid "Online Payments"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:74
+msgid "Calendar feeds"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:75
+#: core/admin/views/settings/html-admin-settings-setting.php:577
+msgid "Custom Code"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:76
+msgid "Shortcode"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:77
+#: core/admin/views/settings/bookings/booking-import.php:79
+#: core/admin/views/settings/customers/customer-import.php:68
+#: core/admin/views/settings/html-admin-settings-setting.php:765
+msgid "Import"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:78
+msgid "Telemed"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:92
+msgid "Registered"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:93
+msgid "Guest"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:103
+msgid "Including tax"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:104
+msgid "Excluding tax"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:114
+msgid "Required \"Name\" Only"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:115
+msgid "Required \"First Name\" and \"Last Name\""
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:124
+msgid "Hide Header"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:125
+msgid "Hide Footer"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:136
+msgid "Set as Pending"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:137
+msgid "Set as Approved"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:147
+msgid "No Limit"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:148
+msgid "1 Booking"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:149
+msgid "2 Bookings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:150
+msgid "3 Bookings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:151
+msgid "4 Bookings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:152
+msgid "5 Bookings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:153
+msgid "6 Bookings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:154
+msgid "7 Bookings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:155
+msgid "8 Bookings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:156
+msgid "9 Bookings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:157
+msgid "10 Bookings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:158
+msgid "15 Bookings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:159
+msgid "20 Bookings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:160
+msgid "25 Bookings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:161
+msgid "50 Bookings"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:171
+msgid "No buffer"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:172
+msgid "15 minutes"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:173
+msgid "30 minutes"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:174
+msgid "45 minutes"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:175
+msgid "1 hour"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:176
+msgid "2 hours"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:177
+msgid "3 hours"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:178
+msgid "4 hours"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:179
+msgid "5 hours"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:180
+msgid "6 hours"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:181
+msgid "12 hours"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:182
+msgid "24 hours"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:183
+msgid "2 days"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:184
+msgid "3 days"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:185
+#: core/admin/classes/settings/class.wpb-settings-setting.php:229
+msgid "5 days"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:186
+msgid "6 days"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:187
+msgid "1 week"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:188
+msgid "2 weeks"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:189
+msgid "3 weeks"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:190
+msgid "4 weeks"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:191
+msgid "5 weeks"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:192
+msgid "6 weeks"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:193
+msgid "7 weeks"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:194
+msgid "8 weeks"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:201
+msgid "Redirect the same Page"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:218
+msgid "No Redirect"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:219
+msgid "Choose Specific page"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:239
+#: core/shortcodes/views/html-shortcode-login.php:37
+msgid "Email"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:240
+msgid "Recipient(s)"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:241
+#: core/admin/classes/settings/class.wpb-settings-setting.php:262
+msgid "Enable/Disable"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:260
+msgid "Payment Mode"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:261
+#: templates/dashboard/booking-types/booking-types-form.php:98
+msgid "Description"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:282
+msgid "At Event Time"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:283
+msgid "5 Minutes Before"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:284
+msgid "15 Minutes Before"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:285
+msgid "30 Minutes Before"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:286
+msgid "1 Hour Before"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:287
+msgid "2 Hours Before"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:288
+msgid "4 Hours Before"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:289
+msgid "1 Day Before"
+msgstr ""
+
+#: core/admin/classes/settings/class.wpb-settings-setting.php:290
+msgid "1 Week Before"
+msgstr ""
+
+#: core/admin/views/layouts/header.php:6
+#: core/admin/views/layouts/header.php:53
+msgid "Go To WordPress"
+msgstr ""
+
+#: core/admin/views/layouts/header.php:47
+msgid "Settings "
+msgstr ""
+
+#: core/admin/views/layouts/header.php:59
+msgid "Logout"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:4
+msgid "Advanced Filter"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:17
+msgid "Today"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:22
+msgid "Last 30 Days"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:27
+msgid "This Month"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:32
+msgid "Last Month"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:37
+msgid "Last 90 Days"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:42
+msgid "Last 6 Months"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:47
+msgid "Last 1 Year"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:58
+msgid "To"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:74
+#: core/admin/views/settings/bookings/booking-form.php:12
+msgid "Booking Type*"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:82
+msgid "*You can select multiple booking types"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:86
+#: core/admin/views/settings/bookings/booking-form.php:58
+msgid "Status*"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:94
+msgid "*You can select multiple booking statuses"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:103
+msgid "Reset filters"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-advanced-filter.php:108
+msgid "Apply filters"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-form.php:5
+msgid "Create Booking"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-form.php:6
+msgid "Edit Booking"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-form.php:14
+msgid "Select Booking Type"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-form.php:27
+msgid "Date*"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-form.php:28
+msgid "Select Date"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-form.php:34
+msgid "Select Time*"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-form.php:45
+msgid "Customer*"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-form.php:47
+msgid "Select Customer"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-form.php:70
+msgid "Payment Mode*"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-form.php:81
+msgid "Payment Status*"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-form.php:93
+msgid "Notes"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-form.php:94
+#: core/admin/views/settings/customers/customer-form.php:88
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:91
+msgid "Write Your Message Here"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-form.php:105
+#: core/admin/views/settings/customers/customer-form.php:97
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:99
+#: core/admin/views/settings/html-admin-settings-setting.php:186
+#: core/admin/views/settings/html-admin-settings-setting.php:256
+#: core/admin/views/settings/html-admin-settings-setting.php:508
+#: core/admin/views/settings/html-admin-settings-setting.php:623
+#: core/admin/views/settings/html-admin-settings-setting.php:693
+#: core/admin/views/settings/html-admin-settings-setting.php:734
+#: templates/shortcodes/profile/html-edit-profile.php:215
+msgid "Save"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:6
+msgid "Booking import"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:12
+#: core/admin/views/settings/customers/customer-import.php:12
+msgid "Select File Type"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:22
+#: core/admin/views/settings/customers/customer-import.php:22
+#: core/admin/views/settings/html-admin-settings-setting.php:754
+msgid "Upload a File"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:27
+#: core/admin/views/settings/customers/customer-import.php:27
+#: templates/dashboard/booking-types/booking-types-form.php:36
+msgid "Drag & Drop or choose file to upload"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:33
+#: core/admin/views/settings/customers/customer-import.php:33
+msgid "Click here to download sample file"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:36
+msgid "Create guest user(s)"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:39
+msgid "Yes"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:42
+msgid "No"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:47
+#: core/admin/views/settings/customers/customer-import.php:36
+msgid "Following fields is required in CSV file"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:56
+msgid "Appointments Import"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:58
+#: core/admin/views/settings/customers/customer-import.php:47
+msgid "Total rows:"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:59
+#: core/admin/views/settings/customers/customer-import.php:48
+msgid "Total rows inserted:"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:61
+msgid "Booking type not found:"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:62
+msgid "Customer not found:"
+msgstr ""
+
+#: core/admin/views/settings/bookings/booking-import.php:71
+#: core/admin/views/settings/customers/customer-import.php:60
+msgid "Cancle"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-form.php:5
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:4
+msgid "Add New Customer"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-form.php:15
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:16
+#: core/admin/views/settings/html-admin-settings-setting.php:202
+msgid "Upload"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-form.php:21
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:22
+#: templates/shortcodes/profile/html-edit-profile.php:34
+msgid "First Name*"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-form.php:32
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:33
+#: templates/shortcodes/profile/html-edit-profile.php:48
+msgid "Last Name*"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-form.php:42
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:43
+#: templates/shortcodes/profile/html-edit-profile.php:62
+msgid "Email Address*"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-form.php:52
+msgid "Phone Number*"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-form.php:65
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:66
+msgid "Select Gender"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-form.php:66
+#: core/admin/views/settings/html-admin-settings-custom-fields.php:7
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:67
+#: templates/shortcodes/profile/html-edit-profile.php:122
+msgid "Male"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-form.php:67
+#: core/admin/views/settings/html-admin-settings-custom-fields.php:8
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:68
+#: templates/shortcodes/profile/html-edit-profile.php:123
+msgid "Female"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-form.php:68
+#: core/admin/views/settings/html-admin-settings-custom-fields.php:9
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:69
+#: templates/shortcodes/profile/html-edit-profile.php:124
+msgid "Other"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-form.php:87
+#: core/admin/views/settings/html-admin-settings-newcustomer.php:88
+msgid "Note"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-import.php:6
+msgid "Customer import"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-import.php:45
+msgid "Customer Import"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-import.php:50
+msgid "Email not found:"
+msgstr ""
+
+#: core/admin/views/settings/customers/customer-import.php:51
+msgid "Name not found:"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-bookings.php:25
+#: core/admin/views/settings/html-admin-settings-customer.php:16
+#: core/admin/views/settings/html-admin-settings-guest.php:14
+msgid "Search..."
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-bookings.php:29
+msgid "ADVANCED FILTER"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-bookings.php:33
+#: core/admin/views/settings/html-admin-settings-calendar.php:16
+#: core/admin/views/settings/html-admin-settings-dashboard.php:92
+msgctxt "Booking"
+msgid "New"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-bookings.php:57
+#: core/admin/views/settings/html-admin-settings-calendar.php:155
+msgid "Booking details"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-bookings.php:98
+#: core/admin/views/settings/html-admin-settings-calendar.php:196
+msgid "Email:"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-bookings.php:113
+#: core/admin/views/settings/html-admin-settings-calendar.php:212
+msgid "Created:"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-bookingtype-nothing.php:13
+msgid "Ohhh no.. There are no booking types available right now."
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-bookingtype-nothing.php:15
+msgid "There are no booking types available you can add booking type and start a demo call and solve your customer problem easily."
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-bookingtype-nothing.php:21
+#: core/admin/views/settings/html-admin-settings-bookingtype.php:19
+msgctxt "Booking_type"
+msgid "New"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-bookingtype.php:51
+msgid "Price"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-bookingtype.php:69
+msgid "Short code"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-bookingtype.php:100
+msgid "Edit"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-bookingtype.php:102
+msgid "Clone"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-calendar.php:50
+#: core/admin/views/settings/html-admin-settings-calendar.php:58
+msgid "All Booking Types"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-calendar.php:74
+msgid "Custom"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-calendar.php:81
+msgid "Refresh"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-calendar.php:87
+msgid "Print"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-calendar.php:204
+msgid "Meeting URL:"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-custom-fields.php:1
+msgid "Custom Fields"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-custom-fields.php:17
+msgid "Enter your phone number here."
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-custom-fields.php:22
+msgid "User Note"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-custom-fields.php:25
+msgid "Enter your user note here."
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-custom-fields.php:32
+msgid "Enter your date of birth here."
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-customer.php:22
+msgctxt "Customer"
+msgid "New"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-dashboard.php:13
+msgid "Select Date Range"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-dashboard.php:15
+msgid "Submit"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-dashboard.php:16
+msgid "Reset"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-dashboard.php:24
+msgid "Total Bookings"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-dashboard.php:38
+msgid "Total Customer"
+msgstr ""
+
+#. translators: Booking Label in singular or plural placeholder:0, Number of Booking placeholder:1
+#: core/admin/views/settings/html-admin-settings-dashboard.php:53
+#: core/shortcodes/views/html-shortcode-booking.php:51
+#: templates/shortcodes/profile/html-bookings-history.php:30
+#: templates/shortcodes/profile/html-pending-bookings.php:25
+#: templates/shortcodes/profile/html-upcoming-bookings.php:25
+msgid "Booking"
+msgid_plural "Bookings"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/admin/views/settings/html-admin-settings-dashboard.php:69
+#: core/admin/views/settings/html-admin-settings-setting.php:346
+msgid "All Bookings"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-dashboard.php:75
+msgid "Add Bookings"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-dashboard.php:102
+msgid "Upcoming"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-dashboard.php:107
+msgid "Pending"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-dashboard.php:132
+#: core/admin/views/settings/html-admin-settings-dashboard.php:171
+msgid "Booking for "
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-dashboard.php:142
+#: core/admin/views/settings/html-admin-settings-dashboard.php:182
+#: core/admin/views/settings/html-admin-settings-dashboard.php:210
+msgid "No Booking Available"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-dashboard.php:147
+#: core/admin/views/settings/html-admin-settings-dashboard.php:188
+#: core/admin/views/settings/html-admin-settings-dashboard.php:216
+msgid "View All"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-payment-gateway-form.php:13
+msgid "Edit Offline Payments"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-payment-gateway-form.php:24
+msgid "Method"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-payment-gateway-form.php:25
+msgid "e.g. Cash, Cheque, Etc."
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-payment-gateway-form.php:27
+msgid "Method is required."
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-payment-gateway-form.php:33
+msgid "Descriptions"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-payment-gateway-form.php:34
+msgid "e.g. Via USD doller"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-payment-gateway-form.php:36
+msgid "Descriptions are required."
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-payment-gateway-form.php:45
+#: core/admin/views/settings/html-admin-settings-setting.php:855
+#: templates/dashboard/booking-types/booking-types-form.php:421
+#: templates/shortcodes/booking/html-shortcode-booking-confirmation.php:102
+#: templates/shortcodes/booking/html-shortcode-booking-model-footer.php:9
+msgid "Cancel"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-payment-gateway-form.php:53
+#: core/admin/views/settings/html-admin-settings-setting.php:862
+msgid "Update"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-payment-gateway-form.php:56
+msgid "Add"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:40
+msgid "Guest Booking Options"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:44
+msgid "Require Email Address — Require your guests to enter their email address."
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:50
+msgid "Require Phone Number — Ensure guests provide their phone number"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:59
+msgid "Booking Options"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:70
+msgid "Currency"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:84
+msgid "Currency Prefix"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:88
+msgid "CurrencyPostfix"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:96
+msgid "Default Status For New Booking"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:105
+msgid "Pending Booking Limit For Registered Users"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:114
+msgid "Cancellation Buffer"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:126
+msgid "Login Redirect"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:132
+msgid "Please Upgrade Pro Version to use this"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:139
+msgid "Booking Redirect"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:162
+msgid "Base URL Slug"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:166
+msgid "Enter Slug"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:170
+msgid "Hide Header or Footer on Booking Share URL Page"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:200
+msgid "Upload Site Logo:"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:232
+msgid "Dashboard Name"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:241
+msgid "Copyright Text"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:337
+msgid "Calendar Feeds"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:342
+msgid "Use the following URLs to either download a static feed (not auto-updating) or paste the URL into your favorite calendar app (Google Calendar, Apple Calendar, etc.) as a subscription to load a read-only auto-updating booking feed."
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:384
+msgid "Display the Login / Register Form"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:386
+msgid "If the Registration tab doesn't show up, be sure to allow registrations from the Settings > General page."
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:407
+msgid "Display User Profile"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:427
+msgid "Display Booking Type List"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:455
+msgid "Zoom Integration"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:460
+msgid "Enabled / Disabled"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:468
+#: core/admin/views/settings/html-admin-settings-setting.php:718
+msgid "Client ID"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:471
+msgid "Please Enter Client ID"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:475
+msgid "Client Secret Key"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:478
+msgid "Please Enter Client Secret Key"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:483
+msgid "Authorized Redirect URI"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:520
+msgid "Step 1: Sign in to the Zoom Developer Website"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:521
+msgid "Sign in to the Zoom Developer Website - "
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:521
+msgid "https://marketplace.zoom.us"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:524
+msgid "Step 2: Build App"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:525
+msgid "In the header, select \"Build App\" and choose the OAuth type"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:528
+msgid "Step 3: Fill in Application Information"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:529
+msgid "Fill in your application information"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:532
+msgid "Step 4: Retrieve Developer Keys"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:533
+msgid "Retrieve your developer keys: Client ID and Client Secret"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:536
+msgid "Step 5: Select Scope"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:537
+msgid "Select the scope \"Create meeting scope\" from the scope section"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:540
+msgid "Step 6: Paste Credentials"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:541
+msgid "Paste the Client ID and Client Secret in the WPBookit Telemed section"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:544
+msgid "Step 7: Authorize"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:545
+msgid "Click on the authorize button"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:548
+msgid "That's it!"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:578
+msgid "Custom CSS Code"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:599
+msgid "Custom JS Code"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:634
+msgid "Offline Payment Mode"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:638
+msgid "New"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:669
+msgid "Online Payment Mode"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:670
+#: core/includes/wpb-core-functions.php:754
+msgid "Upgrade Pro"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:678
+#: core/admin/views/settings/html-admin-settings-setting.php:686
+msgid "WooCommerce payment gateway"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:681
+msgid "Enable WooCommerce payment"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:683
+msgid "Note: If you enable Woocommerce payment. This action may redirect appointments for payment on the default woocommerce cart page with selected appointment services. The appointment will be canceled automatically in case of an unsuccessful payment. (woocommerce redirection is for the patient role only) "
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:685
+msgid "WooCommerce payment gateway Label"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:699
+msgid "PayPal Payment Gateway"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:706
+msgid "Enable PayPal payment"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:710
+msgid "Mode"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:712
+msgid "Sandbox"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:713
+msgid "Live"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:722
+msgid "Client Secret"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:727
+msgid "Note: The PayPal currency must be the same as the service price currency"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:747
+msgid "Import Booking From WPBooked CSV"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:757
+msgid "Please upload a valid CSV file"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:798
+msgid "Edit Email"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:810
+msgid "Subject"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:811
+msgid "write subject name here.."
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:816
+msgid "Set Reminder"
+msgstr ""
+
+#: core/admin/views/settings/html-admin-settings-setting.php:828
+msgid "Email Content"
+msgstr ""
+
+#: core/class-wpbookit.php:90
+msgid "You are not allowed to clone this class."
+msgstr ""
+
+#: core/class-wpbookit.php:101
+msgid "You are not allowed to unserialize this class."
+msgstr ""
+
+#: core/class-wpbookit.php:220
+msgctxt "Page slug"
+msgid "customer-profile"
+msgstr ""
+
+#: core/class-wpbookit.php:221
+msgctxt "Page title"
+msgid "Customer Profile"
+msgstr ""
+
+#: core/class-wpbookit.php:226
+msgctxt "Page slug"
+msgid "register-login"
+msgstr ""
+
+#: core/class-wpbookit.php:227
+msgctxt "Page title"
+msgid "Register Login user"
+msgstr ""
+
+#. translators: %s: $key Key to check
+#: core/includes/abstracts/abstract-wpb-data.php:347
+msgid "Generic add/update/get meta methods should not be used for internal meta data, including \"%s\". Use getters and setters."
+msgstr ""
+
+#: core/includes/abstracts/abstract-wpb-import.php:42
+msgid "Missing required field in CSV."
+msgstr ""
+
+#: core/includes/classes/class-wpb-data-store.php:66
+#: core/includes/classes/class-wpb-data-store.php:72
+#: core/includes/classes/class-wpb-data-store.php:78
+msgid "Invalid data store."
+msgstr ""
+
+#: core/includes/classes/class.wpb-helpers.php:30
+msgid "WPBookit Staff"
+msgstr ""
+
+#: core/includes/classes/class.wpb-helpers.php:38
+msgid "WPBookit Customer"
+msgstr ""
+
+#. translators: start post number placeholder:0, end post number placeholder:1 ,end post number placeholder:2
+#: core/includes/classes/class.wpb-helpers.php:151
+msgid "Showing %1$d - %2$d of %3$d entries"
+msgstr ""
+
+#: core/includes/classes/class.wpb-helpers.php:272
+msgid "You don't have permission."
+msgstr ""
+
+#: core/includes/classes/import/class-wpb-csv-import.php:16
+msgid "CSV"
+msgstr ""
+
+#: core/includes/wpb-booking-functions.php:12
+#: core/includes/wpb-bookingtypes-functions.php:12
+#: core/includes/wpb-calendar-functions.php:12
+msgctxt "Booking status"
+msgid "Pending"
+msgstr ""
+
+#: core/includes/wpb-booking-functions.php:13
+#: core/includes/wpb-calendar-functions.php:13
+msgctxt "Booking status"
+msgid "Approved"
+msgstr ""
+
+#: core/includes/wpb-booking-functions.php:14
+#: core/includes/wpb-calendar-functions.php:14
+msgctxt "Booking status"
+msgid "Cancelled"
+msgstr ""
+
+#: core/includes/wpb-booking-functions.php:15
+#: core/includes/wpb-calendar-functions.php:15
+msgctxt "Booking status"
+msgid "Completed"
+msgstr ""
+
+#: core/includes/wpb-booking-functions.php:24
+#: core/includes/wpb-calendar-functions.php:24
+msgctxt "Payment status"
+msgid "Paid"
+msgstr ""
+
+#: core/includes/wpb-booking-functions.php:25
+#: core/includes/wpb-calendar-functions.php:25
+msgctxt "Payment status"
+msgid "Unpaid"
+msgstr ""
+
+#: core/includes/wpb-bookingtypes-functions.php:13
+msgctxt "Booking status"
+msgid "Enabled"
+msgstr ""
+
+#: core/includes/wpb-bookingtypes-functions.php:14
+msgctxt "Booking status"
+msgid "Disable"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:79
+msgid "&laquo;"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:80
+msgid "&raquo;"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:478
+msgid "United Arab Emirates dirham"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:479
+msgid "Afghan afghani"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:480
+msgid "Albanian lek"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:481
+msgid "Armenian dram"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:482
+msgid "Netherlands Antillean guilder"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:483
+msgid "Angolan kwanza"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:484
+msgid "Argentine peso"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:485
+msgid "Australian dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:486
+msgid "Aruban florin"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:487
+msgid "Azerbaijani manat"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:488
+msgid "Bosnia and Herzegovina convertible mark"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:489
+msgid "Barbadian dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:490
+msgid "Bangladeshi taka"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:491
+msgid "Bulgarian lev"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:492
+msgid "Bahraini dinar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:493
+msgid "Burundian franc"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:494
+msgid "Bermudian dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:495
+msgid "Brunei dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:496
+msgid "Bolivian boliviano"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:497
+msgid "Brazilian real"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:498
+msgid "Bahamian dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:499
+msgid "Bitcoin"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:500
+msgid "Bhutanese ngultrum"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:501
+msgid "Botswana pula"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:502
+msgid "Belarusian ruble (old)"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:503
+msgid "Belarusian ruble"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:504
+msgid "Belize dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:505
+msgid "Canadian dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:506
+msgid "Congolese franc"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:507
+msgid "Swiss franc"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:508
+msgid "Chilean peso"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:509
+msgid "Chinese yuan"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:510
+msgid "Colombian peso"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:511
+msgid "Costa Rican col&oacute;n"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:512
+msgid "Cuban convertible peso"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:513
+msgid "Cuban peso"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:514
+msgid "Cape Verdean escudo"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:515
+msgid "Czech koruna"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:516
+msgid "Djiboutian franc"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:517
+msgid "Danish krone"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:518
+msgid "Dominican peso"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:519
+msgid "Algerian dinar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:520
+msgid "Egyptian pound"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:521
+msgid "Eritrean nakfa"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:522
+msgid "Ethiopian birr"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:523
+msgid "Euro"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:524
+msgid "Fijian dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:525
+msgid "Falkland Islands pound"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:526
+msgid "Pound sterling"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:527
+msgid "Georgian lari"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:528
+msgid "Guernsey pound"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:529
+msgid "Ghana cedi"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:530
+msgid "Gibraltar pound"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:531
+msgid "Gambian dalasi"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:532
+msgid "Guinean franc"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:533
+msgid "Guatemalan quetzal"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:534
+msgid "Guyanese dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:535
+msgid "Hong Kong dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:536
+msgid "Honduran lempira"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:537
+msgid "Croatian kuna"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:538
+msgid "Haitian gourde"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:539
+msgid "Hungarian forint"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:540
+msgid "Indonesian rupiah"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:541
+msgid "Israeli new shekel"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:542
+msgid "Manx pound"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:543
+msgid "Indian rupee"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:544
+msgid "Iraqi dinar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:545
+msgid "Iranian rial"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:546
+msgid "Iranian toman"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:547
+msgid "Icelandic kr&oacute;na"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:548
+msgid "Jersey pound"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:549
+msgid "Jamaican dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:550
+msgid "Jordanian dinar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:551
+msgid "Japanese yen"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:552
+msgid "Kenyan shilling"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:553
+msgid "Kyrgyzstani som"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:554
+msgid "Cambodian riel"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:555
+msgid "Comorian franc"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:556
+msgid "North Korean won"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:557
+msgid "South Korean won"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:558
+msgid "Kuwaiti dinar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:559
+msgid "Cayman Islands dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:560
+msgid "Kazakhstani tenge"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:561
+msgid "Lao kip"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:562
+msgid "Lebanese pound"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:563
+msgid "Sri Lankan rupee"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:564
+msgid "Liberian dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:565
+msgid "Lesotho loti"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:566
+msgid "Libyan dinar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:567
+msgid "Moroccan dirham"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:568
+msgid "Moldovan leu"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:569
+msgid "Malagasy ariary"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:570
+msgid "Macedonian denar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:571
+msgid "Burmese kyat"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:572
+msgid "Mongolian t&ouml;gr&ouml;g"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:573
+msgid "Macanese pataca"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:574
+msgid "Mauritanian ouguiya"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:575
+msgid "Mauritian rupee"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:576
+msgid "Maldivian rufiyaa"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:577
+msgid "Malawian kwacha"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:578
+msgid "Mexican peso"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:579
+msgid "Malaysian ringgit"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:580
+msgid "Mozambican metical"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:581
+msgid "Namibian dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:582
+msgid "Nigerian naira"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:583
+msgid "Nicaraguan c&oacute;rdoba"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:584
+msgid "Norwegian krone"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:585
+msgid "Nepalese rupee"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:586
+msgid "New Zealand dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:587
+msgid "Omani rial"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:588
+msgid "Panamanian balboa"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:589
+msgid "Sol"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:590
+msgid "Papua New Guinean kina"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:591
+msgid "Philippine peso"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:592
+msgid "Pakistani rupee"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:593
+msgid "Polish z&#x142;oty"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:594
+msgid "Transnistrian ruble"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:595
+msgid "Paraguayan guaran&iacute;"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:596
+msgid "Qatari riyal"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:597
+msgid "Romanian leu"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:598
+msgid "Serbian dinar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:599
+msgid "Russian ruble"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:600
+msgid "Rwandan franc"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:601
+msgid "Saudi riyal"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:602
+msgid "Solomon Islands dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:603
+msgid "Seychellois rupee"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:604
+msgid "Sudanese pound"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:605
+msgid "Swedish krona"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:606
+msgid "Singapore dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:607
+msgid "Saint Helena pound"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:608
+msgid "Sierra Leonean leone"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:609
+msgid "Somali shilling"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:610
+msgid "Surinamese dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:611
+msgid "South Sudanese pound"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:612
+msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe dobra"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:613
+msgid "Syrian pound"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:614
+msgid "Swazi lilangeni"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:615
+msgid "Thai baht"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:616
+msgid "Tajikistani somoni"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:617
+msgid "Turkmenistan manat"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:618
+msgid "Tunisian dinar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:619
+msgid "Tongan pa&#x2bb;anga"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:620
+msgid "Turkish lira"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:621
+msgid "Trinidad and Tobago dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:622
+msgid "New Taiwan dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:623
+msgid "Tanzanian shilling"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:624
+msgid "Ukrainian hryvnia"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:625
+msgid "Ugandan shilling"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:626
+msgid "United States (US) dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:627
+msgid "Uruguayan peso"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:628
+msgid "Uzbekistani som"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:629
+msgid "Venezuelan bol&iacute;var (2008–2018)"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:630
+msgid "Venezuelan bol&iacute;var"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:631
+msgid "Vietnamese &#x111;&#x1ed3;ng"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:632
+msgid "Vanuatu vatu"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:633
+msgid "Samoan t&#x101;l&#x101;"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:634
+msgid "Central African CFA franc"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:635
+msgid "East Caribbean dollar"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:636
+msgid "West African CFA franc"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:637
+msgid "CFP franc"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:638
+msgid "Yemeni rial"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:639
+msgid "South African rand"
+msgstr ""
+
+#: core/includes/wpb-core-functions.php:640
+msgid "Zambian kwacha"
+msgstr ""
+
+#: core/includes/wpb-import-functions.php:13
+msgid "Date (Date should be less than current date)"
+msgstr ""
+
+#: core/includes/wpb-import-functions.php:14
+msgid "Start time"
+msgstr ""
+
+#: core/includes/wpb-import-functions.php:15
+msgid "Booking Type ID"
+msgstr ""
+
+#: core/includes/wpb-import-functions.php:16
+#: core/includes/wpb-import-functions.php:21
+#: core/includes/wpb-import-functions.php:26
+#: core/includes/wpb-import-functions.php:31
+msgid "Customer Email"
+msgstr ""
+
+#: core/includes/wpb-import-functions.php:19
+#: core/includes/wpb-import-functions.php:24
+#: core/includes/wpb-import-functions.php:29
+#: templates/shortcodes/booking/html-shortcode-booking-form-first-last-name.php:9
+msgid "First Name"
+msgstr ""
+
+#: core/includes/wpb-import-functions.php:20
+#: core/includes/wpb-import-functions.php:25
+#: core/includes/wpb-import-functions.php:30
+#: templates/shortcodes/booking/html-shortcode-booking-form-first-last-name.php:23
+msgid "Last Name"
+msgstr ""
+
+#: core/includes/wpb-import-functions.php:32
+msgid "Booking Date"
+msgstr ""
+
+#: core/includes/wpb-import-functions.php:33
+msgid "Booking Start Time"
+msgstr ""
+
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:44
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:56
+msgid "Do you want to cancel this appointment?"
+msgstr ""
+
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:45
+msgid "Payment failed. Please try again."
+msgstr ""
+
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:46
+msgid "Please enter a valid email format."
+msgstr ""
+
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:47
+msgid "* No slots available for the selected date."
+msgstr ""
+
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:49
+msgid "First name cannot be blank"
+msgstr ""
+
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:50
+msgid "Last name cannot be blank"
+msgstr ""
+
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:51
+msgid "Email address cannot be blank"
+msgstr ""
+
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:52
+msgid "Change Password cannot be blank"
+msgstr ""
+
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:53
+msgid "Confirm Password cannot be blank"
+msgstr ""
+
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:54
+msgid "Confirm and Change Passwords don't match"
+msgstr ""
+
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:59
+msgid "Phone number must be 10 digits"
+msgstr ""
+
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:60
+msgid "Please select a valid gender"
+msgstr ""
+
+#: core/shortcodes/class-wpbookit-shortcode-abstract.php:61
+msgid "Required uppercase and lower letter, number, and special character."
+msgstr ""
+
+#: core/shortcodes/classes/class-wpbookit-booking-shortcode.php:87
+msgid "Please enter Full Name"
+msgstr ""
+
+#: core/shortcodes/classes/class-wpbookit-booking-shortcode.php:95
+msgid "Please enter first name"
+msgstr ""
+
+#: core/shortcodes/classes/class-wpbookit-booking-shortcode.php:103
+msgid "Please enter last name"
+msgstr ""
+
+#: core/shortcodes/classes/class-wpbookit-booking-shortcode.php:112
+#: core/shortcodes/classes/class-wpbookit-booking-shortcode.php:131
+msgid "Please enter email"
+msgstr ""
+
+#: core/shortcodes/classes/class-wpbookit-booking-shortcode.php:113
+#: core/shortcodes/classes/class-wpbookit-booking-shortcode.php:132
+msgid "Please enter valid email"
+msgstr ""
+
+#: core/shortcodes/classes/class-wpbookit-booking-shortcode.php:122
+msgid "Please enter Password"
+msgstr ""
+
+#: core/shortcodes/classes/class-wpbookit-booking-shortcode.php:140
+msgid "Please Select Payment Gateway"
+msgstr ""
+
+#: core/shortcodes/classes/class-wpbookit-booking-shortcode.php:148
+msgid "Please Enter Phone Number"
+msgstr ""
+
+#: core/shortcodes/classes/class-wpbookit-booking-shortcode.php:182
+msgid "Booking not found"
+msgstr ""
+
+#: core/shortcodes/classes/class-wpbookit-booking-shortcode.php:213
+msgid "Booking type not found"
+msgstr ""
+
+#: core/shortcodes/views/html-shortcode-booking.php:52
+msgid "Pick a date and time for booking."
+msgstr ""
+
+#: core/shortcodes/views/html-shortcode-booking.php:81
+msgid "Booking Type not available, kindly contact Admin."
+msgstr ""
+
+#: core/shortcodes/views/html-shortcode-login.php:19
+msgid "Sign In"
+msgstr ""
+
+#: core/shortcodes/views/html-shortcode-login.php:25
+#: core/shortcodes/views/html-shortcode-login.php:85
+msgid "Register"
+msgstr ""
+
+#: core/shortcodes/views/html-shortcode-login.php:32
+msgid "Error: The username/password is not incorrect."
+msgstr ""
+
+#: core/shortcodes/views/html-shortcode-login.php:34
+#: core/shortcodes/views/html-shortcode-login.php:67
+#: core/shortcodes/views/html-shortcode-login.php:70
+msgid "Email Address"
+msgstr ""
+
+#: core/shortcodes/views/html-shortcode-login.php:39
+#: core/shortcodes/views/html-shortcode-login.php:43
+#: core/shortcodes/views/html-shortcode-login.php:72
+#: core/shortcodes/views/html-shortcode-login.php:76
+#: templates/shortcodes/booking/html-shortcode-booking-form-user-register-login.php:32
+#: templates/shortcodes/booking/html-shortcode-booking-form-user-register-login.php:69
+msgid "Password"
+msgstr ""
+
+#: core/shortcodes/views/html-shortcode-login.php:55
+msgid "Remember Me"
+msgstr ""
+
+#: core/shortcodes/views/html-shortcode-login.php:58
+#: templates/shortcodes/booking/html-shortcode-booking-form-user-register-login.php:84
+msgid "Forgot Password?"
+msgstr ""
+
+#: core/shortcodes/views/html-shortcode-login.php:61
+msgid "Log in"
+msgstr ""
+
+#: core/shortcodes/views/html-shortcode-login.php:91
+msgid "What is your email address?"
+msgstr ""
+
+#: core/shortcodes/views/html-shortcode-login.php:94
+msgid "Reset my password"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:16
+msgid "New booking"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:17
+msgid "Advanced booking"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:29
+msgid "Background Image"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:48
+msgid "Replace image with color"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:52
+msgid "No cover image? Use a background color!"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:61
+msgid "Title"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:63
+msgid "write your title here"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:74
+msgid "Slug"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:79
+msgid "write your slug here"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:86
+msgid "Enter duration"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:88
+msgid "Minutes"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:117
+msgid "When are you available for this booking?"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:121
+msgid "Weekly"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:128
+msgid "Specific Dates"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:135
+msgid "Define your specific dates availability below"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:155
+#: templates/dashboard/booking-types/booking-types-form.php:247
+msgid "Duplicate"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:166
+msgid "Add New Date"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:175
+msgid "Define your weekly availability below:"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:205
+msgid "New Slot"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:211
+msgid "Unavailable"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:223
+msgid "Add Unavailable Dates"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:226
+msgid "Define specific dates that will be excluded from your weekly availability."
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:258
+msgctxt "Unavailable Date"
+msgid "Add New Date"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:270
+msgid "Availability details"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:273
+msgid "How far out can users book?(Day ahead)"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:274
+msgid "Enter days"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:278
+msgid "Minimum meeting padding or buffer"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:280
+msgid "Enter meeting buffer"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:281
+#: templates/dashboard/booking-types/booking-types-form.php:306
+msgid "Minutes of current time."
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:288
+msgid "Enter Maximum Number of Bookings"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:290
+msgid "Enter maximum number of bookings"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:293
+msgid "Days"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:294
+msgid "Weeks"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:295
+msgid "Months"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:303
+msgid "Bookers can't schedule within"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:305
+msgid "Enter booking threshold"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:320
+msgid "Enable Group Booking For More then One Attendee"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:328
+msgid "Enter Number of Seats Per Booking"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:334
+msgid "Show Remaining Seats?"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:342
+msgid "Location"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:345
+msgid "Online video conference"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:352
+msgid "Physical address"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:356
+msgid "Phone number"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:364
+msgid "No Location"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:367
+msgid "Enter URL below"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:379
+msgid "https://example.com"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:390
+msgid "Enter Address"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:391
+msgid "Enter Physical Address"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:395
+msgid "Enter Mobile Number *"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:396
+msgid "Enter Mobile Number"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:401
+msgid "a new zoom link will be generated for this booking."
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:408
+msgid "Enable Guest Booking"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:426
+msgid "Save booking type"
+msgstr ""
+
+#: templates/dashboard/booking-types/booking-types-form.php:429
+msgid "Apply advanced booking"
+msgstr ""
+
+#: templates/shortcodes/booking-types/booking-types.php:56
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/shortcodes/booking-types/booking-types.php:70
+#: templates/shortcodes/booking/html-shortcode-booking-model-footer.php:21
+msgid "Book Now"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-confirmation.php:19
+msgid "Booking Confirmed!"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-confirmation.php:20
+msgid "Your Appointment is Booked Sucessfully!"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-confirmation.php:81
+msgid "Add To Calendar:"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-confirmation.php:100
+msgid "Book a new meeting"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-form-name-only.php:10
+msgid "Full Name"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-form-user-email.php:11
+#: templates/shortcodes/booking/html-shortcode-booking-form-user-register-login.php:15
+#: templates/shortcodes/booking/html-shortcode-booking-form-user-register-login.php:53
+msgid "Email address"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-form-user-register-login.php:5
+msgid "Already have an account?"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-form-user-register-login.php:35
+#: templates/shortcodes/booking/html-shortcode-booking-form-user-register-login.php:72
+msgid "Enter Password"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-model-footer.php:6
+msgid "No Payment Gateway Available"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-model-footer.php:10
+msgid "Prev"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-model-footer.php:27
+msgid "Next Step"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-model.php:14
+msgid "Enter your basic information"
+msgstr ""
+
+#. Translators: %s is the display name of the staff member
+#: templates/shortcodes/booking/html-shortcode-booking-model.php:25
+msgid "Demo Call with %s"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-payment-fail.php:12
+msgid "Oops... Payment Unsuccessful !"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-payment-fail.php:13
+msgid "Please check your details and try again. If the issue persists, contact support for assistance."
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-payment-fail.php:14
+msgid "Try Again"
+msgstr ""
+
+#: templates/shortcodes/booking/html-shortcode-booking-questions.php:10
+msgid "Questions:"
+msgstr ""
+
+#. translators: Date format placeholder:0, Time slot placeholder:1
+#: templates/shortcodes/booking/html-shortcode-booking-timeslot.php:12
+msgid "%1$s At %2$s"
+msgstr ""
+
+#: templates/shortcodes/booking/tabs/html-shortcode-booking-payment-tab.php:12
+msgid "Booking Summary"
+msgstr ""
+
+#: templates/shortcodes/booking/tabs/html-shortcode-booking-payment-tab.php:52
+msgid "Payments"
+msgstr ""
+
+#: templates/shortcodes/html-shortcode-profile.php:44
+msgid "Sign-out"
+msgstr ""
+
+#: templates/shortcodes/html-shortcode-profile.php:78
+msgid "Upcoming bookings"
+msgstr ""
+
+#: templates/shortcodes/html-shortcode-profile.php:91
+msgid "Pending bookings"
+msgstr ""
+
+#: templates/shortcodes/html-shortcode-profile.php:98
+msgid "9+"
+msgstr ""
+
+#: templates/shortcodes/html-shortcode-profile.php:120
+msgid "Bookings history"
+msgstr ""
+
+#: templates/shortcodes/html-shortcode-profile.php:134
+#: templates/shortcodes/profile/html-edit-profile.php:8
+msgid "Edit profile"
+msgstr ""
+
+#. translators: Booking Label in singular or plural placeholder:0, Number of Booking placeholder:1
+#: templates/shortcodes/profile/html-bookings-history.php:30
+msgid "%1$d Completed %2$s"
+msgstr ""
+
+#: templates/shortcodes/profile/html-bookings-history.php:33
+msgid "Your all Completed bookings schedule is here. Check now!"
+msgstr ""
+
+#: templates/shortcodes/profile/html-bookings-history.php:65
+#: templates/shortcodes/profile/html-pending-bookings.php:64
+#: templates/shortcodes/profile/html-upcoming-bookings.php:63
+msgid "Booking:"
+msgstr ""
+
+#: templates/shortcodes/profile/html-bookings-history.php:75
+#: templates/shortcodes/profile/html-pending-bookings.php:74
+#: templates/shortcodes/profile/html-upcoming-bookings.php:72
+msgid "Total:"
+msgstr ""
+
+#: templates/shortcodes/profile/html-edit-profile.php:36
+msgid "Enter First Name"
+msgstr ""
+
+#: templates/shortcodes/profile/html-edit-profile.php:50
+msgid "Enter Last Name"
+msgstr ""
+
+#: templates/shortcodes/profile/html-edit-profile.php:76
+msgid "Date of birth"
+msgstr ""
+
+#: templates/shortcodes/profile/html-edit-profile.php:84
+msgid "select your dob"
+msgstr ""
+
+#: templates/shortcodes/profile/html-edit-profile.php:108
+msgid "Enter Phone Number"
+msgstr ""
+
+#: templates/shortcodes/profile/html-edit-profile.php:135
+msgid "Old Password"
+msgstr ""
+
+#: templates/shortcodes/profile/html-edit-profile.php:137
+msgid "Enter Old Password"
+msgstr ""
+
+#: templates/shortcodes/profile/html-edit-profile.php:159
+msgid "Change Password"
+msgstr ""
+
+#: templates/shortcodes/profile/html-edit-profile.php:161
+msgid "Enter New Password"
+msgstr ""
+
+#: templates/shortcodes/profile/html-edit-profile.php:184
+msgid "Confirm Password"
+msgstr ""
+
+#: templates/shortcodes/profile/html-edit-profile.php:186
+msgid "Enter Confirm Password"
+msgstr ""
+
+#: templates/shortcodes/profile/html-no-history-booking.php:13
+msgid "Oops! There is no Booking History."
+msgstr ""
+
+#: templates/shortcodes/profile/html-no-pending-booking.php:12
+msgid "Oops! There is no Pending Booking."
+msgstr ""
+
+#: templates/shortcodes/profile/html-no-upcoming-booking.php:13
+msgid "Oops! There is no Upcoming Booking."
+msgstr ""
+
+#: templates/shortcodes/profile/html-pending-bookings.php:28
+msgid "Your all pending bookings schedule is here. Check now!"
+msgstr ""
+
+#: templates/shortcodes/profile/html-upcoming-bookings.php:28
+msgid "Your all upcoming bookings schedule is here. Check now!"
+msgstr ""
+
+#: wpbookit.php:102
+msgid "WPBookit Lite cannot be activated while Pro version is active."
+msgstr ""

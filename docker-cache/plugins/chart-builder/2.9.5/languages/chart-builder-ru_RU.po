@@ -1,0 +1,1533 @@
+# Translation of Plugins - Chartify &#8211; WordPress Chart Plugin - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Chartify &#8211; WordPress Chart Plugin - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-10-11 14:48:19+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-beta.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Chartify &#8211; WordPress Chart Plugin - Stable (latest release)\n"
+
+#: admin/partials/charts/chart-builder-charts-display.php:106
+msgid "Date"
+msgstr "Дата"
+
+#: admin/partials/charts/chart-builder-charts-display.php:144
+msgid "Publish"
+msgstr "Опубликовать"
+
+#: admin/partials/charts/chart-builder-charts-display.php:146
+msgid "Unpublish"
+msgstr "Не публиковать"
+
+#: admin/class-chart-builder-admin.php:1597
+msgid "Activate"
+msgstr "Активировать"
+
+#: admin/class-chart-builder-admin.php:198
+#: admin/class-chart-builder-admin.php:1589
+msgid "Activated"
+msgstr "Активировано"
+
+#: admin/class-chart-builder-admin.php:1586
+msgid "Active"
+msgstr "Активный"
+
+#: admin/class-chart-builder-admin.php:199
+msgid "Error"
+msgstr "Ошибка"
+
+#: admin/class-chart-builder-admin.php:1594
+msgid "Inactive"
+msgstr "Неактивно"
+
+#: admin/class-chart-builder-admin.php:1611
+msgid "Install Plugin"
+msgstr "Установить плагин"
+
+#: admin/class-chart-builder-admin.php:1608
+msgid "Not Installed"
+msgstr "Не установлен"
+
+#: admin/class-chart-builder-admin.php:1677
+msgid "WordPress.org"
+msgstr "WordPress.org"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:217
+msgid "%"
+msgstr "%"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:218
+msgid "px"
+msgstr "пикс."
+
+#: admin/class-chart-builder-admin.php:4175
+msgid "Top Margin"
+msgstr "Внешний отступ сверху"
+
+#: admin/class-chart-builder-admin.php:4053
+#: admin/class-chart-builder-admin.php:4136
+msgid "Border Color"
+msgstr "Цвет рамки"
+
+#: admin/class-chart-builder-admin.php:4040
+#: admin/class-chart-builder-admin.php:4123
+msgid "Border Width"
+msgstr "Ширина рамки"
+
+#: admin/class-chart-builder-admin.php:4011
+#: admin/class-chart-builder-admin.php:4110
+msgid "Background Color"
+msgstr "Цвет фона"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:468
+msgid "Timeline"
+msgstr "Временная шкала"
+
+#: admin/class-chart-builder-admin.php:4980
+#: admin/class-chart-builder-admin.php:5104
+#: admin/class-chart-builder-admin.php:5212
+msgid "Country"
+msgstr "Страна"
+
+#: admin/class-chart-builder-admin.php:3042
+#: admin/class-chart-builder-admin.php:3385
+msgid "Format"
+msgstr "Формат"
+
+#: admin/class-chart-builder-admin.php:5035
+msgid "Offset"
+msgstr "Смещение"
+
+#: admin/class-chart-builder-admin.php:5017
+#: admin/class-chart-builder-admin.php:5141
+#: admin/class-chart-builder-admin.php:5267
+msgid "Color"
+msgstr "Цвет"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:185
+msgid "Circle"
+msgstr "Круг"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:187
+msgid "Square"
+msgstr "Квадрат"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:188
+msgid "Diamond"
+msgstr "Ромб"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:189
+msgid "Star"
+msgstr "Звезда"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:180
+msgid "Auto"
+msgstr "Авто"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:178
+msgid "Category"
+msgstr "Рубрика"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:181
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:207
+msgid "None"
+msgstr "Отсутствует"
+
+#: admin/class-chart-builder-admin.php:3579
+msgid "Animation easing"
+msgstr "Сглаживание движения"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:171
+msgid "Linear"
+msgstr "Линейный"
+
+#: admin/class-chart-builder-admin.php:3550
+msgid "Animation duration"
+msgstr "Длительность анимации"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:165
+msgid "Left"
+msgstr "Слева"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:166
+msgid "Right"
+msgstr "Справа"
+
+#: admin/partials/charts/chart-builder-charts-display.php:87
+#: admin/partials/charts/chart-builder-charts-display.php:299
+msgid "Clear filters"
+msgstr "Очистить фильтры"
+
+#: admin/partials/charts/chart-builder-charts-display.php:86
+#: admin/partials/charts/chart-builder-charts-display.php:298
+msgid "Filter"
+msgstr "Фильтр"
+
+#: admin/partials/charts/chart-builder-charts-display.php:56
+#: admin/partials/charts/chart-builder-charts-display.php:268
+msgid "Select Type"
+msgstr "Выбрать тип"
+
+#: admin/partials/charts/chart-builder-charts-display.php:92
+msgid "Search"
+msgstr "Поиск"
+
+#: admin/class-chart-builder-admin.php:2580
+#: admin/class-chart-builder-admin.php:5054
+msgid "Text color"
+msgstr "Цвет текста"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:159
+msgid "Automatic"
+msgstr "Автоматический"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:161
+msgid "False"
+msgstr "False"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:160
+msgid "True"
+msgstr "True"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:155
+msgid "Hide"
+msgstr "Скрыть"
+
+#: admin/class-chart-builder-admin.php:4704
+#: admin/class-chart-builder-admin.php:5282
+msgid "Opacity"
+msgstr "Прозрачность"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:148
+msgid "Name"
+msgstr "Имя"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:147
+msgid "Quantitative value"
+msgstr "Количественное значение"
+
+#: admin/class-chart-builder-admin.php:4574
+msgid "Choose the content of the text to be displayed on the pie slice."
+msgstr "Выберите содержимое текста, которое будет отображаться на срезе круговой диаграммы."
+
+#: admin/class-chart-builder-admin.php:4573
+msgid "Slice text"
+msgstr "Тест сегмента"
+
+#: admin/class-chart-builder-admin.php:883
+#: admin/class-chart-builder-admin.php:1086
+msgid "Buy Now !"
+msgstr "Купить сейчас !"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:146
+msgid "Percentage"
+msgstr "Процент"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:121
+msgid "Value & Percent"
+msgstr "Значение и процент"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:120
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:211
+msgid "Percent"
+msgstr "Процент"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:119
+msgid "Value"
+msgstr "Значение"
+
+#: admin/class-chart-builder-admin.php:4596
+msgid "Choose how to display the text in the chart tooltip."
+msgstr "Выберите способ отображения текста во всплывающей подсказке диаграммы."
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:103
+msgid "The number of times all the users passed all the quizzes for the last 7 days (PRO)"
+msgstr "Количество раз, когда все пользователи прошли все викторины за последние 7 дней (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:102
+msgid "The answers count of the chosen quiz/question category (PRO)"
+msgstr "Количество ответов выбранной категории викторины/вопроса (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:101
+msgid "The answers count for each question of the chosen quiz (PRO)"
+msgstr "Ответы учитываются для каждого вопроса выбранной викторины (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:100
+msgid "The count of the logged-in users and guests for the last 7 days (PRO)"
+msgstr "Количество залогиненных пользователей и гостей за последние 7 дней (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:99
+msgid "The number of people based on the particular Interval score (PRO)"
+msgstr "Количество людей на основе определенного интервального балла (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:98
+msgid "The number of people who got the particular score (PRO)"
+msgstr "Количество людей, набравших определенный балл (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:97
+msgid "The number of times the user passed the chosen category quizzes (PRO)"
+msgstr "Сколько раз пользователь прошел викторины выбранной категории (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:96
+msgid "The average scores of current user of the quizzes for each quiz category (PRO)"
+msgstr "Средние баллы текущего пользователя викторин для каждой категории викторин (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:95
+msgid "The current user's scores of the chosen quiz (PRO)"
+msgstr "Текущие оценки пользователя в выбранной викторине (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:93
+msgid "The average score of current user of each quiz"
+msgstr "Средний балл текущего пользователя каждой викторины"
+
+#: admin/class-chart-builder-admin.php:4545
+msgid "If this option is enabled, the pie slices will be drawn counterclockwise."
+msgstr "Если эта опция включена, секторы круговой диаграммы будут рисоваться против часовой стрелки."
+
+#: admin/class-chart-builder-admin.php:4544
+msgid "Reverse Categories"
+msgstr "Обратные (reverse) рубрики"
+
+#: admin/class-chart-builder-admin.php:4440
+msgid "Description"
+msgstr "Описание"
+
+#: admin/class-chart-builder-admin.php:1962
+msgid "Choose the format of the file you are going to import."
+msgstr "Выберите формат файла, который вы собираетесь импортировать."
+
+#: admin/class-chart-builder-admin.php:1958
+msgid "Choose what kind of data would you like to upload."
+msgstr "Выберите, какие данные вы хотите загрузить."
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:282
+#: admin/partials/features/chart-builder-features-display.php:231
+#: admin/partials/features/chart-builder-features-display.php:234
+msgid "Gauge Chart"
+msgstr "Диаграмма датчика"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:251
+#: admin/partials/features/chart-builder-features-display.php:221
+#: admin/partials/features/chart-builder-features-display.php:224
+msgid "Area Chart"
+msgstr "Диаграмма областей"
+
+#: admin/class-chart-builder-admin.php:2732
+msgid "Font Color"
+msgstr "Цвет шрифта"
+
+#: admin/class-chart-builder-admin.php:4357
+msgid "Chart description color"
+msgstr "Цвет описания диаграммы"
+
+#: admin/class-chart-builder-admin.php:4370
+msgid "Chart description font size"
+msgstr "Размер шрифта описания диаграммы"
+
+#: admin/class-chart-builder-admin.php:194
+msgid "Are you sure you want to delete the row?"
+msgstr "Вы уверены, что хотите удалить строку?"
+
+#: admin/class-chart-builder-admin.php:195
+msgid "Are you sure you want to delete the column?"
+msgstr "Вы уверены, что хотите удалить колонку?"
+
+#: admin/class-chart-builder-admin.php:196
+msgid "Sorry, minimum count of rows should be 1"
+msgstr "Извините, минимальное количество строк должно быть 1"
+
+#: admin/class-chart-builder-admin.php:197
+msgid "Sorry, minimum count of columns should be 1"
+msgstr "Извините, минимальное количество столбцов должно быть 1"
+
+#: admin/class-chart-builder-admin.php:4245
+msgid "Chart title font size"
+msgstr "Размер шрифта заголовка диаграммы"
+
+#: admin/class-chart-builder-admin.php:1706
+#: admin/class-chart-builder-admin.php:1729
+#: admin/class-chart-builder-admin.php:1803
+#: admin/class-chart-builder-admin.php:1830
+msgid "Something went wrong."
+msgstr "Что-то пошло не так."
+
+#: admin/class-chart-builder-admin.php:1716
+#: admin/class-chart-builder-admin.php:1813
+msgid "No data given."
+msgstr "Данные не приводятся."
+
+#: admin/class-chart-builder-admin.php:1761
+#: admin/class-chart-builder-admin.php:1862
+msgid "There is no data."
+msgstr "Нет никаких данных."
+
+#: admin/class-chart-builder-admin.php:1885
+msgid "Given incorrect Chart ID."
+msgstr "Указан неверный идентификатор чарта."
+
+#: admin/class-chart-builder-admin.php:1893
+msgid "Data was successfully saved."
+msgstr "Данные были успешно сохранены."
+
+#: admin/class-chart-builder-admin.php:1980
+#: admin/class-chart-builder-admin.php:2036
+#: admin/class-chart-builder-admin.php:2126
+#: admin/class-chart-builder-admin.php:2191
+#: includes/class-chart-builder-integrations.php:174
+msgid "Save data"
+msgstr "Сохранить сданные"
+
+#: admin/class-chart-builder-admin.php:1989
+msgid "Import data from file"
+msgstr "Импорт данных из файла"
+
+#: admin/class-chart-builder-admin.php:1989
+msgid "With the help of this option, you can import a file in your chosen file format."
+msgstr "С помощью этой опции вы можете импортировать файл в выбранном вами формате."
+
+#: admin/class-chart-builder-admin.php:2100
+#: admin/class-chart-builder-admin.php:2176
+msgid "Select query"
+msgstr "Выберите запрос"
+
+#: admin/class-chart-builder-admin.php:2109
+msgid "Select quiz"
+msgstr "Выбрать Викторину"
+
+#: admin/class-chart-builder-admin.php:2135
+msgid "Get Quiz Maker data"
+msgstr "Получить данные о Quiz Maker"
+
+#: admin/class-chart-builder-admin.php:2135
+msgid "By using this option, you can display the quiz statistics by charts.%s %sNote:%s The Quiz Maker plugin must be active."
+msgstr "Используя эту опцию, вы можете отобразить статистику викторины с помощью графиков.%s %sПримечание:%s Плагин Quiz Maker должен быть активен."
+
+#: public/class-chart-builder-public.php:179
+msgid "You are not logged in. Please log in to view this chart."
+msgstr "Вы не вошли в систему. Пожалуйста, войдите в систему, чтобы просмотреть этот график."
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:94
+msgid "The number of times the current user has passed each quiz overall"
+msgstr "Общее количество раз, когда текущий пользователь прошел каждый тест."
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:92
+msgid "The number of times the current user has passed the current quiz"
+msgstr "Сколько раз текущий пользователь прошел текущий тест"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:91
+msgid "The number of times the current user has passed all quizzes daily"
+msgstr "Сколько раз текущий пользователь проходил все тесты в день"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:90
+msgid "The number of times all the users have passed the particular quiz"
+msgstr "Сколько раз все пользователи прошли конкретную викторину"
+
+#: admin/class-chart-builder-admin.php:4950
+msgid "Line curve type"
+msgstr "Тип кривой линии"
+
+#: admin/class-chart-builder-admin.php:4955
+msgid "Straight"
+msgstr "Тянущийся"
+
+#: admin/class-chart-builder-admin.php:4656
+msgid "Is stacked"
+msgstr "Сложен"
+
+#: admin/class-chart-builder-admin.php:4657
+msgid "Is stacked: If this option is enabled, the chart will be displayed in the proportional contribution of individual data points in comparison to a total."
+msgstr "Складывается: Если этот параметр включен, график будет отображаться в виде пропорционального вклада отдельных точек данных по сравнению с общим."
+
+#: admin/class-chart-builder-admin.php:4672
+msgid "Focus target"
+msgstr "Фокус-цель"
+
+#: admin/class-chart-builder-admin.php:4675
+msgid "There are two ways to focus the data table elements."
+msgstr "Существует два способа фокусировки элементов таблицы данных."
+
+#: admin/class-chart-builder-admin.php:4676
+msgid "%sSingle data:%s If you choose the Single Data option, the focus will be on the single data point. By this, the particular cell of the data table will be focused."
+msgstr "%sОдиночные данные:%s Если вы выберете опцию \"Одиночные данные\", фокус будет сосредоточен на одной точке данных. При этом в фокусе будет находиться конкретная ячейка таблицы данных."
+
+#: admin/class-chart-builder-admin.php:4677
+msgid "%sGroup data:%s If you choose the Group Data option, the focus will be on the grouped data points. By this, a row of the data table will be focused."
+msgstr "%sГруппировать данные:%s Если вы выберете опцию Группировать данные, фокус будет сосредоточен на сгруппированных точках данных. При этом в фокусе окажется строка таблицы данных."
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:125
+msgid "Single data"
+msgstr "Единичные данные"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:126
+msgid "Group data"
+msgstr "Групповые данные"
+
+#: admin/class-chart-builder-admin.php:193
+msgid "Are you sure you want to delete the chart(s)?"
+msgstr "Вы уверены, что хотите удалить график(ы)?"
+
+#: admin/class-chart-builder-admin.php:4560
+msgid "Slice Border Color"
+msgstr "Цвет границы ломтика"
+
+#: admin/class-chart-builder-admin.php:4531
+msgid "Degree of chart rotation"
+msgstr "Степень поворота графика"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:47
+msgid "Shortcode text for editor"
+msgstr "Текст шорткода для редактора"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:51
+msgid "To insert the chart into a page, post or text widget, copy shortcode"
+msgstr "Чтобы вставить график в страницу, пост или текстовый виджет, скопируйте шорткод"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:53
+msgid "and paste it at the desired place in the editor."
+msgstr "и вставить его в нужное место в Редакторе."
+
+#: admin/class-chart-builder-admin.php:981
+msgid "40%"
+msgstr "40%"
+
+#: admin/class-chart-builder-admin.php:982
+msgid "Chart Builder Plugin"
+msgstr "Chart Builder Plugin"
+
+#: admin/class-chart-builder-admin.php:1007
+msgid "BUY NOW!"
+msgstr "КУПИТЬ СЕЙЧАС!"
+
+#: admin/class-chart-builder-admin.php:2710
+msgid "Alignment"
+msgstr "Выравнивание"
+
+#: admin/class-chart-builder-admin.php:2711
+msgid "Choose the appropriate alignment for the chart legend."
+msgstr "Выберите подходящее выравнивание для легенды графика."
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:140
+msgid "Start"
+msgstr "Начать"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:141
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:167
+msgid "Center"
+msgstr "По центру"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:142
+msgid "End"
+msgstr "Окончание"
+
+#: admin/partials/settings/chart-builder-settings.php:136
+msgid "Except words count in list table"
+msgstr "Исключение подсчета слов в таблице списка"
+
+#: admin/partials/settings/chart-builder-settings.php:141
+msgid "Charts list table"
+msgstr "Таблица со списком диаграмм"
+
+#: admin/partials/settings/chart-builder-settings.php:142
+msgid "Determine the length of the questions to be shown in the Charts List Table by putting your preferred count of words in the following field. (For example: if you put 10,  you will see the first 10 words of each question in the Charts page of your dashboard."
+msgstr "Определите длину вопросов, которые будут отображаться в таблице списка диаграмм, указав желаемое количество слов в следующем поле. (Например: если вы поставите 10, вы увидите первые 10 слов каждого вопроса на странице диаграмм панели инструментов."
+
+#: admin/class-chart-builder-admin.php:1952
+#: admin/class-chart-builder-admin.php:2013
+#: admin/class-chart-builder-admin.php:2162
+#: admin/class-chart-builder-admin.php:3644
+#: admin/class-chart-builder-admin.php:3669
+#: admin/class-chart-builder-admin.php:3716
+#: admin/class-chart-builder-admin.php:3741
+#: admin/class-chart-builder-admin.php:3766
+#: admin/class-chart-builder-admin.php:3791
+#: admin/class-chart-builder-admin.php:3816
+#: admin/class-chart-builder-admin.php:4944
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:108
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:139
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:170
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:201
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:232
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:263
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:294
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:325
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:356
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:387
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:418
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:449
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:480
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:511
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:542
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:573
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:604
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:635
+#: admin/partials/charts/chart-builder-charts-display.php:72
+#: admin/partials/charts/chart-builder-charts-display.php:284
+#: admin/partials/settings/chart-builder-settings.php:76 chart-builder.php:137
+#: includes/class-chart-builder-integrations.php:152
+#: includes/class-chart-builder-integrations.php:214
+msgid "Upgrade"
+msgstr "Обновить"
+
+#: admin/partials/charts/chart-builder-charts-display.php:316
+msgid "Create Your First Chart in Under One Minute"
+msgstr "Создайте свой первый график менее чем за одну минуту"
+
+#: admin/class-chart-builder-admin.php:334
+#: admin/class-chart-builder-admin.php:335
+msgid "How to use"
+msgstr "Как использовать"
+
+#: admin/class-chart-builder-admin.php:356
+#: admin/class-chart-builder-admin.php:357
+msgid "Our products"
+msgstr "Наши продукты"
+
+#: admin/class-chart-builder-admin.php:369
+#: admin/class-chart-builder-admin.php:370
+msgid "PRO Features"
+msgstr "ПРОФУНКЦИИ"
+
+#: admin/partials/chart-builder-admin-display.php:38
+msgid "How to create a chart in 4 steps with the help of the"
+msgstr "Как создать график за 4 шага с помощью"
+
+#: admin/partials/chart-builder-admin-display.php:39
+#: admin/partials/chart-builder-admin-display.php:47
+msgid "Chartify"
+msgstr "Chartify"
+
+#: admin/partials/chart-builder-admin-display.php:40
+msgid "plugin."
+msgstr "плагин."
+
+#: admin/partials/chart-builder-admin-display.php:47
+msgid "Go to the"
+msgstr "Перейдите на"
+
+#: admin/partials/chart-builder-admin-display.php:47
+msgid "page and click on the"
+msgstr "страницу и нажмите на"
+
+#: admin/partials/chart-builder-admin-display.php:47
+msgid "button for creating your first chart."
+msgstr "для создания вашего первого графика."
+
+#: admin/partials/chart-builder-admin-display.php:50
+msgid "Choose your preferred chart type and click on the Next button."
+msgstr "Выберите предпочтительный тип графика и нажмите кнопку Далее."
+
+#: admin/partials/chart-builder-admin-display.php:53
+msgid "Add the needed data for your chart (manually, from Google Sheets and from Database)"
+msgstr "Добавьте необходимые данные для вашего графика (вручную, из Google Sheets и из базы данных)"
+
+#: admin/partials/chart-builder-admin-display.php:56
+msgid "Copy the"
+msgstr "Скопируйте"
+
+#: admin/partials/chart-builder-admin-display.php:56
+msgid "shortcode"
+msgstr "шорткод"
+
+#: admin/partials/chart-builder-admin-display.php:56
+msgid "of the chart and paste it into any post․"
+msgstr "графика и вставьте его в любое сообщение"
+
+#: admin/partials/chart-builder-admin-display.php:61
+msgid "Congrats! You have already created your first chart."
+msgstr "Поздравляем! Вы уже создали свой первый график."
+
+#: admin/partials/chart-builder-admin-display.php:69
+msgid "Community"
+msgstr "Сообщество"
+
+#: admin/partials/chart-builder-admin-display.php:79
+msgid "YouTube community"
+msgstr "Сообщество YouTube"
+
+#: admin/partials/chart-builder-admin-display.php:80
+msgid "Our YouTube community  guides you to step by step tutorials about our products and not only..."
+msgstr "Наше сообщество на YouTube расскажет вам шаг за шагом о наших продуктах и не только..."
+
+#: admin/partials/chart-builder-admin-display.php:90
+msgid "Best Free support"
+msgstr "Лучшая бесплатная поддержка"
+
+#: admin/partials/chart-builder-admin-display.php:91
+msgid "With the Free version, you get a lifetime usage for the plugin, however, you will get new updates and support for only 1 month."
+msgstr "В бесплатной версии вы получаете пожизненное использование плагина, однако новые обновления и поддержку вы будете получать только в течение 1 месяца."
+
+#: admin/partials/chart-builder-admin-display.php:94
+msgid "Join"
+msgstr "Присоединяйтесь"
+
+#: admin/partials/chart-builder-admin-display.php:101
+msgid "Premium support"
+msgstr "Премиум-поддержка"
+
+#: admin/partials/chart-builder-admin-display.php:102
+msgid "Get 12 months updates and support for the Business package and lifetime updates and support for the Developer package."
+msgstr "Получите 12 месяцев обновлений и поддержки для пакета Business и постоянные обновления и поддержку для пакета Developer."
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:127
+#: admin/partials/features/chart-builder-features-display.php:181
+#: admin/partials/features/chart-builder-features-display.php:184
+msgid "Donut Chart"
+msgstr "Кольцевая диаграмма"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:158
+msgid "Histogram"
+msgstr "Гистограмма"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:189
+msgid "Geo Chart"
+msgstr "Географическая карта"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:220
+msgid "Org Chart"
+msgstr "Оргсхема"
+
+#: admin/partials/features/chart-builder-features-display.php:21
+msgid "Personal"
+msgstr "Personal"
+
+#: admin/partials/features/chart-builder-features-display.php:25
+msgid "Business"
+msgstr "Business"
+
+#: admin/partials/features/chart-builder-features-display.php:29
+msgid "Developer"
+msgstr "Developer"
+
+#: admin/partials/features/chart-builder-features-display.php:37
+msgid "Free"
+msgstr "Бесплатно"
+
+#: admin/partials/features/chart-builder-features-display.php:71
+#: admin/partials/features/chart-builder-features-display.php:74
+#: admin/partials/features/chart-builder-features-display.php:91
+#: admin/partials/features/chart-builder-features-display.php:94
+msgid "Support for"
+msgstr "Поддержка"
+
+#: admin/partials/features/chart-builder-features-display.php:75
+msgid "1 site"
+msgstr "1 сайт"
+
+#: admin/partials/features/chart-builder-features-display.php:76
+msgid "5 site"
+msgstr "5 сайтов"
+
+#: admin/partials/features/chart-builder-features-display.php:77
+msgid "Unlimited sites"
+msgstr "Неограниченное количество сайтов"
+
+#: admin/partials/features/chart-builder-features-display.php:81
+#: admin/partials/features/chart-builder-features-display.php:84
+msgid "Update for"
+msgstr "Обновление для"
+
+#: admin/partials/features/chart-builder-features-display.php:85
+#: admin/partials/features/chart-builder-features-display.php:95
+msgid "1 months"
+msgstr "1 месяц"
+
+#: admin/partials/features/chart-builder-features-display.php:86
+#: admin/partials/features/chart-builder-features-display.php:96
+msgid "12 months"
+msgstr "12 месяцев"
+
+#: admin/partials/features/chart-builder-features-display.php:101
+#: admin/partials/features/chart-builder-features-display.php:104
+msgid "Usage for"
+msgstr "Использование для"
+
+#: admin/partials/features/chart-builder-features-display.php:111
+#: admin/partials/features/chart-builder-features-display.php:114
+msgid "Responsive design"
+msgstr "Адаптивный дизайн"
+
+#: admin/partials/features/chart-builder-features-display.php:121
+#: admin/partials/features/chart-builder-features-display.php:124
+msgid "Permissions by user role"
+msgstr "Разрешения по роли пользователя"
+
+#: admin/partials/features/chart-builder-features-display.php:131
+#: admin/partials/features/chart-builder-features-display.php:134
+msgid "Access by user role"
+msgstr "Доступ по пользовательской роли"
+
+#: admin/partials/features/chart-builder-features-display.php:191
+#: admin/partials/features/chart-builder-features-display.php:194
+msgid "Histogram Chart"
+msgstr "Диаграмма гистограммы"
+
+#: admin/partials/features/chart-builder-features-display.php:201
+#: admin/partials/features/chart-builder-features-display.php:204
+msgid "Geographical Chart"
+msgstr "Географическая карта"
+
+#: admin/partials/features/chart-builder-features-display.php:211
+#: admin/partials/features/chart-builder-features-display.php:214
+msgid "Organizational Chart"
+msgstr "Организационная Структура"
+
+#: admin/partials/features/chart-builder-features-display.php:361
+#: admin/partials/features/chart-builder-features-display.php:364
+msgid "Google sheet integration"
+msgstr "Интеграция с Google Sheet"
+
+#: admin/partials/features/chart-builder-features-display.php:371
+#: admin/partials/features/chart-builder-features-display.php:374
+msgid "Source - Database"
+msgstr "Источник-база данных"
+
+#: admin/partials/features/chart-builder-features-display.php:381
+#: admin/partials/features/chart-builder-features-display.php:384
+msgid "Source - Manual"
+msgstr "Источник-руководство"
+
+#: admin/partials/features/chart-builder-features-display.php:49
+#: admin/partials/features/chart-builder-features-display.php:62
+#: admin/partials/features/chart-builder-features-display.php:465
+#: admin/partials/features/chart-builder-features-display.php:471
+msgid "Buy now"
+msgstr "Купить сейчас"
+
+#: admin/partials/features/chart-builder-plugin-featured-display.php:2
+msgid "Please feel free to use our other awesome plugins!"
+msgstr "Пожалуйста, не стесняйтесь использовать наши другие удивительные Плагины!"
+
+#: admin/class-chart-builder-admin.php:1455
+msgid "Poll Maker"
+msgstr "Poll Maker"
+
+#: admin/class-chart-builder-admin.php:1456
+msgid "Create amazing online polls for your WordPress website super easily."
+msgstr "Создавайте удивительные онлайн-опросы для вашего сайта WordPress очень легко."
+
+#: admin/class-chart-builder-admin.php:1457
+msgid "Build up various types of polls in a minute and get instant feedback on any topic or product."
+msgstr "Создавайте различные типы опросов за минуту и получайте мгновенную обратную связь по любой теме или продукту."
+
+#: admin/class-chart-builder-admin.php:810
+#: admin/class-chart-builder-admin.php:1682
+msgid "Buy Now"
+msgstr "Купить сейчас"
+
+#: admin/class-chart-builder-admin.php:1446
+msgid "Survey Maker"
+msgstr "Survey Maker"
+
+#: admin/class-chart-builder-admin.php:1447
+msgid "Make amazing online surveys and get real-time feedback quickly and easily."
+msgstr "Проводите удивительные онлайн-опросы и получайте отзывы в режиме реального времени быстро и легко."
+
+#: admin/class-chart-builder-admin.php:1448
+msgid "Learn what your website visitors want, need, and expect with the help of Survey Maker. Build surveys without limiting your needs."
+msgstr "Узнавайте, чего хотят, в чем нуждаются и чего ожидают посетители вашего сайта с помощью Survey Maker. Создавайте опросы, не ограничивая свои потребности."
+
+#: admin/class-chart-builder-admin.php:1464
+msgid "Popup Box"
+msgstr "Popup Box"
+
+#: admin/class-chart-builder-admin.php:1465
+msgid "Popup everything you want! Create informative and promotional popups all in one plugin."
+msgstr "Popup - это все, что вам нужно! Создавайте информационные и рекламные всплывающие окна в одном плагине."
+
+#: admin/class-chart-builder-admin.php:1466
+msgid "Attract your visitors and convert them into email subscribers and paying customers."
+msgstr "Привлекайте посетителей и трансформируйте их в подписчиков электронной почты и платящих клиентов."
+
+#: admin/class-chart-builder-admin.php:1482
+msgid "Gallery Photo Gallery"
+msgstr "Gallery Photo Gallery"
+
+#: admin/class-chart-builder-admin.php:1483
+msgid "Create unlimited galleries and include unlimited images in those galleries."
+msgstr "Создавайте неограниченное количество галерей и добавляйте неограниченное количество изображений в эти галереи."
+
+#: admin/class-chart-builder-admin.php:1484
+msgid "Represent images in an attractive way. Attract people with your own single and multiple free galleries from your photo library."
+msgstr "Представляйте изображения в привлекательном виде. Привлекайте людей с помощью собственных одиночных и многочисленных бесплатных галерей из вашей фото библиотеки."
+
+#: admin/class-chart-builder-admin.php:1473
+msgid "Secure Copy Content Protection"
+msgstr "Secure Copy Content Protection"
+
+#: admin/class-chart-builder-admin.php:1474
+msgid "Disable the right click, copy paste, content selection and copy shortcut keys on your website."
+msgstr "Отключите правый клик, копирование и вставку, выделение содержимого и сочетания клавиш копирования на вашем сайте."
+
+#: admin/class-chart-builder-admin.php:1475
+msgid "Protect web content from being plagiarized. Prevent plagiarism from your website with this easy to use plugin."
+msgstr "Защитите веб-контент от плагиата. Предотвратите плагиат с вашего сайта с помощью этого простого в использовании плагина."
+
+#: admin/class-chart-builder-admin.php:1437
+msgid "Quiz Maker"
+msgstr "Quiz Maker"
+
+#: admin/partials/features/chart-builder-plugin-featured-display.php:5
+msgid "See All Plugins"
+msgstr "Просмотреть все плагины"
+
+#: pb_templates/chart-builder-elementor.php:60
+#: chart/chart-builder-block-new.js:623 chart/chart-builder-block.js:689
+msgid "Select chart"
+msgstr "Выберите чарт"
+
+#: admin/partials/chart-builder-admin-display.php:105
+msgid "Contact"
+msgstr "Контакт"
+
+#: admin/partials/features/chart-builder-features-display.php:87
+#: admin/partials/features/chart-builder-features-display.php:97
+msgid "Lifetime"
+msgstr "Время существования"
+
+#: admin/partials/chart-builder-admin-display.php:83
+msgid "Subscribe"
+msgstr "Подписка"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:30
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:53
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:76
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:99
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:130
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:161
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:192
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:223
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:254
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:285
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:316
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:347
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:378
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:409
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:440
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:471
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:502
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:533
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:564
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:595
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:626
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:657
+msgid "View demo"
+msgstr "Посмотреть демо"
+
+#: admin/class-chart-builder-admin.php:2677
+#: admin/class-chart-builder-admin.php:3952
+msgid "Position"
+msgstr "Позиция"
+
+#: admin/class-chart-builder-admin.php:2678
+msgid "Choose the appropriate position for the chart legend. You will be able to also hide it by choosing the 'Omit the legend' option."
+msgstr "Выберите подходящее положение для легенды графика. Вы также сможете скрыть ее, выбрав опцию \"Опустить легенду\"."
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:130
+msgid "Left of the chart"
+msgstr "Слева от графика"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:131
+msgid "Right of the chart"
+msgstr "Справа от графика"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:132
+msgid "Above the chart"
+msgstr "Выше графика"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:133
+msgid "Below the chart"
+msgstr "Ниже графика"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:136
+msgid "Omit the legend"
+msgstr "Опустить легенду"
+
+#: admin/class-chart-builder-admin.php:2793
+msgid "Legend"
+msgstr "Условные обозначения"
+
+#: admin/class-chart-builder-admin.php:2416
+msgid "Chart description"
+msgstr "Описание диаграммы"
+
+#: admin/class-chart-builder-admin.php:792
+#: admin/class-chart-builder-admin.php:933
+#: admin/class-chart-builder-admin.php:991
+msgid "Hours"
+msgstr "Часы"
+
+#: admin/class-chart-builder-admin.php:793
+#: admin/class-chart-builder-admin.php:934
+#: admin/class-chart-builder-admin.php:992
+msgid "Minutes"
+msgstr "Минуты"
+
+#: admin/class-chart-builder-admin.php:794
+#: admin/class-chart-builder-admin.php:935
+#: admin/class-chart-builder-admin.php:993
+msgid "Seconds"
+msgstr "Секунды"
+
+#: admin/class-chart-builder-admin.php:949
+msgid "Get Your Deal"
+msgstr "Получите свою сделку"
+
+#: admin/class-chart-builder-admin.php:958
+#: admin/class-chart-builder-admin.php:1015
+msgid "Dismiss ad"
+msgstr "Закрыть рекламу"
+
+#: admin/class-chart-builder-admin.php:1973
+#: admin/class-chart-builder-admin.php:2029
+#: admin/class-chart-builder-admin.php:2119
+#: admin/class-chart-builder-admin.php:2184
+#: includes/class-chart-builder-integrations.php:167
+msgid "Show Results"
+msgstr "Показать результаты"
+
+#: admin/class-chart-builder-admin.php:2023
+msgid "Add your query here."
+msgstr "Добавьте свой запрос сюда."
+
+#: admin/class-chart-builder-admin.php:2043
+msgid "Use %1$sControl+Space%2$s for autocompleting keywords or table names."
+msgstr "Используйте %1$sControl+Пробел%2$s для автозаполнения ключевых слов или названий таблиц."
+
+#: admin/class-chart-builder-admin.php:2053
+msgid "Connect to Database"
+msgstr "Подключение к базе данных"
+
+#: admin/class-chart-builder-admin.php:2053
+msgid "Insert the Database query and the appropriate information from your Database will be displayed in the chart."
+msgstr "Вставьте запрос базы данных, и соответствующая информация из вашей базы данных будет отображена на диаграмме."
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:27
+#: admin/partials/charts/chart-builder-charts-display.php:171
+#: admin/partials/features/chart-builder-features-display.php:141
+#: admin/partials/features/chart-builder-features-display.php:144
+msgid "Line Chart"
+msgstr "Линейный график"
+
+#: admin/partials/settings/chart-builder-settings.php:53
+msgid "General"
+msgstr "Общие"
+
+#: admin/partials/settings/chart-builder-settings.php:56
+#: admin/partials/settings/chart-builder-settings.php:154
+msgid "Integrations"
+msgstr "Интеграция"
+
+#: admin/partials/settings/chart-builder-settings.php:67
+msgid "Who will have permission to Chart Builder"
+msgstr "Кто будет иметь разрешение на Chart Builder"
+
+#: admin/partials/settings/chart-builder-settings.php:84
+msgid "Select user role for giving access to Chart Builder menu"
+msgstr "Выберите роль пользователя для предоставления доступа к меню Построителя диаграмм"
+
+#: admin/partials/settings/chart-builder-settings.php:85
+msgid "Give access to the Chart Builder plugin to only the selected user role(s) on your WP dashboard. Each selected user will see only his/her created charts."
+msgstr "Предоставьте доступ к плагину Chart Builder только выбранной роли пользователя (пользователей) на вашей приборной панели WP. Каждый выбранный пользователь будет видеть только свои созданные диаграммы."
+
+#: admin/partials/settings/chart-builder-settings.php:105
+msgid "Select user role for giving access to change all chart data"
+msgstr "Выберите роль пользователя для предоставления доступа к изменению всех данных графика"
+
+#: admin/partials/settings/chart-builder-settings.php:106
+msgid "Give permissions to manage all charts and submissions to these user roles. Please add the given user roles to the above field as well."
+msgstr "Дайте права на управление всеми графиками и представлениями этим ролям пользователей. Пожалуйста, добавьте данные роли пользователей в вышеуказанное поле."
+
+#: admin/partials/settings/chart-builder-settings.php:125
+msgid "Control the access of the plugin from the dashboard and manage the capabilities of those user roles."
+msgstr "Контролируйте доступ к плагину с приборной панели и управляйте возможностями ролей пользователей."
+
+#: admin/partials/settings/chart-builder-settings.php:127
+msgid "If you want to give a full control to the given user role, please add the role in both fields."
+msgstr "Если вы хотите предоставить полный контроль данной роли пользователя, пожалуйста, добавьте роль в оба поля."
+
+#: admin/partials/settings/chart-builder-settings.php:167
+msgid "Save changes"
+msgstr "Сохранить изменения"
+
+#: includes/class-chart-builder-db-query.php:165
+msgid "Only SELECT queries are allowed"
+msgstr "Разрешены только SELECT-запросы"
+
+#: includes/class-chart-builder-integrations.php:64
+msgid "For enabling this option, please go to %s page and fill all options."
+msgstr "Чтобы включить эту опцию, пожалуйста, перейдите на страницу %s и заполните все параметры."
+
+#: includes/class-chart-builder-integrations.php:65
+msgid "this"
+msgstr "это"
+
+#: includes/class-chart-builder-integrations.php:76
+msgid "This functionality is disabled."
+msgstr "Эта функциональность отключена."
+
+#: includes/class-chart-builder-integrations.php:161
+msgid "Select spreadsheet"
+msgstr "Выберите электронную таблицу"
+
+#: includes/class-chart-builder-integrations.php:190
+msgid "Connect to Google Sheets"
+msgstr "Подключение к Google Sheets"
+
+#: includes/class-chart-builder-integrations.php:190
+msgid "Activate Google Integration to import the information from the Google Sheets."
+msgstr "Активируйте Интеграцию Google, чтобы импортировать информацию из Таблиц Google."
+
+#: includes/class-chart-builder-integrations.php:221
+msgid "Instructions"
+msgstr "Инструкции"
+
+#: includes/class-chart-builder-integrations.php:223
+msgid "Turn on Your Google Sheet API"
+msgstr "Включите API Google Sheet"
+
+#: includes/class-chart-builder-integrations.php:226
+msgid "Create "
+msgstr "Создать "
+
+#: includes/class-chart-builder-integrations.php:226
+msgid "new Google Oauth client ID credentials (if you do not still have)"
+msgstr "новые учетные данные идентификатора клиента Google Oauth (если у вас их еще нет)"
+
+#: includes/class-chart-builder-integrations.php:227
+msgid "Choose the application type as <b>Web application</b>"
+msgstr "Выберите тип приложения как <b>веб-приложение</b>"
+
+#: includes/class-chart-builder-integrations.php:228
+msgid "Add the following link in the <b>Authorized redirect URIs</b> field"
+msgstr "Добавьте следующую ссылку в поле <b>Авторизованные URI перенаправления</b>"
+
+#: includes/class-chart-builder-integrations.php:233
+msgid "Copy the <b>Your Client ID</b> and <b>Your Client Secret</b> from the opened popup and paste them in the corresponding fields."
+msgstr "Скопируйте <b>ID вашего клиента</b> и <b>Секрет вашего клиента</b> из открывшегося всплывающего окна и вставьте их в соответствующие поля."
+
+#: includes/class-chart-builder-integrations.php:234
+msgid "Click on the <b>Connect</b> button to complete authorization"
+msgstr "Нажмите на кнопку <b>Connect</b> для завершения авторизации"
+
+#: includes/class-chart-builder-integrations.php:241
+msgid "Google Client ID"
+msgstr "Google Client ID"
+
+#: includes/class-chart-builder-integrations.php:252
+msgid "Google Client Secret"
+msgstr "Секретный код клиента Google"
+
+#: includes/class-chart-builder-integrations.php:265
+msgid "Connect"
+msgstr "Подключить"
+
+#: includes/class-chart-builder-integrations.php:206
+msgid "Google"
+msgstr "Google"
+
+#: includes/class-chart-builder-integrations.php:232
+msgid "Click on the <b>Create</b> button"
+msgstr "Нажмите на кнопку <b>Создать</b>"
+
+#: admin/class-chart-builder-admin.php:919
+#: admin/class-chart-builder-admin.php:981
+msgid "Limited Time"
+msgstr "Ограниченное время"
+
+#: admin/class-chart-builder-admin.php:919
+msgid "Sale"
+msgstr "Распродажа"
+
+#: admin/class-chart-builder-admin.php:920
+msgid "Chart Builder plugin"
+msgstr "Плагин Chart Builder"
+
+#: admin/class-chart-builder-admin.php:924
+msgid "20% off"
+msgstr "20%"
+
+#: admin/class-chart-builder-admin.php:791
+#: admin/class-chart-builder-admin.php:932
+#: admin/class-chart-builder-admin.php:990
+msgid "Days"
+msgstr "Дни"
+
+#: admin/class-chart-builder-admin.php:181
+#: admin/class-chart-builder-admin.php:243
+msgid "Select user roles"
+msgstr "Выберите роли пользователя"
+
+#: admin/class-chart-builder-admin.php:182
+#: admin/class-chart-builder-admin.php:244
+#: admin/partials/charts/chart-builder-charts-display.php:51
+#: admin/partials/charts/chart-builder-charts-display.php:153
+#: admin/partials/charts/chart-builder-charts-display.php:263
+msgid "Delete"
+msgstr "Удалить"
+
+#: admin/class-chart-builder-admin.php:183
+#: admin/class-chart-builder-admin.php:245
+msgid "Select question default type"
+msgstr "Выберите тип вопроса по умолчанию"
+
+#: admin/class-chart-builder-admin.php:184
+#: admin/class-chart-builder-admin.php:246
+msgid "Yes"
+msgstr "Да"
+
+#: admin/class-chart-builder-admin.php:186
+#: admin/class-chart-builder-admin.php:201
+#: admin/class-chart-builder-admin.php:248
+msgid "Maybe something went wrong."
+msgstr "Возможно, что-то пошло не так."
+
+#: admin/class-chart-builder-admin.php:189
+#: admin/class-chart-builder-admin.php:251
+msgid "Select post type"
+msgstr "Выберите тип публикации"
+
+#: admin/class-chart-builder-admin.php:190
+#: admin/class-chart-builder-admin.php:252
+msgid "Copied!"
+msgstr "Скопировано!"
+
+#: admin/class-chart-builder-admin.php:191
+#: admin/class-chart-builder-admin.php:253
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:52
+#: admin/partials/charts/chart-builder-charts-display.php:192
+msgid "Click to copy"
+msgstr "Нажмите чтобы скопировать"
+
+#: admin/class-chart-builder-admin.php:192
+#: admin/class-chart-builder-admin.php:254
+msgid "Select form"
+msgstr "Выбрать форму"
+
+#: admin/class-chart-builder-admin.php:213
+msgid "You have modified the chart's settings. To modify the source/data again, you must save this chart and reopen it for editing. If you continue without saving the chart, you may lose your changes."
+msgstr "Вы изменили настройки графика. Чтобы снова изменить источник/данные, вы должны сохранить этот график и снова открыть его для редактирования. Если вы продолжите работу без сохранения графика, вы можете потерять свои изменения."
+
+#. Plugin Name of the plugin
+#: admin/class-chart-builder-admin.php:291
+#: admin/class-chart-builder-admin.php:295
+#: pb_templates/chart-builder-elementor.php:9
+#: pb_templates/chart-builder-elementor.php:22
+#: pb_templates/chart-builder-elementor.php:30
+#: chart/chart-builder-block-new.js:589 chart/chart-builder-block.js:655
+msgid "Chart Builder"
+msgstr "Chart Builder"
+
+#: admin/class-chart-builder-admin.php:542
+#: admin/partials/charts/actions/partials/chart-builder-charts-actions-tab1.php:47
+msgid "Settings"
+msgstr "Настройки"
+
+#: admin/class-chart-builder-admin.php:604
+msgid "If you love our plugin, please do big favor and rate us on"
+msgstr "Если вам нравится наш плагин, пожалуйста, сделайте большую услугу и оцените нас на"
+
+#: admin/class-chart-builder-admin.php:2332
+msgid "Manual data"
+msgstr "Ручные данные"
+
+#: admin/class-chart-builder-admin.php:2400
+msgid "Chart status"
+msgstr "Состояние диаграммы"
+
+#: admin/class-chart-builder-admin.php:2401
+msgid "Decide whether the chart is active or not. If the chart is a draft, it won't be shown anywhere on your website (you don't need to remove shortcodes)."
+msgstr "Определите, активна ли диаграмма или нет. Если график является черновиком, он не будет отображаться нигде на вашем сайте (вам не нужно удалять шорткоды)."
+
+#: admin/class-chart-builder-admin.php:3913
+msgid "Width"
+msgstr "Ширина"
+
+#: admin/class-chart-builder-admin.php:3974
+msgid "Height"
+msgstr "Высота"
+
+#: admin/class-chart-builder-admin.php:2593
+#: admin/class-chart-builder-admin.php:2745
+#: admin/class-chart-builder-admin.php:3997
+msgid "Font size"
+msgstr "Размер шрифта"
+
+#: admin/class-chart-builder-admin.php:4232
+msgid "Chart title color"
+msgstr "Цвет заголовка диаграммы"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-actions-tab1.php:50
+msgid "Styles"
+msgstr "Стили"
+
+#: admin/class-chart-builder-admin.php:2542
+msgid "Trigger"
+msgstr "Триггер"
+
+#: admin/class-chart-builder-admin.php:2543
+#: admin/class-chart-builder-admin.php:2624
+msgid "Choose when to display the results on the chart."
+msgstr "Выберите, когда отображать результаты на графике."
+
+#: admin/class-chart-builder-admin.php:2564
+msgid "Show Color Code"
+msgstr "Показать код цвета"
+
+#: admin/class-chart-builder-admin.php:2565
+msgid "The color will be displayed while clicking on a particular part of the chart."
+msgstr "Цвет будет отображаться при нажатии на определенную часть графика."
+
+#: admin/class-chart-builder-admin.php:2647
+msgid "Tooltip"
+msgstr "Подсказка"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:108
+msgid "When selected"
+msgstr "При выборе"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:109
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:115
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:149
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:197
+msgid "Disable"
+msgstr "Отключить"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:232
+msgid "Add new chart"
+msgstr "Добавить новый график"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:235
+msgid "Edit chart"
+msgstr "Редактирование графика"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:18
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:83
+msgid "Save and close"
+msgstr "Сохранить и закрыть"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:19
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:84
+msgid "Save"
+msgstr "Сохранить"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:101
+msgid "Database query results"
+msgstr "Результаты запросов к базе данных"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-actions-tab1.php:6
+msgid "Set the chart title."
+msgstr "Установите заголовок графика."
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-actions-tab1.php:17
+msgid "Chart type:"
+msgstr "Тип диаграммы:"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-actions-tab1.php:44
+msgid "Source"
+msgstr "Источник"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:50
+#: admin/partials/charts/chart-builder-charts-display.php:176
+#: admin/partials/features/chart-builder-features-display.php:151
+#: admin/partials/features/chart-builder-features-display.php:154
+msgid "Bar Chart"
+msgstr "Гистограмма"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:73
+#: admin/partials/charts/chart-builder-charts-display.php:181
+#: admin/partials/features/chart-builder-features-display.php:161
+#: admin/partials/features/chart-builder-features-display.php:164
+msgid "Pie Chart"
+msgstr "Круговая диаграмма"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:96
+#: admin/partials/charts/chart-builder-charts-display.php:186
+#: admin/partials/features/chart-builder-features-display.php:171
+#: admin/partials/features/chart-builder-features-display.php:174
+msgid "Column Chart"
+msgstr "Диаграмма столбцов"
+
+#: admin/partials/charts/chart-builder-charts-display.php:102
+msgid "Type"
+msgstr "Тип"
+
+#: admin/partials/charts/chart-builder-charts-display.php:103
+msgid "Shortcode"
+msgstr "Шорткод"
+
+#: admin/partials/charts/chart-builder-charts-display.php:104
+msgid "Author"
+msgstr "Автор"
+
+#: admin/partials/charts/chart-builder-charts-display.php:105
+msgid "Status"
+msgstr "Статус"
+
+#: admin/partials/charts/chart-builder-charts-display.php:107
+msgid "ID"
+msgstr "ID"
+
+#: admin/partials/charts/chart-builder-charts-display.php:136
+msgid "Restore"
+msgstr "Восстановить"
+
+#: admin/partials/charts/chart-builder-charts-display.php:137
+msgid "Delete Permanently"
+msgstr "Удалить навсегда"
+
+#: admin/partials/charts/chart-builder-charts-display.php:143
+msgid "Draft"
+msgstr "Черновик"
+
+#: admin/partials/charts/chart-builder-charts-display.php:224
+msgid "There are no items yet."
+msgstr "Здесь пока ничего нет."
+
+#: includes/class-chart-builder-actions.php:523
+msgid "Chart example"
+msgstr "Пример диаграммы"
+
+#: includes/class-chart-builder-db-actions.php:1142
+msgid "Chart created."
+msgstr "Создана диаграмма."
+
+#: includes/class-chart-builder-db-actions.php:1145
+msgid "Chart saved."
+msgstr "Диаграмма сохранена."
+
+#: includes/class-chart-builder-db-actions.php:1148
+msgid "Chart duplicated."
+msgstr "Диаграмма продублирована."
+
+#: includes/class-chart-builder-db-actions.php:1151
+msgid "Chart deleted."
+msgstr "Диаграмма удалена."
+
+#: includes/class-chart-builder-db-actions.php:1154
+msgid "Chart moved to trash."
+msgstr "График перемещен в мусор."
+
+#: includes/class-chart-builder-db-actions.php:1157
+msgid "Chart restored."
+msgstr "Диаграмма восстановлена."
+
+#: includes/class-chart-builder-db-actions.php:1160
+msgid "Charts are duplicated."
+msgstr "Диаграммы дублируются."
+
+#: includes/class-chart-builder-db-actions.php:1163
+msgid "Charts are deleted."
+msgstr "Диаграммы удаляются."
+
+#: includes/class-chart-builder-db-actions.php:1166
+msgid "Charts are moved to trash."
+msgstr "Диаграммы перемещаются в корзину."
+
+#: includes/class-chart-builder-db-actions.php:1169
+msgid "Charts are restored."
+msgstr "Графики восстанавливаются."
+
+#: includes/class-chart-builder-db-actions.php:1173
+msgid "Error: Chart title can not be empty."
+msgstr "Ошибка: Заголовок диаграммы не может быть пустым."
+
+#: public/class-chart-builder-public.php:146
+#: public/class-chart-builder-public.php:161
+#: public/class-chart-builder-public.php:172
+msgid "Wrong shortcode initialized"
+msgstr "Неверный инициализированный шорткод"
+
+#: admin/class-chart-builder-admin.php:212
+msgid "Please select a few columns to include in the chart."
+msgstr "Выберите несколько столбцов для включения в диаграмму."
+
+#: admin/class-chart-builder-admin.php:211
+msgid "Please check the filters you have configured."
+msgstr "Пожалуйста, проверьте фильтры, которые вы настроили."
+
+#: admin/class-chart-builder-admin.php:209
+msgid "You have entered invalid URL. Please, insert proper URL."
+msgstr "Вы ввели неверный URL. Введите правильный URL."
+
+#. Author URI of the plugin
+msgid "https://ays-pro.com/"
+msgstr "https://ays-pro.com/"
+
+#. Author of the plugin
+msgid "Chart Builder Team"
+msgstr "Команда Chart Builder"
+
+#. Description of the plugin
+msgid "Display the results with various charts and compare the data."
+msgstr "Отобразите результаты с помощью различных диаграмм и сравните данные."
+
+#. Plugin URI of the plugin
+msgid "https://ays-pro.com/wordpress/chart-builder"
+msgstr "https://ays-pro.com/wordpress/chart-builder"
+
+#: admin/class-chart-builder-admin.php:2332
+msgid "Add the data manually. By clicking on the Add Row button you will be able to add as many rows as you need. While choosing the Line, Bar, Column Chart types you will be able to also add the columns."
+msgstr "Добавьте данные вручную. Нажав кнопку «Добавить строку», вы сможете добавить столько строк, сколько вам нужно. При выборе типов диаграммы вы также сможете добавлять столбцы."
+
+#: admin/class-chart-builder-admin.php:185
+#: admin/class-chart-builder-admin.php:247
+msgid "Cancel"
+msgstr "Отмена"
+
+#: admin/partials/charts/chart-builder-charts-display.php:139
+msgid "Edit"
+msgstr "Изменить"
+
+#: admin/class-chart-builder-admin.php:4329
+#: admin/partials/charts/actions/partials/chart-builder-charts-actions-tab1.php:5
+#: admin/partials/charts/chart-builder-charts-display.php:101
+msgid "Title"
+msgstr "Заголовок"
+
+#: admin/class-chart-builder-admin.php:322
+#: admin/class-chart-builder-admin.php:323
+#: admin/partials/chart-builder-admin-display.php:47
+#: admin/partials/charts/chart-builder-charts-display.php:40
+#: admin/partials/charts/chart-builder-charts-display.php:310
+#: admin/partials/charts/chart-builder-charts-display.php:325
+msgid "Add New"
+msgstr "Добавить"
+
+#: admin/class-chart-builder-admin.php:382
+msgid "Charts"
+msgstr "Графики"
+
+#: admin/class-chart-builder-admin.php:543
+msgid "Demo"
+msgstr "Демонстрация"
+
+#: admin/class-chart-builder-admin.php:187
+#: admin/class-chart-builder-admin.php:249
+msgid "Failed"
+msgstr "Неудачно"
+
+#: admin/class-chart-builder-admin.php:345
+#: admin/class-chart-builder-admin.php:346
+#: admin/class-chart-builder-admin.php:2511
+#: admin/partials/settings/chart-builder-settings.php:45
+#: admin/partials/settings/chart-builder-settings.php:62
+msgid "General Settings"
+msgstr "Общие настройки"
+
+#: admin/class-chart-builder-admin.php:210 chart/chart-builder-block-new.js:608
+#: chart/chart-builder-block.js:674
+msgid "Loading..."
+msgstr "Загрузка…"
+
+#: admin/class-chart-builder-admin.php:188
+#: admin/class-chart-builder-admin.php:250
+msgid "Select page"
+msgstr "Выбрать страницу"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:107
+msgid "While hovering"
+msgstr "При наведении"

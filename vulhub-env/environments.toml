@@ -728,32 +728,33 @@ template = "nuclei-templates/CVE-2022-0533.yaml"
 template_source = "official"
 
 [[environment]]
-name = "formidable - XSS"
+name = "Formcraft3 < 3.8.28 - Unauthenticated Server-Side Request Forgery"
 cve = ["CVE-2022-0591"]
-app = "formidable"
-path = "formidable/CVE-2022-0591"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
-tags = ["XSS"]
+app = "formcraft3"
+path = "formcraft3/CVE-2022-0591"
+dockerfile = {"vulhub/formcraft3:3.8.1" = "formcraft3/CVE-2022-0591"}
+tags = ["SSRF"]
 template = "nuclei-templates/CVE-2022-0591.yaml"
 template_source = "official"
+notes = "OOB 模板（interactsh），需手动 curl 验证；MU-plugin 强制激活；premium 插件（CodeCanyon）不托管在 WP.org，需自行将 formcraft3.3.8.1.zip 放入容器 /tmp/ 目录"
 
 [[environment]]
-name = "caldera-forms - XSS"
+name = "MapSVG < 6.2.20 - Unauthenticated SQLi"
 cve = ["CVE-2022-0592"]
-app = "caldera-forms"
-path = "caldera-forms/CVE-2022-0592"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
-tags = ["XSS"]
+app = "mapsvg"
+path = "mapsvg/CVE-2022-0592"
+dockerfile = {"vulhub/mapsvg:6.2.19" = "base/mapsvg/6.2.19"}
+tags = ["SQL Injection"]
 template = "nuclei-templates/CVE-2022-0592.yaml"
 template_source = "official"
 
 [[environment]]
-name = "woo-discount-rules - XSS"
+name = "WP Statistics <= 13.1.5 - SQL Injection"
 cve = ["CVE-2022-0651"]
-app = "woo-discount-rules"
-path = "woo-discount-rules/CVE-2022-0651"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
-tags = ["XSS"]
+app = "WP Statistics"
+path = "wp-statistics/CVE-2022-0651"
+dockerfile = {"vulhub/wp-statistics:13.1.5" = "wp-statistics/CVE-2022-0651"}
+tags = ["SQL Injection"]
 template = "nuclei-templates/CVE-2022-0651.yaml"
 template_source = "official"
 
@@ -768,12 +769,12 @@ template = "nuclei-templates/CVE-2022-0653.yaml"
 template_source = "official"
 
 [[environment]]
-name = "cool-timeline - XSS"
+name = "Multiple Shipping Address Woocommerce <= 1.0.1 - SQL Injection"
 cve = ["CVE-2022-0783"]
-app = "cool-timeline"
-path = "cool-timeline/CVE-2022-0783"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
-tags = ["XSS"]
+app = "Multiple Shipping Address Woocommerce"
+path = "multiple-shipping-address-woocommerce/CVE-2022-0783"
+dockerfile = {"vulhub/multiple-shipping-address-woocommerce:1.0.1" = "multiple-shipping-address-woocommerce/CVE-2022-0783"}
+tags = ["SQL Injection"]
 template = "nuclei-templates/CVE-2022-0783.yaml"
 template_source = "official"
 
@@ -789,14 +790,15 @@ template_source = "official"
 notes = "MU-plugin 强制激活; 自定义 entrypoint 创建 arplite_arprice_analytics 表; 通用级 entrypoint 不创建该表导致 AJAX SQLi 静默失败"
 
 [[environment]]
-name = "updraft-backup-post-email - XSS"
+name = "miniorange-limit-login-attempts <= 4.0.71 - Stored XSS"
 cve = ["CVE-2022-1029"]
-app = "updraft-backup-post-email"
-path = "updraft-backup-post-email/CVE-2022-1029"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+app = "miniorange-limit-login-attempts"
+path = "miniorange-limit-login-attempts/CVE-2022-1029"
+dockerfile = {"vulhub/miniorange-limit-login-attempts:4.0.71" = "miniorange-limit-login-attempts/CVE-2022-1029"}
 tags = ["XSS"]
 template = "nuclei-templates/CVE-2022-1029.yaml"
 template_source = "official"
+notes = "MU-plugin 强制激活; Dockerfile 预下载插件 zip; 需 admin 认证"
 
 [[environment]]
 name = "wpcargo-track-and-trace - LFI"
@@ -809,12 +811,12 @@ template = "nuclei-templates/CVE-2022-1221.yaml"
 template_source = "official"
 
 [[environment]]
-name = "additional-order-filters-for-woocommerce - XSS"
+name = "Admin Word Count Column <= 2.2 - Local File Inclusion"
 cve = ["CVE-2022-1390"]
-app = "additional-order-filters-for-woocommerce"
-path = "additional-order-filters-for-woocommerce/CVE-2022-1390"
+app = "admin-word-count-column"
+path = "admin-word-count-column/CVE-2022-1390"
 dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
-tags = ["XSS"]
+tags = ["LFI"]
 template = "nuclei-templates/CVE-2022-1390.yaml"
 template_source = "official"
 
@@ -1025,10 +1027,11 @@ name = "simple-file-list - LFI"
 cve = ["CVE-2022-1119"]
 app = "simple-file-list"
 path = "simple-file-list/CVE-2022-1119"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+dockerfile = {"vulhub/simple-file-list:3.2.6" = "simple-file-list/CVE-2022-1119"}
 tags = ["LFI"]
 template = "nuclei-templates/CVE-2022-1119.yaml"
 template_source = "official"
+notes = "MU-plugin 强制激活; 使用 3.2.6 而非 3.2.7 因 ee-downloader.php 的 realpath() 检测拦截官方模板的 ../ payload; 自定义 Dockerfile 预下载插件 zip 并替换 entrypoint"
 
 [[environment]]
 name = "stripe-payments - SQLi"

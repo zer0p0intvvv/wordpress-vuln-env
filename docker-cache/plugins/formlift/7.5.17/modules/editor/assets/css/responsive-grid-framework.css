@@ -1,0 +1,199 @@
+/*  SECTIONS  */
+.formlift-section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.formlift-col {
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    padding: 5px 1% 5px 1%;
+}
+
+.formlift-col:first-child {
+    margin-left: 0;
+}
+
+/*  GROUPING  */
+.formlift-group:before,
+.formlift-group:after {
+    content: "";
+    display: table;
+}
+
+.formlift-group:after {
+    clear: both;
+}
+
+.formlift-group {
+    zoom: 1; /* For IE 6/7 */
+}
+
+/*  GRID OF FOUR  */
+.formlift-span_4_of_4 {
+    width: 100%;
+}
+
+.formlift-span_3_of_4 {
+    width: 75%;
+}
+
+.formlift-span_2_of_4 {
+    width: 50%;
+}
+
+.formlift-span_1_of_4 {
+    width: 25%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+    .formlift-span_1_of_4, .formlift-span_2_of_4, .formlift-span_3_of_4, .formlift-span_4_of_4 {
+        width: 100%;
+    }
+}
+
+/*  GRID OF THREE  */
+.formlift-span_3_of_3 {
+    width: 100%;
+}
+
+.formlift-span_2_of_3 {
+    width: 66.66%;
+}
+
+.formlift-span_1_of_3 {
+    width: 33.33%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+    .formlift-span_3_of_3, .formlift-span_2_of_3, .formlift-span_1_of_3 {
+        width: 100%;
+    }
+}
+
+/*  GRID OF TWO  */
+.formlift-span_2_of_2 {
+    width: 100%;
+}
+
+.formlift-span_1_of_2 {
+    width: 50%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+    .formlift-span_2_of_2, .formlift-span_1_of_2 {
+        width: 100%;
+    }
+}
+
+/*  SECTIONS  */
+.formlift-form-section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.formlift-form-col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.formlift-form-col:first-child {
+    margin-left: 0;
+}
+
+/*  GROUPING  */
+.formlift-form-group:before,
+.formlift-form-group:after {
+    content: "";
+    display: table;
+}
+
+.formlift-form-group:after {
+    clear: both;
+}
+
+.formlift-form-group {
+    zoom: 1; /* For IE 6/7 */
+}
+
+/*  GRID OF FOUR  */
+.formlift-form-span_4_of_4 {
+    width: 98.2%;
+}
+
+.formlift-form-span_3_of_4 {
+    width: 73.6%;
+}
+
+.formlift-form-span_2_of_4 {
+    width: 48.2%;
+}
+
+.formlift-form-span_1_of_4 {
+    width: 23.8%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+    .formlift-form-col {
+        margin: 1% 0 1% 0;
+    }
+
+    .formlift-form-span_1_of_4, .formlift-form-span_2_of_4, .formlift-form-span_3_of_4, .formlift-form-span_4_of_4 {
+        width: 100%;
+    }
+}
+
+/*  GRID OF THREE  */
+.formlift-form-span_3_of_3 {
+    width: 98.2%;
+}
+
+.formlift-form-span_2_of_3 {
+    width: 65.13%;
+}
+
+.formlift-form-span_1_of_3 {
+    width: 31.26%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+    .formlift-form-col {
+        margin: 1% 0 1% 0;
+    }
+
+    .formlift-form-span_3_of_3, .formlift-form-span_2_of_3, .formlift-form-span_1_of_3 {
+        width: 100%;
+    }
+}
+
+/*  GRID OF TWO  */
+.formlift-form-span_2_of_2 {
+    width: 98.2%;
+}
+
+.formlift-form-span_1_of_2 {
+    width: 48.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .formlift-form-col {
+        margin: 1% 0 1% 0;
+    }
+
+    .formlift-form-span_2_of_2, .formlift-form-span_1_of_2 {
+        width: 100%;
+    }
+}

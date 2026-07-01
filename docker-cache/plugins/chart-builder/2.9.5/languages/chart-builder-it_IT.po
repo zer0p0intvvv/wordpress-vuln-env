@@ -1,0 +1,2460 @@
+# Translation of Plugins - Best Chart Plugin &#8211; Chartify - Stable (latest release) in Italian
+# This file is distributed under the same license as the Plugins - Best Chart Plugin &#8211; Chartify - Stable (latest release) package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Plugins - Best Chart Plugin &#8211; Chartify - Stable (latest release)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2023-11-14 09:13+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.4\n"
+
+#: admin/class-chart-builder-admin.php:2875
+msgid "Enable this option to make chart tooltip text italic."
+msgstr "Abilita questa opzione per rendere in corsivo il testo del tooltip del diagramma."
+
+#: admin/class-chart-builder-admin.php:2874
+msgid "Italic text"
+msgstr "Testo corsivo"
+
+#: admin/class-chart-builder-admin.php:2978
+msgid "The font size for all text within the chart legend, specified in pixels. Please note that if an invalid value is entered, it will revert to the default global font size."
+msgstr "La dimensione del font per tutto il testo all'interno della legenda del grafico, specificata in pixel. Se si inserisce un valore non valido, verrà ripristinata la dimensione predefinita del font globale."
+
+#: admin/class-chart-builder-admin.php:2861
+msgid "The font size for all text within the chart tooltip, specified in pixels. Please note that if an invalid value is entered, it will revert to the default global font size."
+msgstr "La dimensione del font per tutto il testo all'interno del tooltip del grafico, specificata in pixel. Se si inserisce un valore non valido, verrà ripristinata la dimensione predefinita del font globale."
+
+#: admin/class-chart-builder-admin.php:2757
+msgid "The position of the chart description."
+msgstr "La posizione della descrizione del grafico."
+
+#: admin/class-chart-builder-admin.php:2756
+msgid "Chart description position"
+msgstr "Posizione descrizione grafico"
+
+#: admin/class-chart-builder-admin.php:4002
+msgid "The crosshair opacity, with 0.0 being fully transparent and 1.0 fully opaque."
+msgstr "L'opacità dei crocini, con 0.0 è completamente trasparente e 1.0 completamente pieno."
+
+#: admin/class-chart-builder-admin.php:4001
+msgid "Crosshair opacity"
+msgstr "Opacità dei crocini"
+
+#: admin/class-chart-builder-admin.php:837
+msgid ""
+"Hurry up! \n"
+"                                                <a href='https://ays-pro.com/wordpress/chart-builder?utm_source=dashboard&utm_medium=chart-free&utm_campaign=helloween-sale-banner' target='_blank' style='color:#ffc700;'>\n"
+"                                                    Check it out!\n"
+"                                                </a>"
+msgstr ""
+"Affrettati! \n"
+"                                                <a href='https://ays-pro.com/wordpress/chart-builder?utm_source=dashboard&utm_medium=chart-free&utm_campaign=helloween-sale-banner' target='_blank' style='color:#ffc700;'>\n"
+"                                                    Guarda qui!\n"
+"                                                </a>"
+
+#: admin/class-chart-builder-admin.php:824
+msgid ""
+"Limited Time \n"
+"                            <span class='ays-chart-dicount-wrap-color-helloween' style='color:#b2ff00;'>30%</span> \n"
+"                            <span>\n"
+"                                SALE on\n"
+"                            </span> \n"
+"                            <br>\n"
+"                            <span style='' class='ays-chart-helloween-bundle'>\n"
+"                                <a href='https://ays-pro.com/wordpress/chart-builder?utm_source=dashboard&utm_medium=chart-free&utm_campaign=helloween-sale-banner' target='_blank' class='ays-chart-dicount-wrap-color-helloween ays-chart-dicount-wrap-text-decoration-helloween' style='display:block; color:#b2ff00;margin-right:6px;'>\n"
+"                                    Chart Builder\n"
+"                                </a>\n"
+"                            </span>"
+msgstr ""
+"Periodo limitato \n"
+"                            <span class='ays-chart-dicount-wrap-color-helloween' style='color:#b2ff00;'>30%</span> \n"
+"                            <span>\n"
+"                                SCONTO su\n"
+"                            </span> \n"
+"                            <br>\n"
+"                            <span style='' class='ays-chart-helloween-bundle'>\n"
+"                                <a href='https://ays-pro.com/wordpress/chart-builder?utm_source=dashboard&utm_medium=chart-free&utm_campaign=helloween-sale-banner' target='_blank' class='ays-chart-dicount-wrap-color-helloween ays-chart-dicount-wrap-text-decoration-helloween' style='display:block; color:#b2ff00;margin-right:6px;'>\n"
+"                                    Chart Builder\n"
+"                                </a>\n"
+"                            </span>"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:187
+msgid "Both"
+msgstr "Entrambi"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:186
+msgid "Horizontal"
+msgstr "Orizzontale"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:185
+msgid "Vertical"
+msgstr "Verticale"
+
+#: admin/class-chart-builder-admin.php:3980
+msgid "The crosshair orientation, which can be 'vertical' for vertical hairs only, 'horizontal' for horizontal hairs only, or 'both' for traditional crosshairs."
+msgstr "L'orientamento dei crocini può essere \"verticale\" per solo segni verticali, \"orizzontale\" per solo segni orizzontali, oppure entrambi per i crocini tradizionali."
+
+#: admin/class-chart-builder-admin.php:3979
+msgid "Crosshair orientation"
+msgstr "Orientamento dei crocini"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:180
+msgid "Focus and Selection"
+msgstr "Fuoco e selezione"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:179
+msgid "Selection"
+msgstr "Selezione"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:178
+msgid "Focus"
+msgstr "Fuoco"
+
+#: admin/class-chart-builder-admin.php:3958
+msgid "Choose when to display crosshairs. Crosshairs are thin vertical and horizontal lines centered on a data point in a chart."
+msgstr "Scegli quando visualizzare i crocini. I crocini sono sottili linee verticali e orizzontali centrate su un punto di dati in un grafico."
+
+#: admin/class-chart-builder-admin.php:3957
+msgid "Crosshair trigger"
+msgstr "Innesco dei crocini"
+
+#: admin/class-chart-builder-admin.php:747
+msgid "<span><a href='https://ays-pro.com/wordpress/chart-builder?utm_source=chart-free-dashboard&utm_medium=chart-sale-banner&utm_campaign=chart-sale-plugin-name' target='_blank' style='color:#ffffff; text-decoration: underline;'>Chart Builder</a></span>"
+msgstr "<span><a href='https://ays-pro.com/wordpress/chart-builder?utm_source=chart-free-dashboard&utm_medium=chart-sale-banner&utm_campaign=chart-sale-plugin-name' target='_blank' style='color:#ffffff; text-decoration: underline;'>Chart Builder</a></span>"
+
+#: admin/partials/charts/chart-builder-charts-display.php:87
+msgid "Date"
+msgstr "Data"
+
+#: admin/partials/charts/chart-builder-charts-display.php:296
+msgid "How to create chart in one minute?"
+msgstr "Come creare un grafico in un minuto?"
+
+#: admin/partials/charts/chart-builder-charts-display.php:284
+msgid "Please note that this video will disappear once you created 4 charts."
+msgstr "Tieni presente che questo video scomparirà dopo che hai creato 4 grafici."
+
+#: admin/partials/charts/chart-builder-charts-display.php:126
+msgid "Unpublish"
+msgstr "Non pubblicato"
+
+#: admin/partials/charts/chart-builder-charts-display.php:124
+msgid "Publish"
+msgstr "Pubblica"
+
+#: admin/class-chart-builder-admin.php:1662
+msgid "WordPress.org"
+msgstr "WordPress.org"
+
+#: admin/class-chart-builder-admin.php:1596
+msgid "Install Plugin"
+msgstr "Installa il plugin"
+
+#: admin/class-chart-builder-admin.php:1593
+msgid "Not Installed"
+msgstr "Non installato"
+
+#: admin/class-chart-builder-admin.php:1582
+msgid "Activate"
+msgstr "Attiva"
+
+#: admin/class-chart-builder-admin.php:1579
+msgid "Inactive"
+msgstr "Inattivo"
+
+#: admin/class-chart-builder-admin.php:1571
+msgid "Active"
+msgstr "Attivo"
+
+#: admin/class-chart-builder-admin.php:1487
+msgid "Create contact forms, payment forms, surveys, and many more custom forms. Build forms easily with us."
+msgstr "Crea moduli di contatto, moduli di pagamento, sondaggi e molti altri moduli personalizzati. Costruisci facilmente i moduli con noi."
+
+#: admin/class-chart-builder-admin.php:1486
+msgid "Choose the best WordPress form builder plugin. "
+msgstr "Scegli il miglior plugin per la creazione di moduli per WordPress. "
+
+#: admin/class-chart-builder-admin.php:1485
+msgid "Easy Form"
+msgstr "Modulo facile"
+
+#: admin/class-chart-builder-admin.php:1478
+msgid "The ChatGPT AI Assistant plugin is here to empower your WordPress website. Have your personal chatbot, content generator right on your front end and backend."
+msgstr "Il plugin ChatGPT AI Assistant è qui per potenziare il tuo sito web WordPress. Avrai il tuo chatbot personale e il tuo generatore di contenuti direttamente sul tuo frontend e backend."
+
+#: admin/class-chart-builder-admin.php:1477
+msgid "ChatGPT AI Assistant plugin gives you the ability to automate various tasks related to content creation and programming."
+msgstr "Il plugin ChatGPT AI Assistant ti dà la possibilità di automatizzare vari compiti legati alla creazione di contenuti e alla programmazione."
+
+#: admin/class-chart-builder-admin.php:1476
+msgid "AI Assistant with ChatGPT"
+msgstr "Assistente IA con ChatGPT"
+
+#: admin/class-chart-builder-admin.php:1424
+msgid "Build an unlimited number of quizzes and questions."
+msgstr "Crea un numero illimitato di quiz e domande."
+
+#: admin/class-chart-builder-admin.php:1423
+msgid "Create powerful and engaging quizzes, tests, and exams in minutes."
+msgstr "Crea quiz, test ed esami efficaci e coinvolgenti in pochi minuti."
+
+#: admin/class-chart-builder-admin.php:1368
+msgid "Addon installed and activated."
+msgstr "Add-on installato e attivato."
+
+#: admin/class-chart-builder-admin.php:1368
+msgid "Plugin installed and activated."
+msgstr "Plugin installato e attivato."
+
+#: admin/class-chart-builder-admin.php:1356
+msgid "Plugin installed."
+msgstr "Plugin installato."
+
+#: admin/class-chart-builder-admin.php:1284
+msgid "Could not install the plugin. Please download and install it manually."
+msgstr "Impossibile installare il plugin. Scaricalo e installalo manualmente."
+
+#: admin/class-chart-builder-admin.php:1275
+msgid "There was an error while performing your request."
+msgstr "Si è verificato un errore durante l'esecuzione della richiesta."
+
+#: admin/class-chart-builder-admin.php:1261
+msgid "Could not activate the addon. Please activate it on the Plugins page."
+msgstr "Impossibile attivare l'add-on. Attivalo nella pagina dei plugin."
+
+#: admin/class-chart-builder-admin.php:1258
+msgid "Could not activate the plugin. Please activate it on the Plugins page."
+msgstr "Impossibile attivare il plugin. Attivalo nella pagina dei plugin."
+
+#: admin/class-chart-builder-admin.php:1252
+msgid "Addon activated."
+msgstr "Add-on attivato."
+
+#: admin/class-chart-builder-admin.php:1250
+msgid "Plugin activated."
+msgstr "Plugin attivato."
+
+#: admin/class-chart-builder-admin.php:1234
+msgid "Plugin activation is disabled for you on this site."
+msgstr "L'attivazione del plugin è disabilitata per te su questo sito."
+
+#: admin/class-chart-builder-admin.php:200
+msgid "Can't load resource."
+msgstr "Impossibile caricare la risorsa."
+
+#: admin/class-chart-builder-admin.php:199
+msgid "Error"
+msgstr "Errore"
+
+#: admin/class-chart-builder-admin.php:198
+#: admin/class-chart-builder-admin.php:1574
+msgid "Activated"
+msgstr "Attivato"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:202
+msgid "px"
+msgstr "px"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:201
+msgid "%"
+msgstr "%"
+
+#: admin/class-chart-builder-admin.php:2743
+msgid "The font size of the chart description."
+msgstr "La dimensione del font per la descrizione del grafico."
+
+#: admin/class-chart-builder-admin.php:2730
+msgid "The color of the chart description."
+msgstr "Il colore della descrizione del grafico."
+
+#: admin/class-chart-builder-admin.php:2714
+msgid "Specify the space between the chart title and the chart container."
+msgstr "Specifica lo spazio tra il titolo e il contenitore del grafico."
+
+#: admin/class-chart-builder-admin.php:2692
+msgid "The position of the chart title."
+msgstr "La posizione del titolo del grafico."
+
+#: admin/class-chart-builder-admin.php:2678
+msgid "The font size of the chart title."
+msgstr "La dimensione del font per il titolo del grafico."
+
+#: admin/class-chart-builder-admin.php:2665
+msgid "The color of the chart title."
+msgstr "Il colore del titolo del grafico."
+
+#: admin/class-chart-builder-admin.php:2650
+msgid "Specify the chart's distance from the bottom border. Leave blank for auto-positioning."
+msgstr "Specifica la distanza del grafico dal bordo inferiore. Lascia vuoto per il posizionamento automatico."
+
+#: admin/class-chart-builder-admin.php:2637
+msgid "Specify the chart's distance from the top border. Leave blank for auto-positioning."
+msgstr "Specifica la distanza del grafico dal bordo superiore. Lascia vuoto per il posizionamento automatico."
+
+#: admin/class-chart-builder-admin.php:2624
+msgid "Specify the chart's distance from the right border. Leave blank for auto-positioning."
+msgstr "Specifica la distanza del grafico dal bordo destro. Lascia vuoto per il posizionamento automatico."
+
+#: admin/class-chart-builder-admin.php:2611
+msgid "Specify the chart's distance from the left border. Leave blank for auto-positioning."
+msgstr "Specifica la distanza del grafico dal bordo sinistro. Lascia vuoto per il posizionamento automatico."
+
+#: admin/class-chart-builder-admin.php:2598
+msgid "The border color of the chart area."
+msgstr "Il colore del bordo dell'area del grafico."
+
+#: admin/class-chart-builder-admin.php:2585
+msgid "The border width of the chart area."
+msgstr "Lo spessore del bordo dell'area del grafico."
+
+#: admin/class-chart-builder-admin.php:2572
+msgid "The background color of the chart area."
+msgstr "Il colore di sfondo dell'area del grafico."
+
+#: admin/class-chart-builder-admin.php:2557
+msgid "The border color of the chart container."
+msgstr "Il colore del bordo del contenitore del grafico."
+
+#: admin/class-chart-builder-admin.php:2544
+msgid "The width of the chart container border."
+msgstr "Lo spessore del bordo del contenitore del grafico."
+
+#: admin/class-chart-builder-admin.php:2531
+msgid "The background color of the chart container."
+msgstr "Il colore di sfondo del contenitore del grafico."
+
+#: admin/class-chart-builder-admin.php:2517
+msgid "The font size of all text in the chart, in pixels. You can override this using other font size options for specific chart elements."
+msgstr "La dimensione del font per tutto il testo all'interno del grafico. La puoi sovrascrivere utilizzando le opzioni per la dimensione font per altri specifici elementi del grafico."
+
+#: admin/class-chart-builder-admin.php:2494
+msgid "The height of the chart container, in pixels."
+msgstr "L'altezza del contenitore del grafico in pixel."
+
+#: admin/class-chart-builder-admin.php:2478
+msgid "Tick this option to keep the chart's width fixed at 100%, no matter what is set for the Width option. This makes the chart more responsive."
+msgstr "Seleziona questa opzione per mantenere la larghezza del grafico fissa al 100%, indipendentemente dall'impostazione dell'opzione larghezza. Questo rende il grafico più reattivo."
+
+#: admin/class-chart-builder-admin.php:2455
+msgid "The width of the chart container, in percents."
+msgstr "La larghezza del contenitore del grafico in percentuale."
+
+#: admin/class-chart-builder-admin.php:2649
+msgid "Bottom Margin"
+msgstr "Margine inferiore"
+
+#: admin/class-chart-builder-admin.php:2636
+msgid "Top Margin"
+msgstr "Margine superiore"
+
+#: admin/class-chart-builder-admin.php:2623
+msgid "Right Margin"
+msgstr "Margine destro"
+
+#: admin/class-chart-builder-admin.php:2610
+msgid "Left Margin"
+msgstr "Margine sinistro"
+
+#: admin/class-chart-builder-admin.php:2477
+msgid "Responsive Width"
+msgstr "Larghezza responsive"
+
+#: admin/class-chart-builder-admin.php:2556
+#: admin/class-chart-builder-admin.php:2597
+msgid "Border Color"
+msgstr "Colore bordo"
+
+#: admin/class-chart-builder-admin.php:2543
+#: admin/class-chart-builder-admin.php:2584
+msgid "Border Width"
+msgstr "Spessore bordo"
+
+#: admin/class-chart-builder-admin.php:2567
+msgid "Chart Area"
+msgstr "Area grafico"
+
+#: admin/class-chart-builder-admin.php:2530
+#: admin/class-chart-builder-admin.php:2571
+msgid "Background Color"
+msgstr "Colore sfondo"
+
+#: admin/partials/features/chart-builder-features-display.php:426
+msgid ""
+"We're sure that you'll love our Chartify plugin, but, if for some reason, you're not\n"
+"                    satisfied in the first 30 days of using our product, there is a money-back guarantee and\n"
+"                    we'll issue a refund."
+msgstr ""
+"Siamo sicuri che il nostro plugin Chartify ti piacerà, ma se per qualche motivo non sei soddisfatto nei primi 30 giorni di utilizzo del nostro prodotto, c'è una garanzia di rimborso.\n"
+"                    soddisfatti nei primi 30 giorni di utilizzo del nostro prodotto, c'è una garanzia di rimborso e\n"
+"                    e vi rimborseremo."
+
+#: admin/partials/features/chart-builder-features-display.php:424
+msgid "30 day money back guarantee !!!"
+msgstr "30 giorni di garanzia di rimborso!!!"
+
+#: admin/partials/features/chart-builder-features-display.php:391
+#: admin/partials/features/chart-builder-features-display.php:394
+msgid "Source - File"
+msgstr "Sorgente - File"
+
+#: admin/partials/features/chart-builder-features-display.php:341
+#: admin/partials/features/chart-builder-features-display.php:344
+msgid "Word Tree Chart"
+msgstr "Grafico ad albero di parole"
+
+#: admin/partials/features/chart-builder-features-display.php:331
+#: admin/partials/features/chart-builder-features-display.php:334
+msgid "Treemap Chart"
+msgstr "Grafico mappa ad albero"
+
+#: admin/partials/features/chart-builder-features-display.php:321
+#: admin/partials/features/chart-builder-features-display.php:324
+msgid "Sankey Chart"
+msgstr "Grafico di Sankey"
+
+#: admin/partials/features/chart-builder-features-display.php:291
+#: admin/partials/features/chart-builder-features-display.php:294
+msgid "Timeline Chart"
+msgstr "Grafico timeline"
+
+#: admin/partials/features/chart-builder-features-display.php:50
+#: admin/partials/features/chart-builder-features-display.php:63
+#: admin/partials/features/chart-builder-features-display.php:406
+#: admin/partials/features/chart-builder-features-display.php:412
+msgid "(ONE-TIME PAYMENT)"
+msgstr "(PAGAMENTO UNICO)"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:468
+msgid "Timeline"
+msgstr "Timeline"
+
+#: admin/class-chart-builder-admin.php:801 chart-builder.php:139
+msgid "One-time payment"
+msgstr "Pagamento unico"
+
+#: admin/class-chart-builder-admin.php:777
+msgid "Offer ends in:"
+msgstr "L'offerta scade in:"
+
+#: admin/class-chart-builder-admin.php:756
+msgid "30 Days Money Back Guarantee"
+msgstr "30 giorni di garanzia di rimborso"
+
+#: admin/class-chart-builder-admin.php:3401
+msgid "The approximate number of horizontal gridlines inside the chart area. If you specify a positive number for gridlines count, it will be used to compute the min spacing between gridlines. You can specify a value of 1 to only draw one gridline, or 0 to draw no gridlines. Specify -1, which is the default, to automatically compute the number of gridlines based on other options. Note: This option will not work with 'Rotate vertical' option."
+msgstr "Il numero approssimativo di linee orizzontali della griglia all'interno dell'area del grafico. Se si specifica un numero positivo per il conteggio delle linee di griglia, questo verrà utilizzato per calcolare la distanza minima tra le linee di griglia. È possibile specificare un valore pari a 1 per disegnare una sola linea di griglia o 0 per non disegnare alcuna linea di griglia. Specificando -1, valore predefinito, si calcola automaticamente il numero di linee di griglia in base alle altre opzioni. Nota: questa opzione non funziona con l'opzione \"Ruota verticale\"."
+
+#: admin/class-chart-builder-admin.php:3209
+msgid "The approximate number of vertical gridlines inside the chart area. If you specify a positive number for gridlines count, it will be used to compute the min spacing between gridlines. You can specify a value of 1 to only draw one gridline, or 0 to draw no gridlines. Specify -1, which is the default, to automatically compute the number of gridlines based on other options. Note: This option will not work with 'Rotate vertical' option."
+msgstr "Il numero approssimativo di linee verticali della griglia all'interno dell'area del grafico. Se si specifica un numero positivo per il conteggio delle linee di griglia, questo verrà utilizzato per calcolare la distanza minima tra le linee di griglia. È possibile specificare un valore pari a 1 per disegnare una sola linea di griglia o 0 per non disegnare alcuna linea di griglia. Specificando -1, valore predefinito, si calcola automaticamente il numero di linee di griglia in base alle altre opzioni. Nota: questa opzione non funziona con l'opzione \"Ruota verticale\"."
+
+#: admin/class-chart-builder-admin.php:3208
+#: admin/class-chart-builder-admin.php:3400
+msgid "Gridlines count"
+msgstr "Conteggio linee griglia"
+
+#: admin/class-chart-builder-admin.php:2713
+msgid "Chart title gap"
+msgstr "Spaziatura titolo del grafico"
+
+#: admin/class-chart-builder-admin.php:3196
+#: admin/class-chart-builder-admin.php:3388
+msgid "The minimum value of the axis."
+msgstr "Il valore minimo degli assi."
+
+#: admin/class-chart-builder-admin.php:3195
+#: admin/class-chart-builder-admin.php:3387
+msgid "Min value"
+msgstr "Valore minimo"
+
+#: admin/class-chart-builder-admin.php:3183
+#: admin/class-chart-builder-admin.php:3375
+msgid "The maximum value of the axis."
+msgstr "Il valore massimo degli assi."
+
+#: admin/class-chart-builder-admin.php:3182
+#: admin/class-chart-builder-admin.php:3374
+msgid "Max value"
+msgstr "Valore massimo"
+
+#: admin/class-chart-builder-admin.php:3271
+msgid "The font size of the vertical axis label."
+msgstr "La dimensione del font per l'etichetta dell'asse verticale."
+
+#: admin/class-chart-builder-admin.php:3044
+msgid "The font size of the horizontal axis label."
+msgstr "La dimensione del font per l'etichetta dell'asse orizzontale."
+
+#: admin/class-chart-builder-admin.php:3043
+#: admin/class-chart-builder-admin.php:3270
+msgid "Label font size"
+msgstr "Dimensione font etichetta"
+
+#: admin/class-chart-builder-admin.php:3030
+#: admin/class-chart-builder-admin.php:3257
+msgid "Axis label"
+msgstr "Etichetta asse"
+
+#: admin/class-chart-builder-admin.php:2357
+msgid "If you disable the toggle, the Chart description will not be displayed on the Front-end. By default, the toggle is enabled."
+msgstr "Se disabiliti il commutatore, la descrizione del grafico non verrà visualizzata nel frontend. Per impostazione predefinita il commutatore è abilitato."
+
+#: admin/class-chart-builder-admin.php:2356
+msgid "Show chart description"
+msgstr "Mostra la descrizione del grafico"
+
+#: admin/class-chart-builder-admin.php:177
+#: admin/partials/charts/chart-builder-charts-display.php:62
+#: admin/partials/charts/chart-builder-charts-display.php:257
+msgid "Select author"
+msgstr "Seleziona autore"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:654
+#: admin/partials/features/chart-builder-features-display.php:351
+#: admin/partials/features/chart-builder-features-display.php:354
+msgid "3D Pie Chart"
+msgstr "Grafico a torta 3D"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:623
+msgid "Word Tree"
+msgstr "Albero di parole"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:592
+msgid "Treemap"
+msgstr "Mappa ad albero"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:561
+msgid "Sankey Diagram"
+msgstr "Diagramma di Sankey"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:530
+#: admin/partials/features/chart-builder-features-display.php:311
+#: admin/partials/features/chart-builder-features-display.php:314
+msgid "Gantt Chart"
+msgstr "Grafico di Gantt"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:499
+#: admin/partials/features/chart-builder-features-display.php:301
+#: admin/partials/features/chart-builder-features-display.php:304
+msgid "Candlestick Chart"
+msgstr "Grafico a candele"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:437
+#: admin/partials/features/chart-builder-features-display.php:281
+#: admin/partials/features/chart-builder-features-display.php:284
+msgid "Table Chart"
+msgstr "Grafico a tabella"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:406
+#: admin/partials/features/chart-builder-features-display.php:271
+#: admin/partials/features/chart-builder-features-display.php:274
+msgid "Scatter Chart"
+msgstr "Grafico a dispersione"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:375
+#: admin/partials/features/chart-builder-features-display.php:261
+#: admin/partials/features/chart-builder-features-display.php:264
+msgid "Bubble Chart"
+msgstr "Grafico a bolle"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:344
+#: admin/partials/features/chart-builder-features-display.php:251
+#: admin/partials/features/chart-builder-features-display.php:254
+msgid "Stepped Area Chart"
+msgstr "Grafico ad area a gradini"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:313
+#: admin/partials/features/chart-builder-features-display.php:241
+#: admin/partials/features/chart-builder-features-display.php:244
+msgid "Combo Chart"
+msgstr "Grafico combinato"
+
+#: admin/class-chart-builder-admin.php:4054
+#: admin/class-chart-builder-admin.php:4174
+msgid "Population"
+msgstr "Popolazione"
+
+#: admin/class-chart-builder-admin.php:4053
+#: admin/class-chart-builder-admin.php:4173
+msgid "Country"
+msgstr "Paese"
+
+#: admin/class-chart-builder-admin.php:2389
+msgid "If checked, maximizes the area of the chart."
+msgstr "Se è selezionato ingrandisce l'area del grafico."
+
+#: admin/class-chart-builder-admin.php:2388
+msgid "Maximized view"
+msgstr "Vista ingrandita"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:197
+msgid "Long"
+msgstr "Lungo"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:196
+msgid "Short"
+msgstr "Breve"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:194
+msgid "Currency"
+msgstr "Valuta"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:193
+msgid "Scientific"
+msgstr "Scientifico"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:192
+msgid "Decimal"
+msgstr "Decimali"
+
+#: admin/class-chart-builder-admin.php:3152
+#: admin/class-chart-builder-admin.php:3344
+msgid "%sLong:%s Displays numbers as full words (e.g., 8 million)"
+msgstr "%sLungo:%s visualizza i numeri come parole intere (ad esempio, 8 milioni)."
+
+#: admin/class-chart-builder-admin.php:3151
+#: admin/class-chart-builder-admin.php:3343
+msgid "%sShort:%s Displays abbreviated numbers (e.g., 8M)"
+msgstr "%sBreve:%s visualizza i numeri abbreviati (ad esempio, 8M)"
+
+#: admin/class-chart-builder-admin.php:3150
+#: admin/class-chart-builder-admin.php:3342
+msgid "%sPercent:%s Displays numbers as percentages (e.g., 800,000,000%%)"
+msgstr "%sPercentuale:%s visualizza i numeri come percentuali (ad esempio, 800.000.000%%)"
+
+#: admin/class-chart-builder-admin.php:3149
+#: admin/class-chart-builder-admin.php:3341
+msgid "%sCurrency:%s Displays numbers in the local currency (e.g., $8,000,000.00)"
+msgstr "%sValuta:%s visualizza i numeri nella valuta locale (ad esempio, €8.000.000,00)."
+
+#: admin/class-chart-builder-admin.php:3148
+#: admin/class-chart-builder-admin.php:3340
+msgid "%sScientific:%s Displays numbers in scientific notation (e.g., 8e6)"
+msgstr "%sScientifico:%s visualizza i numeri con notazioni scientifiche (ad esempio, 8e6)"
+
+#: admin/class-chart-builder-admin.php:3147
+#: admin/class-chart-builder-admin.php:3339
+msgid "%sDecimal:%s Displays numbers with thousands separators (e.g., 8,000,000)"
+msgstr "%sDecimali:%s visualizza i numeri con separatori di migliaia (ad esempio, 8.000.000)."
+
+#: admin/class-chart-builder-admin.php:3146
+#: admin/class-chart-builder-admin.php:3338
+msgid "%sNone%s Displays numbers with no formatting (e.g., 8000000)"
+msgstr "%sNessuno%s visualizza i numeri senza formattazione (ad esempio, 8000000)"
+
+#: admin/class-chart-builder-admin.php:3145
+#: admin/class-chart-builder-admin.php:3337
+msgid "A format string for numeric axis labels. You can choose any of the following:"
+msgstr "Una stringa di formato per le etichette degli assi numerici. Puoi scegliere uno dei seguenti formati:"
+
+#: admin/class-chart-builder-admin.php:3142
+#: admin/class-chart-builder-admin.php:3334
+msgid "Format"
+msgstr "Formato"
+
+#: admin/class-chart-builder-admin.php:309
+#: admin/class-chart-builder-admin.php:310
+msgid "All Charts"
+msgstr "Tutti i grafici"
+
+#: admin/class-chart-builder-admin.php:3942
+msgid "Enable the option, if you want to change the direction of the chart from horizontal to vertical."
+msgstr "Abilita l'opzione se vuoi cambiare la direzione del grafico da orizzontale a verticale."
+
+#: admin/class-chart-builder-admin.php:3941
+msgid "Rotate Vertical"
+msgstr "Ruota verticale"
+
+#: admin/class-chart-builder-admin.php:2373
+msgid "Decide if the chart shows events based on user actions or responds to user interaction. If not, the chart won't generate 'select' or similar interaction-based events (but will generate ready or error events), and won't show hovertext or change based on user input."
+msgstr "Stabilisci se il grafico mostra eventi basati sulle azioni dell'utente o se risponde all'interazione dell'utente. In caso contrario, il grafico non genererà eventi di tipo 'select' o simili basati sull'interazione (ma genererà eventi di tipo 'ready' o 'error'), non mostrerà l'hovertext e non cambierà in base all'input dell'utente."
+
+#: admin/class-chart-builder-admin.php:2372
+msgid "Enable interactivity"
+msgstr "Abilita l'interattività"
+
+#: admin/class-chart-builder-admin.php:3811
+msgid "%sPercentage:%s Set the width of the bars in percentage."
+msgstr "%sPercentuale:%s imposta la larghezza delle barre in percentuali."
+
+#: admin/class-chart-builder-admin.php:3810
+msgid "%sPixels:%s Set the width of the bars in pixels."
+msgstr "%sPixel:%s imposta la larghezza delle barre in pixel."
+
+#: admin/class-chart-builder-admin.php:3809
+msgid "The width of the bars, specified in either of these formats:"
+msgstr "La larghezza delle barre, specificata in uno di questi formati:"
+
+#: admin/class-chart-builder-admin.php:3806
+msgid "Bars width"
+msgstr "Larghezza barre"
+
+#: admin/class-chart-builder-admin.php:4128
+msgid "The color to use for the text of this slice."
+msgstr "Il colore da usare per il testo di questa fetta."
+
+#: admin/class-chart-builder-admin.php:4226
+msgid "Tick this option to have the series shown in the legend, otherwise it won`t be shown. If you don't want any of the labels to be shown in the legend, change the 'Legend position' option to 'Omit the legend' to entirely hide the legend ."
+msgstr "Seleziona questa opzione per visualizzare la serie nella legenda, altrimenti non verrà visualizzata. Se non desideri che nessuna delle etichette sia visualizzata nella legenda, modifica l'opzione \"Posizione legenda\" in \"Omettere la legenda\" per nascondere completamente la legenda."
+
+#: admin/class-chart-builder-admin.php:4225
+msgid "Visible in legend"
+msgstr "Visibile nella legenda"
+
+#: admin/class-chart-builder-admin.php:4109
+msgid "How far to separate the slice from the rest of the pie, from 0.0 (not at all) to 1.0 (the chart's radius)."
+msgstr "Quanto separare la fetta dal resto della torta, da 0,0 (per niente) a 1,0 (il raggio del grafico)."
+
+#: admin/class-chart-builder-admin.php:4108
+msgid "Offset"
+msgstr "Offset"
+
+#: admin/class-chart-builder-admin.php:4091
+msgid "The color to use for this slice."
+msgstr "Il colore da usare per questa fetta."
+
+#: admin/class-chart-builder-admin.php:4257
+msgid "Series settings"
+msgstr "Impostazioni serie"
+
+#: admin/class-chart-builder-admin.php:4155
+msgid "Slices settings"
+msgstr "Impostazioni fette"
+
+#: admin/class-chart-builder-admin.php:4090
+#: admin/class-chart-builder-admin.php:4210
+msgid "Color"
+msgstr "Colore"
+
+#: admin/class-chart-builder-admin.php:3929
+msgid "Diameter of displayed points in pixels. Use zero to hide all points."
+msgstr "Diametro dei punti visualizzati in pixel. Inserisci zero per nascondere tutti i punti."
+
+#: admin/class-chart-builder-admin.php:3928
+msgid "Point size"
+msgstr "Dimensione punto"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:174
+msgid "Polygon"
+msgstr "Poligono"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:173
+msgid "Star"
+msgstr "Stella"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:172
+msgid "Diamond"
+msgstr "Diamante"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:171
+msgid "Square"
+msgstr "Quadrato"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:170
+msgid "Triangle"
+msgstr "Triangolo"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:169
+msgid "Circle"
+msgstr "Cerchio"
+
+#: admin/class-chart-builder-admin.php:3907
+msgid "The shape of individual data elements: 'Circle', 'Triangle', 'Square', 'Diamond', 'Star', or 'Polygon'."
+msgstr "La forma dei singoli elementi dei dati: \"Cerchio\", \"Triangolo\", \"Quadrato\", \"Diamante\", \"Stella\" o \"Poligono\"."
+
+#: admin/class-chart-builder-admin.php:3906
+msgid "Point shape"
+msgstr "Forma punto"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:165
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:191
+msgid "None"
+msgstr "Nessuno"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:164
+msgid "Auto"
+msgstr "Auto"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:163
+msgid "Series"
+msgstr "Serie"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:162
+msgid "Category"
+msgstr "Categoria"
+
+#: admin/class-chart-builder-admin.php:3875
+msgid "%sNone:%s Show only one tooltip per selection."
+msgstr "%sNessuno:%s mostra solo un tooltip per selezione."
+
+#: admin/class-chart-builder-admin.php:3874
+msgid "%sAuto:%s Group selected data by row titles, if they have the same titles or by column titles"
+msgstr "%sAuto:%s raggruppa i dati selezionati in base ai titoli delle righe, se hanno lo stesso titolo, o in base ai titoli delle colonne."
+
+#: admin/class-chart-builder-admin.php:3873
+msgid "%sSeries:%s Group selected data by column titles."
+msgstr "%sSerie:%s raggruppa i dati selezionati in base ai titoli delle colonne."
+
+#: admin/class-chart-builder-admin.php:3872
+msgid "%sCategory:%s Group selected data by row titles."
+msgstr "%sCategoria:%s raggruppa i dati selezionati in base ai titoli delle righe."
+
+#: admin/class-chart-builder-admin.php:3871
+msgid "How multiple data selections are rolled up into tooltips:"
+msgstr "Come le selezioni di dati multipli vengono raggruppate nei tooltip:"
+
+#: admin/class-chart-builder-admin.php:3868
+msgid "Multiple data format"
+msgstr "Formato dati multipli"
+
+#: admin/class-chart-builder-admin.php:3853
+msgid "When enabled, you may select multiple data points at once. To remove a data point from selection, click on it again. Note: This option works only when 'Tooltip trigger' option is set to 'When selected'."
+msgstr "Quando è abilitata, è possibile selezionare più punti di dati contemporaneamente. Per rimuovere un punto di dati dalla selezione, fai nuovamente clic su di esso. Nota: questa opzione funziona solo quando l'opzione \"Innesco tooltip\" è impostata su \"Quando selezionato\"."
+
+#: admin/class-chart-builder-admin.php:3852
+msgid "Multiple data selection"
+msgstr "Selezione dati multipli"
+
+#: admin/class-chart-builder-admin.php:3733
+msgid "Color for the combination slice that holds all slices below chart data grouping limit."
+msgstr "Colore per la fetta combinata che contiene tutte le fette al di sotto del limite di raggruppamento dei dati del grafico."
+
+#: admin/class-chart-builder-admin.php:3732
+msgid "Chart Data Grouping Color"
+msgstr "Colore raggruppamento dati del grafico"
+
+#: admin/class-chart-builder-admin.php:3720
+msgid "A label for the combination slice that holds all slices below chart data grouping limit."
+msgstr "Un'etichetta per la fetta combinata che contiene tutte le fette al di sotto del limite di raggruppamento dei dati del grafico."
+
+#: admin/class-chart-builder-admin.php:3719
+msgid "Chart Data Grouping Label"
+msgstr "Etichetta raggruppamento dati del grafico"
+
+#: admin/class-chart-builder-admin.php:3707
+msgid "The percentage value of the pie, below which a slice will not show individually. All slices that have not passed this value will be combined to a single 'Other' slice, whose size is the sum of all their sizes. Default is not to show individually any slice which is smaller than half a degree."
+msgstr "Il valore percentuale della torta, al di sotto del quale una fetta non verrà visualizzata individualmente. Tutte le fette che non hanno superato questo valore saranno combinate in un'unica fetta \"Altro\", la cui dimensione è la somma di tutte le loro dimensioni. L'impostazione predefinita è di non mostrare individualmente le fette più piccole di mezzo grado."
+
+#: admin/class-chart-builder-admin.php:3706
+msgid "Chart Data Grouping Limit"
+msgstr "Limite raggruppamento dati del grafico"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:158
+msgid "Ease in and out"
+msgstr "Entrata e uscita graduali"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:157
+msgid "Ease out"
+msgstr "Uscita graduale"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:156
+msgid "Ease in"
+msgstr "Entrata graduale"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:155
+msgid "Linear"
+msgstr "Lineare"
+
+#: admin/class-chart-builder-admin.php:3496
+msgid "%sEase in and out:%s Start slow, speed up, then slow down."
+msgstr "%sEntrata e uscita graduale:%s inizia lentamente, accelera e poi rallenta."
+
+#: admin/class-chart-builder-admin.php:3495
+msgid "%sEase out:%s Start fast and slow down."
+msgstr "%sUscita graduale:%s inizia rapido e poi decelera."
+
+#: admin/class-chart-builder-admin.php:3494
+msgid "%sEase in:%s Start slow and speed up."
+msgstr "%sEntrata graduale:%s inizia lentamente, e poi accelera."
+
+#: admin/class-chart-builder-admin.php:3493
+msgid "%sLinear:%s Constant speed."
+msgstr "%sLineare:%s velocità costante."
+
+#: admin/class-chart-builder-admin.php:3492
+msgid "The easing function applied to the chart animation. The following options are available:"
+msgstr "La funzione di gradualità applicata all'animazione del grafico. Sono disponibili le seguenti opzioni:"
+
+#: admin/class-chart-builder-admin.php:3489
+msgid "Animation easing"
+msgstr "Gradualità animazione"
+
+#: admin/class-chart-builder-admin.php:3474
+msgid "Determine if the chart will animate on the window load. If checked, the chart will start at the baseline and animate to its final state, else it will animate on size or data change."
+msgstr "Stabilisci se il grafico si animerà al caricamento della finestra. Se l'opzione è selezionata, il grafico partirà dalla linea di base e si animerà fino allo stato finale, altrimenti si animerà al variare delle dimensioni o dei dati."
+
+#: admin/class-chart-builder-admin.php:3473
+msgid "Animation startup"
+msgstr "Inizio animazione"
+
+#: admin/class-chart-builder-admin.php:3444
+msgid "Enable chart animation."
+msgstr "Abilita l'animazione del grafico"
+
+#: admin/class-chart-builder-admin.php:3461
+msgid "The duration of the chart animation, in milliseconds."
+msgstr "La durata dell'animazione del grafico in millisecondi."
+
+#: admin/class-chart-builder-admin.php:3460
+msgid "Animation duration"
+msgstr "Durata animazione"
+
+#: admin/class-chart-builder-admin.php:3443
+#: admin/class-chart-builder-admin.php:3530
+msgid "Chart animation"
+msgstr "Animazione del grafico"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:150
+msgid "Right"
+msgstr "Destra"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:149
+msgid "Left"
+msgstr "Sinistra"
+
+#: admin/class-chart-builder-admin.php:2691
+msgid "Chart title position"
+msgstr "Posizione titolo del grafico"
+
+#: admin/class-chart-builder-admin.php:3840
+msgid "Data line width in pixels. Set 0 for hiding all the lines and show only the point."
+msgstr "Spessore linea dati in pixel. Imposta 0 per nascondere tutte le linee e mostrare solo i punti."
+
+#: admin/class-chart-builder-admin.php:3839
+msgid "Chart line width"
+msgstr "Spessore linea grafico"
+
+#: admin/partials/charts/chart-builder-charts-display.php:68
+#: admin/partials/charts/chart-builder-charts-display.php:263
+msgid "Clear filters"
+msgstr "Pulisci filtri"
+
+#: admin/partials/charts/chart-builder-charts-display.php:67
+#: admin/partials/charts/chart-builder-charts-display.php:262
+msgid "Filter"
+msgstr "Filtro"
+
+#: admin/partials/charts/chart-builder-charts-display.php:51
+#: admin/partials/charts/chart-builder-charts-display.php:246
+msgid "Select Type"
+msgstr "Seleziona tipo"
+
+#: admin/partials/charts/chart-builder-charts-display.php:73
+msgid "Search"
+msgstr "Cerca"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:119
+msgid "Labeled"
+msgstr "Etichettato"
+
+#: admin/class-chart-builder-admin.php:3108
+msgid "By choosing true the text will be slanted. In false it will be horizontal. In Automatic based on the size, it will be displayed either in horizontal or slanted. Note: This option only works, if 'Text position' option is set to 'Outside the chart'"
+msgstr "Scegliendo vero, il testo sarà inclinato. In falso sarà orizzontale. In automatico, in base alle dimensioni, il testo verrà visualizzato in orizzontale o inclinato. Nota: questa opzione funziona solo se l'opzione \"Posizione del testo\" è impostata su \"Fuori dal grafico\"."
+
+#: admin/class-chart-builder-admin.php:2848
+msgid "The color of the tooltip text."
+msgstr "Il colore del testo del tooltip."
+
+#: admin/class-chart-builder-admin.php:2847
+#: admin/class-chart-builder-admin.php:4127
+msgid "Text color"
+msgstr "Colore testo"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:145
+msgid "False"
+msgstr "Falso"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:144
+msgid "True"
+msgstr "Vero"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:143
+msgid "Automatic"
+msgstr "Automatico"
+
+#: admin/class-chart-builder-admin.php:3322
+msgid "The color of the vertical axis text."
+msgstr "Il colore del testo dell'asse verticale del grafico."
+
+#: admin/class-chart-builder-admin.php:3130
+msgid "The slanted text angle will define the angle. It will tilt in between -90 from 90 (except 0)."
+msgstr "The slanted text angle will define the angle. It will tilt in between -90 from 90 (except 0)."
+
+#: admin/class-chart-builder-admin.php:3129
+msgid "Slanted text angle"
+msgstr "Angolo del testo inclinato"
+
+#: admin/class-chart-builder-admin.php:3107
+msgid "Slanted text"
+msgstr "Testo inclinato"
+
+#: admin/class-chart-builder-admin.php:3095
+msgid "The color of the horizontal axis text."
+msgstr "Il colore del testo dell'asse orizzontale del grafico."
+
+#: admin/class-chart-builder-admin.php:3094
+#: admin/class-chart-builder-admin.php:3321
+msgid "Axis text color"
+msgstr "Colore testo asse"
+
+#: admin/class-chart-builder-admin.php:3306
+msgid "The direction in which the values along the vertical axis grow. By default, low values are on the bottom of the chart."
+msgstr "La direzione di crescita dei valori lungo l'asse verticale. Per impostazione predefinita, i valori bassi si trovano nella parte inferiore del grafico."
+
+#: admin/class-chart-builder-admin.php:3079
+msgid "The direction in which the values grow along the horizontal axis. By default, low values are on the left of the chart."
+msgstr "La direzione di crescita dei valori lungo l'asse orizzontale. Per impostazione predefinita, i valori bassi si trovano nella parte sinistra del grafico."
+
+#: admin/class-chart-builder-admin.php:3078
+#: admin/class-chart-builder-admin.php:3305
+msgid "Reverse Direction"
+msgstr "Inverti direzione"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:139
+msgid "Hide"
+msgstr "Nascondi"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:138
+msgid "Outside the chart"
+msgstr "Fuori dal grafico"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:118
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:137
+msgid "Inside the chart"
+msgstr "Dentro al grafico"
+
+#: admin/class-chart-builder-admin.php:3284
+msgid "Position of the vertical axis text, relative to the chart area."
+msgstr "Posizione del testo dell'asse verticale relativo all'area del grafico."
+
+#: admin/class-chart-builder-admin.php:3057
+msgid "Position of the horizontal axis text, relative to the chart area."
+msgstr "Posizione del testo dell'asse orizzontale relativo all'area del grafico."
+
+#: admin/class-chart-builder-admin.php:3056
+#: admin/class-chart-builder-admin.php:3283
+msgid "Text position"
+msgstr "Posizione testo"
+
+#: admin/class-chart-builder-admin.php:3415
+msgid "Vertical Axis Settings"
+msgstr "Impostazioni asse verticale"
+
+#: admin/class-chart-builder-admin.php:3258
+msgid "The title of the vertical axis"
+msgstr "Il titolo dell'asse verticale"
+
+#: admin/class-chart-builder-admin.php:3223
+msgid "Horizontal Axis Settings"
+msgstr "Impostazioni asse orizzontale"
+
+#: admin/class-chart-builder-admin.php:3031
+msgid "The title of the horizontal axis"
+msgstr "Il titolo dell'asse orizzontale"
+
+#: admin/class-chart-builder-admin.php:2341
+msgid "If you disable the toggle, the Chart title will not be displayed on the Front-end. By default, the toggle is enabled."
+msgstr "Se disabiliti il commutatore, il titolo del grafico non verrà visualizzato nel frontend. Per impostazione predefinita il commutatore è abilitato."
+
+#: admin/class-chart-builder-admin.php:2340
+msgid "Show chart title"
+msgstr "Mostra il titolo del grafico"
+
+#: admin/class-chart-builder-admin.php:3794
+msgid "The transparency of data points, with 1.0 being completely opaque and 0.0 fully transparent. In bar and column charts, this refers to the visible data: rectangles. In charts where selecting data creates a dot, such as the line chart, this refers to the circles that appear upon hover or selection."
+msgstr "La trasparenza dei punti di dati, con 1,0 completamente opaco e 0,0 completamente trasparente. Nei grafici a barre e a colonne, si riferisce ai dati visibili: rettangoli. Nei grafici in cui la selezione dei dati crea un punto, come il grafico a linee, si riferisce ai cerchi che appaiono al passaggio del mouse o alla selezione."
+
+#: admin/class-chart-builder-admin.php:3793
+msgid "Opacity"
+msgstr "Opacità"
+
+#: admin/class-chart-builder-admin.php:2332
+msgid "Select User"
+msgstr "Seleziona utente"
+
+#: admin/class-chart-builder-admin.php:2325
+msgid "You can change the author who created the current chart to your preferred one. You need to write the User ID here. Please note, that in case you write an ID, by which there are no users found, the changes will not be applied and the previous author will remain the same."
+msgstr "Puoi modificare l'autore che ha creato il grafico corrente con quello che preferisci. Occorre che inserisci qui l'ID utente. Nota che se inserisci un ID per il quale non è stato trovato alcun utente, le modifiche non verranno applicate e l'autore precedente rimarrà lo stesso."
+
+#: admin/class-chart-builder-admin.php:2324
+msgid "Change the author of the current chart"
+msgstr "Cambia l'autore del grafico attuale"
+
+#: admin/class-chart-builder-admin.php:179
+msgid "Searching..."
+msgstr "Cercando…"
+
+#: admin/class-chart-builder-admin.php:178
+msgid "Please enter 1 or more characters"
+msgstr "Inserisci 1 o più caratteri"
+
+#: admin/class-chart-builder-admin.php:3684
+msgid "Slice tooltip text"
+msgstr "Testo tooltip fetta"
+
+#: admin/class-chart-builder-admin.php:3650
+msgid "The color of the slice borders."
+msgstr "Il colore dei bordi delle fette."
+
+#: admin/class-chart-builder-admin.php:3621
+msgid "The angle, in degrees, to rotate the chart by. The default of 0 will orient the leftmost edge of the first slice directly up."
+msgstr "L'angolo, in gradi, di cui ruotare il grafico. Il valore predefinito di 0 orienta il bordo più a sinistra della prima fetta direttamente verso l'alto."
+
+#: admin/class-chart-builder-admin.php:2965
+msgid "Choose the font color for the chart legend."
+msgstr "Scegli il colore del font per la legenda del grafico."
+
+#: admin/class-chart-builder-admin.php:2312
+msgid "Set the chart description"
+msgstr "Imposta la descrizione del grafico"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:132
+msgid "Name"
+msgstr "Nome"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:131
+msgid "Quantitative value"
+msgstr "Valore quantitativo"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:130
+msgid "Percentage"
+msgstr "Percentuale"
+
+#: admin/class-chart-builder-admin.php:3663
+msgid "Choose the content of the text to be displayed on the pie slice."
+msgstr "Scegli il contenuto del testo da visualizzare nella fetta di torta."
+
+#: admin/class-chart-builder-admin.php:3662
+msgid "Slice text"
+msgstr "Testo fetta"
+
+#: admin/class-chart-builder-admin.php:872
+#: admin/class-chart-builder-admin.php:1072
+msgid "Buy Now !"
+msgstr "Acquista ora!"
+
+#: admin/class-chart-builder-admin.php:1031
+msgid "Hurry up! <a href='https://ays-pro.com/silver-bundle' target='_blank'>Check it out!</a>"
+msgstr "Affrettati! <a href='https://ays-pro.com/silver-bundle' target='_blank'>Guarda qui!</a>"
+
+#: admin/class-chart-builder-admin.php:1025
+msgid "Limited Time <span style='color:#E85011;'>50%</span> SALE on <br><span><a href='https://ays-pro.com/silver-bundle' target='_blank' style='color:#E85011; text-decoration: underline;'>Silver Bundle</a></span> (Quiz + Chart + Form)!"
+msgstr "Periodo limitato <span style='color:#E85011;'>50%</span> SCONTO su <br><span><a href='https://ays-pro.com/silver-bundle' target='_blank' style='color:#E85011; text-decoration: underline;'>Silver Bundle</a></span> (Quiz + Chart + Form)!"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:105
+msgid "Value & Percent"
+msgstr "Valore e percentuale"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:104
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:195
+msgid "Percent"
+msgstr "Percentuale"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:103
+msgid "Value"
+msgstr "Valore"
+
+#: admin/class-chart-builder-admin.php:3685
+msgid "Choose how to display the text in the chart tooltip."
+msgstr "Scegli come visualizzare il testo nel tooltip del grafico."
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:93
+msgid "The number of times all the users passed all the quizzes for the last 7 days (PRO)"
+msgstr "Il numero di volte in cui tutti gli utenti hanno superato tutti i quiz negli ultimi 7 giorni (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:92
+msgid "The answers count of the chosen quiz/question category (PRO)"
+msgstr "Il conteggio delle risposte per ogni domanda del quiz o categoria scelta (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:91
+msgid "The answers count for each question of the chosen quiz (PRO)"
+msgstr "Il conteggio delle risposte per ogni domanda del quiz scelto (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:90
+msgid "The count of the logged-in users and guests for the last 7 days (PRO)"
+msgstr "Il conteggio degli utenti e degli ospiti connessi negli ultimi 7 giorni (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:89
+msgid "The number of people based on the particular Interval score (PRO)"
+msgstr "Il numero di persone in base al particolare intervallo di punteggio (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:88
+msgid "The number of people who got the particular score (PRO)"
+msgstr "Il numero di persone che ha ottenuto un particolare punteggio (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:87
+msgid "The number of times the user passed the chosen category quizzes (PRO)"
+msgstr "Il numero di volte in cui l'utente ha superato i quiz di una specifica categoria (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:86
+msgid "The average scores of current user of the quizzes for each quiz category (PRO)"
+msgstr "I punteggi medi degli utenti attuali dei quiz per ogni categoria di quiz (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:85
+msgid "The current user's scores of the chosen quiz (PRO)"
+msgstr "I punteggi dell'utente attuale del quiz scelto (PRO)"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:83
+msgid "The average score of current user of each quiz"
+msgstr "Il punteggio medio dell'utente attuale di ogni quiz"
+
+#: admin/class-chart-builder-admin.php:3634
+msgid "If this option is enabled, the pie slices will be drawn counterclockwise."
+msgstr "Se questa opzione è selezionata le fette di torta verranno disegnate in senso antiorario."
+
+#: admin/class-chart-builder-admin.php:3633
+msgid "Reverse Categories"
+msgstr "Inverti categorie"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:282
+#: admin/partials/features/chart-builder-features-display.php:231
+#: admin/partials/features/chart-builder-features-display.php:234
+msgid "Gauge Chart"
+msgstr "Grafico di misurazione"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:251
+#: admin/partials/features/chart-builder-features-display.php:221
+#: admin/partials/features/chart-builder-features-display.php:224
+msgid "Area Chart"
+msgstr "Grafico ad aree"
+
+#: admin/class-chart-builder-admin.php:2964
+msgid "Font Color"
+msgstr "Colore font"
+
+#: admin/class-chart-builder-admin.php:2725
+msgid "Description"
+msgstr "Descrizione"
+
+#: admin/class-chart-builder-admin.php:1947
+msgid "Choose the format of the file you are going to import."
+msgstr "Scegli il formato di file che vuoi importare."
+
+#: admin/class-chart-builder-admin.php:1943
+msgid "Choose what kind of data would you like to upload."
+msgstr "Scegli che tipo di dati che vuoi caricare."
+
+#: admin/class-chart-builder-admin.php:2742
+msgid "Chart description font size"
+msgstr "Dimensione font descrizione grafico"
+
+#: admin/class-chart-builder-admin.php:2729
+msgid "Chart description color"
+msgstr "Colore descrizione grafico"
+
+#: admin/class-chart-builder-admin.php:2677
+msgid "Chart title font size"
+msgstr "Dimensione font titolo del grafico"
+
+#: admin/class-chart-builder-admin.php:197
+msgid "Sorry, minimum count of columns should be 1"
+msgstr "Il minimo numero di colonne dovrebbe essere 1"
+
+#: admin/class-chart-builder-admin.php:196
+msgid "Sorry, minimum count of rows should be 1"
+msgstr "Il minimo numero di righe dovrebbe essere 1"
+
+#: admin/class-chart-builder-admin.php:195
+msgid "Are you sure you want to delete the column?"
+msgstr "Vuoi davvero eliminare la colonna?"
+
+#: admin/class-chart-builder-admin.php:194
+msgid "Are you sure you want to delete the row?"
+msgstr "Vuoi davvero eliminare la riga?"
+
+#: public/class-chart-builder-public.php:181
+msgid "You are not logged in. Please log in to view this chart."
+msgstr "Non sei connesso. Accedi per vedere questo grafico."
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:84
+msgid "The number of times the current user has passed each quiz overall"
+msgstr "Il numero di volte in cui l'utente attuale ha superato ogni quiz in totale"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:82
+msgid "The number of times the current user has passed the current quiz"
+msgstr "Il numero di volte in cui l'utente attuale ha superato il quiz attuale."
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:81
+msgid "The number of times the current user has passed all quizzes daily"
+msgstr "Il numero di volte in cui l'utente attuale ha superato giornalmente tutti i quiz"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:80
+msgid "The number of times all the users have passed the particular quiz"
+msgstr "Il numero di volte in cui tutti gli utenti hanno superato il quiz in questione."
+
+#: admin/class-chart-builder-admin.php:2099
+msgid "By using this option, you can display the quiz statistics by charts.%s %sNote:%s The Quiz Maker plugin must be active."
+msgstr "Utilizzando questa opzione, puoi visualizzare le statistiche dei quiz tramite grafici.%s %sNota:%s Il plugin Quiz Maker deve essere attivo."
+
+#: admin/class-chart-builder-admin.php:2099
+msgid "Get Quiz Maker data"
+msgstr "Ricevi i dati da Quiz Maker"
+
+#: admin/class-chart-builder-admin.php:2080
+msgid "Select quiz"
+msgstr "Seleziona quiz"
+
+#: admin/class-chart-builder-admin.php:2071
+msgid "Select query"
+msgstr "Seleziona query"
+
+#: admin/class-chart-builder-admin.php:1967
+msgid "With the help of this option, you can import a file in your chosen file format."
+msgstr "Con l'aiuto di questa opzione, puoi importare un file nel formato prescelto."
+
+#: admin/class-chart-builder-admin.php:1967
+msgid "Import data from file"
+msgstr "Importa i dati da file"
+
+#: admin/class-chart-builder-admin.php:1959
+#: admin/class-chart-builder-admin.php:2091
+msgid "Save data"
+msgstr "Salva i dati"
+
+#: admin/class-chart-builder-admin.php:1878
+msgid "Data was successfully saved."
+msgstr "I dati sono stati salvati con successo."
+
+#: admin/class-chart-builder-admin.php:1870
+msgid "Given incorrect Chart ID."
+msgstr "ID grafico fornito non corretto."
+
+#: admin/class-chart-builder-admin.php:1746
+#: admin/class-chart-builder-admin.php:1847
+msgid "There is no data."
+msgstr "Non ci sono dati."
+
+#: admin/class-chart-builder-admin.php:1701
+#: admin/class-chart-builder-admin.php:1798
+msgid "No data given."
+msgstr "Nessun dato fornito."
+
+#: admin/class-chart-builder-admin.php:1691
+#: admin/class-chart-builder-admin.php:1714
+#: admin/class-chart-builder-admin.php:1788
+#: admin/class-chart-builder-admin.php:1815
+msgid "Something went wrong."
+msgstr "Qualcosa è andato storto."
+
+#: admin/class-chart-builder-admin.php:4028
+msgid "Straight"
+msgstr "Dritto"
+
+#: admin/class-chart-builder-admin.php:4023
+msgid "Line curve type"
+msgstr "Tipo di curva della linea"
+
+#: admin/class-chart-builder-admin.php:3746
+msgid "Is stacked: If this option is enabled, the chart will be displayed in the proportional contribution of individual data points in comparison to a total."
+msgstr "Impilato: se questa opzione è attivata, il grafico verrà visualizzato con il contributo proporzionale dei singoli punti dati rispetto al totale."
+
+#: admin/class-chart-builder-admin.php:3745
+msgid "Is stacked"
+msgstr "Impilato"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:110
+msgid "Group data"
+msgstr "Raggruppa i dati"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:109
+msgid "Single data"
+msgstr "Dato singolo"
+
+#: admin/class-chart-builder-admin.php:3766
+msgid "%sGroup data:%s If you choose the Group Data option, the focus will be on the grouped data points. By this, a row of the data table will be focused."
+msgstr "%sRaggruppa dati:%s se scegli l'opzione \"Raggruppa dati\", l'attenzione verrà posta sui punti di dati raggruppati. In questo modo, viene messa a fuoco una riga della tabella dei dati."
+
+#: admin/class-chart-builder-admin.php:3765
+msgid "%sSingle data:%s If you choose the Single Data option, the focus will be on the single data point. By this, the particular cell of the data table will be focused."
+msgstr "%sDati singoli:%s scegliendo l'opzione \"Dati singoli\", l'attenzione verrà posta sul singolo punto di dati. In questo modo, viene messa a fuoco la cella particolare della tabella dei dati."
+
+#: admin/class-chart-builder-admin.php:3764
+msgid "There are two ways to focus the data table elements."
+msgstr "Esistono due modi per focalizzare gli elementi della tabella dati."
+
+#: admin/class-chart-builder-admin.php:3761
+msgid "Focus target"
+msgstr "Obiettivo del fuoco"
+
+#: admin/class-chart-builder-admin.php:3649
+msgid "Slice Border Color"
+msgstr "Colore bordo della fetta"
+
+#: admin/class-chart-builder-admin.php:193
+msgid "Are you sure you want to delete the chart(s)?"
+msgstr "Vuoi davvero eliminare i grafici?"
+
+#: admin/class-chart-builder-admin.php:3620
+msgid "Degree of chart rotation"
+msgstr "Gradi della rotazione del grafico"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:55
+msgid "and paste it at the desired place in the editor."
+msgstr "e incollarlo nel punto desiderato dell'editor."
+
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:53
+msgid "To insert the chart into a page, post or text widget, copy shortcode"
+msgstr "Per inserire il grafico in una pagina, in un articolo o in un widget di testo, copia lo shortcode"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:49
+msgid "Shortcode text for editor"
+msgstr "Shortcode testo per l'editor"
+
+#: admin/class-chart-builder-admin.php:993
+msgid "BUY NOW!"
+msgstr "Acquista ora!"
+
+#: admin/class-chart-builder-admin.php:968
+msgid "Chart Builder Plugin"
+msgstr "Plugin Chart Builder"
+
+#: admin/class-chart-builder-admin.php:967
+msgid "40%"
+msgstr "40%"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:126
+msgid "End"
+msgstr "Fine"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:125
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:151
+msgid "Center"
+msgstr "Centro"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:124
+msgid "Start"
+msgstr "Inizio"
+
+#: admin/class-chart-builder-admin.php:2943
+msgid "Choose the appropriate alignment for the chart legend."
+msgstr "Scegli l'allineamento più consono per la legenda del grafico."
+
+#: admin/class-chart-builder-admin.php:2942
+msgid "Alignment"
+msgstr "Allineamento"
+
+#: admin/partials/settings/chart-builder-settings.php:142
+msgid "Determine the length of the questions to be shown in the Charts List Table by putting your preferred count of words in the following field. (For example: if you put 10,  you will see the first 10 words of each question in the Charts page of your dashboard."
+msgstr "Stabilisci la lunghezza delle domande da visualizzare nella Tabella elenco grafici inserendo il numero di parole desiderato nel campo seguente (ad esempio: se inserisci 10, verranno visualizzate le prime 10 parole di ogni domanda nella pagina  \"Grafici\" della tua bacheca)."
+
+#: admin/partials/settings/chart-builder-settings.php:141
+msgid "Charts list table"
+msgstr "Tabella elenco grafici"
+
+#: admin/partials/settings/chart-builder-settings.php:136
+msgid "Except words count in list table"
+msgstr "Tranne il conteggio delle parole nella tabella dell'elenco"
+
+#: admin/partials/charts/chart-builder-charts-display.php:278
+msgid "Create Your First Chart in Under One Minute"
+msgstr "Crea il tuo primo grafico in meno di un minuto"
+
+#: admin/class-chart-builder-admin.php:533
+#: admin/class-chart-builder-admin.php:1937
+#: admin/class-chart-builder-admin.php:1991
+#: admin/class-chart-builder-admin.php:4017
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:108
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:139
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:170
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:201
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:232
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:263
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:294
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:325
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:356
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:387
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:418
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:449
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:480
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:511
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:542
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:573
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:604
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:635
+#: admin/partials/settings/chart-builder-settings.php:76 chart-builder.php:137
+#: includes/class-chart-builder-integrations.php:152
+#: includes/class-chart-builder-integrations.php:200
+msgid "Upgrade"
+msgstr "Aggiorna"
+
+#: pb_templates/chart-builder-elementor.php:60
+#: chart/chart-builder-block-new.js:623 chart/chart-builder-block.js:689
+msgid "Select chart"
+msgstr "Seleziona grafico"
+
+#: chart/chart-builder-block-new.js:615 chart/chart-builder-block.js:681
+msgid "There are no charts yet"
+msgstr "Non ci sono ancora grafici"
+
+#: chart/chart-builder-block-new.js:579 chart/chart-builder-block-new.js:602
+#: chart/chart-builder-block.js:579 chart/chart-builder-block.js:668
+msgid "Something goes wrong please reload page"
+msgstr "Qualcosa non va, ricarica pagina"
+
+#: admin/partials/features/chart-builder-plugin-featured-display.php:5
+msgid "See All Plugins"
+msgstr "Vedi tutti i plugin"
+
+#: admin/class-chart-builder-admin.php:1422
+msgid "Quiz Maker"
+msgstr "Quiz Maker"
+
+#: admin/class-chart-builder-admin.php:1460
+msgid "Protect web content from being plagiarized. Prevent plagiarism from your website with this easy to use plugin."
+msgstr "Proteggi i contenuti web dal plagio. Previeni il plagio dal tuo sito web con questo plugin facile da usare."
+
+#: admin/class-chart-builder-admin.php:1459
+msgid "Disable the right click, copy paste, content selection and copy shortcut keys on your website."
+msgstr "Disabilita i tasti di scelta rapida del tasto destro del mouse, del copia-incolla, della selezione del contenuto e della copia sul tuo sito web."
+
+#: admin/class-chart-builder-admin.php:1458
+msgid "Secure Copy Content Protection"
+msgstr "Protezione del contenuto per copie sicure"
+
+#: admin/class-chart-builder-admin.php:1469
+msgid "Represent images in an attractive way. Attract people with your own single and multiple free galleries from your photo library."
+msgstr "Rappresenta le immagini in modo attraente. Attira le persone con le tue gallerie singole e multiple gratuite dalla tua libreria fotografica."
+
+#: admin/class-chart-builder-admin.php:1468
+msgid "Create unlimited galleries and include unlimited images in those galleries."
+msgstr "Crea gallerie illimitate e includi immagini illimitate in tali gallerie."
+
+#: admin/class-chart-builder-admin.php:1467
+msgid "Gallery Photo Gallery"
+msgstr "Galleria - Foto"
+
+#: admin/class-chart-builder-admin.php:1451
+msgid "Attract your visitors and convert them into email subscribers and paying customers."
+msgstr "Attrai i tuoi visitatori e convertili in abbonati alle email e in clienti paganti."
+
+#: admin/class-chart-builder-admin.php:1450
+msgid "Popup everything you want! Create informative and promotional popups all in one plugin."
+msgstr "Crea un popup con qualsiasi cosa tu voglia! Crea tutti i popup informativi e promozionali con un solo plugin."
+
+#: admin/class-chart-builder-admin.php:1449
+msgid "Popup Box"
+msgstr "Popup Box"
+
+#: admin/class-chart-builder-admin.php:1433
+msgid "Learn what your website visitors want, need, and expect with the help of Survey Maker. Build surveys without limiting your needs."
+msgstr "Scopri cosa vogliono, di cosa hanno bisogno e cosa si aspettano i visitatori del tuo sito web con l'aiuto di Survey Maker. Crea sondaggi senza limitare le tue esigenze."
+
+#: admin/class-chart-builder-admin.php:1432
+msgid "Make amazing online surveys and get real-time feedback quickly and easily."
+msgstr "Realizza fantastici sondaggi online e ottieni feedback in tempo reale in modo semplice e veloce."
+
+#: admin/class-chart-builder-admin.php:1431
+msgid "Survey Maker"
+msgstr "Survey Maker"
+
+#: admin/class-chart-builder-admin.php:799
+#: admin/class-chart-builder-admin.php:1667
+msgid "Buy Now"
+msgstr "Acquista ora"
+
+#: admin/class-chart-builder-admin.php:1442
+msgid "Build up various types of polls in a minute and get instant feedback on any topic or product."
+msgstr "Crea vari tipi di sondaggi in un minuto e ottieni un feedback immediato su qualsiasi argomento o prodotto."
+
+#: admin/class-chart-builder-admin.php:1441
+msgid "Create amazing online polls for your WordPress website super easily."
+msgstr "Crea in modo semplicissimo fantastici sondaggi online per il tuo sito web WordPress."
+
+#: admin/class-chart-builder-admin.php:1440
+msgid "Poll Maker"
+msgstr "Poll Maker"
+
+#: admin/partials/features/chart-builder-plugin-featured-display.php:2
+msgid "Please feel free to use our other awesome plugins!"
+msgstr "Sentiti libero di utilizzare anche gli altri nostri plugin!"
+
+#: admin/partials/features/chart-builder-features-display.php:49
+#: admin/partials/features/chart-builder-features-display.php:62
+#: admin/partials/features/chart-builder-features-display.php:405
+#: admin/partials/features/chart-builder-features-display.php:411
+msgid "Buy now"
+msgstr "Acquista ora"
+
+#: admin/partials/features/chart-builder-features-display.php:381
+#: admin/partials/features/chart-builder-features-display.php:384
+msgid "Source - Manual"
+msgstr "Sorgente - Manual"
+
+#: admin/partials/features/chart-builder-features-display.php:371
+#: admin/partials/features/chart-builder-features-display.php:374
+msgid "Source - Database"
+msgstr "Sorgente - Database"
+
+#: admin/partials/features/chart-builder-features-display.php:361
+#: admin/partials/features/chart-builder-features-display.php:364
+msgid "Google sheet integration"
+msgstr "Integrazione Google sheet"
+
+#: admin/partials/features/chart-builder-features-display.php:211
+#: admin/partials/features/chart-builder-features-display.php:214
+msgid "Organizational Chart"
+msgstr "Organigramma"
+
+#: admin/partials/features/chart-builder-features-display.php:201
+#: admin/partials/features/chart-builder-features-display.php:204
+msgid "Geographical Chart"
+msgstr "Grafico geografico"
+
+#: admin/partials/features/chart-builder-features-display.php:191
+#: admin/partials/features/chart-builder-features-display.php:194
+msgid "Histogram Chart"
+msgstr "Grafico a istogramma"
+
+#: admin/partials/features/chart-builder-features-display.php:131
+#: admin/partials/features/chart-builder-features-display.php:134
+msgid "Access by user role"
+msgstr "Accesso per ruolo utente"
+
+#: admin/partials/features/chart-builder-features-display.php:121
+#: admin/partials/features/chart-builder-features-display.php:124
+msgid "Permissions by user role"
+msgstr "Autorizzazione per ruolo utente"
+
+#: admin/partials/features/chart-builder-features-display.php:111
+#: admin/partials/features/chart-builder-features-display.php:114
+msgid "Responsive design"
+msgstr "Design responsive"
+
+#: admin/partials/features/chart-builder-features-display.php:101
+#: admin/partials/features/chart-builder-features-display.php:104
+msgid "Usage for"
+msgstr "Utilizzo per"
+
+#: admin/partials/features/chart-builder-features-display.php:87
+#: admin/partials/features/chart-builder-features-display.php:97
+msgid "Lifetime"
+msgstr "A vita"
+
+#: admin/partials/features/chart-builder-features-display.php:86
+#: admin/partials/features/chart-builder-features-display.php:96
+msgid "12 months"
+msgstr "12 mesi"
+
+#: admin/partials/features/chart-builder-features-display.php:85
+#: admin/partials/features/chart-builder-features-display.php:95
+msgid "1 months"
+msgstr "1 mese"
+
+#: admin/partials/features/chart-builder-features-display.php:81
+#: admin/partials/features/chart-builder-features-display.php:84
+msgid "Update for"
+msgstr "Aggiornamento per"
+
+#: admin/partials/features/chart-builder-features-display.php:77
+msgid "Unlimited sites"
+msgstr "Siti illimitati"
+
+#: admin/partials/features/chart-builder-features-display.php:76
+msgid "5 site"
+msgstr "5 siti"
+
+#: admin/partials/features/chart-builder-features-display.php:75
+msgid "1 site"
+msgstr "1 sito"
+
+#: admin/partials/features/chart-builder-features-display.php:71
+#: admin/partials/features/chart-builder-features-display.php:74
+#: admin/partials/features/chart-builder-features-display.php:91
+#: admin/partials/features/chart-builder-features-display.php:94
+msgid "Support for"
+msgstr "Supporto per"
+
+#: admin/partials/features/chart-builder-features-display.php:37
+msgid "Free"
+msgstr "Gratuito"
+
+#: admin/partials/features/chart-builder-features-display.php:29
+msgid "Developer"
+msgstr "Sviluppatore"
+
+#: admin/partials/features/chart-builder-features-display.php:25
+msgid "Business"
+msgstr "Affari"
+
+#: admin/partials/features/chart-builder-features-display.php:21
+msgid "Personal"
+msgstr "Personale"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:220
+msgid "Org Chart"
+msgstr "Organigramma"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:189
+msgid "Geo Chart"
+msgstr "Grafico geografico"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:158
+msgid "Histogram"
+msgstr "Istogramma"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:127
+#: admin/partials/features/chart-builder-features-display.php:181
+#: admin/partials/features/chart-builder-features-display.php:184
+msgid "Donut Chart"
+msgstr "Grafico a ciambella"
+
+#: admin/partials/chart-builder-admin-display.php:105
+msgid "Contact"
+msgstr "Contatto"
+
+#: admin/partials/chart-builder-admin-display.php:102
+msgid "Get 12 months updates and support for the Business package and lifetime updates and support for the Developer package."
+msgstr "Ricevi 12 mesi di aggiornamenti e assistenza per il pacchetto Affari e aggiornamenti e assistenza a vita per il pacchetto Sviluppatore."
+
+#: admin/partials/chart-builder-admin-display.php:101
+msgid "Premium support"
+msgstr "Supporto Premium"
+
+#: admin/partials/chart-builder-admin-display.php:94
+msgid "Join"
+msgstr "Unisci"
+
+#: admin/partials/chart-builder-admin-display.php:91
+msgid "With the Free version, you get a lifetime usage for the plugin, however, you will get new updates and support for only 1 month."
+msgstr "Con la versione gratuita, si ottiene un utilizzo a vita del plugin, ma si otterranno nuovi aggiornamenti e supporto solo per 1 mese."
+
+#: admin/partials/chart-builder-admin-display.php:90
+msgid "Best Free support"
+msgstr "Il miglior supporto gratuito"
+
+#: admin/partials/chart-builder-admin-display.php:83
+msgid "Subscribe"
+msgstr "Iscriviti"
+
+#: admin/partials/chart-builder-admin-display.php:80
+msgid "Our YouTube community  guides you to step by step tutorials about our products and not only..."
+msgstr "La nostra community di YouTube ti guida passo passo con i tutorial sui nostri prodotti e non solo…"
+
+#: admin/partials/chart-builder-admin-display.php:79
+msgid "YouTube community"
+msgstr "Community YouTube"
+
+#: admin/partials/chart-builder-admin-display.php:69
+msgid "Community"
+msgstr "Community"
+
+#: admin/partials/chart-builder-admin-display.php:61
+msgid "Congrats! You have already created your first chart."
+msgstr "Fantastico! Hai già creato il tuo primo grafico."
+
+#: admin/partials/chart-builder-admin-display.php:56
+msgid "of the chart and paste it into any post․"
+msgstr "del grafico e incollalo in qualsiasi articolo․"
+
+#: admin/partials/chart-builder-admin-display.php:56
+msgid "shortcode"
+msgstr "shortcode"
+
+#: admin/partials/chart-builder-admin-display.php:56
+msgid "Copy the"
+msgstr "Copia il"
+
+#: admin/partials/chart-builder-admin-display.php:53
+msgid "Add the needed data for your chart (manually, from Google Sheets and from Database)"
+msgstr "Aggiungi i dati necessari per il grafico (manualmente, da Google Sheets e dal database)."
+
+#: admin/partials/chart-builder-admin-display.php:50
+msgid "Choose your preferred chart type and click on the Next button."
+msgstr "Scegli il tuo grafico preferito e fai cli sul pulsante \"Successivo\"."
+
+#: admin/partials/chart-builder-admin-display.php:47
+msgid "button for creating your first chart."
+msgstr "pulsante per creare il tuo primo grafico."
+
+#: admin/partials/chart-builder-admin-display.php:47
+msgid "page and click on the"
+msgstr "pagina e fai clic sul"
+
+#: admin/partials/chart-builder-admin-display.php:47
+msgid "Go to the"
+msgstr "Vai al"
+
+#: admin/partials/chart-builder-admin-display.php:40
+msgid "plugin."
+msgstr "plugin."
+
+#: admin/partials/chart-builder-admin-display.php:39
+#: admin/partials/chart-builder-admin-display.php:47
+msgid "Chartify"
+msgstr "Chartify"
+
+#: admin/partials/chart-builder-admin-display.php:38
+msgid "How to create a chart in 4 steps with the help of the"
+msgstr "Come creare un grafico in 4 passaggi con l'aiuto del"
+
+#: admin/class-chart-builder-admin.php:369
+#: admin/class-chart-builder-admin.php:370
+msgid "PRO Features"
+msgstr "Caratteristiche PRO"
+
+#: admin/class-chart-builder-admin.php:356
+#: admin/class-chart-builder-admin.php:357
+msgid "Our products"
+msgstr "I nostri prodotti"
+
+#: admin/class-chart-builder-admin.php:334
+#: admin/class-chart-builder-admin.php:335
+msgid "How to use"
+msgstr "Come si usa"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:30
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:53
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:76
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:99
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:130
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:161
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:192
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:223
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:254
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:285
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:316
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:347
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:378
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:409
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:440
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:471
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:502
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:533
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:564
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:595
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:626
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:657
+msgid "View demo"
+msgstr "Vedi demo"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:120
+msgid "Omit the legend"
+msgstr "Omettere la legenda"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:117
+msgid "Below the chart"
+msgstr "Sotto al grafico"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:116
+msgid "Above the chart"
+msgstr "Sopra al grafico"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:115
+msgid "Right of the chart"
+msgstr "A destra del grafico"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:114
+msgid "Left of the chart"
+msgstr "A sinistra del grafico"
+
+#: admin/class-chart-builder-admin.php:2993
+msgid "Legend"
+msgstr "Legenda"
+
+#: admin/class-chart-builder-admin.php:2921
+msgid "Choose the appropriate position for the chart legend. You will be able to also hide it by choosing the 'Omit the legend' option."
+msgstr "Scegli la posizione più consona per la legenda del grafico. Puoi anche nasconderla utilizzando l'opzione \"Omettere la legenda\"."
+
+#: admin/class-chart-builder-admin.php:2920
+msgid "Position"
+msgstr "Posizione"
+
+#: admin/class-chart-builder-admin.php:2311
+msgid "Chart description"
+msgstr "Descrizione grafico"
+
+#: includes/class-chart-builder-integrations.php:251
+msgid "Connect"
+msgstr "Connetti"
+
+#: includes/class-chart-builder-integrations.php:238
+msgid "Google Client Secret"
+msgstr "Google Client Secret"
+
+#: includes/class-chart-builder-integrations.php:227
+msgid "Google Client ID"
+msgstr "Google Client ID"
+
+#: includes/class-chart-builder-integrations.php:220
+msgid "Click on the <b>Connect</b> button to complete authorization"
+msgstr "Fai clic sul pulsante <b>Connetti</b> per completare l'autorizzazione."
+
+#: includes/class-chart-builder-integrations.php:219
+msgid "Copy the <b>Your Client ID</b> and <b>Your Client Secret</b> from the opened popup and paste them in the corresponding fields."
+msgstr "Copia il <b>tuo ID cliente</b> e il <b>tuo segreto cliente</b> dalla finestra a comparsa aperta e incollali nei campi corrispondenti."
+
+#: includes/class-chart-builder-integrations.php:218
+msgid "Click on the <b>Create</b> button"
+msgstr "Fai clic sul pulsante <b>Crea</b>"
+
+#: includes/class-chart-builder-integrations.php:214
+msgid "Add the following link in the <b>Authorized redirect URIs</b> field"
+msgstr "Aggiungi il seguente link nel campo <b>URI di reindirizzamento autorizzati</b>."
+
+#: includes/class-chart-builder-integrations.php:213
+msgid "Choose the application type as <b>Web application</b>"
+msgstr "Scegli il tipo di applicazione come <b>Applicazione web</b>"
+
+#: includes/class-chart-builder-integrations.php:212
+msgid "new Google Oauth client ID credentials (if you do not still have)"
+msgstr "nuove credenziali del client ID di Google Oauth (se non li hai ancora)"
+
+#: includes/class-chart-builder-integrations.php:212
+msgid "Create "
+msgstr "Crea "
+
+#: includes/class-chart-builder-integrations.php:209
+msgid "Turn on Your Google Sheet API"
+msgstr "Attiva la tua API Google Sheet"
+
+#: includes/class-chart-builder-integrations.php:207
+msgid "Instructions"
+msgstr "Istruzioni"
+
+#: includes/class-chart-builder-integrations.php:192
+msgid "Google"
+msgstr "Google"
+
+#: includes/class-chart-builder-integrations.php:176
+msgid "Activate Google Integration to import the information from the Google Sheets."
+msgstr "Attiva l'integrazione Google per importare le informazioni da Google Sheets."
+
+#: includes/class-chart-builder-integrations.php:176
+msgid "Connect to Google Sheets"
+msgstr "Connetti a Google Sheets"
+
+#: includes/class-chart-builder-integrations.php:161
+msgid "Select spreadsheet"
+msgstr "Seleziona foglio di calcolo"
+
+#: includes/class-chart-builder-integrations.php:76
+msgid "This functionality is disabled."
+msgstr "Questa caratteristica è disabilitata."
+
+#: includes/class-chart-builder-integrations.php:65
+msgid "this"
+msgstr "questo"
+
+#: includes/class-chart-builder-integrations.php:64
+msgid "For enabling this option, please go to %s page and fill all options."
+msgstr "Per abilitare questa opzione vai alla pagina %s e riempi tutte le opzioni."
+
+#: includes/class-chart-builder-db-query.php:165
+msgid "Only SELECT queries are allowed"
+msgstr "Sono consentite solo le query SELECT"
+
+#: admin/partials/settings/chart-builder-settings.php:167
+msgid "Save changes"
+msgstr "Salva modifiche"
+
+#: admin/partials/settings/chart-builder-settings.php:127
+msgid "If you want to give a full control to the given user role, please add the role in both fields."
+msgstr "Se vuoi dare un controllo completo al ruolo dell'utente, aggiungi il ruolo in entrambi i campi."
+
+#: admin/partials/settings/chart-builder-settings.php:125
+msgid "Control the access of the plugin from the dashboard and manage the capabilities of those user roles."
+msgstr "Controlla l'accesso al plugin dalla bacheca e gestisci le capacità di quei ruoli utente."
+
+#: admin/partials/settings/chart-builder-settings.php:106
+msgid "Give permissions to manage all charts and submissions to these user roles. Please add the given user roles to the above field as well."
+msgstr "Assegna le autorizzazioni per la gestione di tutti i grafici e le sottomissioni a questi ruoli utente. Aggiungi i ruoli utente indicati anche nel campo precedente."
+
+#: admin/partials/settings/chart-builder-settings.php:105
+msgid "Select user role for giving access to change all chart data"
+msgstr "Seleziona il ruolo dell'utente per dare accesso alla modifica di tutti i dati del grafico."
+
+#: admin/partials/settings/chart-builder-settings.php:85
+msgid "Give access to the Chart Builder plugin to only the selected user role(s) on your WP dashboard. Each selected user will see only his/her created charts."
+msgstr "Consenti l'accesso al plugin Chart Builder solo agli utenti selezionati nella bacheca di WP. Ogni utente selezionato vedrà solo i grafici da lui creati."
+
+#: admin/partials/settings/chart-builder-settings.php:84
+msgid "Select user role for giving access to Chart Builder menu"
+msgstr "Seleziona il ruolo dell'utente per dare accesso al menu Chart Builder"
+
+#: admin/partials/settings/chart-builder-settings.php:67
+msgid "Who will have permission to Chart Builder"
+msgstr "Chi avrà le autorizzazioni per Chart Builder"
+
+#: admin/partials/settings/chart-builder-settings.php:56
+#: admin/partials/settings/chart-builder-settings.php:154
+msgid "Integrations"
+msgstr "Integrazioni"
+
+#: admin/class-chart-builder-admin.php:2450
+#: admin/partials/settings/chart-builder-settings.php:53
+msgid "General"
+msgstr "Generale"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:27
+#: admin/partials/charts/chart-builder-charts-display.php:149
+#: admin/partials/features/chart-builder-features-display.php:141
+#: admin/partials/features/chart-builder-features-display.php:144
+msgid "Line Chart"
+msgstr "Grafico a linee"
+
+#: admin/class-chart-builder-admin.php:2024
+msgid "Insert the Database query and the appropriate information from your Database will be displayed in the chart."
+msgstr "Inserisci la query del database e le informazioni appropriate del database verranno visualizzate nel grafico."
+
+#: admin/class-chart-builder-admin.php:2024
+msgid "Connect to Database"
+msgstr "Connetti al database"
+
+#: admin/class-chart-builder-admin.php:2014
+msgid "Use %1$sControl+Space%2$s for autocompleting keywords or table names."
+msgstr "Usa %1$sControl+Space%2$s per il completamento automatico di parole chiave o nomi di tabelle."
+
+#: admin/class-chart-builder-admin.php:2008
+#: includes/class-chart-builder-integrations.php:167
+msgid "Save query"
+msgstr "Salva query"
+
+#: admin/class-chart-builder-admin.php:1958
+#: admin/class-chart-builder-admin.php:2007
+#: admin/class-chart-builder-admin.php:2090
+#: includes/class-chart-builder-integrations.php:166
+msgid "Show on chart"
+msgstr "Mostra sul grafico"
+
+#: admin/class-chart-builder-admin.php:1957
+#: admin/class-chart-builder-admin.php:2006
+#: admin/class-chart-builder-admin.php:2089
+#: includes/class-chart-builder-integrations.php:165
+msgid "Show Results"
+msgstr "Mostra risultati"
+
+#: admin/class-chart-builder-admin.php:2001
+msgid "Add your query here."
+msgstr "Aggiungi la tua query qui."
+
+#: admin/class-chart-builder-admin.php:946
+#: admin/class-chart-builder-admin.php:1001
+msgid "Dismiss ad"
+msgstr "Ignora ad"
+
+#: admin/class-chart-builder-admin.php:938
+msgid "Get Your Deal"
+msgstr "Ottieni la tua offerta"
+
+#: admin/class-chart-builder-admin.php:783
+#: admin/class-chart-builder-admin.php:924
+#: admin/class-chart-builder-admin.php:979
+msgid "Seconds"
+msgstr "Secondi"
+
+#: admin/class-chart-builder-admin.php:782
+#: admin/class-chart-builder-admin.php:923
+#: admin/class-chart-builder-admin.php:978
+msgid "Minutes"
+msgstr "Minuti"
+
+#: admin/class-chart-builder-admin.php:781
+#: admin/class-chart-builder-admin.php:922
+#: admin/class-chart-builder-admin.php:977
+msgid "Hours"
+msgstr "Ore"
+
+#: admin/class-chart-builder-admin.php:780
+#: admin/class-chart-builder-admin.php:921
+#: admin/class-chart-builder-admin.php:976
+msgid "Days"
+msgstr "Giorni"
+
+#: admin/class-chart-builder-admin.php:913
+msgid "20% off"
+msgstr "Sconto 20%"
+
+#: admin/class-chart-builder-admin.php:909
+msgid "Chart Builder plugin"
+msgstr "Plugin Chart Builder"
+
+#: admin/class-chart-builder-admin.php:908
+msgid "Sale"
+msgstr "Offerta"
+
+#: admin/class-chart-builder-admin.php:908
+#: admin/class-chart-builder-admin.php:967
+msgid "Limited Time"
+msgstr "Periodo limitato"
+
+#: public/class-chart-builder-public.php:148
+#: public/class-chart-builder-public.php:163
+#: public/class-chart-builder-public.php:174
+#: public/class-chart-builder-public.php:187
+msgid "Wrong shortcode initialized"
+msgstr "Shortcode sbagliato inizializzato"
+
+#: includes/class-chart-builder-db-actions.php:1092
+msgid "Error: Chart title can not be empty."
+msgstr "Errore: il titolo del grafico non può essere vuoto."
+
+#: includes/class-chart-builder-db-actions.php:1088
+msgid "Charts are restored."
+msgstr "I grafici sono stati ripristinati."
+
+#: includes/class-chart-builder-db-actions.php:1085
+msgid "Charts are moved to trash."
+msgstr "I grafici sono stati spostati nel cestino."
+
+#: includes/class-chart-builder-db-actions.php:1082
+msgid "Charts are deleted."
+msgstr "I grafici sono stati eliminati."
+
+#: includes/class-chart-builder-db-actions.php:1079
+msgid "Charts are duplicated."
+msgstr "I grafici sono stati duplicati."
+
+#: includes/class-chart-builder-db-actions.php:1076
+msgid "Chart restored."
+msgstr "Grafico ripristinato."
+
+#: includes/class-chart-builder-db-actions.php:1073
+msgid "Chart moved to trash."
+msgstr "Grafico spostato nel cestino."
+
+#: includes/class-chart-builder-db-actions.php:1070
+msgid "Chart deleted."
+msgstr "Grafico eliminato."
+
+#: includes/class-chart-builder-db-actions.php:1067
+msgid "Chart duplicated."
+msgstr "Grafico duplicato."
+
+#: includes/class-chart-builder-db-actions.php:1064
+msgid "Chart saved."
+msgstr "Grafico salvato."
+
+#: includes/class-chart-builder-db-actions.php:1061
+msgid "Chart created."
+msgstr "Grafico creato."
+
+#: includes/class-chart-builder-actions.php:523
+msgid "Chart example"
+msgstr "Grafico d'esempio"
+
+#: admin/partials/charts/chart-builder-charts-display.php:202
+msgid "There are no items yet."
+msgstr "Non ci sono ancora elementi."
+
+#: admin/partials/charts/chart-builder-charts-display.php:119
+msgid "Edit"
+msgstr "Modifica"
+
+#: admin/partials/charts/chart-builder-charts-display.php:123
+msgid "Draft"
+msgstr "Bozza"
+
+#: admin/partials/charts/chart-builder-charts-display.php:117
+msgid "Delete Permanently"
+msgstr "Elimina definitivamente"
+
+#: admin/partials/charts/chart-builder-charts-display.php:116
+msgid "Restore"
+msgstr "Ripristina"
+
+#: admin/partials/charts/chart-builder-charts-display.php:88
+msgid "ID"
+msgstr "ID"
+
+#: admin/partials/charts/chart-builder-charts-display.php:86
+msgid "Status"
+msgstr "Stato"
+
+#: admin/partials/charts/chart-builder-charts-display.php:85
+msgid "Author"
+msgstr "Autore"
+
+#: admin/partials/charts/chart-builder-charts-display.php:84
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: admin/partials/charts/chart-builder-charts-display.php:83
+msgid "Type"
+msgstr "Tipo"
+
+#: admin/class-chart-builder-admin.php:322
+#: admin/class-chart-builder-admin.php:323
+#: admin/partials/chart-builder-admin-display.php:47
+#: admin/partials/charts/chart-builder-charts-display.php:34
+#: admin/partials/charts/chart-builder-charts-display.php:275
+#: admin/partials/charts/chart-builder-charts-display.php:287
+#: admin/partials/charts/chart-builder-charts-display.php:293
+msgid "Add New"
+msgstr "Aggiungi nuovo"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:96
+#: admin/partials/charts/chart-builder-charts-display.php:164
+#: admin/partials/features/chart-builder-features-display.php:171
+#: admin/partials/features/chart-builder-features-display.php:174
+msgid "Column Chart"
+msgstr "Grafico a colonne"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:73
+#: admin/partials/charts/chart-builder-charts-display.php:159
+#: admin/partials/features/chart-builder-features-display.php:161
+#: admin/partials/features/chart-builder-features-display.php:164
+msgid "Pie Chart"
+msgstr "Grafico a torta"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-add-new-layer-page.php:50
+#: admin/partials/charts/chart-builder-charts-display.php:154
+#: admin/partials/features/chart-builder-features-display.php:151
+#: admin/partials/features/chart-builder-features-display.php:154
+msgid "Bar Chart"
+msgstr "Grafico a barre"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-actions-tab1.php:44
+msgid "Source"
+msgstr "Sorgente"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-actions-tab1.php:17
+msgid "Chart type:"
+msgstr "Tipo grafico:"
+
+#: admin/partials/charts/actions/partials/chart-builder-charts-actions-tab1.php:6
+msgid "Set the chart title."
+msgstr "Imposta il titolo del grafico"
+
+#: admin/class-chart-builder-admin.php:2660
+#: admin/partials/charts/actions/partials/chart-builder-charts-actions-tab1.php:5
+#: admin/partials/charts/chart-builder-charts-display.php:82
+msgid "Title"
+msgstr "Titolo"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:103
+msgid "Database query results"
+msgstr "Risultati della query del database"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:19
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:86
+msgid "Save"
+msgstr "Salva"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:18
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:85
+msgid "Save and close"
+msgstr "Salva e chiudi"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:213
+msgid "Edit chart"
+msgstr "Modifica grafico"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:210
+msgid "Add new chart"
+msgstr "Aggiungi nuovo grafico"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:99
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:133
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:181
+msgid "Disable"
+msgstr "Disabilita"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:98
+msgid "When selected"
+msgstr "Quando selezionato"
+
+#: admin/partials/charts/actions/chart-builder-charts-actions-options.php:97
+msgid "While hovering"
+msgstr "Al passaggio del mouse"
+
+#: admin/class-chart-builder-admin.php:2892
+msgid "Tooltip"
+msgstr "Tooltip"
+
+#: admin/class-chart-builder-admin.php:2832
+msgid "The color will be displayed while clicking on a particular part of the chart."
+msgstr "Il colore verrà visualizzato quando si fa clic su una parte specifica del grafico."
+
+#: admin/class-chart-builder-admin.php:2831
+msgid "Show Color Code"
+msgstr "Mostra codice colore"
+
+#: admin/class-chart-builder-admin.php:2810
+msgid "Choose when to display the results on the chart."
+msgstr "Scegli quando visualizzare i risultati nel grafico."
+
+#: admin/class-chart-builder-admin.php:2809
+msgid "Trigger"
+msgstr "Innesco"
+
+#: admin/class-chart-builder-admin.php:2780
+msgid "Styles"
+msgstr "Stili"
+
+#: admin/class-chart-builder-admin.php:2664
+msgid "Chart title color"
+msgstr "Colore titolo del grafico"
+
+#: admin/class-chart-builder-admin.php:2516
+#: admin/class-chart-builder-admin.php:2860
+#: admin/class-chart-builder-admin.php:2977
+msgid "Font size"
+msgstr "Dimensione font"
+
+#: admin/class-chart-builder-admin.php:2493
+msgid "Height"
+msgstr "Altezza"
+
+#: admin/class-chart-builder-admin.php:2454
+msgid "Width"
+msgstr "Larghezza"
+
+#: admin/class-chart-builder-admin.php:345
+#: admin/class-chart-builder-admin.php:346
+#: admin/class-chart-builder-admin.php:2406
+#: admin/partials/settings/chart-builder-settings.php:45
+#: admin/partials/settings/chart-builder-settings.php:62
+msgid "General Settings"
+msgstr "Impostazioni generali"
+
+#: admin/class-chart-builder-admin.php:2296
+msgid "Decide whether the chart is active or not. If the chart is a draft, it won't be shown anywhere on your website (you don't need to remove shortcodes)."
+msgstr "Stabilisci se il grafico è attivo o meno. Se il grafico è una bozza, non verrà mostrato da nessuna parte sul sito web (non è necessario rimuovere gli shortcode)."
+
+#: admin/class-chart-builder-admin.php:2295
+msgid "Chart status"
+msgstr "Stato del grafico"
+
+#: admin/class-chart-builder-admin.php:2227
+msgid "Add the data manually. By clicking on the Add Row button you will be able to add as many rows as you need. While choosing the Line, Bar, Column Chart types you will be able to also add the columns."
+msgstr "Aggiungi i dati manualmente. Facendo clic sul pulsante Aggiungi riga è puoi inserire tutte le righe che vuoi. Scegliendo i tipi di grafico a linee, a barre e a colonne, potrai anche aggiungere le colonne."
+
+#: admin/class-chart-builder-admin.php:2227
+msgid "Manual data"
+msgstr "Dati manuali"
+
+#: admin/class-chart-builder-admin.php:593
+msgid "If you love our plugin, please do big favor and rate us on"
+msgstr "Se ti piace il nostro plug in, per favore facci un grosso favore e valutaci su"
+
+#: admin/class-chart-builder-admin.php:532
+msgid "Demo"
+msgstr "Demo"
+
+#: admin/class-chart-builder-admin.php:531
+#: admin/partials/charts/actions/partials/chart-builder-charts-actions-tab1.php:47
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: admin/class-chart-builder-admin.php:382
+msgid "Charts"
+msgstr "Grafici"
+
+#: admin/class-chart-builder-admin.php:213
+msgid "You have modified the chart's settings. To modify the source/data again, you must save this chart and reopen it for editing. If you continue without saving the chart, you may lose your changes."
+msgstr "Le impostazioni del grafico sono state modificate. Per modificare nuovamente la sorgente/dati, è necessario salvare il grafico e riaprirlo per modificarlo. Se continui senza salvare il grafico, rischi di perdere le modifiche apportate."
+
+#: admin/class-chart-builder-admin.php:212
+msgid "Please select a few columns to include in the chart."
+msgstr "Seleziona alcune colonne da inserire nel grafico."
+
+#: admin/class-chart-builder-admin.php:211
+msgid "Please check the filters you have configured."
+msgstr "Controlla i filtri che hai configurato."
+
+#: admin/class-chart-builder-admin.php:210 chart/chart-builder-block-new.js:608
+#: chart/chart-builder-block.js:674
+msgid "Loading..."
+msgstr "Caricamento…"
+
+#: admin/class-chart-builder-admin.php:209
+msgid "You have entered invalid URL. Please, insert proper URL."
+msgstr "Hai inserito un URL non valido, inserisci l'URL corretto."
+
+#: admin/class-chart-builder-admin.php:192
+#: admin/class-chart-builder-admin.php:254
+msgid "Select form"
+msgstr "Seleziona modulo"
+
+#: admin/class-chart-builder-admin.php:191
+#: admin/class-chart-builder-admin.php:253
+#: admin/partials/charts/actions/chart-builder-charts-actions.php:54
+#: admin/partials/charts/chart-builder-charts-display.php:170
+msgid "Click to copy"
+msgstr "Fai clic per copiare"
+
+#: admin/class-chart-builder-admin.php:190
+#: admin/class-chart-builder-admin.php:252
+msgid "Copied!"
+msgstr "Copiato!"
+
+#: admin/class-chart-builder-admin.php:189
+#: admin/class-chart-builder-admin.php:251
+msgid "Select post type"
+msgstr "Seleziona tipo di contenuto"
+
+#: admin/class-chart-builder-admin.php:188
+#: admin/class-chart-builder-admin.php:250
+msgid "Select page"
+msgstr "Seleziona pagina"
+
+#: admin/class-chart-builder-admin.php:187
+#: admin/class-chart-builder-admin.php:249
+msgid "Failed"
+msgstr "Fallito"
+
+#: admin/class-chart-builder-admin.php:186
+#: admin/class-chart-builder-admin.php:201
+#: admin/class-chart-builder-admin.php:248
+msgid "Maybe something went wrong."
+msgstr "Forse qualcosa è andato storto."
+
+#: admin/class-chart-builder-admin.php:185
+#: admin/class-chart-builder-admin.php:247
+msgid "Cancel"
+msgstr "Annulla"
+
+#: admin/class-chart-builder-admin.php:184
+#: admin/class-chart-builder-admin.php:246
+msgid "Yes"
+msgstr "Sì"
+
+#: admin/class-chart-builder-admin.php:183
+#: admin/class-chart-builder-admin.php:245
+msgid "Select question default type"
+msgstr "Seleziona tipo domanda predefinito"
+
+#: admin/class-chart-builder-admin.php:182
+#: admin/class-chart-builder-admin.php:244
+#: admin/partials/charts/chart-builder-charts-display.php:46
+#: admin/partials/charts/chart-builder-charts-display.php:131
+#: admin/partials/charts/chart-builder-charts-display.php:241
+msgid "Delete"
+msgstr "Elimina"
+
+#: admin/class-chart-builder-admin.php:181
+#: admin/class-chart-builder-admin.php:243
+msgid "Select user roles"
+msgstr "Seleziona i ruoli utente"
+
+#. Author URI of the plugin
+msgid "https://ays-pro.com/"
+msgstr "https://ays-pro.com/"
+
+#. Author of the plugin
+msgid "Chart Builder Team"
+msgstr "Team Chart Builder"
+
+#. Description of the plugin
+msgid "Display the results with various charts and compare the data."
+msgstr "Visualizza i risultati con differenti grafici e compara i dati."
+
+#. Plugin URI of the plugin
+msgid "https://ays-pro.com/wordpress/chart-builder"
+msgstr "https://ays-pro.com/wordpress/chart-builder"
+
+#. Plugin Name of the plugin
+#: admin/class-chart-builder-admin.php:291
+#: admin/class-chart-builder-admin.php:295
+#: pb_templates/chart-builder-elementor.php:9
+#: pb_templates/chart-builder-elementor.php:22
+#: pb_templates/chart-builder-elementor.php:30
+#: chart/chart-builder-block-new.js:589 chart/chart-builder-block.js:655
+msgid "Chart Builder"
+msgstr "Chart Builder"

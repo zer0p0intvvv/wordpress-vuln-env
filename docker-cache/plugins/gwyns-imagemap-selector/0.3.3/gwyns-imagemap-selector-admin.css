@@ -1,0 +1,79 @@
+/* Admin CSS
+  --------------------------------------------
+  
+  Based on the Oenology theme's admin CSS - http://www.chipbennett.net/2011/02/17/incorporating-the-settings-api-in-wordpress-themes/
+  
+   */
+
+#wpbody .wrap ul.codereflinklist {
+      clear:both;
+}
+#wpbody .wrap ul.codereflinklist li {
+      display:inline;
+      float:left;
+      width:25%;
+}
+#wpbody .wrap ul.codereflinklist li ul {
+      font-size:8pt;
+}
+#wpbody .wrap ul.codereflinklist li ul li {
+      display:block;
+      float:none;
+      width:auto;
+}
+
+#wpbody .wrap #gwyns-imagemap-selectorcoderef {
+	width: 100%;
+}
+
+#wpbody #gwyns-imagemap-selectorcoderef h3 {
+	padding-top:30px;
+}
+
+#wpbody #gwyns-imagemap-selectorcoderef  div.coderefdetail {
+	width: 650px;
+	padding: 5px;
+	background-color: #fefefe;
+	border: 1px solid #bbb;
+	-webkit-box-shadow: 4px 4px 4px #999;
+	-moz-box-shadow: 4px 4px 4px #999;
+	box-shadow: 4px 4px 4px #999;
+}
+
+#wpbody #gwyns-imagemap-selectorcoderef h3 > div {
+	margin-bottom:50px;
+}
+
+#wpbody #gwyns-imagemap-selectorcoderef hr {
+	margin-top:50px;
+}
+
+#wpbody #gwyns-imagemap-selectorcoderef code {
+	background: #f8f8f8;
+	color: #777;
+	text-shadow: 1px 1px 0px #ccc;
+}
+
+#wpbody .wrap #gwyns-imagemap-selectorcoderef ul {
+	list-style-type:disc;
+	margin-left:25px;
+	line-height:1em;
+}
+
+#wpbody .wrap #gwyns-imagemap-selectorcoderef ul li {
+	line-height:1.3em;
+}
+#wpbody .wrap #gwyns-imagemap-selectorcoderef ul  ul li {
+	font-size: 0.8em;
+}
+
+#wpbody .wrap #gwyns-imagemap-selectorcoderef a {
+	text-decoration: none;
+	background-color: #63afd0;
+	color: #555;
+	padding: 0 2px 0 2px;
+	border: 1px solid #bbb;
+	-webkit-box-shadow: 1px 1px 1px #999;
+	-moz-box-shadow: 1px 1px 1px #999;
+	box-shadow: 1px 1px 1px #999;
+}

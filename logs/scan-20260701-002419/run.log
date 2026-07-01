@@ -1,0 +1,33 @@
+[00:24:21] nuclei: /Users/zer0p0int/工具/nuclei (v3.9.0)
+[00:24:21] 日志目录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-002419
+[00:24:21] 本次共 4 个环境 | 并行度: 4 | 重试: 2次/5s间隔
+[00:24:21] 预构建: 是 | 续跑: 是
+[00:24:21] 续跑模式：跳过已 PASS 的 CVE
+[00:24:21] ━━━ 预构建基础镜像 ━━━
+[00:24:21] 预构建基础镜像 (1): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/pie-register/CVE-2021-24731
+[00:24:23]   WARN: 预构建失败，运行时将自动构建
+[00:24:23] 预构建基础镜像 (2): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/button-generation/CVE-2021-25052
+[00:24:25] 预构建基础镜像 (3): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/mystickyelements/CVE-2022-0148
+[00:24:37] 预构建基础镜像 (4): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/dynamic-featured-image/CVE-2022-0533
+[00:24:38]   WARN: 预构建失败，运行时将自动构建
+[00:24:38] 预构建完成，共 4 个基础镜像
+[00:24:38] ━━━ 开始并行测试 (4 并发) ━━━
+[00:24:38] [######------------------]  25% (1/4)  CVE-2021-24731  :8102 [official]
+[00:24:38] [############------------]  50% (2/4)  CVE-2021-25052  :8203 [official]
+[00:24:38] [##################------]  75% (3/4)  CVE-2022-0148  :8110 [official]
+[00:24:38] [########################] 100% (4/4)  CVE-2022-0533  :8190 [official]
+[00:24:38] 等待剩余任务完成...
+[00:25:30] ━━━ 汇总结果 ━━━
+[00:25:30] ERROR CVE-2021-24731 ()
+[00:25:30] FAIL CVE-2021-25052
+[00:25:30] FAIL CVE-2022-0148
+[00:25:30] ERROR CVE-2022-0533 ()
+
+==================== 汇总 ====================
+总计 4  |  PASS 0  FAIL 2  SKIP 0  ERROR 2
+明细: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-002419/summary.txt
+判定记录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-002419/results.jsonl
+原始 jsonl: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-002419/raw/
+[00:25:30] 收到中断信号，清理已启动的容器...
+[00:25:30]   已清理: CVE-2021-24731
+[00:25:30]   已清理: CVE-2022-0533

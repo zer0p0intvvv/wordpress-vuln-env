@@ -1,0 +1,593 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Untitled project\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-18 19:58+0000\n"
+"PO-Revision-Date: 2017-01-18 20:30+0000\n"
+"Last-Translator: igorsaevets Saevets\n"
+"Language-Team: English\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz\n"
+"X-Loco-Source-Locale: en\n"
+"X-Loco-Project-Id: 20325\n"
+"X-Loco-Api-Version: 1.0.15 20170118-1"
+
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:1308
+#: loco:587fc92b52e1a1584a8b4567
+msgid ""
+msgstr ""
+
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:999
+#: loco:587fc92b52e1a1584a8b456d
+msgid "Disable %s integration (to hide country flags on user list):"
+msgstr "Disable %s integration (to hide country flags on user list):"
+
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:1266
+#: loco:587fc92b52e1a1584a8b456e
+msgid "More"
+msgstr "More"
+
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:1267
+#: loco:587fc92b52e1a1584a8b456f
+msgid "Dismiss"
+msgstr "Dismiss"
+
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:352
+#: loco:587fc92b52e1a1584a8b4570
+msgid "Done"
+msgstr "Done"
+
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:732
+#: loco:587fc92b52e1a1584a8b4571
+msgid "You're banned from chat."
+msgstr "You're banned from chat."
+
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:864
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:875
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:934
+#: loco:587fc92b52e1a1584a8b4572
+msgid "Must be positive integer."
+msgstr "Must be positive integer."
+
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:892
+#: loco:587fc92b52e1a1584a8b4573
+msgid "Must be positive integer less than %d."
+msgstr "Must be positive integer less than %d."
+
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:901
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:923
+#: loco:587fc92b52e1a1584a8b4574
+msgid "Must be integer with value between %d and %d."
+msgstr "Must be integer with value between %d and %d."
+
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:912
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:945
+#: loco:587fc92b52e1a1584a8b4575
+msgid "Must be positive integer with value %d or greater."
+msgstr "Must be positive integer with value %d or greater."
+
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/shoutbox.php:990
+#: loco:587fc92b52e1a1584a8b4576
+msgid "WordPress user roles allowed to access moderation tools:"
+msgstr "WordPress user roles allowed to access moderation tools:"
+
+#: home/marko/public_html/wordpress/wp-content/plugins/shoutbox/widgets.php:84
+#: loco:587fc92b52e1a1584a8b4577
+msgid "Include counter:"
+msgstr "Include counter:"
+
+#: loco:587fcf0c52e1a1d04a8b4567
+msgid ""
+"%s invites you to private chat. To start private chat you can click his user "
+"name on the user list."
+msgstr ""
+"%s invites you to private chat. To start private chat you can click his user "
+"name on the user list."
+
+#: loco:587fcf0c52e1a1d04a8b4568
+msgid "Add this user's IP address to your IP block list"
+msgstr "Add this user's IP address to your IP block list"
+
+#: loco:587fcf0c52e1a1d04a8b4569
+msgid ""
+"Advertisement code for your AdSense or other ads placed between chat user "
+"name input box and message text input box:"
+msgstr ""
+"Advertisement code for your AdSense or other ads placed between chat user "
+"name input box and message text input box:"
+
+#: loco:587fcf0c52e1a1d04a8b456a
+msgid "Allow users to change their chat user name:"
+msgstr "Allow users to change their chat user name:"
+
+#: loco:587fcf0c52e1a1d04a8b456b
+msgid "Already taken!"
+msgstr "Already taken!"
+
+#: loco:587fcf0c52e1a1d04a8b456c
+msgid "Appearance options"
+msgstr "Appearance options"
+
+#: loco:587fcf0c52e1a1d04a8b456d
+msgid ""
+"Are you sure you want to add selected users to your Shoutbox admin options "
+"IP blocklist?"
+msgstr ""
+"Are you sure you want to add selected users to your Shoutbox admin options "
+"IP blocklist?"
+
+#: loco:587fcf0c52e1a1d04a8b456e
+msgid ""
+"Are you sure you want to permanently delete all except the latest %s "
+"messages?"
+msgstr ""
+"Are you sure you want to permanently delete all except the latest %s "
+"messages?"
+
+#: loco:587fcf0c52e1a1d04a8b456f
+msgid "Are you sure you want to permanently delete selected messages?"
+msgstr "Are you sure you want to permanently delete selected messages?"
+
+#: loco:587fcf0c52e1a1d04a8b4570
+msgid ""
+"Automatically delete all messages from all private chat rooms as well as old "
+"private chat invitations daily:"
+msgstr ""
+"Automatically delete all messages from all private chat rooms as well as old "
+"private chat invitations daily:"
+
+#: loco:587fcf0c52e1a1d04a8b4571
+msgid "Bad words list (comma separated):"
+msgstr "Bad words list (comma separated):"
+
+#: loco:587fcf0c52e1a1d04a8b4572
+msgid "Ban"
+msgstr "Ban"
+
+#: loco:587fcf0c52e1a1d04a8b4573
+msgid "Changelog"
+msgstr "Changelog"
+
+#: loco:587fcf0c52e1a1d04a8b4574
+msgid "Chat name prefix for guest users:"
+msgstr "Chat name prefix for guest users:"
+
+#: loco:587fcf0c52e1a1d04a8b4575
+msgid "Chat room name:"
+msgstr "Chat room name:"
+
+#: loco:587fcf0c52e1a1d04a8b4576
+msgid "Checking..."
+msgstr "Checking..."
+
+#: loco:587fcf0c52e1a1d04a8b4577
+msgid "Clean"
+msgstr "Clean"
+
+#: loco:587fcf0c52e1a1d04a8b4578
+msgid "Clean all except the latest %s messages"
+msgstr "Clean all except the latest %s messages"
+
+#: loco:587fcf0c52e1a1d04a8b4579
+msgid ""
+"Clean button will delete messages older than following number of messages "
+"per chat room:"
+msgstr ""
+"Clean button will delete messages older than following number of messages "
+"per chat room:"
+
+#: loco:587fcf0c52e1a1d04a8b457a
+msgid "Close this private chat"
+msgstr "Close this private chat"
+
+#: loco:587fcf0c52e1a1d04a8b457b
+msgid "Convert URLs to hyperlinks:"
+msgstr "Convert URLs to hyperlinks:"
+
+#: loco:587fcf0c52e1a1d04a8b457c
+msgid "Debug mode (enable only when debugging):"
+msgstr "Debug mode (enable only when debugging):"
+
+#: loco:587fcf0c52e1a1d04a8b457d
+msgid "Delete"
+msgstr "Delete"
+
+#: loco:587fcf0c52e1a1d04a8b457e
+msgid ""
+"Delete all messages from all private chat rooms as well as old private chat "
+"invitations now:"
+msgstr ""
+"Delete all messages from all private chat rooms as well as old private chat "
+"invitations now:"
+
+#: loco:587fcf0c52e1a1d04a8b457f
+msgid "Delete selected messages"
+msgstr "Delete selected messages"
+
+#: loco:587fcf0c52e1a1d04a8b4580
+msgid "Deny chat access to the following IP addresses (comma separated):"
+msgstr "Deny chat access to the following IP addresses (comma separated):"
+
+#: loco:587fcf0c52e1a1d04a8b4581
+msgid ""
+"Disallow using special characters inside chat user names (including special "
+"locale characters):"
+msgstr ""
+"Disallow using special characters inside chat user names (including special "
+"locale characters):"
+
+#: loco:587fcf0c52e1a1d04a8b4583
+msgid ""
+"Do automatic daily cleanup to delete messages older than target number of "
+"messages:"
+msgstr ""
+"Do automatic daily cleanup to delete messages older than target number of "
+"messages:"
+
+#: loco:587fcf0c52e1a1d04a8b4584
+msgid "Donate"
+msgstr "Donate"
+
+#: loco:587fcf0c52e1a1d04a8b4585
+msgid "Donate using PayPal (sincere thank you for your help):"
+msgstr "Donate using PayPal (sincere thank you for your help):"
+
+#: loco:587fcf0c52e1a1d04a8b4586
+msgid "Donating or getting help"
+msgstr "Donating or getting help"
+
+#: loco:587fcf0c52e1a1d04a8b4588
+msgid "Enable/disable auto scroll when new message arrives"
+msgstr "Enable/disable auto scroll when new message arrives"
+
+#: loco:587fcf0c52e1a1d04a8b4589
+msgid "Enable/disable sound notification when new message arrives"
+msgstr "Enable/disable sound notification when new message arrives"
+
+#: loco:587fcf0c52e1a1d04a8b458a
+msgid "FAQ"
+msgstr "FAQ"
+
+#: loco:587fcf0c52e1a1d04a8b458b
+msgid "Fetch this chat room transcript"
+msgstr "Fetch this chat room transcript"
+
+#: loco:587fcf0c52e1a1d04a8b458c
+msgid "Filter bad words contained inside other words:"
+msgstr "Filter bad words contained inside other words:"
+
+#: loco:587fcf0c52e1a1d04a8b458d
+msgid "Filter options"
+msgstr "Filter options"
+
+#: loco:587fcf0c52e1a1d04a8b458e
+msgid "General options"
+msgstr "General options"
+
+#: loco:587fcf0c52e1a1d04a8b458f
+msgid "Guest users can initiate private chat:"
+msgstr "Guest users can initiate private chat:"
+
+#: loco:587fcf0c52e1a1d04a8b4590
+msgid "Guest_"
+msgstr "Guest_"
+
+#: loco:587fcf0c52e1a1d04a8b4591
+msgid "Here are the Shoutbox appearance options:"
+msgstr "Here are the Shoutbox appearance options:"
+
+#: loco:587fcf0c52e1a1d04a8b4592
+msgid "Here you can control Shoutbox message and chat user names filter:"
+msgstr "Here you can control Shoutbox message and chat user names filter:"
+
+#: loco:587fcf0c52e1a1d04a8b4593
+msgid "Here you can control all general options:"
+msgstr "Here you can control all general options:"
+
+#: loco:587fcf0c52e1a1d04a8b4594
+msgid "Here you can control all private chat options:"
+msgstr "Here you can control all private chat options:"
+
+#: loco:587fcf0c52e1a1d04a8b4595
+msgid "Hide \"Powered by Shoutbox\" link (big thanks for not hiding it):"
+msgstr "Hide \"Powered by Shoutbox\" link (big thanks for not hiding it):"
+
+#: loco:587fcf0c52e1a1d04a8b4596
+msgid ""
+"Hide Shoutbox sidebar widget on pages where same chat room is embedded using "
+"shortcode:"
+msgstr ""
+"Hide Shoutbox sidebar widget on pages where same chat room is embedded using "
+"shortcode:"
+
+#: loco:587fcf0c52e1a1d04a8b4597
+msgid ""
+"If you find Shoutbox useful you can donate to help it's development. Also "
+"you can get help with Shoutbox:"
+msgstr ""
+"If you find Shoutbox useful you can donate to help it's development. Also "
+"you can get help with Shoutbox:"
+
+#: loco:587fcf0c52e1a1d04a8b4598
+msgid "Illegal characters!"
+msgstr "Illegal characters!"
+
+#: loco:587fcf0c52e1a1d04a8b4599
+msgid "In this section you can control security options:"
+msgstr "In this section you can control security options:"
+
+#: loco:587fcf0c52e1a1d04a8b459a
+msgid "Include avatars:"
+msgstr "Include avatars:"
+
+#: loco:587fcf0c52e1a1d04a8b459c
+msgid "Include send button:"
+msgstr "Include send button:"
+
+#: loco:587fcf0c52e1a1d04a8b459d
+msgid "Include smilies container:"
+msgstr "Include smilies container:"
+
+#: loco:587fcf0c52e1a1d04a8b459e
+msgid "Include user list:"
+msgstr "Include user list:"
+
+#: loco:587fcf0c52e1a1d04a8b459f
+msgid "Incoming message sound notification on by default:"
+msgstr "Incoming message sound notification on by default:"
+
+#: loco:587fcf0c52e1a1d04a8b45a0
+msgid "Interval for refreshing list of messages (seconds):"
+msgstr "Interval for refreshing list of messages (seconds):"
+
+#: loco:587fcf0c52e1a1d04a8b45a1
+msgid "Interval for refreshing list of online users (seconds):"
+msgstr "Interval for refreshing list of online users (seconds):"
+
+#: loco:587fcf0c52e1a1d04a8b45a2
+msgid "LOADING..."
+msgstr "LOADING..."
+
+#: loco:587fcf0c52e1a1d04a8b45a3
+msgid "Logged in users can initiate private chat:"
+msgstr "Logged in users can initiate private chat:"
+
+#: loco:587fcf0c52e1a1d04a8b45a4
+msgid "Manual timestamp offset when displaying messages (+/- hours):"
+msgstr "Manual timestamp offset when displaying messages (+/- hours):"
+
+#: loco:587fcf0c52e1a1d04a8b45a5
+msgid "Maximum number of characters for each message:"
+msgstr "Maximum number of characters for each message:"
+
+#: loco:587fcf0c52e1a1d04a8b45a6
+msgid "Maximum number of digits for random guests chat user name suffix:"
+msgstr "Maximum number of digits for random guests chat user name suffix:"
+
+#: loco:587fcf0c52e1a1d04a8b45a7
+msgid "Message container height:"
+msgstr "Message container height:"
+
+#: loco:587fcf0c52e1a1d04a8b45a8
+msgid "Minimize this private chat"
+msgstr "Minimize this private chat"
+
+#: loco:587fcf0c52e1a1d04a8b45ae
+msgid "Not allowed!"
+msgstr "Not allowed!"
+
+#: loco:587fcf0c52e1a1d04a8b45af
+msgid "Notice"
+msgstr "Notice"
+
+#: loco:587fcf0c52e1a1d04a8b45b0
+msgid "Only logged in users can participate in chat:"
+msgstr "Only logged in users can participate in chat:"
+
+#: loco:587fcf0c52e1a1d04a8b45b1
+msgid "Powered by Shoutbox"
+msgstr "Powered by Shoutbox"
+
+#: loco:587fcf0c52e1a1d04a8b45b2
+msgid "Private chat"
+msgstr "Private chat"
+
+#: loco:587fcf0c52e1a1d04a8b45b3
+msgid "Private chat options"
+msgstr "Private chat options"
+
+#: loco:587fcf0c52e1a1d04a8b45b4
+msgid "Profanity!"
+msgstr "Profanity!"
+
+#: loco:587fcf0c52e1a1d04a8b45b5
+msgid "Protect registered users user names from being used by other users:"
+msgstr "Protect registered users user names from being used by other users:"
+
+#: loco:587fcf0c52e1a1d04a8b45b6
+msgid "Reply to %s"
+msgstr "Reply to %s"
+
+#: loco:587fcf0c52e1a1d04a8b45b7
+msgid "Restore this private chat"
+msgstr "Restore this private chat"
+
+#: loco:587fcf0c52e1a1d04a8b45b8
+msgid "Restricted chat user names list (comma separated):"
+msgstr "Restricted chat user names list (comma separated):"
+
+#: loco:587fcf0c52e1a1d04a8b45b9
+msgid "Scroll"
+msgstr "Scroll"
+
+#: loco:587fcf0c52e1a1d04a8b45ba
+msgid "Security options"
+msgstr "Security options"
+
+#: loco:587fcf0c52e1a1d04a8b45bb
+msgid "Select/deselect all messages toggle"
+msgstr "Select/deselect all messages toggle"
+
+#: loco:587fcf0c52e1a1d04a8b45bc
+msgid "Send"
+msgstr "Send"
+
+#: loco:587fcf0c52e1a1d04a8b45bd
+msgid "Settings"
+msgstr "Settings"
+
+#: loco:587fcf0c52e1a1d04a8b45be
+msgid "Shoutbox Admin's Lounge"
+msgstr "Shoutbox Admin's Lounge"
+
+#: loco:587fcf0c52e1a1d04a8b45bf
+msgid "Shoutbox FAQ:"
+msgstr "Shoutbox FAQ:"
+
+#: loco:587fcf0c52e1a1d04a8b45c0
+msgid "Shoutbox at TechyTalk.info"
+msgstr "Shoutbox at TechyTalk.info"
+
+#: loco:587fcf0c52e1a1d04a8b45c1
+msgid "Shoutbox changelog:"
+msgstr "Shoutbox changelog:"
+
+#: loco:587fcf0c52e1a1d04a8b45c2
+msgid ""
+"Shoutbox is quick and elegant WordPress chat plugin that does not waste your "
+"bandwidth."
+msgstr ""
+"Shoutbox is quick and elegant WordPress chat plugin that does not waste your "
+"bandwidth."
+
+#: loco:587fcf0c52e1a1d04a8b45c3
+msgid "Shoutbox support page:"
+msgstr "Shoutbox support page:"
+
+#: loco:587fcf0c52e1a1d04a8b45c4
+msgid "Shoutbox version:"
+msgstr "Shoutbox version:"
+
+#: loco:587fcf0c52e1a1d04a8b45c5
+msgid "Show"
+msgstr "Show"
+
+#: loco:587fcf0c52e1a1d04a8b45c6
+msgid "Sound"
+msgstr "Sound"
+
+#: loco:587fcf0c52e1a1d04a8b45c7
+msgid "Start private chat with %s"
+msgstr "Start private chat with %s"
+
+#: loco:587fcf0c52e1a1d04a8b45c8
+msgid ""
+"Target number of messages for automatic daily cleanup and chat interface "
+"\"Clean\" button:"
+msgstr ""
+"Target number of messages for automatic daily cleanup and chat interface "
+"\"Clean\" button:"
+
+#: loco:587fcf0c52e1a1d04a8b45c9
+msgid "Timeout for disabling updates to inactive user (seconds):"
+msgstr "Timeout for disabling updates to inactive user (seconds):"
+
+#: loco:587fcf0c52e1a1d04a8b45ca
+msgid "Title"
+msgstr "Title"
+
+#: loco:587fcf0c52e1a1d04a8b45cb
+msgid "Toggle"
+msgstr "Toggle"
+
+#: loco:587fcf0c52e1a1d04a8b45cc
+msgid "Transcript"
+msgstr "Transcript"
+
+#: loco:587fcf0c52e1a1d04a8b45cd
+msgid "Unfortunately you do not have the authority to initiate private chat"
+msgstr "Unfortunately you do not have the authority to initiate private chat"
+
+#: loco:587fcf0c52e1a1d04a8b45ce
+msgid "User avatar size (pixels):"
+msgstr "User avatar size (pixels):"
+
+#: loco:587fcf0c52e1a1d04a8b45cf
+msgid "User list position:"
+msgstr "User list position:"
+
+#: loco:587fcf0c52e1a1d04a8b45d0
+msgid "Visible to guest users:"
+msgstr "Visible to guest users:"
+
+#: loco:587fcf0c52e1a1d04a8b45d1
+msgid "Visible to logged in users:"
+msgstr "Visible to logged in users:"
+
+#: loco:587fcf0c52e1a1d04a8b45d3
+msgid "You must login if you want to participate in chat."
+msgstr "You must login if you want to participate in chat."
+
+#: loco:587fcf0c52e1a1d04a8b45d4
+msgid "You must select at least one message"
+msgstr "You must select at least one message"
+
+#: loco:587fcf0c52e1a1d04a8b45d5
+msgid "You must select at least one user"
+msgstr "You must select at least one user"
+
+#: loco:587fcf0c52e1a1d04a8b45d6
+msgid "You're about to accept private chat invitation from %s. Are you sure?"
+msgstr "You're about to accept private chat invitation from %s. Are you sure?"
+
+#: loco:587fcf0c52e1a1d04a8b45d7
+msgid ""
+"You're about to permanently delete all messages from all private chat rooms "
+"as well as old private chat invitations. Are you sure?"
+msgstr ""
+"You're about to permanently delete all messages from all private chat rooms "
+"as well as old private chat invitations. Are you sure?"
+
+#: loco:587fcf0c52e1a1d04a8b45d8
+msgid "You're about to send private chat invitation to %s. Are you sure?"
+msgstr "You're about to send private chat invitation to %s. Are you sure?"
+
+#: loco:587fcf0c52e1a1d04a8b45da
+msgid ""
+"You've been dropped out of chat due to long period of inactivity. To "
+"continue with chat please refresh this page."
+msgstr ""
+"You've been dropped out of chat due to long period of inactivity. To "
+"continue with chat please refresh this page."
+
+#: loco:587fcf0c52e1a1d04a8b45db
+msgid "Your private chat invitation has been sent to %s."
+msgstr "Your private chat invitation has been sent to %s."
+
+#: loco:587fcf0c52e1a1d04a8b45dc
+msgid "options page"
+msgstr "options page"
+
+# There were errors exporting to PO file
+msgctxt "Loco"
+msgid "PO render errors"
+msgstr ""
+"For-displaying-country-flags-on-user-list-%s-requi is a duplicate\n"
+"Do-automatic-daily-cleanup-to-delete-messages-olde is a duplicate\n"
+"Target-number-of-messages-for-automatic-daily-clea is a duplicate\n"
+"Automatically-delete-all-messages-from-all-private is a duplicate\n"
+"Delete-all-messages-from-all-private-chat-rooms-as is a duplicate\n"
+"Dismiss-2 is a duplicate\n"
+"Done-2 is a duplicate\n"
+"Include-counter-2 is a duplicate\n"
+"More-2 is a duplicate\n"
+"Must-be-integer-with-value-between-%d-and-%d-2 is a duplicate\n"
+"Must-be-positive-integer-less-than-%d-2 is a duplicate\n"
+"Must-be-positive-integer-with-value-%d-or-greater-2 is a duplicate\n"
+"Must-be-positive-integer-2 is a duplicate\n"
+"WordPress-user-roles-allowed-to-access-moderation-2 is a duplicate\n"
+"Youre-banned-from-chat-2 is a duplicate"

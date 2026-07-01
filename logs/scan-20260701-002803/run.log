@@ -1,0 +1,49 @@
+[00:28:05] nuclei: /Users/zer0p0int/工具/nuclei (v3.9.0)
+[00:28:05] 日志目录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-002803
+[00:28:05] 本次共 10 个环境 | 并行度: 4 | 重试: 2次/5s间隔
+[00:28:05] 预构建: 是 | 续跑: 是
+[00:28:05] 续跑模式：跳过已 PASS 的 CVE
+[00:28:05] ━━━ 预构建基础镜像 ━━━
+[00:28:05] 预构建基础镜像 (1): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/dukapress/2.5.4
+[00:28:06] 预构建基础镜像 (2): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/ab-google-map-travel/3.4
+[00:28:06] 预构建基础镜像 (3): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/wp-statistics/13.0.7
+[00:28:07] 预构建基础镜像 (4): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/pie-register/CVE-2021-24731
+[00:28:09] 预构建基础镜像 (5): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/button-generation/CVE-2021-25052
+[00:28:11] 预构建基础镜像 (6): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/mystickyelements/CVE-2022-0148
+[00:28:13] 预构建基础镜像 (7): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/photo-gallery/1.5.87
+[00:28:20] 预构建基础镜像 (8): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/check-email/CVE-2022-0220
+[00:28:23]   WARN: 预构建失败，运行时将自动构建
+[00:28:23] 预构建基础镜像 (9): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/wpcf7-redirect/CVE-2022-0250
+[00:28:24] 预构建基础镜像 (10): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/dynamic-featured-image/CVE-2022-0533
+[00:28:26] 预构建完成，共 10 个基础镜像
+[00:28:26] ━━━ 开始并行测试 (4 并发) ━━━
+[00:28:26] [##----------------------]  10% (1/10)  CVE-2014-8799  :8097 [official]
+[00:28:26] [####--------------------]  20% (2/10)  CVE-2015-2755  :8098 [official]
+[00:28:26] [#######-----------------]  30% (3/10)  CVE-2021-24340  :8101 [official]
+[00:28:26] [#########---------------]  40% (4/10)  CVE-2021-24731  :8102 [official]
+[00:29:09] [############------------]  50% (5/10)  CVE-2021-25052  :8203 [official]
+[00:29:09] [##############----------]  60% (6/10)  CVE-2022-0148  :8110 [official]
+[00:29:09] [################--------]  70% (7/10)  CVE-2022-0169  :8103 [official]
+[00:29:10] [###################-----]  80% (8/10)  CVE-2022-0220  :8187 [official]
+[00:29:10] [#####################---]  90% (9/10)  CVE-2022-0250  :8204 [official]
+[00:29:13] [########################] 100% (10/10)  CVE-2022-0533  :8190 [official]
+[00:29:13] 等待剩余任务完成...
+[00:29:58] ━━━ 汇总结果 ━━━
+[00:29:58] FAIL CVE-2014-8799
+[00:29:58] FAIL CVE-2015-2755
+[00:29:58] FAIL CVE-2021-24340
+[00:29:58] FAIL CVE-2021-24731
+[00:29:58] SKIP CVE-2021-25052 ()
+[00:29:58] FAIL CVE-2022-0148
+[00:29:58] PASS CVE-2022-0169    
+[00:29:58] ERROR CVE-2022-0220 ()
+[00:29:58] FAIL CVE-2022-0250
+[00:29:58] FAIL CVE-2022-0533
+
+==================== 汇总 ====================
+总计 10  |  PASS 1  FAIL 7  SKIP 1  ERROR 1
+明细: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-002803/summary.txt
+判定记录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-002803/results.jsonl
+原始 jsonl: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-002803/raw/
+[00:29:58] 收到中断信号，清理已启动的容器...
+[00:29:59]   已清理: CVE-2022-0220

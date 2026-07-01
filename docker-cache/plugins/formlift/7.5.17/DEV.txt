@@ -1,0 +1,56 @@
+This file will contain a list of actions and filters for use of FormLift and External Devlopment purposes.
+
+== Validation Actions ==
+
+= Use Case =
+Create DB entry or WP_Mail with POST from front end Infusionsoft Form. Passes ID of the form and access to $_POST 
+
+= Available Actions =
+formlift_before_submit
+formlift_success_submit
+formlift_failed_submit
+
+== Style Settings Filters ==
+
+= Use Case = 
+Add or remove style settings form the options panel. Return $fields which is an array of type formlift_Style_Field
+
+array_push( 
+	$fields, 
+	new formlift_Style_Field( type, class, attribute, label, options );
+)
+
+= Available Filters =
+formlift_get_advanced_css
+formlift_get_button_css
+formlift_get_input_css
+formlift_get_radio_checkbox_css
+formlift_get_form_css
+formlift_get_field_css
+formlift_get_label_css
+formlift_get_error_css
+
+
+== Settings Filters ==
+= Use Case =
+Add or remove Fields form the options panel. Return $fields which is an array of type formlift_Field
+
+array_push( 
+	$fields, 
+	new formlift_Field( type, id, label, options );
+)
+
+= Available Filters =
+formlift_get_error_settings
+formlift_get_tracking_settings
+formlift_get_captcha_settings
+formlift_get_infusionsoft_settings
+formlift_get_infusionsoft_form_choice_setting
+formlift_get_display_settings
+
+Adrian's notes:
+
+the handling if user data.
+
+If the contactId is passed to the page and a form is present on the page,
+then the form will ask infusionsoft for all the fields in the form if they exist.

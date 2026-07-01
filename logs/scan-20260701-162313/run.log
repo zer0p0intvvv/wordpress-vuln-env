@@ -1,0 +1,18 @@
+[16:23:16] nuclei: /Users/zer0p0int/工具/nuclei (v3.9.0)
+[16:23:16] 日志目录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162313
+[16:23:16] 本次共 1 个环境 | 并行度: 4 | 重试: 2次/5s间隔
+[16:23:16] 预构建: 否 | 续跑: 是
+[16:23:16] 续跑模式：跳过已 PASS 的 CVE
+[16:23:16] ━━━ 开始并行测试 (4 并发) ━━━
+[16:23:16] [########################] 100% (1/1)  CVE-2022-0867  :8196 [official]
+[16:23:16] 等待剩余任务完成...
+[16:24:14] ━━━ 汇总结果 ━━━
+[16:24:14] FAIL CVE-2022-0867
+
+==================== 汇总 ====================
+总计 1  |  PASS 0  FAIL 1  SKIP 0  ERROR 0
+明细: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162313/summary.txt
+判定记录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162313/results.jsonl
+原始 jsonl: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162313/raw/
+[16:24:14] 收到中断信号，清理已启动的容器...
+[16:24:14]   已清理: CVE-2022-0867

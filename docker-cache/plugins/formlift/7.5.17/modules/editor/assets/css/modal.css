@@ -1,0 +1,101 @@
+#formliftPopUpOverlay {
+    background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100050;
+}
+
+#formliftPopUpWindow {
+    top: calc(50% - 250px);
+    left: calc(50% - 400px);
+    position: fixed;
+    background-color: #fff;
+    z-index: 100050;
+    text-align: left;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    width: 800px;
+    height: 500px;
+}
+
+#formliftPopUpTitleContainer {
+    background: #fcfcfc;
+    border-bottom: 1px solid #ddd;
+    height: 40px;
+}
+
+#formliftPopUpFooter {
+    background: #fcfcfc;
+    border-top: 1px solid #ddd;
+    height: 40px;
+    left: 0;
+    bottom: 0;
+}
+
+#formliftPopUpSaveButton {
+    float: right;
+    margin: 5px;
+}
+
+#formliftPopUpTitle {
+    background: #318FC2;
+    color: white;
+    float: left;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 5px 29px 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: calc(100% - 39px);
+}
+
+#formliftCloseButton {
+    position: absolute;
+    color: #fff;
+    left: auto;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: color .1s ease-in-out, background .1s ease-in-out;
+    transition: color .1s ease-in-out, background .1s ease-in-out;
+}
+
+#formliftCloseButton:hover {
+    background: #35ADE4;
+}
+
+#formliftPopUpContent {
+    clear: both;
+    padding: 2px 0 0 0;
+    overflow: auto;
+    text-align: left;
+    line-height: 1.4em;
+    height: 400px;
+    overflow: auto;
+}
+
+#formliftPopUpContent .formlift-cell-label {
+    font-size: 16px;
+    width: 50%;
+}
+
+#formliftPopUpContent .formlift-row {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#formliftPopUpContent .formlift-cell-input {
+    width: 50%;
+}

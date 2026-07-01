@@ -1,0 +1,10 @@
+{"cve":"CVE-2014-8799","port":8097,"status":"FAIL","matcher_name":"","evidence":""}
+{"cve":"CVE-2015-2755","port":8098,"status":"FAIL","matcher_name":"","evidence":""}
+{"cve":"CVE-2021-24340","port":8101,"status":"FAIL","matcher_name":"","evidence":""}
+{"cve":"CVE-2021-24731","port":8102,"status":"FAIL","matcher_name":"","evidence":""}
+{"cve":"CVE-2021-25052","port":8203,"status":"SKIP","reason":""}
+{"cve":"CVE-2022-0148","port":8110,"status":"FAIL","matcher_name":"","evidence":""}
+{"cve":"CVE-2022-0169","port":8103,"status":"PASS","matcher_name":"","evidence":""}
+{"cve":"CVE-2022-0220","port":8187,"status":"FAIL","matcher_name":"","evidence":""}
+{"cve":"CVE-2022-0250","port":8204,"status":"FAIL","matcher_name":"","evidence":""}
+{"cve":"CVE-2022-0533","port":8190,"status":"FAIL","matcher_name":"","evidence":""}

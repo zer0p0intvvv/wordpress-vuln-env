@@ -1,0 +1,99 @@
+/* 
+	Stylesheet for subscribe to category 
+*/
+
+#stc-international-access {
+    width:48px;
+    padding-left:0px;
+    padding-right: 0px;
+    display: inline;
+}
+
+#stc-mobile-phone {
+    width:164px;
+    display: inline;
+}
+
+.stc-subscribe-wrapper{
+	margin-bottom: 20px;
+}
+
+.stc-categories-label-keywords {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.stc-categories-label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.stc-categories-label-notifications {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.stc-categories-label-title {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.stc-btn-default {
+    background-color: #fff;
+    border-color: #ccc;
+    font-weight: bold;
+    color: #22688E;
+}
+
+.stc-btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.stc-post-table {
+    border: 0px solid red;
+    width: 100%;    
+}
+
+.stc-post-table-tr {
+    background-color: blanchedAlmond;
+}
+
+.stc-post-table-tr-td-l {
+    border: 0px solid red;
+    vertical-align: middle;
+    text-align: right;
+    width: 20%; 
+}
+
+.stc-post-table-tr-td-c {
+    border: 0px solid red;
+    vertical-align: middle;
+    text-align: center;
+    width: 60%; 
+}
+
+.stc-post-table-tr-td-r {
+    border: 0px solid red;
+    vertical-align: middle;
+    text-align: center;
+    width: 20%; 
+}

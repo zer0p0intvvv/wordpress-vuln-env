@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="">
+<body>
+<script>
+    var args = JSON.parse(localStorage.getItem("canto_args"));
+    var wpBlockClientId = localStorage.getItem("canto_wpClientId");
+</script>
+
+<script>
+    var timestamp = Date.parse(new Date()) / 1000;
+    var errorMsg = "Please re-authenticate your Canto account.";
+    if (args.expire_token < timestamp) {
+        errorMsg = "Your security token has expired Please re-authenticate your Canto account.";
+    }
+    if (args.subdomain == '' || args.token == '') {
+        errorMsg = "You haven't connected your Canto account yet.";
+    }
+
+    var errorHtml =
+        "<form>\n" +
+        "<h3 className=\"media-title\">" +
+        "<span style=\"font-size:14px;font-family:Helvetica,Arial\">\n" +
+        "<strong>Oops!</strong>" + errorMsg + "\n" +
+        "<a href=\"javascript:\"\n" +
+        "onClick=\"window.top.location.href='" + args.FBC_SITE + "/wp-admin/options-general.php?page=canto_settings'\">Plugin Settings</a>\n" +
+        "</span>\n" +
+        "</h3>\n" +
+        "</form>"
+
+    document.write(errorHtml);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+Dockerfile:13
+--------------------
+  12 |     # 预下载漏洞版本插件 zip（绕过运行时 wp.org 下载延迟）
+  13 | >>> RUN curl -fsSL --retry 5 --retry-delay 3 --http1.1 -o /tmp/mapsvg.6.2.19.zip \
+  14 | >>>     "https://downloads.wordpress.org/plugin/mapsvg.6.2.19.zip"
+  15 |     
+--------------------
+ERROR: failed to solve: process "/bin/sh -c curl -fsSL --retry 5 --retry-delay 3 --http1.1 -o /tmp/mapsvg.6.2.19.zip     \"https://downloads.wordpress.org/plugin/mapsvg.6.2.19.zip\"" did not complete successfully: exit code: 22
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ai7q06aaqlwno113o3e0lvojc

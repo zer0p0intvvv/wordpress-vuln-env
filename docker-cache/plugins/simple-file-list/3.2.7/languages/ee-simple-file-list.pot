@@ -1,0 +1,785 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Simple File List\n"
+"POT-Creation-Date: 2019-05-09 10:24-0500\n"
+"PO-Revision-Date: 2019-02-08 12:43-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: ee-simple-file-list.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: ee-simple-file-list.php:372 includes/ee-admin-page.php:60
+msgid "File List"
+msgstr ""
+
+#: ee-simple-file-list.php:373 includes/ee-list-display.php:161
+msgid "Settings"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: ee-simple-file-list.php:398 ee-simple-file-list.php:399
+#: includes/ee-email-engine.php:62
+msgid "Simple File List"
+msgstr ""
+
+#: ee-simple-file-list.php:413 ee-simple-file-list.php:414
+#: includes/ee-admin-page.php:65
+msgid "User Manager"
+msgstr ""
+
+#: includes/ee-admin-page.php:45
+msgid "DEVELOPMENT MODE ON"
+msgstr ""
+
+#: includes/ee-admin-page.php:72
+msgid "Help"
+msgstr ""
+
+#: includes/ee-admin-page.php:78
+msgid "Author"
+msgstr ""
+
+#: includes/ee-admin-page.php:84
+msgid "Instructions"
+msgstr ""
+
+#: includes/ee-admin-page.php:91
+msgid "Folders"
+msgstr ""
+
+#: includes/ee-admin-page.php:125 includes/ee-list-settings.php:95
+#: support/ee-plugin-instructions.php:188
+msgid "File List Settings"
+msgstr ""
+
+#: includes/ee-admin-page.php:131 support/ee-plugin-instructions.php:200
+msgid "Uploader Settings"
+msgstr ""
+
+#: includes/ee-admin-page.php:175
+msgid ""
+"IMPORTANT: Allowing the public to upload files to your web server comes with "
+"risk. Please go to Upload Settings and ensure that you only use the file "
+"types that you absolutely need. Open each file submitted carefully."
+msgstr ""
+
+#: includes/ee-admin-page.php:178
+#: support/ee-get-simple-file-list-folders.php:40
+msgid "Add Folder Support"
+msgstr ""
+
+#: includes/ee-admin-page.php:181
+msgid "Website"
+msgstr ""
+
+#: includes/ee-admin-page.php:182
+msgid "News"
+msgstr ""
+
+#: includes/ee-admin-page.php:183
+msgid "Feedback"
+msgstr ""
+
+#: includes/ee-admin-page.php:184
+msgid "Review"
+msgstr ""
+
+#: includes/ee-admin-page.php:188
+msgid "Buy Me a Cup of Coffee"
+msgstr ""
+
+#: includes/ee-admin-page.php:193
+msgid "Version"
+msgstr ""
+
+#: includes/ee-class.php:290
+msgid "Greetings"
+msgstr ""
+
+#: includes/ee-class.php:299
+msgid "Uploaded By"
+msgstr ""
+
+#: includes/ee-class.php:311
+msgid "located at"
+msgstr ""
+
+#: includes/ee-class.php:403
+msgid "Your Information"
+msgstr ""
+
+#: includes/ee-class.php:405 includes/ee-list-display.php:177
+msgid "Name"
+msgstr ""
+
+#: includes/ee-class.php:408
+msgid "Email"
+msgstr ""
+
+#: includes/ee-class.php:411
+msgid "Comments"
+msgstr ""
+
+#: includes/ee-class.php:533
+msgid "FFmpeg Error - File Not Created"
+msgstr ""
+
+#: includes/ee-download.php:51 includes/ee-download.php:84
+msgid "File Download"
+msgstr ""
+
+#: includes/ee-download.php:86
+msgid "Downloading"
+msgstr ""
+
+#: includes/ee-download.php:89
+msgid "If the download fails to start"
+msgstr ""
+
+#: includes/ee-download.php:89
+msgid "click here"
+msgstr ""
+
+#: includes/ee-download.php:91
+msgid "Close this Window"
+msgstr ""
+
+#: includes/ee-email-engine.php:63
+msgid "File Upload Notice"
+msgstr ""
+
+#: includes/ee-file-functions.php:34
+msgid "You should know that"
+msgstr ""
+
+#: includes/ee-file-functions.php:38
+msgid "files have"
+msgstr ""
+
+#: includes/ee-file-functions.php:40
+msgid "a file has"
+msgstr ""
+
+#: includes/ee-file-functions.php:42
+msgid "been uploaded to your website"
+msgstr ""
+
+#: includes/ee-file-functions.php:55
+msgid "File Upload Complete"
+msgstr ""
+
+#: includes/ee-list-display.php:36
+msgid "Deleted the File"
+msgstr ""
+
+#: includes/ee-list-display.php:51
+msgid "Thumbnail File Delete Failed"
+msgstr ""
+
+#: includes/ee-list-display.php:59
+msgid "File Delete Failed"
+msgstr ""
+
+#: includes/ee-list-display.php:159 includes/ee-list-display.php:423
+msgid "Delete Checked"
+msgstr ""
+
+#: includes/ee-list-display.php:160 includes/ee-uploader.php:68
+msgid "Upload Files"
+msgstr ""
+
+#: includes/ee-list-display.php:175
+msgid "Thumb"
+msgstr ""
+
+#: includes/ee-list-display.php:179
+msgid "Size"
+msgstr ""
+
+#: includes/ee-list-display.php:181
+msgid "Date"
+msgstr ""
+
+#: includes/ee-list-display.php:183
+msgid "Owner"
+msgstr ""
+
+#: includes/ee-list-display.php:283
+msgid "Open"
+msgstr ""
+
+#: includes/ee-list-display.php:288
+msgid "Download"
+msgstr ""
+
+#: includes/ee-list-display.php:296 includes/ee-list-display.php:306
+msgid "Rename"
+msgstr ""
+
+#: includes/ee-list-display.php:316
+msgid "File Not Found"
+msgstr ""
+
+#: includes/ee-list-display.php:337
+msgid "Folder"
+msgstr ""
+
+#: includes/ee-list-display.php:412
+msgid "Number of Items"
+msgstr ""
+
+#: includes/ee-list-display.php:412
+msgid "Sorted by"
+msgstr ""
+
+#: includes/ee-list-display.php:433
+msgid "No Files"
+msgstr ""
+
+#: includes/ee-list-settings.php:63
+msgid "List Settings Saved"
+msgstr ""
+
+#: includes/ee-list-settings.php:97 includes/ee-list-settings.php:191
+msgid "File List Display"
+msgstr ""
+
+#: includes/ee-list-settings.php:105 support/ee-plugin-instructions.php:99
+#: support/ee-plugin-instructions.php:120
+msgid "Show to Everyone"
+msgstr ""
+
+#: includes/ee-list-settings.php:111
+msgid "Show to Only Logged in Users"
+msgstr ""
+
+#: includes/ee-list-settings.php:117
+msgid "Show to Only Logged in Admins"
+msgstr ""
+
+#: includes/ee-list-settings.php:123
+msgid "Hide the File List Completely"
+msgstr ""
+
+#: includes/ee-list-settings.php:128
+msgid "You can use the uploader without showing the file list."
+msgstr ""
+
+#: includes/ee-list-settings.php:132
+msgid "Columns to Show"
+msgstr ""
+
+#: includes/ee-list-settings.php:134
+msgid "Show Thumbnail"
+msgstr ""
+
+#: includes/ee-list-settings.php:138
+msgid "Show File Date"
+msgstr ""
+
+#: includes/ee-list-settings.php:142
+msgid "Show File Size"
+msgstr ""
+
+#: includes/ee-list-settings.php:146
+msgid ""
+"Limit the columns of file details to display on the front-side file list."
+msgstr ""
+
+#: includes/ee-list-settings.php:148
+msgid "File Sorting and Order"
+msgstr ""
+
+#: includes/ee-list-settings.php:150
+msgid "Sort By"
+msgstr ""
+
+#: includes/ee-list-settings.php:158
+msgid "File Name"
+msgstr ""
+
+#: includes/ee-list-settings.php:163
+msgid "File Date"
+msgstr ""
+
+#: includes/ee-list-settings.php:168
+msgid "File Size"
+msgstr ""
+
+#: includes/ee-list-settings.php:173
+msgid "Random"
+msgstr ""
+
+#: includes/ee-list-settings.php:175
+msgid "Sort the list by name, date, file size, or randomly."
+msgstr ""
+
+#: includes/ee-list-settings.php:179
+msgid "Reverse Order"
+msgstr ""
+
+#: includes/ee-list-settings.php:184
+msgid "Descending"
+msgstr ""
+
+#: includes/ee-list-settings.php:186
+msgid "Check this box to reverse the default sort order."
+msgstr ""
+
+#: includes/ee-list-settings.php:187
+msgid "The list is sorted Ascending by default"
+msgstr ""
+
+#: includes/ee-list-settings.php:187
+msgid "Small to Large"
+msgstr ""
+
+#: includes/ee-list-settings.php:187
+msgid "Old to New"
+msgstr ""
+
+#: includes/ee-list-settings.php:194
+msgid "Show Header"
+msgstr ""
+
+#: includes/ee-list-settings.php:201
+msgid "Show file list's table header or not."
+msgstr ""
+
+#: includes/ee-list-settings.php:206
+msgid "Show File Actions"
+msgstr ""
+
+#: includes/ee-list-settings.php:211
+msgid "Open | Download"
+msgstr ""
+
+#: includes/ee-list-settings.php:213
+msgid "Show file action links below each file name on the front-side list"
+msgstr ""
+
+#: includes/ee-list-settings.php:218
+msgid "Allow Front Delete"
+msgstr ""
+
+#: includes/ee-list-settings.php:223
+msgid "Use with Caution"
+msgstr ""
+
+#: includes/ee-list-settings.php:225
+msgid "Allows file deletion on the front-side of the website"
+msgstr ""
+
+#: includes/ee-list-settings.php:237 includes/ee-upload-settings.php:308
+msgid "SAVE"
+msgstr ""
+
+#: includes/ee-upload-settings.php:97
+msgid "Cannot create the file directory. Reverting to default."
+msgstr ""
+
+#: includes/ee-upload-settings.php:127 includes/ee-upload-settings.php:141
+msgid "This is not a valid email address."
+msgstr ""
+
+#: includes/ee-upload-settings.php:151
+msgid "Uploader Settings Saved"
+msgstr ""
+
+#: includes/ee-upload-settings.php:181
+msgid "File Upload Settings"
+msgstr ""
+
+#: includes/ee-upload-settings.php:183
+msgid "File Uploader"
+msgstr ""
+
+#: includes/ee-upload-settings.php:191
+msgid "Anyone Can Upload"
+msgstr ""
+
+#: includes/ee-upload-settings.php:197
+msgid "Only Logged in Users Can Upload"
+msgstr ""
+
+#: includes/ee-upload-settings.php:203
+msgid "Only Logged in Admins Can Upload"
+msgstr ""
+
+#: includes/ee-upload-settings.php:209
+msgid "Hide the Front Side Uploader Completely"
+msgstr ""
+
+#: includes/ee-upload-settings.php:215
+msgid "Allow anyone to upload, only logged in users, administrators or nobody."
+msgstr ""
+
+#: includes/ee-upload-settings.php:228
+msgid "Upload Limit"
+msgstr ""
+
+#: includes/ee-upload-settings.php:231
+msgid "The maximum number of files that may be uploaded per submission."
+msgstr ""
+
+#: includes/ee-upload-settings.php:243
+msgid "Upload Directory"
+msgstr ""
+
+#: includes/ee-upload-settings.php:248
+msgid "This is relative to your Wordpress home folder."
+msgstr ""
+
+#: includes/ee-upload-settings.php:248
+msgid "is the default"
+msgstr ""
+
+#: includes/ee-upload-settings.php:249
+msgid "This will create the directory if it does not yet exist."
+msgstr ""
+
+#: includes/ee-upload-settings.php:250
+msgid "Your website must use a FQDN in order to change the path."
+msgstr ""
+
+#: includes/ee-upload-settings.php:264
+msgid "Maximum File Size"
+msgstr ""
+
+#: includes/ee-upload-settings.php:265
+msgid "Your hosting limits the maximum file upload size to"
+msgstr ""
+
+#: includes/ee-upload-settings.php:276
+msgid "Get Uploader's Information?"
+msgstr ""
+
+#: includes/ee-upload-settings.php:276
+msgid "Yes"
+msgstr ""
+
+#: includes/ee-upload-settings.php:281
+msgid "No"
+msgstr ""
+
+#: includes/ee-upload-settings.php:287
+msgid "Displays a form which must be filled out"
+msgstr ""
+
+#: includes/ee-upload-settings.php:287
+msgid "Name, Email, with optional text Notes."
+msgstr ""
+
+#: includes/ee-upload-settings.php:288
+msgid "Submissions are sent to the Notice Email."
+msgstr ""
+
+#: includes/ee-upload-settings.php:297
+msgid "Allowed File Types"
+msgstr ""
+
+#: includes/ee-upload-settings.php:298
+msgid "Only use the file types you absolutely need, such as"
+msgstr ""
+
+#: includes/ee-upload-settings.php:302
+msgid "Notice Email"
+msgstr ""
+
+#: includes/ee-upload-settings.php:303
+msgid "You will get an email whenever a file is uploaded."
+msgstr ""
+
+#: includes/ee-upload-settings.php:303
+msgid "Separate multiple addresses with a comma."
+msgstr ""
+
+#: includes/ee-uploader.php:64
+msgid "Upload Settings"
+msgstr ""
+
+#: includes/ee-uploader.php:290
+msgid "Uploading"
+msgstr ""
+
+#: includes/ee-uploader.php:292
+msgid "Upload"
+msgstr ""
+
+#: includes/ee-uploader.php:294
+msgid "File Limit"
+msgstr ""
+
+#: includes/ee-uploader.php:294
+msgid "files"
+msgstr ""
+
+#: includes/ee-uploader.php:296
+msgid "Size Limit"
+msgstr ""
+
+#: includes/ee-uploader.php:298
+msgid "per file"
+msgstr ""
+
+#: includes/ee-uploader.php:298
+msgid ""
+"To select multiple files, hold down the Control key while choosing files"
+msgstr ""
+
+#: includes/ee-uploader.php:298
+msgid "Command key on Macs"
+msgstr ""
+
+#: includes/ee-uploader.php:306
+msgid "No upload directory configured."
+msgstr ""
+
+#: support/ee-get-simple-file-list-folders.php:31
+msgid "Add Folder Support Now"
+msgstr ""
+
+#: support/ee-get-simple-file-list-folders.php:42
+msgid ""
+"Add an extension that allows folder listing, navigation and management "
+"capabilities."
+msgstr ""
+
+#: support/ee-get-simple-file-list-folders.php:45
+msgid "Create folders and unlimited levels of sub-folders."
+msgstr ""
+
+#: support/ee-get-simple-file-list-folders.php:46
+msgid "Use a shortcode attribute to display specific folders."
+msgstr ""
+
+#: support/ee-get-simple-file-list-folders.php:47
+msgid "Display different folders in different places on your site."
+msgstr ""
+
+#: support/ee-get-simple-file-list-folders.php:48
+msgid ""
+"You can even show several different folders on the same page and within "
+"widgets."
+msgstr ""
+
+#: support/ee-get-simple-file-list-folders.php:49
+msgid "Front-side users cannot navigate above the folder you specify."
+msgstr ""
+
+#: support/ee-get-simple-file-list-folders.php:50
+msgid "Breadcrumb navigation indicates where you are."
+msgstr ""
+
+#: support/ee-get-simple-file-list-folders.php:51
+msgid "Easily rename any folder."
+msgstr ""
+
+#: support/ee-get-simple-file-list-folders.php:52
+msgid "Easily delete any folder, along with all contents."
+msgstr ""
+
+#: support/ee-get-simple-file-list-folders.php:53
+msgid "Optionally display folder sizes."
+msgstr ""
+
+#: support/ee-get-simple-file-list-folders.php:54
+msgid "Updating to newer versions is just like other Wordpress plugins."
+msgstr ""
+
+#: support/ee-get-simple-file-list-folders.php:57
+msgid "See Demo"
+msgstr ""
+
+#: support/ee-plugin-author.php:23
+msgid "Show Your Support"
+msgstr ""
+
+#: support/ee-plugin-author.php:29
+msgid "Thank You"
+msgstr ""
+
+#: support/ee-plugin-author.php:31
+msgid ""
+"Thank you for using my plugin. I am proud of this work and want very much to "
+"improve upon it. The goal is to keep it simple, yet make it do what you need "
+"it to do. Tell me about the features that you want!"
+msgstr ""
+
+#: support/ee-plugin-author.php:38
+msgid "Contact Me"
+msgstr ""
+
+#: support/ee-plugin-author.php:38
+msgid "Feedback or Questions"
+msgstr ""
+
+#: support/ee-plugin-author.php:40
+msgid "Please rate this plugin"
+msgstr ""
+
+#: support/ee-plugin-author.php:46
+msgid "Contributors"
+msgstr ""
+
+#: support/ee-plugin-author.php:54
+msgid "Thanks to"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:26
+msgid "Default"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:34
+msgid "Shortcode Usage"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:36
+msgid ""
+"Simply place this bit of shortcode in any post, page or widget that you "
+"would like the plugin to appear."
+msgstr ""
+
+#: support/ee-plugin-instructions.php:38
+msgid ""
+"By default, both the file list and uploader will be displayed. To change "
+"this use Shortcode Builder below or refer to the documentation"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:49
+msgid "Create Page with Shortcode"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:50
+msgid "Create Post with Shortcode"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:56
+msgid "Copy Shortcode to Clipboard"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:61
+msgid "Shortcode Builder"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:63
+msgid "Use the Shortcode Builder to create a customized list."
+msgstr ""
+
+#: support/ee-plugin-instructions.php:95
+msgid "Show File List"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:103
+#: support/ee-plugin-instructions.php:124
+msgid "Show Only to Logged-in Users"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:107
+#: support/ee-plugin-instructions.php:128
+msgid "Show Only to Logged-in Administrators"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:111
+msgid "Hide the List"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:116
+msgid "Show Uploader"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:132
+msgid "Hide the Uploader"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:177
+msgid "Shortcode Documentation"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:186
+msgid "Go to File List Settings"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:190
+msgid "List Settings Instructions"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:198
+msgid "Go to Uploader Settings"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:202
+msgid "Uploader Settings Instructions"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:208
+msgid "How to Customize the Look"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:210
+msgid ""
+"Simple File List styles can be over-written in your theme's CSS to achieve "
+"the look you need."
+msgstr ""
+
+#: support/ee-plugin-instructions.php:210
+msgid "Please refer to the CSS styling documentation here:"
+msgstr ""
+
+#: support/ee-plugin-instructions.php:212
+msgid "Documentation"
+msgstr ""
+
+#: support/ee-plugin-support.php:89
+msgid ""
+"Do you need help or have a suggestion? Send me a message and I will reply "
+"promptly."
+msgstr ""
+
+#: support/ee-plugin-support.php:97
+msgid "Your Name"
+msgstr ""
+
+#: support/ee-plugin-support.php:101
+msgid "Your Email"
+msgstr ""
+
+#: support/ee-plugin-support.php:105
+msgid "Page with Shortcode"
+msgstr ""
+
+#: support/ee-plugin-support.php:107
+msgid "Your Message"
+msgstr ""
+
+#: support/ee-plugin-support.php:133
+msgid ""
+"Plugin environment details will automatically be sent along with your "
+"message to:"
+msgstr ""
+
+#: support/ee-support-functions.php:64
+msgid "The message failed to send."
+msgstr ""
+
+
+#. Description of the plugin/theme
+msgid ""
+"Full Featured File List with Front-Side File Uploading | <a href=\"https://"
+"simplefilelist.com/donations/simple-file-list-project/\">Donate</a> | <a "
+"href=\"admin.php?page=ee-simple-file-list&tab=folders\">Add Folder Support</"
+"a>"
+msgstr ""

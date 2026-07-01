@@ -1,0 +1,22 @@
+[16:24:43] nuclei: /Users/zer0p0int/工具/nuclei (v3.9.0)
+[16:24:43] 日志目录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162442
+[16:24:43] 本次共 1 个环境 | 并行度: 4 | 重试: 2次/5s间隔
+[16:24:43] 预构建: 是 | 续跑: 是
+[16:24:43] 续跑模式：跳过已 PASS 的 CVE
+[16:24:43] ━━━ 预构建基础镜像 ━━━
+[16:24:43] 预构建基础镜像 (1): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/arprice-responsive-pricing-table/CVE-2022-0867
+[16:24:46]   WARN: 预构建失败，运行时将自动构建
+[16:24:46] 预构建完成，共 1 个基础镜像
+[16:24:46] ━━━ 开始并行测试 (4 并发) ━━━
+[16:24:46] [########################] 100% (1/1)  CVE-2022-0867  :8196 [official]
+[16:24:46] 等待剩余任务完成...
+[16:24:50] ━━━ 汇总结果 ━━━
+[16:24:50] ERROR CVE-2022-0867 ()
+
+==================== 汇总 ====================
+总计 1  |  PASS 0  FAIL 0  SKIP 0  ERROR 1
+明细: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162442/summary.txt
+判定记录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162442/results.jsonl
+原始 jsonl: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162442/raw/
+[16:24:50] 收到中断信号，清理已启动的容器...
+[16:24:51]   已清理: CVE-2022-0867

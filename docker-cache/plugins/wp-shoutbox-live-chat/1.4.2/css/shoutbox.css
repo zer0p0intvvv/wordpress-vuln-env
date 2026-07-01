@@ -1,0 +1,231 @@
+/* Shoutbox 1.00 */
+/* Global smilies CSS sprites */
+div.shoutbox-smile {
+    margin:0;
+    padding: 0;
+    display: -moz-inline-stack;
+    display:inline-block;
+    margin: 5px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 50px;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    transition: 0.3s all;
+}
+
+div.shoutbox-history-message {
+    display: inline-block!important;
+    color: rgb(48, 106, 130);
+    font-size: 12.6666669845581px;
+    margin-top: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+div.shoutbox-links > div {
+    background-color: rgb(48, 106, 130);
+    color: #fff;
+    padding: 10px;
+    margin: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+div.shoutbox-links > div:hover {
+    background-color: rgb(58, 116, 140);
+}
+
+div.shoutbox-links > div a {color: #fff!important;}
+
+div.shoutbox-history-links {
+    float: right;
+}
+
+div.shoutbox-smile img,
+div.shoutbox-history-message img {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Shoutbox container */
+div.shoutbox-container{margin: 0; padding: 0;}
+
+/* Shoutbox container for private chat */
+div.shoutbox-container-private{position: fixed; bottom: 0; right: 0; z-index:10000; margin:0; padding: 2px; width: 250px; background-color: #FFF; border: 1px solid #CCC; padding: 4px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px;}
+
+/* Shoutbox private chat titlebar */
+div.shoutbox-container-private-titlebar{border-bottom: 1px solid #CCC; margin: 0; padding: 0 4px;}
+
+/* Shoutbox private chat title */
+div.shoutbox-container-private-title{float: left;}
+
+/* Shoutbox private chat close button */
+div.shoutbox-container-private-close, div.shoutbox-container-private-minimize-restore{padding-left: 8px; float: right;}
+
+/* Hide admin select checkboxes (messages, users) in private chat */
+div.shoutbox-container-private input.shoutbox-to-delete-boxes, div.shoutbox-container-private input.shoutbox-to-ban-boxes{display: none;}
+
+/* Messages container */
+div.shoutbox-history-container{overflow-y:auto; overflow-x:hidden; margin: 0; padding: 0 4px 0 4px;}
+
+/* User list container */
+div.shoutbox-users-container{padding: 0 4px 0 4px;}
+
+/* User name inside user list, applies to left, right and top */
+div.shoutbox-single-user{font-weight: bold;}
+
+/* User list container for left and right user lists */
+div.shoutbox-users-container-left, div.shoutbox-users-container-right{min-width: 100px; max-width:140px; overflow-y:auto; overflow-x:hidden; }
+
+/* User list container for right user list */
+div.shoutbox-users-container-right{float:right; margin: 0 0 0 8px; }
+
+/* User list container for left user list */
+div.shoutbox-users-container-left{float:left; margin: 0 8px 0 0; }
+
+/* User list container for top user list */
+div.shoutbox-users-container-top{width: 100%; box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing: border-box; margin: 0 0 8px 0;}
+
+/* User name inside top user list */
+div.shoutbox-users-container-top div.shoutbox-single-user{display: -moz-inline-stack; display:inline-block; margin-right: 1px;}
+
+/* Single message container */
+div.shoutbox-history-message-alias-container{margin: 0 0 8px 0;}
+
+/* Single message container top part with message authors gravatar, user name and message timestring */
+div.shoutbox-history-header{margin: 0;}
+
+div.shoutbox-history-header {display: inline-block;}
+
+/* Message author gravatar */
+div.shoutbox-history-message-alias-container div.shoutbox-history-header img.avatar{float:left; margin: 0 8px 0 0; padding: 0; border: 0 none;}
+
+/* Message author alias, applies to all messages */
+div.shoutbox-history-alias{font-weight: bold; line-height: 18px; margin-right:4px;}
+
+/* Message links container */
+div.shoutbox-history-links{line-height: 18px; font-size: 90%;}
+
+/* Message checkboxes (admin users) */
+input.shoutbox-to-delete-boxes{float:right; margin: 0 4px; padding: 0;}
+
+/* Message time, applies to all messages */
+div.shoutbox-history-timestring{font-style:italic; margin: 0; padding: 0;}
+
+/* Message text, applies to all messages */
+div.shoutbox-history-message{line-height: 20px; word-wrap: break-word;}
+
+/* Message author alias inside message history and users list (admin users) */
+div.shoutbox-users-container div.shoutbox-admin, div.shoutbox-users-container div.shoutbox-admin a,
+div.shoutbox-admin div.shoutbox-history-alias, div.shoutbox-admin div.shoutbox-history-alias a { color: red;}
+
+/* Message time (admin users) */
+div.shoutbox-admin div.shoutbox-history-timestring{}
+
+/* Message text (admin users) */
+div.shoutbox-admin div.shoutbox-history-message{display: inline-block;}
+
+/* Message author alias insided message history and users list (loggedin users) */
+div.shoutbox-users-container div.shoutbox-loggedin, div.shoutbox-users-container div.shoutbox-loggedin a,
+div.shoutbox-loggedin div.shoutbox-history-alias, div.shoutbox-loggedin div.shoutbox-history-alias a{color: #008800;}
+
+div.shoutbox-history-alias, div .shoutbox-history-timestring {
+    font-size: 10px;
+    display: inline-block;
+    color: rgb(48, 106, 130);
+    font-size: 10.6666669845581px;
+    font-style: normal;
+}
+
+div.shoutbox-history-message {margin-left: 15px;}
+
+div.shoutbox-history-message, div.shoutbox-history-header {display: inline-block;}
+
+/* Message time (loggedin users) */
+div.shoutbox-loggedin div.shoutbox-history-timestring{}
+
+/* Message text (loggedin users) */
+div.shoutbox-loggedin div.shoutbox-history-message{}
+
+/* Message author alias inside message history and users list (guest users) */
+div.shoutbox-users-container div.shoutbox-guest, div.shoutbox-users-container div.shoutbox-guest a,
+div.shoutbox-guest div.shoutbox-history-alias, div.shoutbox-guest div.shoutbox-history-alias a{color: #1982D1;}
+
+/* Message time (guest users) */
+div.shoutbox-guest div.shoutbox-history-timestring{}
+
+/* Message text (guest users) */
+div.shoutbox-guest div.shoutbox-history-message{}
+
+/* Message author alias inside message history and users list (system notices) */
+div.shoutbox-notice div.shoutbox-history-alias{color: #000;}
+
+/* Message time (system notices) */
+div.shoutbox-notice div.shoutbox-history-timestring{}
+
+/* Message text (system notices) */
+div.shoutbox-notice div.shoutbox-history-message{}
+
+/* User select checkboxes (admin users) */
+input.shoutbox-to-ban-boxes{margin:0 4px 0 0; padding:0;}
+
+/* Bottom control links container */
+div.shoutbox-links{margin: 8px 0 0 0; padding: 0; line-height: 100%; font-size: 90%;}
+
+/* Remove underline from links inside bottom control links */
+div.shoutbox-container a, div.shoutbox-container a:hover{text-decoration: none;}
+
+/* Bottom control links - left floted */
+div.shoutbox-left-link{float: left; margin-right: 4px;}
+
+/* Bottom control links - right floated */
+div.shoutbox-right-link{float: right; margin-left: 4px;}
+
+/* Notices informing users they must login/are banned from chat */
+div.shoutbox-bootom-notice{}
+
+/* Message author alias input box container */
+div.shoutbox-alias-container{ margin: 8px 0 0 0}
+
+/* Message author alias input box */
+input.shoutbox-alias{width: 100px; display: inline;}
+
+/* Right margin on under the chat history elements */
+input.shoutbox-alias, span.shoutbox-username-status, span.shoutbox-language-container, span.shoutbox-counter {margin: 0 8px 0 0;}
+
+/* User name checking text (normal, error), keyup counter (normal, exceeded, warning) */
+span.shoutbox-error, span.shoutbox-counter{font-weight:bold;}
+span.shoutbox-counter{color:#CCC;}
+span.shoutbox-error, span.shoutbox-exceeded {color: #E00;}
+span.shoutbox-warning {color: #600;}
+
+/* AdSense content */
+div.shoutbox-adsense{margin: 8px 0;}
+
+/* Send message button */
+input.shoutbox-send-button{display: block; margin: 8px 0 0 0; width: 100%; height: 100%; box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing: border-box;}
+
+/* Textarea for message text */
+textarea.shoutbox-message{display: block; margin: 8px 0 0 0; width: 100%; height: 80px; resize: vertical; box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing: border-box;}
+
+/* Smilies container */
+div.shoutbox-smilies-container{margin: 8px 0 0 0;}
+
+/* Smilie inside smilies containter */
+div.shoutbox-smile-container{float: left; margin: 0 2px;}
+
+/* "Powered by Shoutbox" link */
+div.shoutbox-linkhome{font-style: italic; font-size: 90%; margin-top: 2px;}
+
+/* Initally hide all textarea elements in admin options */
+textarea.shoutbox-show-hide{display: none;}
+
+/* Floats clearing code */
+div.shoutbox-top:after, div.shoutbox-history-links:after, div.shoutbox-container-private-titlebar:after, div.shoutbox-smilies-container:after, div.shoutbox-links:after { content: ".";  display: block; height: 0; clear: both; visibility: hidden; }
+div.shoutbox-top, div.shoutbox-history-links, div.shoutbox-container-private-titlebar, div.shoutbox-smilies-container, div.shoutbox-links {display: inline-block;}
+* html div.shoutbox-top, * html div.shoutbox-history-links, * html div.shoutbox-container-private-titlebar, * html div.shoutbox-smilies-container, * html div.shoutbox-links {height: 1%;}
+div.shoutbox-top, div.shoutbox-history-links, div.shoutbox-container-private-titlebar, div.shoutbox-smilies-container, div.shoutbox-links {display: block;}

@@ -1,0 +1,830 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Subscribe to Category v1.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: French (France)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-10-07 08:24+0000\n"
+"PO-Revision-Date: 2021-08-27 14:13+0000\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes\n"
+"X-Loco-Version: 2.5.3; wp-5.8"
+
+#: classes/class-stc-subscribe.php:1143
+msgid " - this post is set to draft"
+msgstr " - ce post est en mode brouillon"
+
+#. Taxonomy Group: "term1->term2" found
+#: classes/class-stc-subscribe.php:1872 classes/class-stc-subscribe.php:1909
+#, php-format
+msgid "%s: \"%s\" found"
+msgstr "%s: \"%s\" trouvé"
+
+#: classes/class-stc-subscribe.php:1634
+msgid "<strong>Subscribe Me</strong>"
+msgstr "<strong>M'abonner</strong>"
+
+#: classes/class-stc-subscribe.php:1635
+msgid "<strong>Unsubscribe Me</strong>"
+msgstr "<strong>Me désabonner</strong>"
+
+#: classes/class-stc-subscribe.php:1633
+msgid "<strong>Update Me</strong>"
+msgstr "<strong>Mettre à jour</strong>"
+
+#: classes/class-stc-subscribe.php:2317
+msgid "[&hellip;]"
+msgstr "[&hellip;]"
+
+#. %s: email from the bloginfo
+#: classes/class-stc-subscribe.php:646
+#, php-format
+msgid "Activate new or updated subscription to %s"
+msgstr "Activer l'abonnement nouveau (ou mis à jour) à %s"
+
+#: classes/class-stc-subscribe.php:2464 classes/class-stc-subscribe.php:2465
+msgid "Add new subscriber"
+msgstr "Ajouter un nouvel abonné"
+
+#: classes/class-stc-settings.php:657
+msgid "Add your E-mail settings"
+msgstr "Ajouter vos paramètres de courriel"
+
+#: classes/class-stc-widget.php:32
+msgid "Adding the subscribe form to a widget area."
+msgstr "Ajout du formulaire d'abonnement à la zone widget"
+
+#: classes/class-stc-subscribe.php:1598
+msgid "All categories"
+msgstr "Toutes les catégories"
+
+#: classes/class-stc-subscribe.php:2535
+#, php-format
+msgid "Approval <span class=\"count\">(%s)</span>"
+msgid_plural "Approvals <span class=\"count\">(%s)</span>"
+msgstr[0] "Approbation <span class=\"count\">(%s)</span>"
+msgstr[1] "Approbations <span class=\"count\">(%s)</span>"
+
+#. attribute settings
+#: classes/class-stc-settings.php:359
+msgid "Attribute settings"
+msgstr "Réglage des attributs"
+
+#: classes/class-stc-settings.php:446
+msgid "Block-Editor:"
+msgstr "Éditeur de bloc"
+
+#: classes/class-stc-subscribe.php:1592
+msgid "Categories / Taxonomies"
+msgstr "Catégories / Taxonomies"
+
+#: classes/class-stc-settings.php:326
+msgid "Categories on/off enabled: "
+msgstr "Mode on/Off pour les catégories activé : "
+
+#: classes/class-stc-settings.php:1188
+#, php-format
+msgid ""
+"Category \"%s\" not found for \"%s\". Subscriber is added with status: "
+"concept"
+msgstr ""
+"Catégorie \"%s\" non trouvée pour \"%s\". Abonné ajouté avec l'état : "
+"concept"
+
+#: classes/class-stc-settings.php:1007
+msgid ""
+"Check this option if you want to use your own CSS for Subscribe to Category."
+msgstr ""
+"Cochez cette option si vous voulez utiliser votre propre CSS pour Subscribe to Category."
+
+#: classes/class-stc-settings.php:989
+msgid "Check this option to enable SMS notification feature"
+msgstr "Cochez cette option pour activer la notification par SMS"
+
+#: classes/class-stc-settings.php:957
+msgid ""
+"Check this option to enable taxonomy hierarchy when using {{search_reason}} "
+"placeholder"
+msgstr ""
+"Cochez cette option pour prendre en compte la hiérarchie des taxonomies en cas d'utilisation de {{search_reason}} "
+"placeholder"
+
+#: classes/class-stc-settings.php:939
+msgid ""
+"Check this option to enable the use of enable_keyword_search attribute "
+"functionality"
+msgstr ""
+"Cochez cette option pour activer l'utilisation de l'attribut enable_keyword_search "
+"fonctionalité"
+
+#: classes/class-stc-settings.php:921
+msgid ""
+"Check this option to enable the use of hide_unsubscribe attribute "
+"functionality"
+msgstr ""
+"Cochez cette option pour activer l'utilisation de l'attribut hide_unsubscribe "
+"fonctionnalité"
+
+#: classes/class-stc-subscribe.php:2183
+msgid "Click here to read more"
+msgstr "Lire la suite"
+
+#: classes/class-stc-settings.php:178
+msgid "Click here to run this action right now"
+msgstr "Cliquer ici pour exécuter l'action immédiatement"
+
+#: classes/class-stc-subscribe.php:113
+msgid "Content"
+msgstr "Contenu"
+
+#: classes/class-stc-settings.php:605
+msgid "Cron time advised > 180 and <= 3600"
+msgstr "Délai Cron conseillé  > 180 and <= 3600"
+
+#: classes/class-stc-settings.php:462
+msgid "Custom CSS: "
+msgstr "CSS personnalisée :"
+
+#. ID.
+#: classes/class-stc-settings.php:303
+msgid "Custom Post Type Name(s) selection"
+msgstr "Sélection de Nom(s) de type de post personnalisé"
+
+#: classes/class-stc-settings.php:310
+msgid "Custom Post Type Name: "
+msgstr "Nom de type de post personnalisé"
+
+#: classes/class-stc-subscribe.php:123
+msgid "Daily"
+msgstr "Quotidiennement"
+
+#: classes/class-stc-settings.php:414
+msgid "Daily: "
+msgstr "Quotidiennement"
+
+#. Author of the plugin
+msgid "Daniel Söderström / Sidney van de Stouwe"
+msgstr "Daniel Söderström / Sidney van de Stouwe"
+
+#: classes/class-stc-settings.php:1025
+msgid "Delete all subscribers on deactivation"
+msgstr "Supprimer tous les abonnés à la déactivation"
+
+#: classes/class-stc-subscribe.php:248
+msgid "Do not mail this blog"
+msgstr "Ne pas envoyer ce blog par courriel"
+
+#: classes/class-stc-subscribe.php:1096
+msgid "E-mail address already exists"
+msgstr "Cette adresse électronique existe déjà"
+
+#: classes/class-stc-subscribe.php:1559 classes/class-stc-subscribe.php:1695
+msgid "E-mail Address:"
+msgstr "Adresse électronique"
+
+#: classes/class-stc-settings.php:278
+msgid "E-mail from: "
+msgstr "Courriel provenant de :"
+
+#: classes/class-stc-settings.php:167
+#, php-format
+msgid ""
+"E-mail is scheduled to be sent once every <strong>%1$s minutes</strong>."
+msgstr "Envoi du courriel planifié toutes les <strong>%1$s minutes</strong>."
+
+#: classes/class-stc-settings.php:164
+msgid "E-mail is scheduled to be sent once every day at hh:mm local time."
+msgstr "Envoi quotidien du courriel planifié à hh:mm heure locale"
+
+#. ID.
+#: classes/class-stc-settings.php:271
+msgid "E-mail settings"
+msgstr "Paramètres d'envoi"
+
+#. ID.
+#: classes/class-stc-settings.php:343
+msgid "E-Mail Template selection for notification e-mails"
+msgstr "Sélection du modèle pour les courriels de notification"
+
+#: classes/class-stc-settings.php:350
+msgid "E-Mail Template(s): "
+msgstr "Modèles de courriels : "
+
+#: classes/class-stc-subscribe.php:2466
+msgid "Edit subscriber"
+msgstr "Modifier les informations de l'abonné"
+
+#: classes/class-stc-subscribe.php:728
+msgid "Email address not found in database"
+msgstr "Courriel non trouvé dans la base de données"
+
+#: classes/class-stc-settings.php:286
+msgid "Email subject: "
+msgstr "Sujet du courriel : "
+
+#: classes/class-stc-settings.php:743
+msgid "Enable category on/off"
+msgstr "Activer le mode on/Off pour les catégories"
+
+#: classes/class-stc-settings.php:938
+msgid "Enable enable_keyword_search attribute use"
+msgstr "Activer l'utilisation de l'attribut enable_keyword_search"
+
+#: classes/class-stc-settings.php:920
+msgid "Activer l'utilisation de l'attribut hide_unsubscribe"
+msgstr ""
+
+#: classes/class-stc-settings.php:884
+msgid "Enable resend post option"
+msgstr "Permettre l'option de renvoi d'article"
+
+#: classes/class-stc-settings.php:988
+msgid "Enable SMS Notifications"
+msgstr "Activer les notifications par SMS"
+
+#: classes/class-stc-settings.php:956
+msgid "Enable taxonomy hierarchy"
+msgstr "Activer la hiérarchie des taxonomies"
+
+#: classes/class-stc-settings.php:744
+msgid ""
+"Enable the possibility to turn categories on/off under Taxonomies settings"
+msgstr ""
+"Activer l'option Categories on/off dans les réglages de taxonomie"
+
+#: classes/class-stc-settings.php:682
+msgid ""
+"Enter e-mail subject for the e-mail notification, leave empty if you wish to "
+"use post title as email subject."
+msgstr ""
+"Entrez le sujet du courriel de notification, laissez vide si vous désirez "
+"utiliser le titre de l'article comme sujet du courriel."
+
+#: classes/class-stc-settings.php:971
+msgid "Enter name of posts filter query"
+msgstr "Entrez le nom de la requête de filtrage de posts"
+
+#. %s: time of send mail, number of post to send
+#: classes/class-stc-settings.php:670
+#, php-format
+msgid ""
+"Enter the e-mail address for the sender, if empty the admin e-mail address "
+"%s is going to be used as sender."
+msgstr ""
+"Entrez l'adresse électronique de l'expéditeur, si vide, l'adresse de "
+"l'administrateur %s sera utilisée comme expéditeur."
+
+#: classes/class-stc-settings.php:1037
+msgid "Export subscribers to a TAB separated text file"
+msgstr "Exporter les abonnés vers un fichier CSV (tabs)"
+
+#: classes/class-stc-settings.php:1040
+msgid "Export to excel/csv"
+msgstr "Exporter au format Excel/CSV"
+
+#: classes/class-stc-settings.php:1138
+msgid "Filtered by: "
+msgstr "Filtré par :"
+
+#: classes/class-stc-subscribe.php:692
+msgid "Follow this link to activate your subscription"
+msgstr "Suivez ce lien pour activer votre abonnement"
+
+#: classes/class-stc-subscribe.php:673
+msgid "Follow this link to confirm your unsubscription"
+msgstr "Suivez ce lien pour confirmer votre désabonnement"
+
+#: classes/class-stc-subscribe.php:121
+msgid "Fri"
+msgstr "Ven"
+
+#: classes/class-stc-settings.php:885
+msgid ""
+"Gives an option on edit post (in the publish panel) to resend a post on "
+"update."
+msgstr ""
+"Activer l'option pour permettre le renvoi d'un article à sa mise à jour lors "
+"de son édition (dans l'onglet publication)."
+
+#: classes/class-stc-subscribe.php:124
+msgid "Hourly"
+msgstr "À chaque heure"
+
+#. Author URI of the plugin
+msgid "https://vandestouwe.com"
+msgstr "https://vandestouwe.com"
+
+#. URI of the plugin
+msgid "https://vandestouwe.com/stcmanual"
+msgstr "https://vandestouwe.com/stcmanual"
+
+#: classes/class-stc-settings.php:1054
+msgid "Import subscribers from a TAB separated file"
+msgstr "Importer les abonnés depuis un fichier CSV (tabs)"
+
+#: classes/class-stc-settings.php:1064
+msgid "Import subscribers from a tab separated text file"
+msgstr "Importer les abonnés depuis un fichier CSV (tabs)"
+
+#: classes/class-stc-settings.php:374
+msgid "Keyword search: "
+msgstr "Recherche par mot-clé : "
+
+#: classes/class-stc-subscribe.php:2087
+#, php-format
+msgid "Keyword: \"%s\" found in Content"
+msgstr "Mot-clé : \"%s\" trouvé dans le contenu"
+
+#: classes/class-stc-subscribe.php:2062
+#, php-format
+msgid "Keyword: \"%s\" found in Tags"
+msgstr "Mot-clé : \"%s\" trouvé dans les Étiquettes"
+
+#: classes/class-stc-subscribe.php:2074
+#, php-format
+msgid "Keyword: \"%s\" found in Taxonomies"
+msgstr "Mot-clé : \"%s\" trouvé dans les Taxonomies"
+
+#: classes/class-stc-subscribe.php:2052
+#, php-format
+msgid "Keyword: \"%s\" found in Title"
+msgstr "Mot-clé : \"%s\" trouvé dans le Titre Title"
+
+#. Description of the plugin
+msgid "Lets your visitor subscribe to posts for one or several categories."
+msgstr "Permettre au visiteur de s'abonner à une ou plusieurs catégories"
+
+#: classes/class-stc-settings.php:851
+msgid "Local time"
+msgstr "Heure locale"
+
+#: js/stc-gutenberg-addon.js:85
+msgid "Mail Post to Subscribers"
+msgstr "Envoyer le post aux abonnés"
+
+#: js/stc-gutenberg-addon.js:101
+msgid "Mail status"
+msgstr "État du courriel"
+
+#: js/stc-gutenberg-addon.js:119
+msgid "Mail this post again"
+msgstr "Envoyer ce post à nouveau"
+
+#: classes/class-stc-subscribe.php:2133
+msgid "Manage Subscription"
+msgstr "Gérer les abonnements"
+
+#: classes/class-stc-subscribe.php:2557
+#, php-format
+msgid "Marked <span class=\"count\">(%s)</span>"
+msgid_plural "Marked <span class=\"count\">(%s)</span>"
+msgstr[0] "Marqué <span class=\"count\">(%s)</span>"
+msgstr[1] "Marqués <span class=\"count\">(%s)</span>"
+
+#: classes/class-stc-subscribe.php:2595
+msgid "Mobile Number"
+msgstr "N° de téléphone mobile"
+
+#: classes/class-stc-subscribe.php:780
+msgid "Mobile phone number has issued a stop command"
+msgstr "Le numéro de mobile a émis une commande Stop"
+
+#: classes/class-stc-subscribe.php:117
+msgid "Mon"
+msgstr "Lun"
+
+#: js/stc-gutenberg-addon.js:128
+msgid "Never mail this post"
+msgstr "Ne jamais envoyer ce post"
+
+#: classes/class-stc-subscribe.php:2467
+msgid "New subscriber"
+msgstr "Nouvel abonné"
+
+#: classes/class-stc-settings.php:177
+#, php-format
+msgid ""
+"Next run is going to be <strong>%1$s</strong> and will include %2$s posts."
+msgstr ""
+"Le prochain envoi aura lieu dans <strong>%1$s</strong> et incluera %2$s articles."
+
+#: classes/class-stc-settings.php:827
+msgid "No E-mail template available"
+msgstr "Aucun modèle de courriel n'est disponible"
+
+#: classes/class-stc-subscribe.php:2210 classes/class-stc-subscribe.php:2227
+msgid "No featured image assigned to post"
+msgstr "Pas d'image mise en avant pour ce post"
+
+#: classes/class-stc-settings.php:724
+msgid "No public \"Custom Post Types\" available"
+msgstr "Aucun type de post personnalisé public n'est disponible"
+
+#: classes/class-stc-settings.php:779
+msgid "No public \"Custom Taxonomies\" available"
+msgstr "Aucune taxonomie publique personnalisée n'est disponible"
+
+#: classes/class-stc-subscribe.php:2470
+msgid "Not found"
+msgstr "Non trouvé"
+
+#: classes/class-stc-subscribe.php:2471
+msgid "Nothing found in trash"
+msgstr "Non trouvé dans la corbeille"
+
+#: classes/class-stc-subscribe.php:2393
+msgid "Notification"
+msgstr "Notification"
+
+#: classes/class-stc-subscribe.php:1574
+msgid "Notification moment:&nbsp;"
+msgstr "Moment de la notification :&nbsp;"
+
+#: classes/class-stc-subscribe.php:2619
+msgid "Notification Status"
+msgstr "État de la notification"
+
+#: classes/class-stc-subscribe.php:2392 classes/class-stc-subscribe.php:2395
+msgid "Notifications"
+msgstr "Notifications"
+
+#: classes/class-stc-settings.php:541
+msgid ""
+"Nr blog content characters included in the e-mail notification between 0 and "
+"1000"
+msgstr ""
+"Nombre de caractères dans le courriel de notification compris entre 0 et "
+"1000"
+
+#. %d: nr off characters to take from the post content
+#: classes/class-stc-settings.php:696
+#, php-format
+msgid ""
+"Nr of characters of the blog's content, if empty number will be %d characters"
+msgstr ""
+"Nombre de caractères dans le blog, si vide, sera positionné à %d caractères"
+
+#: classes/class-stc-settings.php:294
+msgid "Number of characters: "
+msgstr "Nombre de caractères"
+
+#. ID.
+#: classes/class-stc-settings.php:471
+msgid "On plugin deactivation"
+msgstr "A la désactivation du plugin"
+
+#: classes/class-stc-subscribe.php:744 classes/class-stc-subscribe.php:873
+msgid "Please check email to confirm within 24 hours."
+msgstr "Merci de vérifier vos courriels et de confirmer dans les 24 heures"
+
+#: classes/class-stc-settings.php:390
+msgid "Post Query Name: "
+msgstr "Nom de la requête de publication : "
+
+#: js/stc-gutenberg-addon.js:91
+msgid "Post state"
+msgstr "État du post"
+
+#. cron time in seconds.
+#: classes/class-stc-settings.php:407
+msgid "Reschedule time for sending emails"
+msgstr "Replanifier l'heure d'envoi des courriels"
+
+#. %d: default reschedule time
+#: classes/class-stc-settings.php:867
+#, php-format
+msgid "Reschedule time in seconds, if empty the time will be %d seconds"
+msgstr "Replanifier l'heure en secondes, si vide la valeur sera de %d secondes"
+
+#. ID.
+#: classes/class-stc-settings.php:431
+msgid "Resend post on update"
+msgstr "Renvoyer l'article à sa mise à jour"
+
+#: classes/class-stc-subscribe.php:227
+msgid "Resend post to subscribers"
+msgstr "Réexpédier le post aux abonnés"
+
+#: classes/class-stc-settings.php:438
+msgid "Resend:"
+msgstr "Renvoyer :"
+
+#: classes/class-stc-subscribe.php:122
+msgid "Sat"
+msgstr "Sam"
+
+#: classes/class-stc-settings.php:162
+msgid "Schedule: "
+msgstr "Événement planifié :"
+
+#: classes/class-stc-settings.php:76
+msgid "Scheduled event successfully executed"
+msgstr "Événement planifié exécuté avec succès"
+
+#: classes/class-stc-subscribe.php:1566
+msgid "Search in posts for keywords: "
+msgstr "Rechercher dans les posts par mot-clé : "
+
+#: classes/class-stc-subscribe.php:2469
+msgid "Search subscribers"
+msgstr "Rechercher des abonnés"
+
+#: classes/class-stc-settings.php:1058
+msgid "Select file to import from: "
+msgstr "Sélectionner le fichier d'import dans : "
+
+#: classes/class-stc-subscribe.php:1568
+msgid "Select post areas to search in:&nbsp;"
+msgstr "Sélectionner les zones de posts où chercher &nbsp;"
+
+#: classes/class-stc-settings.php:726
+msgid "Select required Custom Post Type names"
+msgstr "Sélectionner les noms des types de posts personnalisés requis"
+
+#: classes/class-stc-settings.php:829
+msgid "Select required E-mail template"
+msgstr "Sélectionner le modèle de courriel requis"
+
+#: classes/class-stc-settings.php:781
+msgid "Select required taxonomies names"
+msgstr "Sélectionner les taxonomies requises"
+
+#: classes/class-stc-settings.php:852
+msgid "Send email notification once per day at HH:MM (24h) local time"
+msgstr "Envoyer les courriels de notification une fois par jour à HH:MM (24h) heure locale"
+
+#: js/stc-gutenberg-addon.js:110
+msgid "Send on date"
+msgstr "Envoyer à une date spécifique"
+
+#: classes/class-stc-settings.php:123 classes/class-stc-settings.php:124
+msgid "Settings"
+msgstr "Réglages"
+
+#: classes/class-stc-settings.php:156
+msgid "Settings for subscribe to category"
+msgstr "Paramètres pour Subscribe to Category"
+
+#: classes/class-stc-settings.php:398
+msgid "SMS Notifications: "
+msgstr "NOtifications par SMS"
+
+#: classes/class-stc-subscribe.php:1562
+#, php-format
+msgid "SMS Notifications: %s"
+msgstr "Notifications SMS : %s"
+
+#: classes/class-stc-subscribe.php:2596
+msgid "SMS Status"
+msgstr "État des SMS"
+
+#: classes/class-stc-subscribe.php:125
+msgid "STC"
+msgstr "STC"
+
+#: classes/class-stc-subscribe.php:2598
+msgid "STC Status"
+msgstr "État de STC"
+
+#: classes/class-stc-settings.php:114
+#| msgid "Show subscriber"
+msgid "STC Subscribe"
+msgstr "Informations sur l'abonné"
+
+#. ID.
+#: classes/class-stc-settings.php:455
+msgid "Stylesheet (CSS) settings"
+msgstr "Paramètres de la feuille de style (CSS)"
+
+#: classes/class-stc-subscribe.php:2463 classes/class-stc-widget.php:74
+msgid "Subscribe"
+msgstr "S'abonner"
+
+#: classes/class-stc-subscribe.php:1630 classes/class-stc-subscribe.php:1697
+msgid "Subscribe Me"
+msgstr "M'abonner"
+
+#. %s: the bloginfo
+#: classes/class-stc-subscribe.php:691
+#, php-format
+msgid "Subscribe to %s activation"
+msgstr "Activation de l'abonnement à %s"
+
+#. Base ID.
+#. Name of the plugin
+#: classes/class-stc-settings.php:113 classes/class-stc-widget.php:31
+msgid "Subscribe to Category"
+msgstr "S'abonner à la catégorie"
+
+#: classes/class-stc-subscribe.php:2462 classes/class-stc-subscribe.php:2472
+msgid "Subscribers"
+msgstr "Abonnés"
+
+#: classes/class-stc-settings.php:1154
+msgid "Subscribers are succesfully imported"
+msgstr "Abonnés importés avec succès"
+
+#: classes/class-stc-settings.php:478
+msgid "Subscribers: "
+msgstr "Abonnés :"
+
+#: classes/class-stc-subscribe.php:116
+msgid "Sun"
+msgstr "Dim"
+
+#: classes/class-stc-subscribe.php:114
+msgid "Tags"
+msgstr "Étiquettes"
+
+#: classes/class-stc-subscribe.php:301
+msgid "Take me to start page"
+msgstr "Retour à la page d'accueil"
+
+#: classes/class-stc-subscribe.php:115
+msgid "Taxonomies"
+msgstr "Taxonomies"
+
+#: classes/class-stc-settings.php:382
+msgid "Taxonomy hierarchy: "
+msgstr "Hiérarchie des taxonomies"
+
+#. ID.
+#: classes/class-stc-settings.php:319
+msgid "Taxonomy Name(s) selection"
+msgstr "Sélection du nom des taxonomies"
+
+#: classes/class-stc-settings.php:334
+msgid "Taxonomy Name: "
+msgstr "Nom de la taxonomie"
+
+#: classes/class-stc-subscribe.php:1913
+#, php-format
+msgid "Taxonomy: \"%s\" and "
+msgstr "Taxonomie : \"%s\" et "
+
+#: classes/class-stc-subscribe.php:1874 classes/class-stc-subscribe.php:1911
+#, php-format
+msgid "Term: \"%s\" found."
+msgstr "Terme \"%s\" trouvé."
+
+#: classes/class-stc-settings.php:499
+msgid ""
+"The plugin will remove all data in database created by this plugin but there "
+"is an option regarding subscribers"
+msgstr ""
+"Ce plugin supprimera toutes les données dans la base de données crées par ce "
+"plugin mais il existe une option concernant les abonnés"
+
+#. %s: time of send mail, number of post to send
+#: classes/class-stc-subscribe.php:230
+#, php-format
+msgid "This post update will be re-sent to subscribers %s"
+msgstr "Cette mise à jour du post va être réexpédiée aux abonnés %s"
+
+#: classes/class-stc-subscribe.php:120
+msgid "Thu"
+msgstr "Jeu"
+
+#: classes/class-stc-settings.php:422
+msgid "Time in Seconds: "
+msgstr "Temps en secondes : "
+
+#: classes/class-stc-settings.php:573
+msgid "Time must between 00:00 and 23:59"
+msgstr "L'heure doit être comprise entre 00:00 et 23:59"
+
+#: classes/class-stc-subscribe.php:112
+msgid "Title"
+msgstr "Titre"
+
+#: classes/class-stc-subscribe.php:118
+msgid "True"
+msgstr "Vrai"
+
+#: classes/class-stc-subscribe.php:2659
+msgid "Unable to get notification status"
+msgstr "Impossible de récupérer l'état de la notification"
+
+#: classes/class-stc-subscribe.php:2642
+msgid "Unable to get stc status"
+msgstr "Impossible de récupérer l'état de STC"
+
+#: classes/class-stc-settings.php:903
+msgid "Uncheck this option if you are using the WP classic editor"
+msgstr "Décochez cette option si vous utilisez l'éditeur classique de WP"
+
+#: classes/class-stc-subscribe.php:1631
+msgid "Unsubscribe"
+msgstr "Se désabonner"
+
+#. %s: email from the bloginfo
+#. %s: the bloginfo
+#: classes/class-stc-subscribe.php:600 classes/class-stc-subscribe.php:672
+#, php-format
+msgid "Unsubscribe from %s"
+msgstr "Se désabonner de %s"
+
+#: classes/class-stc-subscribe.php:1583
+msgid "Unsubscribe Me"
+msgstr "Me désabonner"
+
+#: classes/class-stc-subscribe.php:2132
+msgid "Unsubscribe me"
+msgstr "Me désabonner"
+
+#: classes/class-stc-settings.php:366
+#| msgid "Unsubscribe"
+msgid "Unsubscribe: "
+msgstr "Se désabonner"
+
+#: classes/class-stc-subscribe.php:2546
+#, php-format
+msgid "Update Approval <span class=\"count\">(%s)</span>"
+msgid_plural "Update Approvals <span class=\"count\">(%s)</span>"
+msgstr[0] "Approbation de la mise à jour class=\"count\">(%s)</span>"
+msgstr[1] "Approbation des mises à jour <span class=\"count\">(%s)</span>"
+
+#: classes/class-stc-subscribe.php:1629
+msgid "Update Me"
+msgstr "Mettre à jour"
+
+#: classes/class-stc-subscribe.php:2015
+msgid "Update | "
+msgstr "Mettre à jour | "
+
+#: classes/class-stc-settings.php:1006
+msgid "Use custom CSS"
+msgstr "Utiliser un CSS personnalisé"
+
+#: classes/class-stc-settings.php:902
+msgid "Using Block/Gutenberg editor"
+msgstr "Utilisation de l'éditeur Gutenberg par blocs"
+
+#: classes/class-stc-subscribe.php:2394
+msgid "View notification"
+msgstr "Voir la notification"
+
+#: classes/class-stc-subscribe.php:2468
+msgid "View subscriber"
+msgstr "Voir l'abonné"
+
+#: classes/class-stc-subscribe.php:378
+msgid ""
+"We are sorry but something went wrong with activating your subscription."
+msgstr "Désolé mais quelque chose s'est mal passé avec l'activation de votre abonnement."
+
+#: classes/class-stc-subscribe.php:450
+msgid "We are sorry but something went wrong with your unsubscription."
+msgstr "Désolé mais quelque chose s'est mal passé avec votre désabonnement."
+
+#. %s: email from the subscriber
+#: classes/class-stc-subscribe.php:406
+#, php-format
+msgid ""
+"We have successfully activated the updated categories/keywords for "
+"subscription %s in our database."
+msgstr ""
+"Catégories/Mots-clés mis à jour activés avec succès pour "
+"l'abonnement %s dans notre base de données."
+
+#. %s: email from the subscriber
+#: classes/class-stc-subscribe.php:411
+#, php-format
+msgid "We have successfully activated your email %s in our database."
+msgstr "Votre adresse électronique %s a été activée avec succès dans notre base de données."
+
+#. %s: email from the unsubscriber
+#: classes/class-stc-subscribe.php:461
+#, php-format
+msgid "We have successfully removed your email %s from our database."
+msgstr "Votre adresse électronique %s a été retirée avec succès de notre base de données."
+
+#: classes/class-stc-subscribe.php:119
+msgid "Tue"
+msgstr "Mar"
+
+#: classes/class-stc-subscribe.php:119
+msgid "Wed"
+msgstr "Mer"
+
+#: classes/class-stc-settings.php:522
+msgid "You have entered an invalid email."
+msgstr "Vous avez spécifié une adresse électronique invalide."
+
+#: classes/class-stc-subscribe.php:718 classes/class-stc-subscribe.php:759
+#: classes/class-stc-subscribe.php:1089
+msgid "You need to enter a valid email address"
+msgstr "Vous devez entrer une adresse électronique valide."

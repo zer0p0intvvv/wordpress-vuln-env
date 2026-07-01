@@ -1,0 +1,52 @@
+#!/bin/bash
+# generate.sh —— 下载 nuclei 模板 + 确认参数
+# 用法: bash generate.sh
+set -euo pipefail
+
+if [ ! -f ".env" ]; then
+    echo "错误: 找不到 .env 文件"
+    echo "请先创建 .env："
+    echo '  CVE_ID="CVE-XXXX-XXXX"'
+    echo '  PLUGIN_SLUG="plugin-slug"'
+    echo '  PLUGIN_VERSION="1.2.3"'
+    echo '  WEB_PORT="8088"'
+    echo '  MYSQL_PORT="3307"'
+    exit 1
+fi
+
+source .env
+mkdir -p nuclei-templates output
+
+echo "=== 任务参数 ==="
+echo "CVE:    $CVE_ID"
+echo "插件:   $PLUGIN_SLUG"
+echo "版本:   $PLUGIN_VERSION"
+echo "Web:    $WEB_PORT"
+echo "MySQL:  $MYSQL_PORT"
+echo ""
+
+# 下载 nuclei 模板
+YEAR="${CVE_ID:4:4}"
+TPL_FILE="nuclei-templates/$CVE_ID.yaml"
+
+if [ ! -f "$TPL_FILE" ]; then
+    for path in "http/cves/$YEAR/$CVE_ID.yaml" "code/cves/$YEAR/$CVE_ID.yaml" "file/cves/$YEAR/$CVE_ID.yaml" "network/cves/$YEAR/$CVE_ID.yaml"; do
+        URL="https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/main/$path"
+        if curl -fsSL --max-time 10 -o "$TPL_FILE" "$URL" 2>/dev/null; then
+            echo "模板已下载: $path"
+            break
+        fi
+    done
+fi
+
+if [ -f "$TPL_FILE" ]; then
+    echo "模板: $TPL_FILE"
+    grep -q 'username=admin\|password=admin\|-V "username"\|-V "password"' "$TPL_FILE" 2>/dev/null && echo "  ⚠ 需要 admin 认证" || true
+    grep -q 'interactsh-url' "$TPL_FILE" 2>/dev/null && echo "  ⚠ OOB 模板 (interactsh)" || true
+else
+    echo "  ⚠ 模板下载失败，请手动放入 nuclei-templates/"
+fi
+
+echo ""
+echo "=== 下一步 ==="
+echo "  bash scan.sh"

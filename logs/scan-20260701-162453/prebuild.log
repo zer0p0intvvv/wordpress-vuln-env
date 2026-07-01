@@ -1,0 +1,11 @@
+sha256:26fa17851b53faa209328c7d3322f9a8ec00c41b87f5b7c925e37f3e8147f534
+Dockerfile:14
+--------------------
+  13 |     # HTTP/2 偶尔断开，强制 HTTP/1.1 + 重试
+  14 | >>> RUN curl -fsSL --retry 5 --retry-delay 3 --http1.1 -o /tmp/multiple-shipping-address-woocommerce.1.0.1.zip \
+  15 | >>>     "https://downloads.wordpress.org/plugin/multiple-shipping-address-woocommerce.1.0.1.zip"
+  16 |     
+--------------------
+ERROR: failed to solve: process "/bin/sh -c curl -fsSL --retry 5 --retry-delay 3 --http1.1 -o /tmp/multiple-shipping-address-woocommerce.1.0.1.zip     \"https://downloads.wordpress.org/plugin/multiple-shipping-address-woocommerce.1.0.1.zip\"" did not complete successfully: exit code: 22
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/bzg41gha44riqt5a26oxxwxyt

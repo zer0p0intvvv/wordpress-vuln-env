@@ -1,0 +1,26 @@
+[16:24:55] nuclei: /Users/zer0p0int/工具/nuclei (v3.9.0)
+[16:24:55] 日志目录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162453
+[16:24:55] 本次共 2 个环境 | 并行度: 4 | 重试: 2次/5s间隔
+[16:24:55] 预构建: 是 | 续跑: 是
+[16:24:55] 续跑模式：跳过已 PASS 的 CVE
+[16:24:55] ━━━ 预构建基础镜像 ━━━
+[16:24:55] 预构建基础镜像 (1): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/wordpress/6.4
+[16:24:57] 预构建基础镜像 (2): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/multiple-shipping-address-woocommerce/CVE-2022-0783
+[16:25:00]   WARN: 预构建失败，运行时将自动构建
+[16:25:00] 预构建完成，共 2 个基础镜像
+[16:25:00] ━━━ 开始并行测试 (4 并发) ━━━
+[16:25:00] [############------------]  50% (1/2)  CVE-2022-0783  :8195 [official]
+[16:25:00] [########################] 100% (2/2)  CVE-2022-0783  :8195 [official]
+[16:25:00] 等待剩余任务完成...
+[16:25:31] ━━━ 汇总结果 ━━━
+[16:25:31] FAIL CVE-2022-0783
+[16:25:31] FAIL CVE-2022-0783
+
+==================== 汇总 ====================
+总计 2  |  PASS 0  FAIL 2  SKIP 0  ERROR 0
+明细: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162453/summary.txt
+判定记录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162453/results.jsonl
+原始 jsonl: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162453/raw/
+[16:25:31] 收到中断信号，清理已启动的容器...
+[16:25:47]   已清理: CVE-2022-0783
+[16:25:47]   已清理: CVE-2022-0783

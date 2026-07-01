@@ -1,0 +1,24 @@
+Dockerfile:10
+--------------------
+   8 |     # MU-plugin 强制激活（Windows CRLF 兼容）
+   9 |     RUN mkdir -p /var/www/html/wp-content/mu-plugins
+  10 | >>> COPY mu-plugins/force-activate.php /var/www/html/wp-content/mu-plugins/
+  11 |     RUN apt-get update && apt-get install -y dos2unix && \
+  12 |         dos2unix /var/www/html/wp-content/mu-plugins/force-activate.php && \
+--------------------
+ERROR: failed to solve: failed to compute cache key: failed to calculate checksum of ref cfe59163-960b-4442-af17-c66004a00b6a::himswrli4xoug1pcyhypmw110: "/mu-plugins/force-activate.php": not found
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/hfi9e5b0pny06um6fm4lehze7
+sha256:27a63da167d8a716d3154ff2dc7bf7a1e7c4fb74739f07c51a5b4d92820a2f53
+sha256:c7f0f5d460424d46e3752c5108de2d1f297508c22b5599743d9e1664a94e5766
+Dockerfile:19
+--------------------
+  17 |     # MU-plugin 强制激活（Windows CRLF 兼容）
+  18 |     RUN mkdir -p /var/www/html/wp-content/mu-plugins
+  19 | >>> COPY mu-plugins/force-activate.php /var/www/html/wp-content/mu-plugins/
+  20 |     RUN apt-get update && apt-get install -y dos2unix && \
+  21 |         dos2unix /var/www/html/wp-content/mu-plugins/force-activate.php && \
+--------------------
+ERROR: failed to solve: failed to compute cache key: failed to calculate checksum of ref cfe59163-960b-4442-af17-c66004a00b6a::mqhb24xw7zgv6sby1arav3kmv: "/mu-plugins/force-activate.php": not found
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/dv7m5blaz7hxzqlcd0uak442k

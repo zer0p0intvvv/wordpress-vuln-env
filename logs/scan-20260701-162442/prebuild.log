@@ -1,0 +1,10 @@
+Dockerfile:14
+--------------------
+  13 |     # HTTP/2 偶尔断开，强制 HTTP/1.1 + 重试
+  14 | >>> RUN curl -fsSL --retry 5 --retry-delay 3 --http1.1 -o /tmp/arprice-responsive-pricing-table.3.6.0.zip \
+  15 | >>>     "https://downloads.wordpress.org/plugin/arprice-responsive-pricing-table.3.6.0.zip"
+  16 |     
+--------------------
+ERROR: failed to solve: process "/bin/sh -c curl -fsSL --retry 5 --retry-delay 3 --http1.1 -o /tmp/arprice-responsive-pricing-table.3.6.0.zip     \"https://downloads.wordpress.org/plugin/arprice-responsive-pricing-table.3.6.0.zip\"" did not complete successfully: exit code: 22
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/c3nt6vszm4vmww42dsfr4d6ds

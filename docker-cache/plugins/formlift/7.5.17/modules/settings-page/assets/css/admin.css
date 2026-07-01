@@ -1,0 +1,81 @@
+.formlift-text-area {
+    width: 200px;
+}
+
+.formlift-input {
+    vertical-align: middle;
+    -moz-box-shadow: inset 0 1px 1px #dddddd;
+    -webkit-box-shadow: inset 0 1px 1px #dddddd;
+    box-shadow: inset 0 1px 1px #dddddd;
+    padding: 4px;
+    border: 1px solid #dddddd;
+    border-radius: 1px;
+}
+
+.formlift-button {
+    vertical-align: middle;
+    padding: 6px;
+    border-radius: 3px;
+    border-width: 0;
+    transition: 0.4s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.formlift-delete-button {
+    color: white;
+    background: #ff6637;
+}
+
+.formlift-delete-button:hover {
+    background: #ff0000;
+    transition: 0.4s;
+}
+
+.formlift-create-redirect-button {
+    color: white;
+    background: #6cc36c;
+}
+
+.formlift-create-redirect-button:hover {
+    background: #008855;
+    transition: 0.4s;
+}
+
+.formlift-copy-shortcode-button {
+    color: white;
+    background: deepskyblue;
+}
+
+.formlift-copy-shortcode-button:hover {
+    background: dodgerblue;
+    transition: 0.4s;
+}
+
+.formlift-max-width {
+    max-width: 300px !important;
+}
+
+.formlift-redirect-row {
+    display: block;
+    margin-bottom: 5px;
+    padding: 4px;
+    background: #F1F1F1;
+    cursor: move;
+}
+
+.text-cell {
+    display: inline-block;
+}
+
+.formlift-redirect-cell {
+    display: inline-block;
+    padding: 5px;
+}
+
+.formlift-error {
+    font-size: 14px;
+    color: red;
+    line-height: 1.1;
+    font-weight: 600;
+}

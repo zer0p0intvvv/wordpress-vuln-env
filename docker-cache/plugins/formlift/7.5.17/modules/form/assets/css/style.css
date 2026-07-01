@@ -1,0 +1,215 @@
+.formlift-form-container * {
+    box-sizing: border-box !important;
+}
+
+.formlift_input::placeholder {
+    opacity: 1;
+}
+
+.intl-tel-input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.formlift-clearfix {
+    zoom: 1;
+    clear: both;
+}
+
+.formlift-infusion-form .formlift_button {
+    cursor: pointer;
+}
+
+.formlift-infusion-form .infusion-radio {
+    padding: 10px;
+}
+
+
+.formlift-infusion-form input[type="text"],
+.formlift-infusion-form input[type="email"],
+.formlift-infusion-form input[type="url"],
+.formlift-infusion-form input[type="number"],
+.formlift-infusion-form input[type="password"],
+.formlift-infusion-form input[type="search"],
+.formlift-infusion-form select,
+.formlift-infusion-form textarea {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border: inherit;
+}
+
+.formlift-form-container {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.formlift_input,
+.formlift_field,
+.formlift_label,
+.formlift_button,
+.formlift-infusion-form {
+    outline: none;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.formlift-no-error {
+    display: none;
+}
+
+.formlift-loader {
+    display: inline-block;
+    margin-right: 10px;
+    border: 4px solid #44d7ff;
+    border-radius: 100%;
+    border-top: 4px solid green;
+    width: 20px;
+    height: 20px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    vertical-align: text-bottom;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.formlift-success-message,
+.formlift-error-message,
+.formlift-wait-message {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50px;
+    color: black;
+    box-sizing: border-box;
+    background: #d5ffa7;
+}
+
+.formlift-success-message::before {
+    content: '\2714';
+}
+
+.formlift-error-message {
+    background: #ffd0d0;
+}
+
+.formlift-error-message::before {
+    content: '\2718';
+}
+
+.formlift-wait-text-container {
+    display: inline;
+}
+
+
+/* The container */
+.formlift_radio_label_container {
+    position: relative;
+    padding-left: calc(var(--rb-size) + 10px);
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* IE
+.formlift_radio_label_container{
+  padding-left: 30px;
+}
+*/
+
+input.formlift_radio:disabled {
+    display: none;
+}
+
+.formlift_check_style {
+    box-sizing: border-box;
+    top: calc(100% / 2 - var(--rb-size) / 2);
+    left: 0;
+    width: var(--rb-size);
+    height: var(--rb-size);
+}
+
+/* IE
+.formlift_radio_label_container{
+    top: calc( 100% / 2 - var( 20px ) / 2 );
+    width: 20px;
+    height: 20px;
+}
+*/
+
+.formlift_radio_label_container input {
+    position: absolute;
+    opacity: 0;
+}
+
+.formlift_radio {
+    position: absolute;
+    /*top: 0;*/
+    /*left: 0;*/
+    border: solid;
+    border-radius: 50%;
+}
+
+.formlift_checkbox {
+    position: absolute;
+    /*top: 0;*/
+    /*left: 0;*/
+    border: solid;
+    text-align: center;
+    line-height: 1;
+}
+
+.formlift_radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.formlift_checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.formlift_radio_label_container input:checked ~ .formlift_radio:after,
+.formlift_radio_label_container input:checked ~ .formlift_checkbox:after {
+    display: block;
+}
+
+.formlift_radio_label_container .formlift_radio:after {
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+}
+
+.formlift_radio_label_container .formlift_checkbox:after {
+    content: '\2714';
+    height: 100%;
+    position: relative;
+}
+
+.formlift-powered-by-icon::before {
+    content: '\26A1' !important;
+}

@@ -1,0 +1,5 @@
+{"cve":"CVE-2014-8799","port":8097,"status":"PASS","matcher_name":"","evidence":""}
+{"cve":"CVE-2015-2755","port":8098,"status":"PASS","matcher_name":"","evidence":""}
+{"cve":"CVE-2021-24340","port":8101,"status":"PASS","matcher_name":"","evidence":""}
+{"cve":"CVE-2021-24731","port":8102,"status":"ERROR","reason":""}
+{"cve":"CVE-2021-25052","port":8203,"status":"SKIP","reason":""}

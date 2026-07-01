@@ -1,42 +1,26 @@
 #!/bin/bash
 set -Eeuo pipefail
 
-WORDPRESS_PATH="/var/www/html"
+WP_PATH="/var/www/html"
 WP_URL="${WORDPRESS_URL:-http://localhost:8088}"
 WP_TITLE="${WORDPRESS_TITLE:-Vulhub Test}"
 WP_ADMIN_USER="${WORDPRESS_ADMIN_USER:-admin}"
 WP_ADMIN_PASSWORD="${WORDPRESS_ADMIN_PASSWORD:-admin}"
 WP_ADMIN_EMAIL="${WORDPRESS_ADMIN_EMAIL:-admin@example.com}"
-WP_PLUGIN_SLUG="${WORDPRESS_PLUGIN_SLUG:-}"
-WP_PLUGIN_VERSION="${WORDPRESS_PLUGIN_VERSION:-}"
-DEBUG_MODE="${DEBUG_MODE:-false}"
+PLUGIN_SLUG="${PLUGIN_SLUG:-}"
+PLUGIN_VERSION="${PLUGIN_VERSION:-}"
 
 # Start the original WordPress entrypoint in the background.
 /usr/local/bin/docker-entrypoint-original.sh "$@" &
 APACHE_PID=$!
-
-cleanup() {
-    if kill -0 "$APACHE_PID" 2>/dev/null; then
-        kill "$APACHE_PID" 2>/dev/null || true
-    fi
-}
-trap cleanup EXIT
+trap 'kill $APACHE_PID 2>/dev/null || true' EXIT
 
 echo "Waiting for WordPress files..."
-until [ -f "$WORDPRESS_PATH/wp-includes/version.php" ] && [ -f "$WORDPRESS_PATH/wp-config.php" ]; do
+until [ -f "$WP_PATH/wp-includes/version.php" ] && [ -f "$WP_PATH/wp-config.php" ]; do
     sleep 1
 done
 
-cd "$WORDPRESS_PATH"
-
-# Inject debug settings if DEBUG_MODE is enabled
-if [ "$DEBUG_MODE" = "true" ]; then
-    echo "DEBUG_MODE enabled: adding WP_DEBUG + SQL logging..."
-    wp config set WP_DEBUG true --raw --allow-root 2>/dev/null || true
-    wp config set WP_DEBUG_LOG true --raw --allow-root 2>/dev/null || true
-    wp config set WP_DEBUG_DISPLAY true --raw --allow-root 2>/dev/null || true
-    wp config set SAVEQUERIES true --raw --allow-root 2>/dev/null || true
-fi
+cd "$WP_PATH"
 
 echo "Waiting for MySQL..."
 DB_READY=0
@@ -53,8 +37,6 @@ if [ "$DB_READY" != "1" ]; then
     exit 1
 fi
 
-echo "MySQL is ready."
-
 if ! wp core is-installed --allow-root 2>/dev/null; then
     echo "Installing WordPress..."
     wp core install \
@@ -65,32 +47,21 @@ if ! wp core is-installed --allow-root 2>/dev/null; then
         --admin_email="$WP_ADMIN_EMAIL" \
         --skip-email \
         --allow-root
-
-    echo "WordPress installed. Admin: $WP_ADMIN_USER / $WP_ADMIN_PASSWORD"
-else
-    echo "WordPress is already installed."
 fi
 
-# Configure WordPress
 wp option update siteurl "$WP_URL" --allow-root >/dev/null
 wp option update home "$WP_URL" --allow-root >/dev/null
 wp option update permalink_structure '/%postname%/' --allow-root >/dev/null
 wp rewrite flush --allow-root >/dev/null || true
 
-# Install and activate plugin
-if [ -n "$WP_PLUGIN_SLUG" ]; then
-    INSTALL_CMD="wp plugin install $WP_PLUGIN_SLUG --allow-root"
-    if [ -n "$WP_PLUGIN_VERSION" ]; then
-        INSTALL_CMD="$INSTALL_CMD --version=$WP_PLUGIN_VERSION"
+# 激活插件（已预拷贝到 plugins/ 目录）
+if [ -n "$PLUGIN_SLUG" ]; then
+    if [ -d "$WP_PATH/wp-content/plugins/$PLUGIN_SLUG" ]; then
+        echo "Activating plugin: $PLUGIN_SLUG (pre-copied)"
+        wp plugin activate "$PLUGIN_SLUG" --allow-root || true
     fi
-    INSTALL_CMD="$INSTALL_CMD --activate"
-
-    echo "Installing plugin: $WP_PLUGIN_SLUG ${WP_PLUGIN_VERSION:-(latest)}"
-    eval "$INSTALL_CMD" || true
 fi
 
 echo "Setup complete. WordPress is running at $WP_URL"
-[ "$DEBUG_MODE" = "true" ] && echo "Debug logs: /var/www/html/wp-content/debug.log"
-
 trap - EXIT
 wait "$APACHE_PID"

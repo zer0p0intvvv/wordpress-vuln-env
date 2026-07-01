@@ -1,0 +1,21 @@
+[16:22:14] nuclei: /Users/zer0p0int/工具/nuclei (v3.9.0)
+[16:22:14] 日志目录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162211
+[16:22:14] 本次共 1 个环境 | 并行度: 4 | 重试: 2次/5s间隔
+[16:22:14] 预构建: 是 | 续跑: 是
+[16:22:14] 续跑模式：跳过已 PASS 的 CVE
+[16:22:14] ━━━ 预构建基础镜像 ━━━
+[16:22:14] 预构建基础镜像 (1): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/booking-calendar/3.2.0
+[16:22:17] 预构建完成，共 1 个基础镜像
+[16:22:17] ━━━ 开始并行测试 (4 并发) ━━━
+[16:22:17] [########################] 100% (1/1)  CVE-2022-3982  :8108 [official]
+[16:22:17] 等待剩余任务完成...
+[16:22:54] ━━━ 汇总结果 ━━━
+[16:22:54] PASS CVE-2022-3982    
+
+==================== 汇总 ====================
+总计 1  |  PASS 1  FAIL 0  SKIP 0  ERROR 0
+明细: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162211/summary.txt
+判定记录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162211/results.jsonl
+原始 jsonl: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162211/raw/
+[16:22:54] 收到中断信号，清理已启动的容器...
+[16:22:55]   已清理: CVE-2022-3982

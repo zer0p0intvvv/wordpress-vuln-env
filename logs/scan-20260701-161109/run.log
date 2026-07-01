@@ -1,0 +1,21 @@
+[16:11:10] nuclei: /Users/zer0p0int/工具/nuclei (v3.9.0)
+[16:11:10] 日志目录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-161109
+[16:11:10] 本次共 1 个环境 | 并行度: 4 | 重试: 2次/5s间隔
+[16:11:10] 预构建: 是 | 续跑: 是
+[16:11:10] 续跑模式：跳过已 PASS 的 CVE
+[16:11:10] ━━━ 预构建基础镜像 ━━━
+[16:11:10] 预构建基础镜像 (1): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/pie-register/CVE-2021-24731
+[16:11:13] 预构建完成，共 1 个基础镜像
+[16:11:13] ━━━ 开始并行测试 (4 并发) ━━━
+[16:11:13] [########################] 100% (1/1)  CVE-2021-24731  :8102 [official]
+[16:11:13] 等待剩余任务完成...
+[16:11:47] ━━━ 汇总结果 ━━━
+[16:11:47] PASS CVE-2021-24731    
+
+==================== 汇总 ====================
+总计 1  |  PASS 1  FAIL 0  SKIP 0  ERROR 0
+明细: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-161109/summary.txt
+判定记录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-161109/results.jsonl
+原始 jsonl: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-161109/raw/
+[16:11:47] 收到中断信号，清理已启动的容器...
+[16:11:47]   已清理: CVE-2021-24731

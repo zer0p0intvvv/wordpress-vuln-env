@@ -1,0 +1,154 @@
+{
+  "_form-data-json.min-8b38a581.js": {
+    "css": [
+      "form-data-json-21fdfc57.css"
+    ],
+    "file": "form-data-json.min-8b38a581.js",
+    "imports": [
+      "_index-aa236c82.js"
+    ]
+  },
+  "_index-5cbe2aa9.js": {
+    "file": "index-5cbe2aa9.js"
+  },
+  "_index-aa236c82.js": {
+    "file": "index-aa236c82.js"
+  },
+  "_intlTelInput-6878de69.js": {
+    "file": "intlTelInput-6878de69.js",
+    "imports": [
+      "_index-aa236c82.js"
+    ]
+  },
+  "_notification-toast-d939c393.js": {
+    "css": [
+      "notification-toast-eb6a5289.css"
+    ],
+    "file": "notification-toast-d939c393.js"
+  },
+  "core/admin/assets/images/delete-icon.svg": {
+    "file": "delete-icon-86fae07c.svg",
+    "src": "core/admin/assets/images/delete-icon.svg"
+  },
+  "core/admin/assets/images/delete-white.svg": {
+    "file": "delete-white-f3f49449.svg",
+    "src": "core/admin/assets/images/delete-white.svg"
+  },
+  "core/admin/assets/images/edit-icon.svg": {
+    "file": "edit-icon-00bc0669.svg",
+    "src": "core/admin/assets/images/edit-icon.svg"
+  },
+  "core/admin/assets/images/edit-white.svg": {
+    "file": "edit-white-3b5745ab.svg",
+    "src": "core/admin/assets/images/edit-white.svg"
+  },
+  "core/admin/assets/src/main.css": {
+    "file": "main-b5caec7e.css",
+    "src": "core/admin/assets/src/main.css"
+  },
+  "core/admin/assets/src/main.js": {
+    "assets": [
+      "edit-icon-00bc0669.svg",
+      "delete-icon-86fae07c.svg",
+      "edit-white-3b5745ab.svg",
+      "delete-white-f3f49449.svg",
+      "flags-336016fc.webp",
+      "flag-2x.webp"
+    ],
+    "css": [
+      "main-b5caec7e.css"
+    ],
+    "file": "main-0608afcc.js",
+    "imports": [
+      "_index-aa236c82.js",
+      "_form-data-json.min-8b38a581.js",
+      "_notification-toast-d939c393.js",
+      "_intlTelInput-6878de69.js"
+    ],
+    "isEntry": true,
+    "src": "core/admin/assets/src/main.js"
+  },
+  "core/shortcodes/assets/js/booking-types.css": {
+    "file": "booking-types-1bffdc8c.css",
+    "src": "core/shortcodes/assets/js/booking-types.css"
+  },
+  "core/shortcodes/assets/js/booking-types.js": {
+    "css": [
+      "booking-types-1bffdc8c.css"
+    ],
+    "file": "booking_types-cca80a12.js",
+    "isEntry": true,
+    "src": "core/shortcodes/assets/js/booking-types.js"
+  },
+  "core/shortcodes/assets/js/booking.css": {
+    "file": "booking-e18366bc.css",
+    "src": "core/shortcodes/assets/js/booking.css"
+  },
+  "core/shortcodes/assets/js/booking.js": {
+    "css": [
+      "booking-e18366bc.css"
+    ],
+    "file": "booking-8bfd00da.js",
+    "imports": [
+      "_notification-toast-d939c393.js",
+      "_index-aa236c82.js",
+      "_form-data-json.min-8b38a581.js",
+      "_index-5cbe2aa9.js"
+    ],
+    "isEntry": true,
+    "src": "core/shortcodes/assets/js/booking.js"
+  },
+  "core/shortcodes/assets/js/login.css": {
+    "file": "login-f9486115.css",
+    "src": "core/shortcodes/assets/js/login.css"
+  },
+  "core/shortcodes/assets/js/login.js": {
+    "css": [
+      "login-f9486115.css"
+    ],
+    "file": "login_register-f9830694.js",
+    "imports": [
+      "_notification-toast-d939c393.js"
+    ],
+    "isEntry": true,
+    "src": "core/shortcodes/assets/js/login.js"
+  },
+  "core/shortcodes/assets/js/profile.css": {
+    "file": "profile-3898f499.css",
+    "src": "core/shortcodes/assets/js/profile.css"
+  },
+  "core/shortcodes/assets/js/profile.js": {
+    "assets": [
+      "flags-336016fc.webp",
+      "flag-2x.webp"
+    ],
+    "css": [
+      "profile-3898f499.css"
+    ],
+    "file": "profile-3328e9ca.js",
+    "imports": [
+      "_index-aa236c82.js",
+      "_notification-toast-d939c393.js",
+      "_index-5cbe2aa9.js",
+      "_intlTelInput-6878de69.js"
+    ],
+    "isEntry": true,
+    "src": "core/shortcodes/assets/js/profile.js"
+  },
+  "form-data-json.css": {
+    "file": "form-data-json-21fdfc57.css",
+    "src": "form-data-json.css"
+  },
+  "node_modules/intl-tel-input/build/img/flags.webp": {
+    "file": "flags-336016fc.webp",
+    "src": "node_modules/intl-tel-input/build/img/flags.webp"
+  },
+  "node_modules/intl-tel-input/build/img/flags@2x.webp": {
+    "file": "flag-2x.webp",
+    "src": "node_modules/intl-tel-input/build/img/flags@2x.webp"
+  },
+  "notification-toast.css": {
+    "file": "notification-toast-eb6a5289.css",
+    "src": "notification-toast.css"
+  }
+}

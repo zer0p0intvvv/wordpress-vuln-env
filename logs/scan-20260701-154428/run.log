@@ -1,0 +1,21 @@
+[15:44:30] nuclei: /Users/zer0p0int/工具/nuclei (v3.9.0)
+[15:44:30] 日志目录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-154428
+[15:44:30] 本次共 1 个环境 | 并行度: 4 | 重试: 2次/5s间隔
+[15:44:30] 预构建: 是 | 续跑: 是
+[15:44:30] 续跑模式：跳过已 PASS 的 CVE
+[15:44:30] ━━━ 预构建基础镜像 ━━━
+[15:44:30] 预构建基础镜像 (1): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/mystickyelements/CVE-2022-0148
+[15:44:33] 预构建完成，共 1 个基础镜像
+[15:44:33] ━━━ 开始并行测试 (4 并发) ━━━
+[15:44:33] [########################] 100% (1/1)  CVE-2022-0148  :8110 [official]
+[15:44:33] 等待剩余任务完成...
+[15:45:14] ━━━ 汇总结果 ━━━
+[15:45:14] PASS CVE-2022-0148    
+
+==================== 汇总 ====================
+总计 1  |  PASS 1  FAIL 0  SKIP 0  ERROR 0
+明细: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-154428/summary.txt
+判定记录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-154428/results.jsonl
+原始 jsonl: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-154428/raw/
+[15:45:14] 收到中断信号，清理已启动的容器...
+[15:45:15]   已清理: CVE-2022-0148

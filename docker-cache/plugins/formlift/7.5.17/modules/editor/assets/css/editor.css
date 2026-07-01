@@ -1,0 +1,257 @@
+/*
+
+Grid sizing done on 5% increments.
+
+*/
+a.add-custom-field {
+    text-decoration: none;
+    outline: none;
+}
+
+a.add-custom-field:focus {
+    outline: none;
+}
+
+.custom-field-type-choice {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 1px 1px 3px #e5e5e5;
+    margin: 5px;
+    box-sizing: border-box;
+    width: calc(33% - 10px);
+    display: inline-block;
+    color: #2C3D62;
+}
+
+.custom-field-type-choice:hover {
+    background-color: #f5f5f5;
+    transition: 0.2s;
+}
+
+#infusion_meta .inside {
+    margin: 0;
+    padding: 0;
+}
+
+#formlift-field-editor {
+    padding: 10px;
+}
+
+.formlift-field-box {
+    box-sizing: border-box;
+    height: 70px;
+}
+
+.formlift-field-header {
+    display: inline-block;
+    width: 100%;
+    background: #f1f1f1;
+    cursor: move;
+    height: 60px;
+    transition: 0.4s;
+    box-shadow: 0 0 5px #919191;
+    border-radius: 5px;
+}
+
+.formlift-field-header:hover {
+    background: #f9f9f9;
+    transition: 0.4s;
+}
+
+.formlift-field-box-heading {
+    display: inline-block;
+    padding: 20px 0 20px 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: calc(100% - 205px);
+}
+
+.formlift-heading-text {
+    color: #2C3D62;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formlift-field-header-options {
+    display: inline-block;
+    float: right;
+    height: 60px;
+    background: white;
+    /*border-left: 1px solid #e4e4e4;*/
+    /*padding: 0 0 0 4px;*/
+    width: 200px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.formlift-field-header-options .formlift-header-select {
+    height: 60px !important;
+    font-weight: 500;
+    vertical-align: top;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #2C3D62;
+    cursor: pointer;
+    box-shadow: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 46px;
+    text-align: center;
+    text-align-last: center;
+}
+
+.formlift-header-option {
+    display: inline-block;
+    padding: 0 5px 0 5px;
+    border-left: 1px solid #e4e4e4;
+}
+
+.formlift-header-button {
+    vertical-align: top;
+    padding: 20px 8px;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: none;
+    display: inline-block;
+    color: #2C3D62;
+    border: none;
+    height: 60px;
+    cursor: pointer;
+}
+
+.formlift-form-builder-content {
+    padding: 20px;
+}
+
+.formlift-builder-cell {
+    color: #323232;
+    font-weight: 600;
+}
+
+.formlift-option-container {
+    padding: 5px;
+    /*background: #F1F1F1;*/
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    /*margin: 5px 0px 20px 0px;*/
+}
+
+.formlift-option-editor {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 15px;
+    padding: 7px;
+    border-radius: 2px;
+    box-shadow: 0 0 3px #919191;
+    cursor: default;
+    background: #f1f1f1;
+}
+
+.formlift-option-editor input {
+    margin: 0 5px 0 5px;
+}
+
+.formlift-options-header label {
+    color: #323232;
+    font-weight: 600;
+}
+
+.formlift-hide {
+    display: none;
+}
+
+.formlift-option-icon {
+    padding: 0 8px;
+    cursor: pointer;
+    vertical-align: text-bottom;
+}
+
+
+.formlift-delete-field {
+    color: #FF5757;
+}
+
+.formlift_trigger_popup {
+    color: #66B5CE;
+}
+
+.formlift-option-icon:hover {
+    color: #318FC2;
+}
+
+.formlift-move-icon {
+    cursor: move !important;
+}
+
+.formlift-handle {
+    display: inline-block;
+    border: none;
+    background: none;
+    height: 20px;
+    width: 20px;
+}
+
+.formlift-handle-arrow {
+    border: solid white;
+    width: 3px;
+    height: 3px;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.formlift-header-button .on {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.formlift-header-button .formlift-hide {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.formlift-placeholder {
+    background: #F1F1F1;
+    border: dashed 1px #555555;
+}
+
+#infusion_meta .editor-header {
+    border-bottom: 2px solid #eee;
+    box-shadow: 0px 3px 10px #eee;
+}
+
+#infusion_meta .header-item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+/* ==== Meta Box Styling === */
+
+#formlift_form_settings .inside {
+    margin: 0;
+    padding: 0;
+}
+
+#formlift_form_settings .formlift-settings-page {
+    border: none;
+    margin: 0;
+}
+
+/* ==== editor ==== */
+#infusion_meta .editor-header {
+    border-bottom: 2px solid #eee;
+    box-shadow: 0 3px 10px #eee;
+}
+
+#infusion_meta .header-item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}

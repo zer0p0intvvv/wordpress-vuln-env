@@ -1,0 +1,94 @@
+#!/bin/bash
+set -Eeuo pipefail
+
+WP_PATH="/var/www/html"
+WP_URL="${WORDPRESS_URL:-http://localhost:8088}"
+WP_TITLE="${WORDPRESS_TITLE:-Vulhub Test}"
+WP_ADMIN_USER="${WORDPRESS_ADMIN_USER:-admin}"
+WP_ADMIN_PASSWORD="${WORDPRESS_ADMIN_PASSWORD:-admin}"
+WP_ADMIN_EMAIL="${WORDPRESS_ADMIN_EMAIL:-admin@example.com}"
+PLUGIN_SLUG="${PLUGIN_SLUG:-}"
+PLUGIN_VERSION="${PLUGIN_VERSION:-}"
+
+# 启动原始 WordPress entrypoint（后台）
+/usr/local/bin/docker-entrypoint-original.sh "$@" &
+APACHE_PID=$!
+trap 'kill $APACHE_PID 2>/dev/null || true' EXIT
+
+echo "Waiting for WordPress files..."
+until [ -f "$WP_PATH/wp-includes/version.php" ] && [ -f "$WP_PATH/wp-config.php" ]; do sleep 1; done
+
+cd "$WP_PATH"
+
+echo "Waiting for MySQL..."
+for i in $(seq 1 60); do
+    if wp db check --allow-root --quiet 2>/dev/null; then break; fi
+    sleep 2
+done
+
+if ! wp core is-installed --allow-root 2>/dev/null; then
+    echo "Installing WordPress..."
+    wp core install --url="$WP_URL" --title="$WP_TITLE" \
+        --admin_user="$WP_ADMIN_USER" --admin_password="$WP_ADMIN_PASSWORD" \
+        --admin_email="$WP_ADMIN_EMAIL" --skip-email --allow-root
+    echo "Admin: $WP_ADMIN_USER / $WP_ADMIN_PASSWORD"
+fi
+
+wp option update siteurl "$WP_URL" --allow-root >/dev/null
+wp option update home "$WP_URL" --allow-root >/dev/null
+wp option update permalink_structure '/%postname%/' --allow-root >/dev/null
+wp rewrite flush --allow-root >/dev/null || true
+
+# ── CVE 特定初始化（由 Scaffold agent 填充） ──
+# 此处根据 nuclei 模板分析结果添加：
+# - 预创建 WordPress 页面
+# - 初始化插件自定义表 (check_tables / DOING_AJAX)
+# - 修改插件选项
+# - 依赖插件安装
+# type=none: simple-membership 无需预先创建页面/表/选项。
+	# swpm_validate_email AJAX endpoint 在插件激活后即公开可访问。
+
+# ── 安装并激活漏洞插件 ──
+# 优先使用 Docker build 时预下载的本地 zip（瞬时完成，避免 wait_wp 超时）
+if [ -n "$PLUGIN_SLUG" ]; then
+    PLUGIN_DIR="$WP_PATH/wp-content/plugins/$PLUGIN_SLUG"
+    ZIP="/tmp/${PLUGIN_SLUG}.${PLUGIN_VERSION}.zip"
+    INSTALLED=0
+
+    # ① 本地 zip 预下载（Dockerfile 已缓存，瞬时）
+    if [ ! -d "$PLUGIN_DIR" ] && [ -f "$ZIP" ]; then
+        unzip -oq "$ZIP" -d "$WP_PATH/wp-content/plugins/"
+        chown -R www-data:www-data "$PLUGIN_DIR" 2>/dev/null || true
+        wp plugin activate "$PLUGIN_SLUG" --allow-root && INSTALLED=1
+        rm -f "$ZIP"
+    fi
+
+    # ② 本地已有（插件专用镜像回退）
+    if [ "$INSTALLED" != "1" ] && [ -d "$PLUGIN_DIR" ]; then
+        wp plugin activate "$PLUGIN_SLUG" --allow-root && INSTALLED=1
+    fi
+
+    # ③ WP.org API（在线下载，慢）
+    if [ "$INSTALLED" != "1" ]; then
+        INSTALL_CMD="wp plugin install $PLUGIN_SLUG --allow-root --activate"
+        [ -n "$PLUGIN_VERSION" ] && INSTALL_CMD="$INSTALL_CMD --version=$PLUGIN_VERSION"
+        eval "$INSTALL_CMD" 2>/dev/null && INSTALLED=1 || echo "WP.org API 失败，尝试 CDN..."
+    fi
+
+    # ④ CDN 直链（在线下载，慢）
+    if [ "$INSTALLED" != "1" ] && [ -n "$PLUGIN_VERSION" ]; then
+        URL="https://downloads.wordpress.org/plugin/${PLUGIN_SLUG}.${PLUGIN_VERSION}.zip"
+        if curl -fsSL --retry 3 --max-time 30 -o "$ZIP" "$URL"; then
+            unzip -oq "$ZIP" -d "$WP_PATH/wp-content/plugins/"
+            chown -R www-data:www-data "$PLUGIN_DIR" 2>/dev/null || true
+            wp plugin activate "$PLUGIN_SLUG" --allow-root && INSTALLED=1
+            rm -f "$ZIP"
+        fi
+    fi
+
+    [ "$INSTALLED" = "1" ] && echo "Plugin $PLUGIN_SLUG activated" || echo "WARNING: plugin install failed"
+fi
+
+chown -R www-data:www-data "$WP_PATH/wp-content/uploads/" 2>/dev/null || true
+echo "Setup complete. WordPress: $WP_URL"
+trap - EXIT; wait "$APACHE_PID"

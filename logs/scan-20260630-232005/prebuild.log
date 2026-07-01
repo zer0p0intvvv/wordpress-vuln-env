@@ -1,0 +1,10 @@
+Dockerfile:7
+--------------------
+   6 |     
+   7 | >>> RUN chmod +x /docker-cache/tools/wp && \
+   8 | >>>     install -m 0755 /docker-cache/tools/wp /usr/local/bin/wp && wp --info --allow-root
+   9 |     
+--------------------
+ERROR: failed to solve: process "/bin/sh -c chmod +x /docker-cache/tools/wp &&     install -m 0755 /docker-cache/tools/wp /usr/local/bin/wp && wp --info --allow-root" did not complete successfully: exit code: 1
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/m038l9j22t9njn88bykvh571d

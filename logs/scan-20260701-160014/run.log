@@ -1,0 +1,19 @@
+[16:00:17] nuclei: /Users/zer0p0int/工具/nuclei (v3.9.0)
+[16:00:17] 日志目录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-160014
+[16:00:17] 本次共 1 个环境 | 并行度: 4 | 重试: 2次/5s间隔
+[16:00:17] 预构建: 是 | 续跑: 是
+[16:00:17] 续跑模式：跳过已 PASS 的 CVE
+[16:00:17] ━━━ 预构建基础镜像 ━━━
+[16:00:17] 预构建基础镜像 (1): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/button-generation/CVE-2021-25052
+[16:00:19] 预构建完成，共 1 个基础镜像
+[16:00:19] ━━━ 开始并行测试 (4 并发) ━━━
+[16:00:19] [########################] 100% (1/1)  CVE-2021-25052  :8203 [official]
+[16:00:19] 等待剩余任务完成...
+[16:00:19] ━━━ 汇总结果 ━━━
+[16:00:19] SKIP CVE-2021-25052 ()
+
+==================== 汇总 ====================
+总计 1  |  PASS 0  FAIL 0  SKIP 1  ERROR 0
+明细: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-160014/summary.txt
+判定记录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-160014/results.jsonl
+原始 jsonl: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-160014/raw/

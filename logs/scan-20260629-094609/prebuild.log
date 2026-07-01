@@ -1,0 +1,1763 @@
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2111 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:c9793362 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/dukapress/2.5.4
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2152 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:9af53ee1 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/ab-google-map-travel/3.4
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2170 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:75586dc3 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/wp-statistics/13.0.7
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2189 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:427beac6 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/pie-register/3.7.1.5
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2207 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:499fa997 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/wordpress/6.4
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2225 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:fad202aa /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/capability-manager-enhanced/2.3.0
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2243 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:99cde7b9 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/button-generation/CVE-2021-25052
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2265 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:f0918475 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/mystickyelements/2.0.3
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2286 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:84fb35f3 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/photo-gallery/1.5.87
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2320 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:bca6475f /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/wpcf7-redirect/CVE-2022-0250
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2342 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:65620e32 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/ti-woocommerce-wishlist/CVE-2022-0412
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2395 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:05a6f494 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/arprice-responsive-pricing-table/CVE-2022-0867
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2440 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:a877d2b8 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/simple-membership/4.1.0
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2462 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:5dcd7dae /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/booking-calendar/3.2.0
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2480 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:319b924d /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/cryptocurrency-widgets-pack/1.8.1
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2501 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:40877402 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/wd-google-maps/CVE-2023-0037
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2539 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:129ba98a /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/paid-memberships-pro/2.9.7
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2565 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:abfbe8c2 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/mstore-api/CVE-2023-2734
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2587 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:af8ae863 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/quiz-master-next/CVE-2023-28787
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2605 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:4f10a9eb /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/mstore-api/CVE-2023-3077
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2632 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:3df5948b /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/ultimate-member/CVE-2023-3460
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2658 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:9f8f07b6 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/forminator/CVE-2023-4596
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2676 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:dec11cd8 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/elementor/CVE-2023-48777
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2706 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:6dc36ac7 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/my-calendar/3.4.0
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2745 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:cc28ae49 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/really-simple-ssl/CVE-2024-10924
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2767 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:3a3f2202 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/download-manager/CVE-2024-11740
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2799 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:65f94d2e /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/error-log-viewer/CVE-2024-12849
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2825 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:7c571253 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/gamipress/2.7.0
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2843 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:33672fd7 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/notificationx/CVE-2024-1698
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2865 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:294bdaba /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/instawp-connect/0.1.0.22
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2884 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:6ab3e0f2 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/email-subscribers/5.7.13
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2930 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:a045cf29 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/ds-cf7-math-captcha/2.0.1
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2948 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:3ba0020c /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/wp-simple-firewall/20.0.5
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+2966 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:b09e97d1 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/learnpress/CVE-2024-8522
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+3004 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:8ab4eecc /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/registrationmagic/6.0.7.1
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+3030 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:855ea685 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/depicter/3.6.0
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+3100 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:28ed345f /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/newsletters-lite/CVE-2026-3018
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+3118 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:0b74c700 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/drag-and-drop-multiple-file-upload-contact-form-7/1.3.9.6
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+3136 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:7437dbfe /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/highland-software-custom-role-manager/1.0.0
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+3154 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:0f7ec291 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/wp-optimize/4.5.2
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+3172 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:e541fde6 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/easy-elements/1.4.4
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+3190 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:eb7c5f54 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/expand-maker/3.5.5
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///Users/zer0p0int/.docker/run/docker.sock: Head "http://%2FUsers%2Fzer0p0int%2F.docker%2Frun%2Fdocker.sock/_ping": dial unix /Users/zer0p0int/.docker/run/docker.sock: connect: operation not permitted
+3208 v0.20.1-desktop.2 /Users/zer0p0int/.docker/cli-plugins/docker-buildx buildx build -q -t vulhub-base:28ff1af4 /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/base/import-users-from-csv-with-meta/2.0.8
+github.com/docker/docker/client.(*Client).doRequest
+	github.com/docker/docker@v27.5.0+incompatible/client/request.go:160
+github.com/docker/docker/client.(*Client).Ping
+	github.com/docker/docker@v27.5.0+incompatible/client/ping.go:31
+github.com/docker/buildx/builder.(*Builder).Factory.func1
+	github.com/docker/buildx/builder/builder.go:251
+sync.(*Once).doSlow
+	sync/once.go:76
+sync.(*Once).Do
+	sync/once.go:67
+github.com/docker/buildx/builder.(*Builder).Factory
+	github.com/docker/buildx/builder/builder.go:232
+github.com/docker/buildx/builder.(*Builder).LoadNodes
+	github.com/docker/buildx/builder/node.go:91
+github.com/docker/buildx/commands.runBuild
+	github.com/docker/buildx/commands/build.go:319
+github.com/docker/buildx/commands.buildCmd.func1
+	github.com/docker/buildx/commands/build.go:580
+github.com/docker/cli/cli-plugins/plugin.RunPlugin.func1.1.2
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:64
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.8.1/command.go:985
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.8.1/command.go:1117
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.8.1/command.go:1041
+github.com/docker/cli/cli-plugins/plugin.RunPlugin
+	github.com/docker/cli@v27.5.0+incompatible/cli-plugins/plugin/plugin.go:79
+main.runPlugin
+	github.com/docker/buildx/cmd/buildx/main.go:66
+main.run
+	github.com/docker/buildx/cmd/buildx/main.go:80
+main.main
+	github.com/docker/buildx/cmd/buildx/main.go:90
+runtime.main
+	runtime/proc.go:272
+runtime.goexit
+	runtime/asm_arm64.s:1223
+

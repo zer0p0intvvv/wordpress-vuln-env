@@ -1,0 +1,27 @@
+.formlift-notice-icon-container {
+    padding-top: 10px;
+    width: 40px;
+    display: inline-block;
+}
+
+.formlift-notice-text-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+    padding: 8px;
+}
+
+.formlift-notice-footer {
+    padding: 10px;
+    float: right;
+    display: inline-block;
+}
+
+.formlift-notice {
+    display: inline-block;
+}
+
+.formlift-license-form {
+    /* padding: 20px; */
+    box-sizing: border-box;
+}

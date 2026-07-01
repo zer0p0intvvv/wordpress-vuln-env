@@ -1,0 +1,21 @@
+[16:20:32] nuclei: /Users/zer0p0int/工具/nuclei (v3.9.0)
+[16:20:32] 日志目录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162028
+[16:20:32] 本次共 1 个环境 | 并行度: 4 | 重试: 2次/5s间隔
+[16:20:32] 预构建: 是 | 续跑: 是
+[16:20:32] 续跑模式：跳过已 PASS 的 CVE
+[16:20:32] ━━━ 预构建基础镜像 ━━━
+[16:20:32] 预构建基础镜像 (1): /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/vulhub-env/wp-statistics/CVE-2022-0651
+[16:20:34] 预构建完成，共 1 个基础镜像
+[16:20:34] ━━━ 开始并行测试 (4 并发) ━━━
+[16:20:35] [########################] 100% (1/1)  CVE-2022-0651  :8193 [official]
+[16:20:35] 等待剩余任务完成...
+[16:21:07] ━━━ 汇总结果 ━━━
+[16:21:07] FAIL CVE-2022-0651
+
+==================== 汇总 ====================
+总计 1  |  PASS 0  FAIL 1  SKIP 0  ERROR 0
+明细: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162028/summary.txt
+判定记录: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162028/results.jsonl
+原始 jsonl: /Users/zer0p0int/Desktop/wordpress漏洞环境自动化生成/logs/scan-20260701-162028/raw/
+[16:21:07] 收到中断信号，清理已启动的容器...
+[16:21:24]   已清理: CVE-2022-0651

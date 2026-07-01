@@ -1,0 +1,4 @@
+/* Shoutbox 1.00 */
+/* IE 7 hacks. Please get a real browser :) */
+div.shoutbox-smile, div.shoutbox-users-container-top div.shoutbox-single-user {display:inline; zoom:1;}
+textarea.shoutbox-message{padding:0;border: none;}

@@ -1,0 +1,213 @@
+/*.formlift-animate-right{position:relative;-webkit-animation:animateright 0.4s;animation:animateright 0.4s}*/
+/*@-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}*/
+/*@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}*/
+
+.formlift-above-settings div {
+    display: inline-block;
+}
+
+#_formlift_required_field_settings .formlift-cell-label {
+    width: auto;
+}
+
+.formlift-settings-page {
+    display: inline-block;
+    width: 800px;
+    background: #ffffff;
+    height: auto;
+    border: 1px solid #e5e5e5
+}
+
+#formlift-settings-form_settings,
+#formlift-settings-style_settings {
+    display: flex;
+    min-height: 600px;
+    height: auto;
+}
+
+.formlift-navigation {
+    height: 100%;
+}
+
+#formlift_form_settings .formlift-settings-page,
+#formlift_style_settings .formlift-settings-page {
+    width: auto;
+}
+
+.formlift-nav {
+    display: inline-block;
+    float: left;
+    z-index: 1;
+    width: 220px;
+    color: white;
+    background-color: #318FC2;
+    /*height: 100%;*/
+    /*box-shadow: 5px 4px 8px 0px #888888;*/
+}
+
+.formlift-tab {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.formlift-tab:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #1e5876;
+    transition: 0.4s;
+}
+
+.formlift-active {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #1e5876;
+    transition: 0.4s;
+}
+
+.formlift-row {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.formlift-cell {
+    display: inline-block
+}
+
+.formlift-cell-label {
+    width: 50%;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.formlift-cell-label {
+    font-weight: 600
+}
+
+.formlift-cell-input {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.formlift-sections-container {
+    max-width: calc(100% - 220px);
+    display: inline-block;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    /*margin-left: 15px;*/
+}
+
+.formlift-logo {
+    background: #ffffff;
+    text-align: center;
+}
+
+/* ==== Meta Box Styling === */
+
+#formlift_form_settings .inside,
+#formlift_style_settings .inside {
+    margin: 0;
+    padding: 0;
+}
+
+#formlift_form_settings .formlift-settings-page,
+#formlift_style_settings .formlift-settings-page {
+    border: none;
+    margin: 0;
+}
+
+/* ==== The switch - the box around the slider ==== */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    display: none;
+}
+
+/* The slider */
+.formlift-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.formlift-slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .formlift-slider {
+    background-color: #2196F3;
+}
+
+input:focus + .formlift-slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .formlift-slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.formlift-slider.round {
+    border-radius: 17px;
+}
+
+.formlift-slider.round:before {
+    border-radius: 50%;
+}
+
+.options-container {
+    /*float: left;*/
+    width: 800px;
+    margin-top: 20px;
+}
+
+.right-bar {
+    float: right;
+    width: 250px;
+    margin-top: 20px;
+}
+
+.right-bar img {
+    width: 100%;
+}
+
+.formlift-settings-wrap:last-child {
+    margin-top: 20px;
+}
+
+#groundhogg-connect {
+    cursor: pointer;
+}
+
+#groundhogg-connect.loading {
+    cursor: wait;
+}

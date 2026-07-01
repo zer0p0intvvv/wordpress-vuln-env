@@ -1,0 +1,21 @@
+<svg
+                                                                    class="me-2 icon-16" width="16" height="16"
+                                                                    viewBox="0 0 16 16" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M14.426 9.59715H11.7272C10.7362 9.59655 9.93298 8.79393 9.93237 7.80297C9.93237 6.81201 10.7362 6.0094 11.7272 6.00879H14.426"
+                                                                        stroke="#0C112E" stroke-width="1.2"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path d="M12.0324 7.7618H11.8246" stroke="#0C112E"
+                                                                        stroke-width="1.2" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M5.16519 2H10.9275C12.8596 2 14.4259 3.56634 14.4259 5.49844V10.2831C14.4259 12.2152 12.8596 13.7816 10.9275 13.7816H5.16519C3.23309 13.7816 1.66675 12.2152 1.66675 10.2831V5.49844C1.66675 3.56634 3.23309 2 5.16519 2Z"
+                                                                        stroke="#0C112E" stroke-width="1.2"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path d="M4.69043 5.02547H8.28973" stroke="#0C112E"
+                                                                        stroke-width="1.2" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
