@@ -168,7 +168,7 @@ name = "Cryptocurrency Widgets Pack <= 1.8.1 - SQL Injection"
 cve = ["CVE-2022-4059"]
 app = "Cryptocurrency Widgets Pack"
 path = "cryptocurrency-widgets-pack/CVE-2022-4059"
-dockerfile = {"vulhub/cryptocurrency-widgets-pack:1.8.1" = "base/cryptocurrency-widgets-pack/1.8.1"}
+dockerfile = {"vulhub/cryptocurrency-widgets-pack:1.8.1" = "cryptocurrency-widgets-pack/CVE-2022-4059"}
 tags = ["SQL Injection"]
 template = "nuclei-templates/CVE-2022-4059.yaml"
 template_source = "official"
