@@ -32,12 +32,16 @@
 | CVE-2022-3982 | File Upload RCE | No | No | booking-calendar/CVE-2022-3982 | 8108 |
 | CVE-2022-4059 | SQLi (time-based) | No | No | cryptocurrency-widgets-pack/CVE-2022-4059 | 8104 |
 | CVE-2023-0037 | SQLi (time-based) | No | No | wd-google-maps/CVE-2023-0037 | 8207 |
+| CVE-2023-0159 | LFI (File Read) | No | No | extensive-vc-addon/CVE-2023-0159 | 8134 |
+| CVE-2023-0600 | SQLi (time-based) | No | No | wp-stats-manager/CVE-2023-0600 | 8133 |
 | CVE-2023-1893 | Reflected XSS | Yes | No | login-configurator/CVE-2023-1893 | 8131 |
 | CVE-2023-23488 | SQLi (time-based) | No | No | paid-member-subscriptions/CVE-2023-23488 | 8090 |
 | CVE-2023-2732 | Auth Bypass | No | No | mstore-api/CVE-2023-2732 | 8138 |
 | CVE-2023-2734 | Auth Bypass | No | No | mstore-api/CVE-2023-2734 | 8210 |
 | CVE-2023-3077 | SQLi (time-based) | No | No | mstore-api/CVE-2023-3077 | 8211 |
+| CVE-2023-5360 | File Upload RCE | No | No | royal-elementor-addons/CVE-2023-5360 | 8140 |
 | CVE-2023-6360 | SQLi (time-based) | No | No | my-calendar/CVE-2023-6360 | 8105 |
+| CVE-2024-10571 | LFI (File Read) | No | No | chart-builder/CVE-2024-10571 | 8121 |
 | CVE-2024-13496 | SQLi (time-based) | Yes | No | gamepress/CVE-2024-13496 | 8106 |
 | CVE-2024-2667 | File Upload | No | Yes | instawp-connect/CVE-2024-2667 | 8109 |
 | CVE-2022-0591 | SSRF (OOB) | No | Yes | formcraft3/CVE-2022-0591 | 8191 |
@@ -57,8 +61,8 @@
 
 ## 统计
 
-- 总计: 47 个模板
-- 无需认证: 33 个
+- 总计: 50 个模板
+- 无需认证: 36 个
 - 需认证 (username/password): 14 个 (CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2022-0250, CVE-2022-0533, CVE-2022-1029, CVE-2023-1893, CVE-2024-7313, CVE-2024-13496, CVE-2026-7106, CVE-2026-7252, CVE-2026-7467, CVE-2026-7641)
 - 使用 OOB (interactsh): 3 个 (CVE-2021-25052, CVE-2022-0591, CVE-2024-2667)
 

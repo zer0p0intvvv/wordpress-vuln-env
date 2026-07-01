@@ -872,14 +872,15 @@ template = ""
 template_source = "none"
 
 [[environment]]
-name = "chart-builder - LFI"
+name = "Chartify <= 2.9.5 - Local File Inclusion"
 cve = ["CVE-2024-10571"]
 app = "chart-builder"
 path = "chart-builder/CVE-2024-10571"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
-tags = ["LFI"]
+dockerfile = {"vulhub/chart-builder:2.9.5" = "chart-builder/CVE-2024-10571"}
+tags = ["LFI", "RCE"]
 template = "nuclei-templates/CVE-2024-10571.yaml"
 template_source = "official"
+notes = "MU-plugin 强制激活; Dockerfile 预下载插件 zip; 自建 entrypoint 替代通用 base"
 
 [[environment]]
 name = "elementor - RCE"
@@ -892,14 +893,15 @@ template = "nuclei-templates/CVE-2023-48777.yaml"
 template_source = "official"
 
 [[environment]]
-name = "extensive-vc-addon - LFI"
+name = "Extensive VC Addons for WPBakery <= 1.8.1 - Unauthenticated LFI -> RCE"
 cve = ["CVE-2023-0159"]
 app = "extensive-vc-addon"
 path = "extensive-vc-addon/CVE-2023-0159"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+dockerfile = {"vulhub/extensive-vc-addon:1.8.1" = "base/extensive-vc-addon/1.8.1"}
 tags = ["LFI"]
 template = "nuclei-templates/CVE-2023-0159.yaml"
 template_source = "official"
+notes = "MU-plugin 强制激活; WPBakery stub class 作为依赖; 预下载插件 zip"
 
 [[environment]]
 name = "gift-cards-woocommerce - SQLi"
@@ -1116,14 +1118,15 @@ template = "nuclei-templates/CVE-2023-1020.yaml"
 template_source = "official"
 
 [[environment]]
-name = "wp-stats-manager - SQLi"
+name = "WP Visitor Statistics (Real Time Traffic) <= 6.8 - Unauthenticated SQL Injection"
 cve = ["CVE-2023-0600"]
-app = "wp-stats-manager"
+app = "WP Visitor Statistics"
 path = "wp-stats-manager/CVE-2023-0600"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+dockerfile = {"vulhub/wp-stats-manager:6.8" = "wp-stats-manager/CVE-2023-0600"}
 tags = ["SQLi"]
 template = "nuclei-templates/CVE-2023-0600.yaml"
 template_source = "official"
+notes = "MU-plugin 强制激活; 自定义 Dockerfile 预下载插件 zip 并创建 wp-statistics symlink 供模板 readme 检测; entrypoint 手动调用 wsmInitPlugin::wsm_activate 创建插件表"
 
 [[environment]]
 name = "wp-umbrella - LFI"
