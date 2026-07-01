@@ -89,6 +89,15 @@ if [ -n "$WP_PLUGIN_SLUG" ]; then
     eval "$INSTALL_CMD" || true
 fi
 
+# Initialize My Calendar plugin database tables and demo content
+echo "Initializing My Calendar plugin..."
+wp --allow-root eval '
+    require_once "/var/www/html/wp-content/plugins/my-calendar/my-calendar-upgrade-db.php";
+    mc_upgrade_db();
+    require_once "/var/www/html/wp-content/plugins/my-calendar/my-calendar-install.php";
+    mc_create_demo_content();
+' 2>/dev/null || true
+
 echo "Setup complete. WordPress is running at $WP_URL"
 [ "$DEBUG_MODE" = "true" ] && echo "Debug logs: /var/www/html/wp-content/debug.log"
 
