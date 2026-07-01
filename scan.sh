@@ -306,11 +306,11 @@ run_one_cve() {
   fi
 
   # OOB / skip 参数解析
-  local is_oob=0 do_skip=0
+  local is_oob=0 do_skip=0 need_auth=0
   declare -a extra=()
   for t in $tokens; do
     case "$t" in
-      auth) extra+=(-V "username=admin" -V "password=admin") ;;
+      auth) need_auth=1; extra+=(-V "username=admin" -V "password=admin") ;;
       oob)  is_oob=1 ;;
       skip) do_skip=1 ;;
       *)    extra+=("$t") ;;
@@ -353,6 +353,24 @@ run_one_cve() {
   fi
 
   echo "  环境已就绪 (plugin=$plugin_slug)"
+
+  # ── 2.5 auth cookie 注入（针对 http: path 格式模板）──
+  # 部分官方模板使用 http: path 格式访问 wp-admin 页面，没有 raw: 方式的 login POST 步骤，
+  # 但 nuclei -V 变量无法自动生成 session cookie。此处先行登录获取 session cookie，以 -H 注入。
+  if [ "$need_auth" -eq 1 ]; then
+    local cookiejar="$TMP_DIR/$cve.cookies.txt"
+    curl -s -c "$cookiejar" "http://localhost:$port/wp-login.php"       -d "log=admin&pwd=admin&wp-submit=Log+In&redirect_to=%2Fwp-admin%2F&testcookie=1"       -o /dev/null 2>/dev/null || true
+    if [ -s "$cookiejar" ]; then
+      local wpcookie
+      # 从 Netscape cookie jar 提取所有非注释 cookie（含 #HttpOnly 行）
+      # 发送完整 cookie jar 到 nuclei，确保 admin session cookie 包含在内
+      wpcookie=$(awk -F'\t' '!/^# |^$/{gsub(/^#HttpOnly_/,""); print $6"="$7";"}' "$cookiejar" 2>/dev/null | tr -d '\n' | sed 's/;$//')
+      if [ -n "$wpcookie" ]; then
+        extra+=(-H "Cookie: $wpcookie")
+        echo "  auth cookie injected for nuclei"
+      fi
+    fi
+  fi
 
   # ── 3. nuclei 智能试错 ──
   #    连接错误 → 重试；matcher 不命中 → 不重试
