@@ -39,6 +39,7 @@
 | CVE-2023-2732 | Auth Bypass | No | No | mstore-api/CVE-2023-2732 | 8138 |
 | CVE-2023-2734 | Auth Bypass | No | No | mstore-api/CVE-2023-2734 | 8210 |
 | CVE-2023-3077 | SQLi (time-based) | No | No | mstore-api/CVE-2023-3077 | 8211 |
+| CVE-2023-3460 | Privilege Escalation | No | No | ultimate-member/CVE-2023-3460 | 8130 |
 | CVE-2023-5360 | File Upload RCE | No | No | royal-elementor-addons/CVE-2023-5360 | 8140 |
 | CVE-2023-6360 | SQLi (time-based) | No | No | my-calendar/CVE-2023-6360 | 8105 |
 | CVE-2024-10571 | LFI (File Read) | No | No | chart-builder/CVE-2024-10571 | 8121 |
@@ -50,6 +51,7 @@
 | CVE-2024-5084 | File Upload RCE | No | No | hash-form/CVE-2024-5084 | 8096 |
 | CVE-2024-6517 | Reflected XSS | No | No | ds-cf7-math-captcha/CVE-2024-6517 | 8113 |
 | CVE-2024-7313 | Reflected XSS | Yes | No | wp-simple-firewall/CVE-2024-7313 | 8100 |
+| CVE-2024-10516 | LFI (File Read) | No | No | swift-performance-lite/CVE-2024-10516 | 8127 |
 | CVE-2025-2011 | SQLi (union-based) | No | No | depicter/CVE-2025-2011 | 8107 |
 | CVE-2026-5718 | File Upload RCE | No | No | drag-and-drop-multiple-file-upload-cf7/CVE-2026-5718 | 8114 |
 | CVE-2026-7106 | Privilege Escalation | Yes | No | highland-software-custom-role-manager/CVE-2026-7106 | 8117 |
@@ -61,8 +63,8 @@
 
 ## 统计
 
-- 总计: 50 个模板
-- 无需认证: 36 个
+- 总计: 52 个模板
+- 无需认证: 37 个
 - 需认证 (username/password): 14 个 (CVE-2015-2755, CVE-2021-25032, CVE-2021-25052, CVE-2022-0148, CVE-2022-0250, CVE-2022-0533, CVE-2022-1029, CVE-2023-1893, CVE-2024-7313, CVE-2024-13496, CVE-2026-7106, CVE-2026-7252, CVE-2026-7467, CVE-2026-7641)
 - 使用 OOB (interactsh): 3 个 (CVE-2021-25052, CVE-2022-0591, CVE-2024-2667)
 

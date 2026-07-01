@@ -876,11 +876,11 @@ name = "Chartify <= 2.9.5 - Local File Inclusion"
 cve = ["CVE-2024-10571"]
 app = "chart-builder"
 path = "chart-builder/CVE-2024-10571"
-dockerfile = {"vulhub/chart-builder:2.9.5" = "chart-builder/CVE-2024-10571"}
+dockerfile = {"vulhub/chart-builder:2.9.4" = "chart-builder/CVE-2024-10571"}
 tags = ["LFI", "RCE"]
 template = "nuclei-templates/CVE-2024-10571.yaml"
 template_source = "official"
-notes = "MU-plugin 强制激活; Dockerfile 预下载插件 zip; 自建 entrypoint 替代通用 base"
+notes = "MU-plugin 强制激活; Dockerfile 预下载插件 zip; 自建 entrypoint 替代通用 base; WP.org 的 2.9.5 zip 已被 silent patch (加入 $allowed_sources 验证但含 typo $chart_source_type undefined)，实际使用 2.9.4（无验证，$_GET['source'] 直通 require_once）"
 
 [[environment]]
 name = "elementor - RCE"
@@ -1046,11 +1046,11 @@ template = ""
 template_source = "none"
 
 [[environment]]
-name = "swift-performance-lite - LFI"
+name = "Swift Performance Lite <= 2.3.7.1 - Local PHP File Inclusion"
 cve = ["CVE-2024-10516"]
 app = "swift-performance-lite"
 path = "swift-performance-lite/CVE-2024-10516"
-dockerfile = {"vulhub/wordpress:6.4" = "base/wordpress/6.4"}
+dockerfile = {"vulhub/swift-performance-lite:2.3.7.1" = "base/swift-performance-lite/2.3.7.1"}
 tags = ["LFI"]
 template = "nuclei-templates/CVE-2024-10516.yaml"
 template_source = "official"
